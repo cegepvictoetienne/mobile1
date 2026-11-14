@@ -1,8 +1,8 @@
 # Horaire
 Semaine|Cours|Date|Sujet|Exercice
 --|--|--|--|--
-1|1|2026-08-21 12:15:00|[Introduction](index.md) <br/> [Coder une application avec XCode](lecons/creer-projet.md)|
-1|2|2026-08-26 15:15:00||
+1|1|2026-08-21 12:15:00|[Travailler avec un mac](lecons/travailler-avec-un-mac.md)|[S'approprier son mac](exercices/s-approprier-son-mac.md)
+1|2|2026-08-26 15:15:00|[Coder une application avec XCode](lecons/creer-projet.md)|
 2|3|2026-08-28 12:15:00||
 2|4|2026-09-02 15:15:00||
 3|5|2026-09-04 12:15:00||

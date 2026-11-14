@@ -10,6 +10,11 @@ nav = [
   {"Horaire" = "horaire.md"},
   {"Leçons" = [
     {"Créer un projet dans XCode" = "lecons/creer-projet.md"},
+    {"Travailler avec un mac" = "lecons/travailler-avec-un-mac.md"},
+  ],
+  },
+  {"Exercices" = [
+    {"S'approprier son mac" = "exercices/s-approprier-son-mac.md"},
   ],
   },
   {"Déclaration de l'utilisation de l'IA" = "declaration-ia.md"},
