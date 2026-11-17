@@ -4,17 +4,6 @@
 
 Avec SwiftData, effectuer des opération CRUD (**Create, Read, Update, Delete**) est un charme.
 
-Dans cette fiche :
-
-- [Insert](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-- [Delete](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-  - [Suppression simple](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-  - [Confirmation avant suppression](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-  - [Vider une table entière](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-- [Update](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-- [Dangers de l'enregistrement automatique sans save()](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-- [Erreur « Thread 1: Fatal error: Observation Registrar was not found on Model »](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees)
-
 ### Insert
 
 L'insertion de données consiste à instancier un nouvel objet puis à faire appel à [modelContext.insert()](https://developer.apple.com/documentation/swiftdata/modelcontext/insert(_:)).
@@ -439,12 +428,6 @@ struct EditerCategorie: View {
 ## Demander une confirmation avec .confirmationDialog()
 
 La méthode [confirmationDialog()](https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9ibgk) permet d'afficher une boîte de confirmation sous forme de popup, pour permettre à l'usager d'accepter ou de refuser une proposition.
-
-Dans cette fiche :
-
-- [confirmationDialog vs alert](crud-avec-swiftdata.md#demander-une-confirmation-avec-confirmationdialog)
-- [Fonctionnement du confirmationDialog](crud-avec-swiftdata.md#demander-une-confirmation-avec-confirmationdialog)
-- [Et si le bouton qui appelle le confirmationDialog n'est pas dans une liste?](crud-avec-swiftdata.md#demander-une-confirmation-avec-confirmationdialog)
 
 ### confirmationDialog vs alert
 

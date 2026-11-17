@@ -2,16 +2,6 @@
 
 ## Variables, constantes et types de données
 
-Dans cette fiche :
-
-- Déclaration
-- Types de base
-- Type Decimal
-- Type CGFloat
-- Instances de structures et de classes
-- Types opaques
-- À quel endroit déclarer les variables dans SwiftUI?
-
 ### Déclaration
 
 Avec Swift, les mots-clés `var` et `let` permettent de déclarer respectivement des variables et des constantes.
@@ -561,11 +551,6 @@ struct AjouterItem: View {
 
 ## Les énumérations
 
-Dans cette fiche :
-
-- [enum](le-langage-swift-reference.md#les-enumerations)
-- [Valeur brute des cas de l'énumération (Raw value)](le-langage-swift-reference.md#les-enumerations)
-
 ### enum
 
 Une énumération, ou **enum** pour les intimes, est un modèle de données qui permet de définir un type qui comporte une liste déterminée de valeurs possibles. Chaque valeur est appelée un cas.
@@ -695,14 +680,6 @@ Il est possible de demander à Swift d'interpréter une variable ou une constant
 
 Je vous propose de comparer l’interpolation de chaîne à une simple conversion de type, puis d’aborder les différentes méthodes de formatage des nombres en Swift et en SwiftUI.
 
-Dans cette fiche :
-
-- [Conversion de type](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine)
-- [Interpolation de chaîne](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine)
-- [Format des nombres (paramètre specifier)](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine)
-- [Format des nombres (paramètre format)](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine)
-- [NumberFormatter](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine)
-
 ### Conversion de type
 
 Si vous avez besoin d'une simple conversion de type, par exemple de changer un nombre en chaîne de caractères, vous pouvez utiliser le constructeur de la structure [String](https://developer.apple.com/documentation/swift/string).
@@ -828,14 +805,6 @@ struct ContentView: View {
 ## Les optionnels (?, !, ??)
 
 Lorsqu'une variable peut prendre la valeur nil, on dira que c'est un [optionnel](https://developer.apple.com/documentation/swift/optional). Dans d'autres langages, on utilise le terme **nullable**.
-
-Dans cette fiche :
-
-- [Déclaration](le-langage-swift-reference.md#les-optionnels)
-- [Utilisation](le-langage-swift-reference.md#les-optionnels)
-  - [Opérateur de déballage forcé (!)](le-langage-swift-reference.md#les-optionnels)
-  - [Opérateur de fusion nil (??)](le-langage-swift-reference.md#les-optionnels)
-  - [Chaînage d'optionnels (?)](le-langage-swift-reference.md#les-optionnels)
 
 ### Déclaration
 

@@ -32,14 +32,6 @@ Un **sideload** peut être réalisé à partir de fichiers .IPA, de fichiers .DE
 
 Dans cet article, je vous montre comment procéder au **sideload** à partir du code source.
 
-Dans cette fiche :
-
-- [Matériel requis](installer-une-application-swiftui-sur-iphone.md#installation-sans-passer-par-lappstore)
-- [Limites de la méthode](installer-une-application-swiftui-sur-iphone.md#installation-sans-passer-par-lappstore)
-- [Transférer l'application sur iPhone](installer-une-application-swiftui-sur-iphone.md#installation-sans-passer-par-lappstore)
-- [Permettre l'exécution de l'application sur le iPhone](installer-une-application-swiftui-sur-iphone.md#installation-sans-passer-par-lappstore)
-- [Installation sans câble après une première connexion](installer-une-application-swiftui-sur-iphone.md#installation-sans-passer-par-lappstore)
-
 ### Matériel requis
 
 Cette technique nécessite un ordinateur Mac sur lequel Xcode est installé.

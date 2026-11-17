@@ -43,16 +43,6 @@ var body: some View {
 
 Je vous présente ici des techniques pour modifier le fond d'écran d'une application SwiftUI.
 
-Dans cette fiche :
-
-- [Si on ne tient pas compte de la zone protégée](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-- [Couleur de fond](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-  - [Technique du ZStack](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-  - [Technique du .background()](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-- [Image de fond](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-  - [Technique du .background()](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-  - [Technique du ZStack](la-zone-protegee.md#fond-decran-qui-recouvre-tout-lecran)
-
 ### Si on ne tient pas compte de la zone protégée
 
 Une technique de base pour modifier la couleur de fond de l'écran consiste à utiliser un `ZStack` avec une couleur et le reste de la vue sera affiché par-dessus.

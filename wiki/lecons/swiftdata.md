@@ -32,14 +32,6 @@ Par défaut, lorsqu'une application pour iPhone utilise une base de données gé
 
 `/Users/monnom/Library/Developer/CoreSimulator/Devices/[UDID]/data/Containers/Data/Application/[app GUID]/Library/Application Support/default.store`
 
-Dans cette fiche :
-
-- [Outil de débogage et de développement](swiftdata.md#emplacement-de-la-base-de-donnees-swiftdata)
-- [Pourquoi trois fichiers?](swiftdata.md#emplacement-de-la-base-de-donnees-swiftdata)
-- [UDID et app GUID](swiftdata.md#emplacement-de-la-base-de-donnees-swiftdata)
-- [Techniques pour retrouver facilement la base de données](swiftdata.md#emplacement-de-la-base-de-donnees-swiftdata)
-- [Base de données interne](swiftdata.md#emplacement-de-la-base-de-donnees-swiftdata)
-
 ### Outil de débogage et de développement
 
 Pourquoi un développeur a-t-il besoin de savoir où est la base de données?
@@ -98,7 +90,7 @@ La structure interne de la base de données diffère de celle que nous définiss
 
 Remarquez que SwiftData se charge de créer les clés étrangères requises mais il ne crée pas de contraintes d'intégrité référentielle dans la base de données car il gère lui-même l'intégrité des données via son modèle objet.
 
-Dans cette fiche, j'ai utilisé [DbGate](editeur-visuel-sqlite-dbgate.md#installation-de-dbgate) pour visualiser le contenu de la base de données.
+Ici, j'ai utilisé [DbGate](editeur-visuel-sqlite-dbgate.md#installation-de-dbgate) pour visualiser le contenu de la base de données.
 
 ![Tables créées par SwiftData](images/SwiftData-TablesCreees.png)
 
@@ -425,14 +417,6 @@ Quand on travaille avec SwiftData, il n'est pas nécessaire de créer physiqueme
 
 SwiftData se chargera de tout cela en fonction des modèles définis et des opérations qui y seront faites.
 
-Dans cette fiche :
-
-- [Informer l'application qu'elle doit utiliser un ModelContainer](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
-- [Insérer des données dans une seule table](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
-- [Insérer des données dans des tables liées](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
-- [Insérer des données dans des tables non liées](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
-- [Technique à éviter : insérer des données dans le onAppear()](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
-
 ### Informer l'application qu'elle doit utiliser un ModelContainer
 
 Une technique intéressante pour insérer des données initiales dans une base de données SwiftData consiste à définir un nouveau conteneur qui contiendra le code à exécuter.
@@ -732,16 +716,6 @@ Notez également que les données peuvent avoir été insérées par l'une de ce
 - [insérées initialement à l'aide du ModelContainer](swiftdata.md#inserer-des-donnees-initiales-dans-la-base-de-donnees)
 - [insérées par l'application](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees) selon la logique mise en place (ex : quand un usager clique sur un bouton pour insérer des données)
 
-Dans cette fiche :
-
-- [Requête simple](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Enchaînement d'objets](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Variable observable](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Tri](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Filtre](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Animation](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-- [Requête en dehors d'une vue](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query)
-
 ### Requête simple
 
 Pour retrouver les données, il faut ajouter l'instruction `import SwiftData` dans le haut de la vue dans laquelle on désire effectuer une requête, par exemple ContentView.
@@ -991,13 +965,6 @@ Du moins, ce n'était pas possible au moment d'écrire ces lignes.
 Il existe pourtant des techniques qui permettent de contourner ce problème.
 
 La technique à utiliser sera différente selon la nature de ce qui doit être réalisé avec la table enfant.
-
-Dans cette fiche :
-
-- [Lister les éléments de la table enfant](swiftdata.md#trier-les-donnees-dune-table-enfant)
-  - [.sorted()](swiftdata.md#trier-les-donnees-dune-table-enfant)
-  - [Travailler avec une autre variable triée](swiftdata.md#trier-les-donnees-dune-table-enfant)
-- [Obtenir la première ou la dernière valeur d'une table enfant](swiftdata.md#trier-les-donnees-dune-table-enfant)
 
 ### Lister les éléments de la table enfant
 

@@ -2,11 +2,6 @@
 
 SwiftUI propose quelques vues qui permettent de placer des vues en lignes et en colonnes.
 
-Dans cette fiche :
-
-- [Grid](grille-d-items.md)
-- [LazyVGrid](grille-d-items.md)
-
 ## Grid
 
 La vue [Grid](https://developer.apple.com/documentation/swiftui/grid) permet de placer des vues en lignes et en colonnes.

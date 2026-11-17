@@ -4,14 +4,6 @@
 
 Une application SwiftUI peut lancer une action de façon répétée selon un intervalle donné, par exemple à l'aide d'un publisher basé sur Timer.
 
-Dans cette fiche :
-
-- [Timer qui démarre automatiquement](les-minuteurs.md#timer)
-- [Démarrer et arrêter le Timer manuellement](les-minuteurs.md#timer)
-- [Application dans laquelle le Timer doit être arrêté puis redémarré](les-minuteurs.md#timer)
-  - [Variable d'état qui contrôle l'exécution du onReceive](les-minuteurs.md#timer)
-  - [Recréation du Timer](les-minuteurs.md#timer)
-
 ### Timer qui démarre automatiquement
 
 Le Timer sera instancié comme suit :

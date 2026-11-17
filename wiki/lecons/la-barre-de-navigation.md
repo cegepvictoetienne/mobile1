@@ -4,12 +4,6 @@
 
 Il est intéressant d'ajouter un titre dans la bare de navigation, dans le haut de la fenêtre d'une application mobile. Cette barre peut contenir le titre de l'application et possiblement des icônes ou du texte qui donnent accès à des fonctionnalités de votre choix.
 
-Dans cette fiche :
-
-- [NavigationStack](la-barre-de-navigation.md#configurer-le-titre-de-lapplication)
-- [Titre plus petit](la-barre-de-navigation.md#configurer-le-titre-de-lapplication)
-- [Où placer le .navigationTitle?](la-barre-de-navigation.md#configurer-le-titre-de-lapplication)
-
 ### NavigationStack
 
 Avec SwiftUI, il est possible d'ajouter un titre en englobant le contenu de la vue dans un [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack), qui est disponible depuis iOS 16.
@@ -135,11 +129,6 @@ struct ContentView: View {
 « Working with Toolbar in SwiftUI ». AppCoda. <https://www.appcoda.com/swiftui-toolbar/>
 
 ## Configurer les barres d'outils
-
-Dans cette fiche :
-
-- [Deux barre d'outils](la-barre-de-navigation.md#configurer-les-barres-doutils)
-- [Code des barres d'outils dans son propre fichier](la-barre-de-navigation.md#configurer-les-barres-doutils)
 
 ### Deux barres d'outils
 

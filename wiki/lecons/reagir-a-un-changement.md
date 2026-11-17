@@ -6,13 +6,6 @@ Mais s'il fallait, lorsqu'une variable change, effectuer une autre tâche qu'un 
 
 Le modificateur `onChange()` est tout à fait indiqué pour ce type de travail.
 
-Dans cette fiche :
-
-- [onChange()](reagir-a-un-changement.md)
-- [Réagir au changement d'une variable qui est constamment modifiée](reagir-a-un-changement.md)
-- [Réagir au changement d'une variable optionnelle](reagir-a-un-changement.md)
-- [Syntaxes obsolètes](reagir-a-un-changement.md)
-
 ## onChange()
 
 Le modificateur [onChange()](https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:)-4psgg) permet d'exécuter un traitement dès que la valeur d'une variable change.

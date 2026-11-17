@@ -1,16 +1,5 @@
 # Picker
 
-Dans cette fiche :
-
-- [Picker](choisir-une-option.md)
-  - [Picker avec un tableau de String](choisir-une-option.md)
-  - [Picker avec instances d'une structure ou d'une classe](choisir-une-option.md)
-  - [Picker avec une énumération](choisir-une-option.md)
-- [Utilisation d'une valeur optionnelle](choisir-une-option.md)
-- [Picker dans un menu](choisir-une-option.md)
-
-## Picker
-
 La structure [Picker](https://developer.apple.com/documentation/swiftui/picker) permet de lister des options et d'identifier celle qui est présentement sélectionnée.
 
 Le Picker pourra être utilisé dans différents contextes, par exemple un formulaire ou un menu.

@@ -18,13 +18,6 @@ Attention : les données enregistrées avec @AppStorage (ou avec UserDefaults) n
 
 Les variables @AppStorage sont semblable à celles déclarées avec [@State](https://developer.apple.com/documentation/swiftui/state)  : SwiftUI rafraîchira automatiquement la vue dès qu'un changement de valeur est détecté.
 
-Dans cette fiche :
-
-- [Types de données acceptés](les-preferences-utilisateur.md#appstorage)
-- [Retrouver la valeur enregistrée pour une clé](les-preferences-utilisateur.md#appstorage)
-- [Enregistrer une paire clé-valeur](les-preferences-utilisateur.md#appstorage)
-- [Valeur utilisée dans plusieurs vues](les-preferences-utilisateur.md#appstorage)
-
 ### Types de données acceptés
 
 Les informations enregistrées avec @AppStorage sont enregistrées dans un fichier .plist (**property list**). Aussi, elles sont limitées à certains types de données.

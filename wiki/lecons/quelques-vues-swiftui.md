@@ -6,17 +6,6 @@ La structure [Text](https://developer.apple.com/documentation/swiftui/text) est 
 
 Elle permet, comme son nom le suggère, d'afficher un texte à l'écran.
 
-Dans cette fiche :
-
-- [Texte simple](quelques-vues-swiftui.md#text)
-- [Texte multilignes](quelques-vues-swiftui.md#text)
-- [Taille du texte](quelques-vues-swiftui.md#text)
-  - [Types dynamiques](quelques-vues-swiftui.md#text)
-  - [Taille fixe](quelques-vues-swiftui.md#text)
-- [Markdown](quelques-vues-swiftui.md#text)
-- [Émoticones](quelques-vues-swiftui.md#text)
-- [Date ajustée selon la localisation de l'appareil mobile](quelques-vues-swiftui.md#text)
-
 ### Texte simple
 
 Dans sa forme la plus simple, la structure `Text` affichera un texte composé de quelques mots.
@@ -112,18 +101,6 @@ Selon les configurations de l'appareil mobile, ceci afficher une date du genre 1
 « Typography - Supporting Dynamic Type ». Apple Developer. <https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type>
 
 ## Button
-
-Dans cette fiche :
-
-- [Apparence du bouton](quelques-vues-swiftui.md#button)
-  - [Texte cliquable](quelques-vues-swiftui.md#button)
-  - [Style prédéfini](quelques-vues-swiftui.md#button)
-  - [Rôle](quelques-vues-swiftui.md#button)
-  - [Modifieurs](quelques-vues-swiftui.md#button)
-    - [Emplacement des modifieurs](quelques-vues-swiftui.md#button)
-  - [Image cliquable](quelques-vues-swiftui.md#button)
-- [Action du bouton](quelques-vues-swiftui.md#button)
-- [Bouton inactif](quelques-vues-swiftui.md#button)
 
 ### Apparence du bouton
 
@@ -502,16 +479,6 @@ Son principe est le suivant : on appelle la méthode en fournissant notamment un
 
 Le popup s'affichera seulement quand ce paramètre prendra la valeur true.
 
-Dans cette fiche :
-
-- [Alerte avec bouton OK](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte avec bouton personnalisé](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte avec code à exécuter](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte avec message plus substantiel](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte qui pose une question](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte qui saisit de l'information](quelques-vues-swiftui.md#message-popup-avec-alert)
-- [Alerte attachée à autre chose qu'un bouton](quelques-vues-swiftui.md#message-popup-avec-alert)
-
 ### Alerte avec bouton OK
 
 Par défaut, le texte de l'alerte s'affichera dans une boîte avec un bouton OK qui permet de la refermer.
@@ -697,12 +664,6 @@ VStack {
 ## Demander une confirmation avec .confirmationDialog()
 
 La méthode [confirmationDialog()](https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9ibgk) permet d'afficher une boîte de confirmation sous forme de popup, pour permettre à l'usager d'accepter ou de refuser une proposition.
-
-Dans cette fiche :
-
-- [confirmationDialog vs alert](quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog)
-- [Fonctionnement du confirmationDialog](quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog)
-- [Et si le bouton qui appelle le confirmationDialog n'est pas dans une liste?](quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog)
 
 ### confirmationDialog vs alert
 
@@ -1011,18 +972,6 @@ VStack(alignment: .leading) {
 Avec SwiftUI, la vue [List](https://developer.apple.com/documentation/swiftui/list) permet d’afficher des éléments les uns sous les autres et, selon les options choisies, de permettre leur sélection.
 
 Elle gère automatiquement le défilement lorsque le contenu dépasse la hauteur de l’écran.
-
-Dans cette fiche :
-
-- [Protocole Identifiable](quelques-vues-swiftui.md#list)
-- [Masquer le fond gris](quelques-vues-swiftui.md#list)
-- [Si les éléments ne répondent pas au protocole Identifiable](quelques-vues-swiftui.md#list)
-- [Affichage sophistiqué](quelques-vues-swiftui.md#list)
-- [Avec ForEach](quelques-vues-swiftui.md#list)
-- [Sélectionner un élément](quelques-vues-swiftui.md#list)
-- [Sélectionner plusieurs éléments](quelques-vues-swiftui.md#list)
-- [Changer l'apparence de l'item sélectionné](quelques-vues-swiftui.md#list)
-- [Placer deux boutons sur une même ligne du List](quelques-vues-swiftui.md#list)
 
 ### Protocole Identifiable
 
@@ -1420,11 +1369,6 @@ Le visuel est très sommaire mais il permet d'illustrer l'importance de `.button
 ## Grid et LazyVGrid
 
 SwiftUI propose quelques vues qui permettent de placer des vues en lignes et en colonnes.
-
-Dans cette fiche :
-
-- [Grid](quelques-vues-swiftui.md#grid-et-lazyvgrid)
-- [LazyVGrid](quelques-vues-swiftui.md#grid-et-lazyvgrid)
 
 ### Grid
 

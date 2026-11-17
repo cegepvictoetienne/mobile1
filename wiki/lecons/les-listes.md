@@ -6,18 +6,6 @@ Avec SwiftUI, la vue [List](https://developer.apple.com/documentation/swiftui/li
 
 Elle gère automatiquement le défilement lorsque le contenu dépasse la hauteur de l’écran.
 
-Dans cette fiche :
-
-- [Protocole Identifiable](les-listes.md#list)
-- [Masquer le fond gris](les-listes.md#list)
-- [Si les éléments ne répondent pas au protocole Identifiable](les-listes.md#list)
-- [Affichage sophistiqué](les-listes.md#list)
-- [Avec ForEach](les-listes.md#list)
-- [Sélectionner un élément](les-listes.md#list)
-- [Sélectionner plusieurs éléments](les-listes.md#list)
-- [Changer l'apparence de l'item sélectionné](les-listes.md#list)
-- [Placer deux boutons sur une même ligne du List](les-listes.md#list)
-
 ### Protocole Identifiable
 
 Bien que ce ne soit pas obligatoire, la liste est plus facile à créer à partir d'un tableau dont les éléments répondent au protocole [Identifiable](https://developer.apple.com/documentation/swift/identifiable).

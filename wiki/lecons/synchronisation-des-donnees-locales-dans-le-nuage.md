@@ -58,19 +58,6 @@ Je vous démontre ici comment écrire un service Web en PHP qui interagit avec u
 
 Ce service peut être utilisé avec une application mobile pour iOS ou pour Android de même qu'avec tout autre type d'application qui utilise des données locales.
 
-Dans cette fiche :
-
-- [Synchronisation vs enregistrement au fur et à mesure dans la base de données distante](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Serveurs de développement](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Structure des informations envoyées au service Web puis retournées par le service Web](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Sécurité et autorisations](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Branchement à la base de données](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Comparer les enregistrements des BD locale et distante](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-  - [UUID ou ULID](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Une bonne base pour votre service Web](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Tester le service Web manuellement](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-- [Consommer le service Web](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees)
-
 ### Synchronisation vs enregistrement au fur et à mesure dans la base de données distante
 
 Quand on travaille avec une base de données locale et une base de données distante, il faut distinguer deux figures de cas :
@@ -86,7 +73,7 @@ Mais dans le cas où l'application roule alors qu'elle n'a pas accès à Interne
 
 C'est là qu'entre en jeu la synchronisation. Elle permet de comparer les données locales et les données distantes afin d'effectuer les opérations d'ajout, de modification et de suppression qui n'ont pas encore été effectuées sur les données distantes.
 
-Dans cette fiche, je vous montre comment développer un service Web qui permettra d'effectuer cette synchronisation.
+Ici, je vous montre comment développer un service Web qui permettra d'effectuer cette synchronisation.
 
 ### Serveurs de développement
 

@@ -50,16 +50,6 @@ Dans Xcode, il est possible de modifier la version de Swift pour un projet. Pour
 
 ## Variables, constantes et types de données
 
-Dans cette fiche :
-
-- Déclaration
-- Types de base
-- Type Decimal
-- Type CGFloat
-- Instances de structures et de classes
-- Types opaques
-- À quel endroit déclarer les variables dans SwiftUI?
-
 ### Déclaration
 
 Avec Swift, les mots-clés `var` et `let` permettent de déclarer respectivement des variables et des constantes.

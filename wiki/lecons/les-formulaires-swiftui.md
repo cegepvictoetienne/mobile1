@@ -8,13 +8,6 @@ Il s'agit d'un conteneur spécialisé, basé sur List, qui applique automatiquem
 
 Il est cependant tout à fait possible de définir un formulaire sans Form.
 
-Dans cette fiche :
-
-- [Form simple](les-formulaires-swiftui.md#form)
-- [Ajuster l'espacement à l'intérieur du Form](les-formulaires-swiftui.md#form)
-- [Limiter la hauteur du Form](les-formulaires-swiftui.md#form)
-- [Placer plus d'un bouton dans une ligne du formulaire](les-formulaires-swiftui.md#form)
-
 ### Form simple
 
 ```swift title="SwiftUI"
@@ -116,19 +109,6 @@ Form {
 « Creating Forms in SwiftUI ». SerialCoder.dev. <https://serialcoder.dev/text-tutorials/swiftui/creating-forms-in-swiftui/>
 
 ## TextField
-
-Dans cette fiche :
-
-- [Modifieur textFieldStyle()](les-formulaires-swiftui.md#textfield)
-- [Bordure personnalisée](les-formulaires-swiftui.md#textfield)
-- [Placer le TextField dans un Form](les-formulaires-swiftui.md#textfield)
-- [Libellé](les-formulaires-swiftui.md#textfield)
-- [Libellé flottant](les-formulaires-swiftui.md#textfield)
-- [Alignement du texte](les-formulaires-swiftui.md#textfield)
-- [Bouton pour traiter le formulaire](les-formulaires-swiftui.md#textfield)
-- [Configurer le clavier](les-formulaires-swiftui.md#textfield)
-- [Quelques autres modifieurs](les-formulaires-swiftui.md#textfield)
-- [Réagir au changement](les-formulaires-swiftui.md#textfield)
 
 La vue [TextField](https://developer.apple.com/documentation/swiftui/textfield) permet de saisir du texte.
 
@@ -671,17 +651,6 @@ var body: some View {
 ```
 
 ## Picker
-
-Dans cette fiche :
-
-- [Picker](les-formulaires-swiftui.md#picker)
-  - [Picker avec un tableau de String](les-formulaires-swiftui.md#picker)
-  - [Picker avec instances d'une structure ou d'une classe](les-formulaires-swiftui.md#picker)
-  - [Picker avec une énumération](les-formulaires-swiftui.md#picker)
-- [Utilisation d'une valeur optionnelle](les-formulaires-swiftui.md#picker)
-- [Picker dans un menu](les-formulaires-swiftui.md#picker)
-
-### Picker
 
 La structure [Picker](https://developer.apple.com/documentation/swiftui/picker) permet de lister des options et d'identifier celle qui est présentement sélectionnée.
 

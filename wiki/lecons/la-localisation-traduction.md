@@ -6,25 +6,6 @@ La localisation d'une application SwiftUI est réalisée grâce à un fichier de
 
 La langue utilisée correspondra à la langue configurée sur le périphérique, par exemple le iPhone ou le simulateur.
 
-Dans cette fiche :
-
-- [Ajouter une langue à l'application](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Extraction automatique des chaînes à localiser](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Ajustement du code](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Valeurs tirées de la base de données](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Chaines qui contiennent une variable](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Configuration pour permettre l'extraction](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Extraction des chaînes](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Localisation des chaînes](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Importation dans le projet](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Nouvelles chaînes à localiser](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Langue du simulateur](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Icône Réglages](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Edit Scheme](la-localisation-traduction.md#application-swiftui-bilingue)
-- [Afficher les chaînes dans la langue du périphérique](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Comment SwiftUI détermine la langue à utiliser](la-localisation-traduction.md#application-swiftui-bilingue)
-  - [Comment SwiftUI retrouve la chaîne à afficher](la-localisation-traduction.md#application-swiftui-bilingue)
-
 ### Ajouter une langue à l'application
 
 Pour que l'application puisse être affichée en français, vous devez y ajouter une langue.

@@ -4,13 +4,6 @@
 
 Il existe différentes techniques pour changer de page – ou plus précisément de vue – en SwiftUI.
 
-Dans cette fiche :
-
-- [Lien vers une autre vue avec NavigationLink(destination:...)](les-applications-multivues.md)
-- [Lien vers une vue enfant avec NavigationLink(value:...) et .navigationDestination(for:)](les-applications-multivues.md)
-- [Lien vers une autre vue avec Button et .navigationDestination(isPresented:)](les-applications-multivues.md)
-- [Lien vers une autre vue avec Button et .navigationDestination(item:)](les-applications-multivues.md)
-
 ### Lien vers une autre vue avec NavigationLink(destination:...)
 
 À l'intérieur d'un NavigationStack, il est possible d'ajouter des vues de type [NavigationLink](https://developer.apple.com/documentation/swiftui/navigationlink).

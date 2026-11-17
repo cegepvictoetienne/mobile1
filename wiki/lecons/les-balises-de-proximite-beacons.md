@@ -2,15 +2,6 @@
 
 ## Qu'est-ce qu'une balise de proximité (beacon)?
 
-Dans cette fiche :
-
-- [Balise de proximité](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-  - [Quelques applications possibles](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-  - [Capteur utilisé](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-- [Localisateurs d'articles](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-- [Étiquettes NFC et RFID](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-- [Beacon ou iBeacon?](les-balises-de-proximite-beacons.md#quest-ce-quune-balise-de-proximite-beacon)
-
 ### Balise de proximité
 
 Une balise de proximité, ou en anglais **beacon**, est un appareil électronique qui envoie un signal plusieurs fois par seconde afin de pouvoir être repéré par d'autres appareils.

@@ -47,17 +47,6 @@ Le propriétaire d'un iPhone peut choisir d'afficher les applications en mode Ap
 
 Puisque c'est l'utilisateur qui contrôle le mode d'affichage, l'application que vous développez doit pouvoir fonctionner dans les deux modes.
 
-Dans cette fiche :
-
-- [Coder en fonction des deux modes](couleurs.md)
-  - [Problème des couleurs codées en dur](couleurs.md)
-  - [Ajustement automatique des couleurs](couleurs.md)
-  - [Ajuster la couleur selon le mode](couleurs.md)
-- [Tester les deux modes](couleurs.md)
-  - [Configuration dans le canevas](couleurs.md)
-  - [Configuration dans le simulateur](couleurs.md)
-  - [Configuration sur iPhone](couleurs.md)
-
 ### Coder en fonction des deux modes
 
 Vous devez toujours avoir les deux modes en tête quand vous codez.

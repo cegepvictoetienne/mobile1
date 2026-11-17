@@ -405,12 +405,6 @@ Ce comportement était différent avant iOS 26.
 
 Si vous ciblez une ancienne version, ces explications sont pour vous!
 
-Dans cette fiche :
-
-- [Texte par défaut](fonctions-obsoletes-ou-anciennes-syntaxes.md#texte-du-bouton-de-retour-dans-la-vue-enfant)
-- [Titre de la vue parent comme libellé du lien de retour](fonctions-obsoletes-ou-anciennes-syntaxes.md#texte-du-bouton-de-retour-dans-la-vue-enfant)
-- [Utiliser un texte différent du titre comme lien de retour](fonctions-obsoletes-ou-anciennes-syntaxes.md#texte-du-bouton-de-retour-dans-la-vue-enfant)
-
 ### Texte par défaut
 
 Lorsqu'une vue est affichée à partir d'un [NavigationLink](les-applications-multivues.md) et que la vue principale n'a pas de `.navigationTitle()`, le texte par défaut du lien de retour est **Back**.

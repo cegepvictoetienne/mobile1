@@ -46,14 +46,6 @@ La technique pour sécuriser une clé d'API en production est tout à fait diff�
 
 Pour l'instant, concentrons-nous sur la phase de développement.
 
-Dans cette fiche :
-
-- [Création du fichier de configuration](configurations-et-cles-d-api.md#stocker-une-cle-dapi-de-facon-securisee-pendant-le-developpement)
-- [Lier le fichier de configuration](configurations-et-cles-d-api.md#stocker-une-cle-dapi-de-facon-securisee-pendant-le-developpement)
-- [Ajout d'une entrée dans info.plist](configurations-et-cles-d-api.md#stocker-une-cle-dapi-de-facon-securisee-pendant-le-developpement)
-- [Extraction des informations](configurations-et-cles-d-api.md#stocker-une-cle-dapi-de-facon-securisee-pendant-le-developpement)
-- [Utilisation de la donnée retrouvée](configurations-et-cles-d-api.md#stocker-une-cle-dapi-de-facon-securisee-pendant-le-developpement)
-
 ### Création du fichier de configuration
 
 Pour créer le fichier de configuration :

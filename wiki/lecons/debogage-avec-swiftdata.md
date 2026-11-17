@@ -2,12 +2,6 @@
 
 Quand vous utilisez SwiftData dans votre application SwiftUI, quelques techniques peuvent aider au débogage.
 
-Dans cette fiche :
-
-- [print() et protocole CustomStringConvertible](debogage-avec-swiftdata.md)
-- [dump() et protocole CustomReflectable](debogage-avec-swiftdata.md)
-- [Informations de débogage du schéma de compilation](debogage-avec-swiftdata.md)
-
 ## print() et protocole CustomStringConvertible
 
 Le protocole `CustomStringConvertible` ressemble beaucoup à la méthode toString() que l'on retrouve dans d'autres langages, notamment JavaScript.

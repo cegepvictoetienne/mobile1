@@ -2,19 +2,6 @@
 
 ## TextField
 
-Dans cette fiche :
-
-- [Modifieur textFieldStyle()](saisie-de-texte.md#textfield)
-- [Bordure personnalisée](saisie-de-texte.md#textfield)
-- [Placer le TextField dans un Form](saisie-de-texte.md#textfield)
-- [Libellé](saisie-de-texte.md#textfield)
-- [Libellé flottant](saisie-de-texte.md#textfield)
-- [Alignement du texte](saisie-de-texte.md#textfield)
-- [Bouton pour traiter le formulaire](saisie-de-texte.md#textfield)
-- [Configurer le clavier](saisie-de-texte.md#textfield)
-- [Quelques autres modifieurs](saisie-de-texte.md#textfield)
-- [Réagir au changement](saisie-de-texte.md#textfield)
-
 La vue [TextField](https://developer.apple.com/documentation/swiftui/textfield) permet de saisir du texte.
 
 Le premier paramètre de `TextField` permet de spécifier le libellé. Sous iOS, ce libellé sera inscrit dans la boîte de saisie, comme un filigrane (en anglais : **watermark** ou **placeholder**). Ce n'est que sous macOS qu'il est placé comme les libellés qu'on a l'habitude de voir dans un formulaire Web, c'est-à-dire à gauche de la case de saisie.

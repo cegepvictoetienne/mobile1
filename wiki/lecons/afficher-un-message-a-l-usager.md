@@ -39,16 +39,6 @@ Son principe est le suivant : on appelle la méthode en fournissant notamment un
 
 Le popup s'affichera seulement quand ce paramètre prendra la valeur true.
 
-Dans cette fiche :
-
-- [Alerte avec bouton OK](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte avec bouton personnalisé](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte avec code à exécuter](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte avec message plus substantiel](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte qui pose une question](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte qui saisit de l'information](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-- [Alerte attachée à autre chose qu'un bouton](afficher-un-message-a-l-usager.md#message-popup-avec-alert)
-
 ### Alerte avec bouton OK
 
 Par défaut, le texte de l'alerte s'affichera dans une boîte avec un bouton OK qui permet de la refermer.

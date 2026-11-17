@@ -1,12 +1,5 @@
 # Menu
 
-Dans cette fiche :
-
-- [Menu](le-menu.md)
-- [Menu avec Picker](le-menu.md)
-
-## Menu
-
 Un menu peut être facilement créé à l'aide de la vue [Menu](https://developer.apple.com/documentation/swiftui/menu).
 
 Typiquement, le menu affichera une icône qui mène vers les options disponibles.

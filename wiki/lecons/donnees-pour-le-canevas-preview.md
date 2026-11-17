@@ -56,14 +56,6 @@ Si vous laissez la prévisualisation telle quelle, vous obtenez le message « Mi
 
 Lorsqu'une vue déclare une propriété en lecture seule dont la valeur provient de la vue parent, il suffit de passer une valeur en paramètre dans l'appel de la vue à l'intérieur du `#Preview`. Mais ceci ne fonctionne pas pour une propriété déclarée avec `@Binding` ou `@Bindable`.
 
-Dans cette fiche, je vous expose différentes techniques pour ajuster le `#Preview` pour des paramètres `@Binding` ou `@Bindable` :
-
-- [Fournir une valeur aux propriétés](donnees-pour-le-canevas-preview.md#ajuster-la-previsualisation-dune-vue-qui-contient-un-binding-ou-un-bindable)
-  - [Déclaration d'une variable d'état dans le #Preview](donnees-pour-le-canevas-preview.md#ajuster-la-previsualisation-dune-vue-qui-contient-un-binding-ou-un-bindable)
-  - [Liaison avec une valeur immuable (.constant())](donnees-pour-le-canevas-preview.md#ajuster-la-previsualisation-dune-vue-qui-contient-un-binding-ou-un-bindable)
-  - [Vue intermédiaire](donnees-pour-le-canevas-preview.md#ajuster-la-previsualisation-dune-vue-qui-contient-un-binding-ou-un-bindable)
-- [Pour voir le titre de la vue enfant et les barres d'outils](donnees-pour-le-canevas-preview.md#ajuster-la-previsualisation-dune-vue-qui-contient-un-binding-ou-un-bindable)
-
 ### Fournir une valeur aux propriétés
 
 Voici quelques techniques pour que le `#Preview` puisse fournir une valeur aux propriétés.
