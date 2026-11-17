@@ -22,7 +22,7 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
-      Image("chien")
+      Image("chat")
         .resizable()
         .scaledToFit()
         .opacity(opacite.rawValue)
@@ -38,7 +38,7 @@ struct ContentView: View {
            })
         }
 
-      Text("Mon chien")
+      Text("Mon chat")
         .padding()
         .fontWeight(gras ? .bold : .regular)
         .italic(italique)
@@ -56,7 +56,7 @@ struct ContentView: View {
 }
 ```
 
-![Menu contextuel](images/SwiftUI-ContextMenu-1.png) ![Menu contextuel](images/SwiftUI-ContextMenu-2.png)
+![Menu contextuel](images/SwiftUI-ContextMenu-1.webp){width=300} ![Menu contextuel](images/SwiftUI-ContextMenu-2.webp){width=316}
 
 ## Pour plus d'information
 

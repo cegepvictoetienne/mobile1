@@ -116,6 +116,7 @@ nav = [
   ],
   },
   {"Déclaration de l'utilisation de l'IA" = "declaration-ia.md"},
+  {"À propos" = "a-propos.md"},
 ]
 
 extra_css = ["stylesheets/all.css", "stylesheets/extra.css"]

@@ -170,7 +170,7 @@ Dans cette classe, il y a différentes façons de modifier la propriété `mot`,
 
 ```swift title="Swift"
 class MotHasard: ObservableObject {
-  var mots = ["abeille", "tableau", "voiture", "chien", "téléphone"]
+  var mots = ["abeille", "tableau", "voiture", "chat", "téléphone"]
   @Published var mot: String = ""
   @Published var majuscules: Bool = false {
     didSet {

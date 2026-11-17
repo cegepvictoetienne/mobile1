@@ -2,7 +2,7 @@
 
 Dans cet exercice, vous serez appelé à travailler dans différents projets Xcode.
 
-1. Créez une application pour afficher une photo de chien à partir d'un API. Voici quelques consignes en vrac :
+1. Créez une application pour afficher une photo de chat à partir d'un API. Voici quelques consignes en vrac :
     1. Utilisez le code fourni dans les [notes de cours](../lecons/consommer-un-service-web-avec-swiftui.md).
     2. Votre but : afin de mieux comprendre la gestion des erreurs, mettez en place les conditions pour que les différentes exceptions soient levées.
     3. Vous devez y arriver sans modifier la logique du code. Vous pouvez, par exemple, modifier l'URL, modifier le modèle de la réponse, etc. Quelques exemples de tests sont fournis dans les notes de cours.

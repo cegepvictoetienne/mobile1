@@ -6,15 +6,6 @@ La classe [URLSession](https://developer.apple.com/documentation/foundation/urls
 
 Je vous présente ici une technique pour appeler un [service Web qui permet de synchroniser des données locales avec une base de données distante](synchronisation-des-donnees-locales-dans-le-nuage.md#service-web-pour-synchroniser-les-donnees).
 
-Dans cette fiche :
-
-- [Données fournies au service Web](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-- [Données retournées par le service Web](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-- [À quel moment doit-on appeler le service Web de synchronisation?](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-- [Utiliser un URL non sécurisé pendant le développement](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-- [Bouton qui lance l'appel](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-- [Démonstration](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees)
-
 ### Données fournies au service Web
 
 Le service Web de mon exemple attend en entrée une représentation JSON des données à synchroniser pour une table d'items gérée par SwiftData.
@@ -141,22 +132,6 @@ En effet, l'application mobile ne peut pas avoir directement accès à certains 
 
 De plus, comme pour toute application mobile, Web ou de bureau, il est intéressant de pouvoir accéder à des API qui fournissent des informations ou même des images sans qu'on ait à gérer les données ni à effectuer les traitements requis.
 
-Dans cette fiche :
-
-- [Données échangées](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-- [Dog API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Données attendues par Dog API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Données retournées par Dog API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-- [Exemple d'application qui utilise Dog API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-- [Quelques explications s'imposent!](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [async/await](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Task et .task](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Requête HTTP](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Code d'état HTTP de l'API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-  - [Décodage JSON](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-- [Tester l'appel à l'API](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-- [Techniques de débogage](consommer-un-service-web-avec-swiftui.md#consommer-et-deboguer-un-service-web-exemple-avec-service-qui-retourne-une-image)
-
 ### Données échangées
 
 Avant de vous lancer dans le projet, vous devez savoir quelles données sont attendues par l'API et quelles données sont retournées.
@@ -165,36 +140,28 @@ S'il s'agit de données complexes, elles seront généralement encodées au form
 
 Vous pouvez également utiliser le protocole `Codable` qui regroupe les deux.
 
-### Dog API
+### Cat API
 
-Je vous fais ici une démonstration en utilisant Dog API : <https://dog.ceo/dog-api/>![Application démo pour async/await](images/SwiftUI-DemoApiDog.png)
+Je vous fais ici une démonstration en utilisant Cat API : <https://getcat.dev/>  
 
-Cet API fournit au hasard une image de chien à l'aide de la requête GET `https://dog.ceo/api/breeds/image/random`.
+![Application démo pour async/await](images/application-mes-minous.webp){width=300}
 
-#### Données attendues par Dog API
+Cet API fournit au hasard une image de chat à l'aide de la requête GET `https://api.getcat.dev/`.
 
-Avec Dog API, aucune information n'est attendue si le chien peut être de n'importe quelle race.
-
-Notez qu'il est possible de limiter la requête à une seule race de chien à l'aide d'une requête au format `https://dog.ceo/api/breed/race/images/random`, en remplaçant le mot **race** par la race souhaitée.
-
-La liste des races disponibles peut être visualisée à partir de l'URL `https://dog.ceo/api/breeds/list/all`.
-
-Si on souhaitait limiter les images aux chiens d'une seule race, il suffirait donc de fournir le nom de la race dans l'URL. Donc, pas d'encodage JSON requis.
-
-#### Données retournées par Dog API
+#### Données retournées par Cat API
 
 Pour connaître le format des données retournées par un API dont la une requête HTTP est de type GET, il suffit d'entrer son URL dans un navigateur.
 
 Si la requête doit être de type POST, vous devrez plutôt utiliser un outil spécialisé pour tester les requêtes REST, par exemple [Postman](synchronisation-des-donnees-locales-dans-le-nuage.md#tester-un-service-web-api-manuellement-avec-postman), [Bruno](https://www.usebruno.com/) ou [curl](https://curl.se/).
 
-Dans le cas de Dog API, l'appel est de type GET.
+Dans le cas de Cat API, l'appel est de type GET.
 
 L'information retournée est au format :  
-{"`message`":"https:\/\/images.dog.ceo\/breeds\/springer-english\/n02102040_2036.jpg","`status`":"success"}
-
-Dans le cas où l'URL serait inexact, l'API retournerait plutôt ceci :
-
-{"`status`":"error","`message`":"No route found for \"GET \/api\/breeds\/image\" with code: 0","`code`":404}
+```json
+{
+  "url": "https://cdn.getcat.dev/cats/42.jpg"
+}
+``` 
 
 Voici donc la structure requise pour stocker ces informations.
 
@@ -205,15 +172,13 @@ Remarquez qu'il n'est pas obligatoire que la structure reçoive toutes les infor
 Cette variable n'est jamais utilisée dans le code que je vous présente plus bas mais j'ai choisi de la placer dans ma structure au cas où je voudrais en tenir compte plus tard.
 
 ```swift title="Fichier Models/ReponseApi.swift"
-/// Pour recevoir les informations en provenance de l'API Dog Api : https://dog.ceo/api/breeds/image/random (aucune clé requise)
+/// Pour recevoir les informations en provenance de l'API Cat Api : https://api.getcat.dev/ (aucune clé requise)
 struct ReponseApi: Decodable {
-  var message: String
-  var status: String
-  var code: Int?
+  var url: String
 }
 ```
 
-### Exemple d'application qui utilise Dog API
+### Exemple d'application qui utilise Cat API
 
 Passons maintenant à l'appel asynchrone de l'API.
 
@@ -239,7 +204,7 @@ struct ContentView: View {
           }
           else {
             AsyncImage(
-              url: URL(string: reponseApi?.message ?? ""),
+              url: URL(string: reponseApi?.url ?? ""),
               content: { image in
                 image
                   .resizable()
@@ -256,7 +221,7 @@ struct ContentView: View {
           Spacer()
 
           // on veut un bouton seulement si une image a été affichée
-          if let message = reponseApi?.message, !message.isEmpty {
+          if let message = reponseApi?.url, !message.isEmpty {
             Button(action: {
               taskPourAppelerApi()
             }) {
@@ -279,7 +244,7 @@ struct ContentView: View {
           }
         }
       } // fin VStack
-      .navigationTitle("Les pitous")
+      .navigationTitle("Les minous")
     } // fin NavigationStack
     .onAppear {
       // Image chargée au départ
@@ -303,13 +268,13 @@ struct ContentView: View {
   }
 
   /**
-   Appelle le service Web qui retourne l'URL d'une image de chien.
+   Appelle le service Web qui retourne l'URL d'une image de chat.
 
    - Returns : réponse du service Web
   */
   func appelerApi() async throws -> ReponseApi {
 
-    let chaineURL = "https://dog.ceo/api/breeds/image/random"
+    let chaineURL = "https://api.getcat.dev/"
 
     guard let url = URL(string: chaineURL) else {
       // Arrivera ici si l'URL est invalide, par exemple s'il s'agit d'une chaîne vide ou qui contient des caractères accentués.

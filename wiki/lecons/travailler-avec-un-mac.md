@@ -93,7 +93,7 @@ Dans cet exemple, le terminal est apparu comme suggestion principale après avoi
 
 ## Spotlight pour trouver un fichier
 
-Vous recherchez une photo de votre chien Stella ? Ouvrez Spotlight et commencez à taper le nom du fichier de la photo.
+Vous recherchez une photo de votre chat Roger ? Ouvrez Spotlight et commencez à taper le nom du fichier de la photo.
 
 Si le fichier n'apparaît pas assez rapidement à votre goût, naviguez dans la liste de suggestion à l'aide des flèches. Spotlight vous affichera un aperçu de ce qui est sélectionné. Appuyez sur <kbd>Entrée</kbd> lorsque vous aurez trouvé la photo recherchée.
 

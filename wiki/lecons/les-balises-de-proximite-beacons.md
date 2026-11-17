@@ -58,7 +58,7 @@ La ressemblance entre les balises de proximité et les localisateurs d'articles 
 | Peuvent être configurées pour que n'importe quelle application mobile interagisse avec elles. | Généralement, ne peuvent être détectés que par l'application mobile du fabricant. |
 | Possibilité de modifier leur UUID. | Impossible de modifier leur UUID. |
 
-Les localisateurs que j'ai testés ne m'ont pas permis d'interagir avec une application que j'ai codée. Par contre, en utilisant l'application du fabricant, ils m'ont été très utiles attachés au cou de mon chien!
+Les localisateurs que j'ai testés ne m'ont pas permis d'interagir avec une application que j'ai codée. 
 
 ### Étiquettes NFC et RFID
 
