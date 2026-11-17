@@ -148,13 +148,6 @@ Si, comme moi, vous préférez que la recherche soit circonscrite au dossier act
 - Rendez-vous dans le menu **Finder** / **Réglages**.
 - Dans l'onglet **Avancé**, cochez **Afficher toutes les extensions de fichiers**.
 
-## Associer une extension de fichier avec une application
-
-Les détails de cette technique sont donnés dans cette fiche : [Associer une extension de fichier avec une application](https://apical.xyz/fiches/installer_un_logiciel_sur_un_mac/associer_une_extension_de_fichier_avec_une_application).
-
-Ceci permettra d'ouvrir un fichier avec l'application de notre choix simplement en faisant un double-clic sur ce fichier dans le Finder.
-
-
 ## Afficher les disques externes sur le bureau
 
 J'aime bien que les disques amovibles que je branche à mon Mac apparaissent sur le bureau. Ceci me permet notamment d'utiliser la corbeille pour éjecter ces disques.
@@ -264,7 +257,7 @@ Notez que les scripts inclus dans un fichier .pkg se chargent généralement de 
 
 Les fichiers .app constituent les applications en tant que telles. Ils peuvent fonctionner à partir de n'importe quel dossier mais ils sont généralement regroupés dans le dossier `/Applications`, directement sous Macintosh HD.
 
-# 1.11 Installation sur un Mac sans les droits d'administrateur
+# Installation sur un Mac sans les droits d'administrateur
 
 Si vous n'êtes pas administrateur de votre ordinateur, vous pourriez tout de même réussir à installer certaines applications.
 

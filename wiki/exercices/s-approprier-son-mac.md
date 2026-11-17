@@ -27,16 +27,9 @@ de « Ce PC » sous Windows.
 15. Installez Geany à partir du Web. Il sera utile lorsque vous désirerez ouvrir rapidement un seul fichier texte
 (vous préférerez travailler avec Xcode pour programmer).
 16. Associez les fichiers .txt à Geany.
-17. Installez Devilbox. Vous en aurez besoin plus tard dans la session.  
-    1. Le téléchargement peut être long, poursuivez les autres numéros pendant ce temps.  
+17. Installez les services docker. Vous en aurez besoin plus tard dans la session.   
     1. Notez que même avec une installation dans le dossier /users/monnom/Applications , vous aurez besoin d'un mot de passe admin lors de l'installation de Docker. Vous demanderez à votre prof de l'entrer pour vous lorsque requis.  
-    1. Pour vous assurer que votre installation soit fonctionnelle, créez un fichier PHP qui fait un echo de "Hello World" (suivez les instructions dans la fiche d'installation de Devilbox).  
-    
-    Remarquez que [apical_lien_interne][fichier_sudoers,votre Mac a été configuré][/apical_lien_interne] pour vous permettre d'éditer le fichier hosts même si vous ne possédez pas les droits d'admin. Il suffit d'utiliser la commande suivante. Vous devez utiliser la commande telle quelle même si vous êtes déjà dans le dossier /etc.
-        ```bash title="Terminal"  
-        sudo nano /etc/hosts  
-        ```    
-
+    1. Pour vous assurer que votre installation soit fonctionnelle, créez un fichier Python qui fait un echo de "Hello World" (suivez les instructions dans [la fiche d'installation](../lecons/docker-services.md)).   
 18. Dans une fenêtre Terminal, lancez la commande which python3 pour voir où Python est installé par défaut sur macOS.   
 19. Installez Seashore (éditeur d'images, icône de poisson bleu et blanc) à partir de l'AppStore.  
 20. Ouvrez Seashore et agrandissez sa fenêtre sans cacher la barre de menu ni le Dock.  
