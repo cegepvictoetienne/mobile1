@@ -6,7 +6,7 @@ Dans Xcode, le canevas, aussi appelé **fenêtre Preview**, est une représentat
 
 Lorsque vous développez une vue, le canevas montre immédiatement l'apparence qu'elle prendra.
 
-![Canevas](images/Xcode-LeCanevas.png)
+![Canevas](images/Xcode-LeCanevas.webp)
 
 Attention : les fonctionnalités du canevas sont limitées. Même si on peut y effectuer certaines tâches, son rôle principal consiste à vous monter le visuel de l'application.
 
@@ -18,13 +18,15 @@ Par défaut, lorsque vous ouvrez un projet dans Xcode, le canevas apparaît à l
 
 L'apparence du canevas est dictée entre autres par les boutons qui sont au bas de la zone du canevas.
 
-![Canevas](images/Xcode-Canevas.png)
+![Canevas](images/Xcode-Canevas.webp)
 
 Le menu **Editor** / **Canvas** permet d'afficher ou de cacher le canevas.
 
-Il est également possible de cacher le canevas et de le réafficher à l'aide du bouton **Adjust Editor Options** (![Adjust Editor Options](images/Xcode-IconeAdjustEditorOptions.png)) situé dans le coin supérieur droit de l'écran. Notez que l'apparence de ce bouton change selon les options choisies.
+Il est également possible de cacher le canevas et de le réafficher à l'aide du bouton suivant : 
 
-![Afficher/masquer le canevas](images/Xcode-AfficherMasquerCanevas.png)
+![Adjust Editor Options](images/XCode-BoutonAfficherCanevas.webp)  
+
+Il est situé dans le coin supérieur droit de l'écran.  
 
 ## Si le canevas n'est pas affiché
 
@@ -42,9 +44,9 @@ Assurez-vous que ces trois critères soient respectés :
     MaVue()
   }
   ```
-- Dans Xcode, quand on clique sur l'icône **Adjust Editor Options** (ou dans le menu **Editor** / **Canvas**),  l'option **Canvas** est cochée.
+- Dans Xcode, quand on clique sur l'icône en haut à droite de la fenêtre (ou dans le menu **Editor** / **Canvas**, l'option **Canvas** est cochée).
 
-Si le canevas ne s'affiche toujours pas, ceci peut être dû à un problème dans la définition de la vue ou même à un **caractère accentué dans le nom du projet**.
+Si le canevas ne s'affiche toujours pas, ceci peut être dû à un problème dans la définition de la vue ou même à un **caractère accentué dans le nom du projet**.  
 
 # Prévisualiser dans différentes modes/orientations
 
@@ -58,11 +60,7 @@ Les icônes au bas de la zone du canevas permettent de modifier l'apparence du c
 
 L'icône **Device Settings** (en forme de deux commutateurs superposés) permet de modifier l'apparence du canevas présentement affiché.
 
-Voici un aperçu de configurations possibles.
-
-![Color scheme](images/Xcode-Preview-ColorScheme.png) ![Orientation](images/Xcode-Preview-Orientation.png)
-
-![Dynamic type](images/Xcode-Preview-DynamicType.png)
+![Color scheme](images/Xcode-Preview-ColorScheme.webp) 
 
 ### Icône Variants
 
@@ -72,15 +70,15 @@ Notez que pour revenir à l'affichage d'un seul canevas, il faut cliquer sur l'i
 
 Voici un aperçu de configurations possibles.
 
-![Color scheme variants](images/Xcode-Preview-ColorSchemeVariants.png) ![Orientation variants](images/Xcode-Preview-OrientationVariants.png)
+![Color scheme variants](images/Xcode-Preview-ColorSchemeVariants.webp){width=300} ![Orientation variants](images/Xcode-Preview-OrientationVariants.webp){width=300}
 
-![Dynamic type variants](images/Xcode-Preview-DynamicTypeVariants.png)
+![Dynamic type variants](images/Xcode-Preview-DynamicTypeVariants.webp){width=300}
 
 ### Combinaison
 
-Il est possible de combiner différentes options dans **Device Settings** et dans **Variants** afin de répondre à nos besoins, comme dans cet exemple où on a choisi **Orientation Variants**, **Dark appearance** et **Dynamic Type AX 4**.
+Il est possible de combiner différentes options dans **Device Settings** et dans **Variants** afin de répondre à nos besoins, comme dans cet exemple où on a choisi **Dynamic Type Variants**, **Dark appearance** et **Orientation Landscape Right**.
 
-![Combinaison](images/Xcode-Preview-Combinaison.png)
+![Combinaison](images/Xcode-Preview-Combinaison.webp)
 
 # Forcer le rafraîchissement des données en cache du canevas
 
@@ -127,10 +125,10 @@ xcode-select --install
 
 # Faire apparaître un cadre bleu alentour de la vue sélectionnée
 
-Il est intéressant de faire apparaître sur le canevas un cadre bleu alentour de l'élément qui est sélectionné dans l'éditeur de code source.
+Il est intéressant de faire apparaître sur le canevas un cadre bleu (ou couleur d'accent configuré dans votre mac) alentour de l'élément qui est sélectionné dans l'éditeur de code source.
 
-Pour y parvenir, vous devez placer le canevas en mode **Selectable** en cliquant sur le second icône dans le bas du canevas.
+Pour y parvenir, vous devez placer le canevas en mode **Selectable** en cliquant sur le trosième icône dans le bas du canevas.
 
 Dans l'image qui suit, on voit que le `Text()` dans le code correspond au texte `Hello, world!` sur le canevas.
 
-![Cadre bleu](images/Xcode-CadreBleuSurCanevas.png)
+![Cadre bleu](images/Xcode-CadreBleuSurCanevas.webp)

@@ -11,7 +11,12 @@ Dans l'écran suivant, **sélectionnez l'onglet **iOS**** puis le type d'applica
   ![Choix type projet](images/XCodeChooseTemplate.webp){ width="600" }
 
 Dans l'écran qui suit, entrez ces informations :  
-  - **Product Name** : Nom qui identifie votre projet, en casse mixte. **Il ne faut pas utiliser de caractères accentués sinon, vous n'aurez pas accès à la prévisualisation à l'aide du canevas.  
+
+  - **Product Name** : Nom qui identifie votre projet, en casse mixte.  
+
+!!! warning
+      Il ne faut pas utiliser de caractères accentués sinon, vous n'aurez pas accès à la prévisualisation à l'aide du canevas.  
+
   - **Team** : Si vous ou votre organisation avez un compte Apple Developer Program, entrez votre code ici. Ceci vous permettra éventuellement de déployer votre application sur le App Store.
 
 !!! Note    
@@ -175,7 +180,7 @@ Pour modifier la taille de police dans le canevas :
 }
 ```
 
-![Large Font](XCode-LargeFont.webp){ width="400" }  
+![Large Font](images/XCode-LargeFont.webp){ width="400" }  
 
 ### Plusieurs #Preview
 

@@ -4,7 +4,7 @@ Un peu d'information et de vocabulaire sur la fenêtre Mac vous aidera à bien c
 
 Le menu de l'application active apparaît toujours dans le haut de l'écran, peu importe la taille de la fenêtre. Il n'est pas rare d'avoir un menu complètement détaché de la fenêtre.
 
-![Le menu ne suit pas la fenêtre](images/Mac-MenuNeSuitPasFenetre.png)
+![Le menu ne suit pas la fenêtre](images/Mac-MenuNeSuitPasFenetre.webp)
 
 ## Quai (Dock)
 
@@ -14,7 +14,7 @@ Les applications ouvertes ont un point noir sous leur icône.
 
 Le Quai est utile notamment pour passer d'une application à l'autre.
 
-![Dock](images/Mac-Dock.png)
+![Dock](images/Mac-Dock.webp)
 
 ### Garder dans le Quai
 
@@ -97,7 +97,7 @@ Vous recherchez une photo de votre chat Roger ? Ouvrez Spotlight et commencez à
 
 Si le fichier n'apparaît pas assez rapidement à votre goût, naviguez dans la liste de suggestion à l'aide des flèches. Spotlight vous affichera un aperçu de ce qui est sélectionné. Appuyez sur <kbd>Entrée</kbd> lorsque vous aurez trouvé la photo recherchée.
 
-![Spotlight](images/Mac-SpotlightPourTrouverPhoto.png)
+![Spotlight](images/Mac-SpotlightPourTrouverPhoto.webp)
 
 ## Spotlight pour trouver un site Web, une chanson, un contact
 
@@ -158,7 +158,7 @@ Pour réaliser cette configuration :
 - Rendez-vous dans le menu **Finder** / **Préférences**.
 - Dans l'onglet **Général**, zone **Afficher ces éléments sur le bureau**, cochez **Disques externes**.
 
-![Disques externes sur le bureau](images/Mac-PreferencesDuFinder-DisquesExternesSurBureau.png)
+![Disques externes sur le bureau](images/Mac-PreferencesDuFinder-DisquesExternesSurBureau.webp)
 
 Les fichiers dont le nom débute par un point (en anglais : **dot files**) sont des fichiers cachés.
 
@@ -237,7 +237,7 @@ Si le .dmg contenait un .app, vous verrez l'application à gauche et le dossier 
 
 Vous devez finalement aller dans le Finder pour éjecter l'image disque.
 
-![Éjecter l'image disque](images/Finder-EjecterFichierDMG.png)
+![Éjecter l'image disque](images/Finder-EjecterFichierDMG.webp)
 
 Il est à noter qu'on retrouve parfois des fichiers .dmg qui contiennent un fichier .pkg. Il faut à ce moment double-cliquer sur le .pkg pour poursuivre le processus (voir la section qui suit).
 
