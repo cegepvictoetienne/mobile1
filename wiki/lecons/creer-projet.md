@@ -14,7 +14,7 @@ Dans l'écran qui suit, entrez ces informations :
 
   - **Product Name** : Nom qui identifie votre projet, en casse mixte.  
 
-!!! warning
+!!! warning "Attention"
       Il ne faut pas utiliser de caractères accentués sinon, vous n'aurez pas accès à la prévisualisation à l'aide du canevas.  
 
   - **Team** : Si vous ou votre organisation avez un compte Apple Developer Program, entrez votre code ici. Ceci vous permettra éventuellement de déployer votre application sur le App Store.
@@ -37,16 +37,21 @@ Dans l'écran qui suit, entrez ces informations :
 
 - Après avoir cliqué sur **Next**, vous devrez préciser à quel endroit enregistrer votre projet.  
 - Le projet est maintenant créé. Il contient du code de base selon le modèle et le type d'application que vous avez choisi.  
-- Après quelques instants, vous voyez même un aperçu de l'écran généré par le programme. Attention : ceci n'est qu'un aperçu et non un simulateur. Vous n'aurez accès qu'à quelques fonctionnalités dans cet écran.  
+- Après quelques instants, vous voyez même un aperçu de l'écran généré par le programme. 
+
+!!! warning "Attention"  
+    ceci n'est qu'un aperçu et non un simulateur. Vous n'aurez accès qu'à quelques fonctionnalités dans cet écran.  
 
   ![Projet créé](images/XCodeProjetCree.webp){ width="800" }
 
 
 ## Lancer l'application dans le simulateur
 
-Dans un projet Xcode, vous pouvez sélectionner le type d'appareil que vous désirez simuler. Ceci peut être réalisé dans le menu **Product** / **Destination** ou encore directement dans la barre d'outils.
 
-Pour effectuer cette configuration à partir de la barre d'outils, cliquez sur la zone qui présente le nom de votre projet. En anglais, cette zone s'appelle **Scheme menu**. On y retrouve le nom du projet (**scheme**) à gauche et l'appareil de destination à droite.
+Le choix de l'appareil à simuler :
+
+- dans le menu **Product** / **Destination**
+- dans la barre d'outils.
 
 ![Scheme menu](images/Xcode-SchemeMenu.webp){ width="800" }
 
@@ -54,7 +59,7 @@ Une liste des périphériques disponibles sera affichée. Choisissez le périph�
 
 ![Simulateur](images/Xcode-SchemeMenu-Destination.webp){ width="400" }
 
-Cliquez sur le bouton **Start the active scheme** pour lancer le simulateur. Patientez pendant le chargement.
+Le bouton **Start the active scheme** lance le simulateur.  
 
 ![Start the active scheme](images/Xcode-StartTheActiveScheme.webp){ width="400" }
 
@@ -65,7 +70,7 @@ Une image de iPhone apparaîtra à l'écran avec l'application exécutée à l'i
 
 ## Les fichiers du projet initial
 
-Par défaut, un projet de type App pour iOS basé sur SwiftUI contiendra les fichiers suivants.
+Par défaut, un projet de type App pour iOS contiendra les fichiers suivants.
 
 | Fichier | Description  
 | -- | -- 
@@ -105,9 +110,7 @@ struct MonProjetApp: App {
 
 Ce fichier définit une structure qui répond au protocole [View](https://developer.apple.com/documentation/swiftui/view).
 
-Elle définit dans sa propriété `body` ce qui sera affiché à l'écran. Par défaut, c'est simplement un objet `Text` avec les mots « Hello World! ». Classique! Le texte est accompagné d'une image. Le texte et l'image sont placés dans un `VStack` afin qu'ils soit empilés verticalement.
-
-Reconnaissez-vous le nom `ContentView`? C'est le nom de la vue qui a été chargée dans le fichier `MonProjetApp.swift`. Voilà pourquoi cette vue est affichée dès le chargement de l'application.
+Elle définit dans sa propriété `body` ce qui sera affiché à l'écran. 
 
 Au bas de la structure, on retrouve la macro `#Preview` qui est utilisée par Xcode pour la prévisualisation.
 
@@ -137,15 +140,13 @@ struct ContentView: View {
 
 ## Section #Preview
 
-La section `#Preview`, généralement présente juste après le code d'une vue, permet elle aussi de configurer comment le ou les canevas seront affichés.
+La section `#Preview`, permet de configurer comment le ou les canevas seront affichés.  
 
 ### Apparence claire ou sombre
 
 Par défaut, le canevas est affiché en mode clair.
 
-Pour passer au mode sombre :
-
-```swift
+```swift title="Pour passer au mode sombre"
 #Preview {
   ContentView().preferredColorScheme(.dark)
 }
@@ -157,9 +158,7 @@ Pour passer au mode sombre :
 
 Par défaut, le canevas est présenté en orientation portrait.
 
-Pour modifier l'orientation, il faut ajouter un paramètre directement sur la ligne `#Preview`.
-
-```swift
+```swift title="Pour modifier l'orientation"
 #Preview(traits: .landscapeLeft) {
   ContentView()
 }
@@ -169,11 +168,11 @@ Pour modifier l'orientation, il faut ajouter un paramètre directement sur la li
 
 ### Types dynamiques
 
-Le canevas peut vous montrer l'apparence de votre application avec différentes tailles de police à condition que vous ayez utilisé les types dynamiques, qui permettent à l’application de s’adapter automatiquement à la taille de texte choisie par l’usager dans les réglages de son appareil.
+Les tailles des types dynamiques servent à l'accessibilité (difficulté à lire du petit texte).  
 
-Pour modifier la taille de police dans le canevas :
+En utilisant les types dynamiques, le choix est à l'utilisateur pour la taille du texte. Votre choix est de choisir une taille relative.
 
-```swift
+```swift title="Pour modifier la taille de police dans le canevas"
 #Preview {
   ContentView().environment(\.dynamicTypeSize, .xxxLarge)
 }
@@ -185,7 +184,7 @@ Pour modifier la taille de police dans le canevas :
 
 Une option est intéressante : on peut définir plusieurs zones `#Preview` afin de permettre de choisir l'une ou l'autre par un simple clic sur un bouton.
 
-```swift
+```swift title="définir plusieurs zones"
 #Preview {
   ContentView().preferredColorScheme(.light)
 }
@@ -202,7 +201,7 @@ Une option est intéressante : on peut définir plusieurs zones `#Preview` afin 
 
 Si désiré, on peut donner un nom à chaque bouton.
 
-```swift
+```swift title="définir plusieurs zones avec noms"
 #Preview("Clair") {
   ContentView().preferredColorScheme(.light)
 }

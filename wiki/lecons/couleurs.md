@@ -1,10 +1,9 @@
-# Les couleurs
-
 ## Color
 
 La structure [Color](https://developer.apple.com/documentation/swiftui/color) permet de représenter une couleur.
 
-Dans la mesure du possible, évitez de coder en dur les couleurs dans votre code. Ceci rend plus difficile la gestion des modes Apparence Claire vs Apparence Sombre.
+!!! warning "Attention" 
+    Ne codez pas en dur les couleurs dans votre code. Ceci rend plus difficile la gestion des modes Apparence Claire vs Apparence Sombre.
 
 ### Couleurs prédéfinies
 
@@ -23,6 +22,57 @@ La structure Color propose des propriétés de classe pour définir des couleurs
 
 ![Couleurs prédéfinies](images/SwiftUI-Color.png)
 
+??? Code   
+    ```swift title="views/UneCouleur.swift"  
+    import SwiftUI
+
+    struct UneCouleur: View {
+        var fg: Color;
+        var bg: Color;
+        var body: some View {
+            Text("Color." + bg.description)
+                .frame(maxWidth: .infinity, minHeight: 80)
+                .foregroundStyle(fg)
+                .background {
+                    Rectangle()
+                        .fill(bg)
+                }
+        }
+    }
+    ```   
+    
+    ```swift title="ContentView.swift"  
+    import SwiftUI
+
+    struct Couleur: Identifiable {
+        var id: UUID = UUID()
+        var fg: Color
+        var bg: Color
+    }
+
+    var couleurs = [
+        Couleur(fg: Color.white, bg: Color.black),
+        Couleur(fg: Color.black, bg: Color.blue),
+        Couleur(fg: Color.black, bg: Color.green),
+        Couleur(fg: Color.black, bg: Color.orange),
+        Couleur(fg: Color.black, bg: Color.pink),
+        Couleur(fg: Color.black, bg: Color.purple),
+        Couleur(fg: Color.black, bg: Color.red),
+        Couleur(fg: Color.black, bg: Color.white),
+        Couleur(fg: Color.black, bg: Color.yellow),
+            ]
+
+    struct ContentView: View {
+        var body: some View {
+            VStack(spacing: 0) {
+                ForEach(couleurs) { c in
+                    UneCouleur(fg:c.fg, bg:c.bg)}
+            }
+        }
+    }
+    ```
+
+
 Les couleurs peuvent être utilisées dans des méthodes qui attendent en paramètre une structure Color.
 
 ```swift title="SwiftUI"
@@ -40,6 +90,57 @@ La structure Color propose également des propriétés de classe pour choisir un
 - [Color.secondary](https://developer.apple.com/documentation/swiftui/color/secondary) (noir avec transparence en mode Apparence Claire ou blanc avec transparence en mode Apparence Sombre))
 
 ![Couleurs prédéfinies](images/SwiftUI-Color-2.png)
+
+
+??? Code   
+    ```swift title="views/UneCouleur.swift"  
+    struct UneCouleur: View {
+        var fg: Color;
+        var bg: Color;
+        private var desc: String {
+            let result = bg.description.prefix(1).lowercased() + bg.description.dropFirst()
+            return result.description.replacingOccurrences(of: "Provider()", with: "")
+            
+        }
+        var body: some View {
+            Text("Color." + desc)
+                .frame(maxWidth: .infinity, minHeight: 175)
+                .foregroundStyle(fg)
+                .background {
+                    Rectangle()
+                        .fill(bg)
+                }
+        }
+    }
+    ```   
+    
+    ```swift title="ContentView.swift"  
+    import SwiftUI
+
+    struct Couleur: Identifiable {
+        var id: UUID = UUID()
+        var fg: Color
+        var bg: Color
+    }
+
+    var couleurs = [
+        Couleur(fg: Color.white, bg: Color.accentColor),
+        Couleur(fg: Color.black, bg: Color.clear),
+        Couleur(fg: Color.white, bg: Color.primary),
+        Couleur(fg: Color.black, bg: Color.secondary),
+            ]
+
+    struct ContentView: View {
+        var body: some View {
+            VStack(spacing: 0) {
+                ForEach(couleurs) { c in
+                    UneCouleur(fg:c.fg, bg:c.bg)}
+            }
+        }
+    }
+
+    ```
+
 
 ## Mode Apparence Claire vs mode Apparence Sombre
 
@@ -70,7 +171,7 @@ Pour voir le résultat de ce code en mode clair et en mode sombre, cliquez sur l
 
 Il faut privilégier l'utilisation des [propriétés de classe](quelques-vues-swiftui.md#color)   `.primary`, `.secondary`, etc. pour identifier les couleurs.
 
-Il est également intéressant de [définir nos propres couleurs personnalisées en mode clair et en mode sombre](couleurs.md).
+Il est également intéressant de définir nos propres couleurs personnalisées en mode clair et en mode sombre.
 
 Dans l'exemple qui suit, la couleur `messageBienvenue` est différente selon que l'écran est sombre ou clair.
 
@@ -111,12 +212,6 @@ struct ContentView: View {
 
 Pour éviter les mauvaises surprises quand l'usager passe d'un mode à l'autre, il faut tester l'application dans les deux modes.
 
-#### Configuration dans le canevas
-
-Le canevas permet de voir rapidement l'apparence en mode clair et en mode sombre.
-
-Les détails des configurations possibles sont donnés sur la fiche « [Prévisualiser dans différentes modes/orientations](canevas.md) ».
-
 #### Configuration dans le simulateur
 
 Pour tester le tout dans le simulateur de Xcode, lancez le simulateur puis rendez-vous dans **Réglages** / **Dévelopeur** puis cochez **Appearence sombre**.
@@ -125,7 +220,9 @@ Pour tester le tout dans le simulateur de Xcode, lancez le simulateur puis rende
 
 #### Configuration sur iPhone
 
-Le choix entre le mode Apparence Claire ou Apparence Sombre peut être réalisé sur le iPhone : **Réglages** / **Affichage et luminosité** puis cochez **Claire** ou **Sombre**.
+1. **Réglages**   
+2. **Affichage et luminosité**   
+3. Cochez **Claire** ou **Sombre**.  
 
 ![Mode Sombre ou Clair](images/iPhone-ModeSombreClair.png)
 
@@ -141,13 +238,14 @@ Juste à sa droite, un carré vous permet de choisir la couleur qui correspondra
 
 Cliquez sur ce carré et définissez ses paramètres dans l'éditeur de propriétés à droite.
 
-Note : si l'éditeur de propriétés n'apparaît pas, cliquez sur l'icône **Hide or show the Inspectors** dans le coin supérieur droit de l'écran.
-
-![Hide or show the inspectors](images/Xcode-HideOrShowTheInspectors.png)
+!!! note "Note"  
+    Si l'éditeur de propriétés n'apparaît pas, cliquez sur l'icône **Hide or show the Inspectors** dans le coin supérieur droit de l'écran. 
+    
+    ![Hide or show the inspectors](images/Xcode-HideOrShowTheInspectors.png)
 
 Au besoin, cliquez sur **Show Color Panel** afin de sélectionner la couleur dans une roue de couleurs.
 
-![Configurer .accentColor](images/Xcode-ChangerAccentColor.png)
+![Configurer .accentColor](images/Xcode-ChangerAccentColor.webp)
 
 Par défaut, il n'y a qu'une couleur d'accent. Il est possible de définir une couleur différente pour le mode sombre ou pour le mode clair à l'aide de la liste déroulante <kbd>Appearances</kbd>.
 
@@ -162,74 +260,91 @@ Sans rien changer à votre code, les vue qui utilisent `Color.accentColor` seron
 A l'aide de [l'opacité](quelques-modifieurs.md#modifieur-opacity), il est possible d'obtenir une couleur plus pâle en mode Clair ou plus foncée en mode Sombre.
 
 ```swift title="SwiftUI"
-VStack(spacing: 0) {
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-    Text("Color.blue")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.9)
-    Text("Color.blue, opacité 0.9")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.8)
-    Text("Color.blue, opacité 0.8")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.7)
-    Text("Color.blue, opacité 0.7")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.6)
-    Text("Color.blue, opacité 0.6")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.5)
-    Text("Color.blue, opacité 0.5")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.4)
-    Text("Color.blue, opacité 0.4")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.3)
-    Text("Color.blue, opacité 0.3")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.2)
-    Text("Color.blue, opacité 0.2")
-  }
-  ZStack {
-    Rectangle()
-      .fill(Color.blue)
-      .opacity(0.1)
-    Text("Color.blue, opacité 0.1")
+struct ContentView: View {
+
+  var body: some View {
+    ZStack {
+      Rectangle()
+        .fill(.blue)
+        .opacity(0.5)
+      Text("Color.blue, opacity 0.5")
+        .foregroundColor(.primary)
+        .padding()
+    }
+    ...
   }
 }
 ```
 
 ![opacity](images/SwiftUI-Color-opacity.png)
 
+
+??? Code   
+    ```swift title="views/UneCouleur.swift"  
+    import SwiftUI
+
+    struct UneCouleur: View {
+        var fg: Color
+        var bg: Color
+        var opacite: Double
+        private var desc: String {
+            let result = bg.description.prefix(1).lowercased() + bg.description.dropFirst()
+            return result.description.replacingOccurrences(of: "Provider()", with: "") + " opacité " + String(opacite)
+            
+        }
+        var body: some View {
+            Text("Color." + desc)
+                .frame(maxWidth: .infinity, minHeight: 80)
+                .foregroundStyle(fg)
+                .background {
+                    Rectangle()
+                        .fill(bg)
+                        .opacity(opacite)
+                }
+        }
+    }
+    ```   
+    
+    ```swift title="ContentView.swift"  
+    import SwiftUI
+
+    struct Couleur: Identifiable {
+        var id: UUID = UUID()
+        var fg: Color
+        var bg: Color
+        var opacite: Double
+    }
+
+    var couleurs = [
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 1),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.9),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.8),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.7),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.6),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.5),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.4),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.3),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.2),
+        Couleur(fg: Color.primary, bg: Color.blue, opacite: 0.1),
+            ]
+
+    struct ContentView: View {
+        var body: some View {
+            VStack(spacing: 0) {
+                ForEach(couleurs) { c in
+                    UneCouleur(fg:c.fg, bg:c.bg, opacite: c.opacite)}
+            }
+        }
+    }
+
+    ```
+
+
 ou, en mode Sombre :
 
 ![Opacité en mode sombre](images/SwiftUI-Color-opacityModeSombre.png)
+
+
 
 ## Couleurs RGB
 
@@ -300,49 +415,54 @@ Dans les impressions d'écrans, les images de gauches sont originales et celles 
 
 ```swift title="SwiftUI"
 struct ContentView: View {
-  var body: some View {
-    VStack {
-      Text(".renderingMode")
-       HStack {
-         Image("avril")
-           .resizable()
-           .scaledToFit()
-         Image("avril")
-           .renderingMode(.template)
-           .resizable()
-           .scaledToFit()
-           .foregroundColor(.blue)
-       }
-      Text(".brightness")
-        .padding(.top)
-      HStack {
-        Image("fond")
-          .resizable()
-           .scaledToFit()
-         Image("fond")
-           .resizable()
-           .scaledToFit()
-           .brightness(0.2)
-       }
-      Text(".saturation et .contrast")
-        .padding(.top)
-       HStack {
-         Image("coucher_soleil")
-           .resizable()
-           .scaledToFit()
-         Image("coucher_soleil")
-           .resizable()
-           .scaledToFit()
-           .saturation(1.5)
-           .contrast(1.9)
-       }
+    var body: some View {
+        VStack {
+            Image("roger")
+                .resizable()
+                .scaledToFit()
+              
+            HStack(spacing: 0) {
+                VStack {
+                    Text(".renderingMode")
+                    Image("roger")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.blue)
+                }
+                VStack {
+                    Text(".brightness")
+                        Image("roger")
+                            .resizable()
+                            .scaledToFit()
+                            .brightness(0.2)
+                }
+                
+            }
+            HStack(spacing: 0) {
+                VStack {
+                    Text(".saturation")
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .saturation(1.5)
+                    
+                }
+                VStack {
+                    Text(".contrast")
+                        Image("roger")
+                            .resizable()
+                            .scaledToFit()
+                            .contrast(1.9)
+                }
+                
+            }
+        }
     }
-    .padding()
-  }
 }
 ```
 
-![Ajustements aux couleurs d'images](images/SwiftUI-AjustementCouleursImage.png)
+![Ajustements aux couleurs d'images](images/SwiftUI-AjustementCouleursImage.webp)
 
  Si vous travaillez avec une image dont les traits principaux sont en noir, voici une astuce pour transformer les traits noirs dans la couleur de votre choix.
 

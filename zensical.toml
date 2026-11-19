@@ -10,10 +10,9 @@ nav = [
   {"Horaire" = "horaire.md"},
   {"Leçons" = [
     {"Travailler avec un mac" = "lecons/travailler-avec-un-mac.md"},
-    {"Développer une application qui pourra être publiée sur l'App Store" = "lecons/developper-une-application-qui-pourra-etre-publiee-sur-l-app-store.md"},
+    {"Travailler dans Xcode" = "lecons/travailler-dans-xcode.md"},
     {"Créer un projet dans XCode" = "lecons/creer-projet.md"},
     {"Le canevas" = "lecons/canevas.md"},
-    {"Travailler dans Xcode" = "lecons/travailler-dans-xcode.md"},
     {"Créer une interface utilisateur SwiftUI" = "lecons/creer-interface-utilisateur.md"},
     {"Couleurs" = "lecons/couleurs.md"},
     {"La zone protégée" = "lecons/la-zone-protegee.md"},
@@ -113,6 +112,10 @@ nav = [
     {"Exercice 17 : Applications à corriger" = "exercices/applications-a-corriger.md"},
     {"Exercice 18 : FaceID et application bilingue" = "exercices/faceid-et-application-bilingue.md"},
     {"Projet de session" = "exercices/projet-de-session.md"},
+  ],
+  },
+  {"Compléments" = [
+   {"Développer une application qui pourra être publiée sur l'App Store" = "lecons/developper-une-application-qui-pourra-etre-publiee-sur-l-app-store.md"},
   ],
   },
   {"Déclaration de l'utilisation de l'IA" = "declaration-ia.md"},

@@ -180,7 +180,7 @@ Un double-clic sur un fichier .pkg lancera le [programme d'installation de macOS
 
 Pour lancer l'installation, cliquez sur **Continuer** dans le programme d'installation et suivez les étapes.
 
-!!! note 
+!!! note "Note"
   Les scripts inclus dans un fichier .pkg se chargent généralement de copier l'application dans le dossier Applications.
 
 ## Fichier .app
@@ -216,7 +216,8 @@ Pour effectuer une installation sans détenir les droits d'administration, suive
 - Ouvrez le Finder puis double-cliquez sur le fichier.
 - Lorsqu'une fenêtre vous invite à faire glisser le .app dans le dossier `/Applications`, NE LE FAITES PAS!
 
-  ![Ne pas glisser .app dans /Applications](images/Mac-NePasGlisserAppDansApplications.png)
+    ![Ne pas glisser .app dans /Applications](images/Mac-NePasGlisserAppDansApplications.png)  
+
 - **Dans cette fenêtre**, faites un clic droit sur l'icône qui représente l'application puis choisissez **Copier**.
 - Ouvrez une nouvelle fenêtre Finder.
 - Rendez-vous dans le dossier désiré (ex : `/Users/monnom/Applications`) puis faites clic droit / **Coller**.
@@ -303,21 +304,16 @@ Dans Google Chrome, il existe un petit utilitaire qui permet de générer une im
 
 Pour y arriver, ouvrez les outils de développement de Chrome. Trois techniques permettent d'y arriver :
 
-- clic sur les trois points verticaux à droite de la barre d'URL / **Plus d'outils** / **Outils de développement**
-
-  ou
-- clic droit dans une page Web / **Inspecter**
-
-  ou
-- à l'aide du raccourci-clavier <kbd>⌘ Cmd</kbd>+<kbd>⌥ Option</kbd>+<kbd>I</kbd>.
+- clic sur les trois points verticaux à droite de la barre d'URL / **Plus d'outils** / **Outils de développement**  OU
+- clic droit dans une page Web / **Inspecter**  OU  
+- à l'aide du raccourci-clavier <kbd>⌘ Cmd</kbd>+<kbd>⌥ Option</kbd>+<kbd>I</kbd>.  
 
 Ouvrez ensuite la fenêtre de commande des outils de développement :
 
 - clic sur les trois points verticaux à droite de la fenêtre des outils de développement / **Exécuter la commande** (en anglais : **Run command**)
 
-  ![Exécuter la commande](images/Chrome-MenuExecuterLaCommande.png)
-
-  ou
+  ![Exécuter la commande](images/Chrome-MenuExecuterLaCommande.png)  
+  
 - à l'aide du raccourci-clavier <kbd>⌘ Cmd</kbd>+<kbd>⇧ Maj</kbd>+<kbd>P</kbd>.
 
 Inscrivez `screenshot`.

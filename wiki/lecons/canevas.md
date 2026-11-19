@@ -1,6 +1,6 @@
 # Canevas  
 
-# Qu'est-ce que le canevas?
+## Qu'est-ce que le canevas?
 
 Dans Xcode, le canevas, aussi appelé **fenêtre Preview**, est une représentation graphique du iPhone. On le retrouve à droite de l'éditeur de code source.
 
@@ -8,11 +8,12 @@ Lorsque vous développez une vue, le canevas montre immédiatement l'apparence q
 
 ![Canevas](images/Xcode-LeCanevas.webp)
 
-Attention : les fonctionnalités du canevas sont limitées. Même si on peut y effectuer certaines tâches, son rôle principal consiste à vous monter le visuel de l'application.
+!!! warning "Attention" 
+    les fonctionnalités du canevas sont limitées. Même si on peut y effectuer certaines tâches, son rôle principal consiste à vous monter le visuel de l'application.
 
 Le simulateur offre plus de possibilités pour tester une application.
 
-# Afficher / cacher le canevas
+## Afficher / cacher le canevas
 
 Par défaut, lorsque vous ouvrez un projet dans Xcode, le canevas apparaît à l'écran.
 
@@ -36,33 +37,37 @@ Assurez-vous que ces trois critères soient respectés :
 
   ```swift title="SwiftUI"
   struct MaVue: View {
-  ```
-- Après la définition de la vue, il y a une macro `#Preview` qui appelle la vue.
+  ```   
+
+- Après la définition de la vue, il y a une macro `#Preview` qui appelle la vue.  
 
   ```swift title="SwiftUI"
   #Preview {
     MaVue()
   }
-  ```
-- Dans Xcode, quand on clique sur l'icône en haut à droite de la fenêtre (ou dans le menu **Editor** / **Canvas**, l'option **Canvas** est cochée).
+  ```   
 
-Si le canevas ne s'affiche toujours pas, ceci peut être dû à un problème dans la définition de la vue ou même à un **caractère accentué dans le nom du projet**.  
+- Dans Xcode, quand on clique sur l'icône en haut à droite de la fenêtre.
 
-# Prévisualiser dans différentes modes/orientations
+
+!!! warning "Attention"  
+    Si le canevas ne s'affiche toujours pas, ceci peut être dû à un problème dans la définition de la vue ou même à un **caractère accentué dans le nom du projet**.  
+
+## Prévisualiser dans différentes modes/orientations
 
 Par défaut, Xcode affiche le canevas en mode clair et en position verticale. La taille du texte est fixée à l'aide du type dynamique `large`.
 
-## Icône au bas de la zone du canevas
+### Icône au bas de la zone du canevas
 
 Les icônes au bas de la zone du canevas permettent de modifier l'apparence du canevas sans avoir à modifier le code.
 
-### Icône Device Settings
+#### Icône Device Settings
 
 L'icône **Device Settings** (en forme de deux commutateurs superposés) permet de modifier l'apparence du canevas présentement affiché.
 
-![Color scheme](images/Xcode-Preview-ColorScheme.webp) 
+![Color scheme](images/Xcode-Preview-ColorScheme.webp){width=500}
 
-### Icône Variants
+#### Icône Variants
 
 L'icône **Variants** (en forme de damier) permet d'afficher plusieurs canevas dans différentes variantes.
 
@@ -70,27 +75,17 @@ Notez que pour revenir à l'affichage d'un seul canevas, il faut cliquer sur l'i
 
 Voici un aperçu de configurations possibles.
 
-![Color scheme variants](images/Xcode-Preview-ColorSchemeVariants.webp){width=300} ![Orientation variants](images/Xcode-Preview-OrientationVariants.webp){width=300}
+![Color scheme variants](images/Xcode-Preview-ColorSchemeVariants.webp){width=300} ![Orientation variants](images/Xcode-Preview-OrientationVariants.webp){width=315}
 
 ![Dynamic type variants](images/Xcode-Preview-DynamicTypeVariants.webp){width=300}
 
-### Combinaison
+#### Combinaison
 
-Il est possible de combiner différentes options dans **Device Settings** et dans **Variants** afin de répondre à nos besoins, comme dans cet exemple où on a choisi **Dynamic Type Variants**, **Dark appearance** et **Orientation Landscape Right**.
+Il est possible de combiner différentes options dans **Device Settings** et dans **Variants** afin de répondre à nos besoins, comme dans cet exemple où on a choisi **Dynamic Type Variants**, **Light appearance** et **Orientation Landscape Right**.
 
-![Combinaison](images/Xcode-Preview-Combinaison.webp)
+![Combinaison](images/Xcode-Preview-Combinaison.webp){width=300}
 
-# Forcer le rafraîchissement des données en cache du canevas
-
-En temps normal, le canevas est rafraîchi au fur et à mesure que vous entrez du code dans l'éditeur de code source ou dans l'inspecteur de propriétés.
-
-Parfois, cependant, il demeure figé dans un état quelconque.
-
-Ou pire : il ne s'affiche pas et indique qu'il y a une erreur alors que tout semble normal.
-
-Ceci peut arriver notamment lorsque la structure d'une base de données SwiftData est modifiée. Il faut comprendre que le canevas travaille avec ses propres données en cache sans interagir avec la vraie base de données.
-
-Peu importe ce qui cause les problèmes d'affichage du canevas, le rafraîchissement du cache du canevas est une solution à envisager.
+## Forcer le rafraîchissement des données en cache du canevas
 
 Ceci est réalisé à l'aide d'une commande entrée dans une fenêtre Terminal sur le Mac.
 
@@ -123,7 +118,7 @@ Notez qu'il est également possible d'installer les outils en ligne de commande 
 xcode-select --install
 ```
 
-# Faire apparaître un cadre bleu alentour de la vue sélectionnée
+## Faire apparaître un cadre bleu alentour de la vue sélectionnée
 
 Il est intéressant de faire apparaître sur le canevas un cadre bleu (ou couleur d'accent configuré dans votre mac) alentour de l'élément qui est sélectionné dans l'éditeur de code source.
 

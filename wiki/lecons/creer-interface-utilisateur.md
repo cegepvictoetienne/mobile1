@@ -1,4 +1,4 @@
-# Principes de développement d'une interface
+## Principes de développement d'une interface
 
 - l'utilisateur doit voir tout le contenu important sans avoir à zoomer ni à faire défiler l'écran.
 - utiliser des contrôles conçus pour les écrans tactiles.
