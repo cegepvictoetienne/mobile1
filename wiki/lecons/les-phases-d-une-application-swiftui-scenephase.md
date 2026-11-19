@@ -76,6 +76,6 @@ struct MaVue: View {
 }
 ```
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« Using Core Data with SwiftUI App Protoc ». Apple Developer Forums. <https://developer.apple.com/forums/thread/650876?answerId=620207022#620207022>
+    « Using Core Data with SwiftUI App Protoc ». Apple Developer Forums. <https://developer.apple.com/forums/thread/650876?answerId=620207022#620207022>

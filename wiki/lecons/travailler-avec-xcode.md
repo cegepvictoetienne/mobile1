@@ -167,6 +167,6 @@ En jouant avec les traits d'union, il est possible :
 
   ![Barre horizontale avantet après MARK](images/Xcode-MARKAvecBarreHorizontaleAvantEtApres.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Apple Developer ». Editing source files in Xcode - Annotate your code for visibility. <https://developer.apple.com/documentation/xcode/creating-organizing-and-editing-source-files#Annotate-your-code-for-visibility>
+    « Apple Developer ». Editing source files in Xcode - Annotate your code for visibility. <https://developer.apple.com/documentation/xcode/creating-organizing-and-editing-source-files#Annotate-your-code-for-visibility>

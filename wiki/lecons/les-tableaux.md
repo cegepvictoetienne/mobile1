@@ -76,13 +76,13 @@ monTableau[x][y] = 3
 
 Si jamais vous avez besoin d'un tableau qui contient différents types de données, la solution consiste à déclarer un protocole, de créer différentes structures qui répondent à ce protocole et d'utiliser ce protocole comme type de données dans le tableau.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Array ». Apple. <https://developer.apple.com/documentation/swift/array>
+    « Array ». Apple. <https://developer.apple.com/documentation/swift/array>
 
-« Collection Types ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html>
+    « Collection Types ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html>
 
-« Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
+    « Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
 
 ## Quelques méthodes utiles pour manipuler des tableaux
 
@@ -236,9 +236,9 @@ if (resultats.allSatisfy { $0 >= 60 }) {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« allSatisfy(_:) ». Apple. <https://developer.apple.com/documentation/swift/array/allsatisfy(_:)>
+    « allSatisfy(_:) ». Apple. <https://developer.apple.com/documentation/swift/array/allsatisfy(_:)>
 
 ## Recherche dans un tableau ou dans un dictionnaire
 
@@ -320,9 +320,9 @@ let monDictionnaire:[String:Int] = ["ABC":10, "DEF":3, "GHI":8]
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How To Find an Item in an Array in Swift ». LearnAppMaking.com. <https://learnappmaking.com/find-item-in-array-swift/>
+    « How To Find an Item in an Array in Swift ». LearnAppMaking.com. <https://learnappmaking.com/find-item-in-array-swift/>
 
 ## Trier un tableau
 
@@ -365,6 +365,6 @@ var itemsTries = items.sorted(by: { instance1, instance2 in
  })
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to Sort an Array in Swift ». Cocoacasts. <https://cocoacasts.com/swift-fundamentals-how-to-sort-an-array-in-swift>
+    « How to Sort an Array in Swift ». Cocoacasts. <https://cocoacasts.com/swift-fundamentals-how-to-sort-an-array-in-swift>

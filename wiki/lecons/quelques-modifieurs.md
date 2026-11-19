@@ -208,11 +208,11 @@ Cette image illustre ce qu'on voit quand on clique sur le cercle dans le code.
 
 ![Offset](images/SwiftUI-Offset-4.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Making Fine Adjustments to a View’s Position ». Apple. <https://developer.apple.com/documentation/swiftui/making-fine-adjustments-to-a-view-s-position>
+    « Making Fine Adjustments to a View’s Position ». Apple. <https://developer.apple.com/documentation/swiftui/making-fine-adjustments-to-a-view-s-position>
 
-« SwiftUI Tutorial: Layout Tools - Offset and Position ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe#d397>
+    « SwiftUI Tutorial: Layout Tools - Offset and Position ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe#d397>
 
 ## Modifieur .position()
 
@@ -356,11 +356,11 @@ Avec ce résultat, on comprend que le parent de chacun des rectangles est la pla
 
 ![VStack](images/SwiftUI-PositionAvecVStack.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Making Fine Adjustments to a View’s Position ». Apple. <https://developer.apple.com/documentation/swiftui/making-fine-adjustments-to-a-view-s-position>
+    « Making Fine Adjustments to a View’s Position ». Apple. <https://developer.apple.com/documentation/swiftui/making-fine-adjustments-to-a-view-s-position>
 
-« SwiftUI Tutorial: Layout Tools - Offset and Position ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe#d397>
+    « SwiftUI Tutorial: Layout Tools - Offset and Position ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe#d397>
 
 ## Modifieur .zIndex()
 

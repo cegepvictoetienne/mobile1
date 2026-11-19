@@ -42,9 +42,9 @@ Il est désormais plus facile de prévisualiser la vue responsable du `@Query` l
 
 Si, après avoir modifié les données en faisant des tests dans le canevas, vous désirez remettre les données initiales en place, suivez les instructions sur cette fiche : « [Forcer le rafraîchissement des données en cache du canevas](canevas.md) ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to use SwiftData in SwiftUI previews ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-swiftdata-in-swiftui-previews>
+    « How to use SwiftData in SwiftUI previews ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-swiftdata-in-swiftui-previews>
 
 ## Ajuster la prévisualisation d'une vue qui contient un @Binding ou un @Bindable
 

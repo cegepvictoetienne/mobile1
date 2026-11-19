@@ -58,6 +58,6 @@ struct ContentView: View {
 
 ![Menu contextuel](images/SwiftUI-ContextMenu-1.webp){width=300} ![Menu contextuel](images/SwiftUI-ContextMenu-2.webp){width=316}
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to add a Context Menu to a view in SwiftUI ». dev.to. <https://dev.to/maeganwilson_/how-to-add-a-context-menu-to-a-view-in-swiftui-4eo4>
+    « How to add a Context Menu to a view in SwiftUI ». dev.to. <https://dev.to/maeganwilson_/how-to-add-a-context-menu-to-a-view-in-swiftui-4eo4>

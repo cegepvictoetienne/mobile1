@@ -18,8 +18,8 @@ Voici quelques conditions à titre d'exemple :
 - l'application ne doit pas être une simple interface pour afficher le contenu d'une application tierce
 - etc.
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« App Store Review Guidelines ». Apple. <https://developer.apple.com/app-store/review/guidelines/>
+    « App Store Review Guidelines ». Apple. <https://developer.apple.com/app-store/review/guidelines/>
 
-« Preparing apps for review - Avoiding common app rejections ». Apple. <https://developer.apple.com/app-store/review/#common-app-rejections>
+    « Preparing apps for review - Avoiding common app rejections ». Apple. <https://developer.apple.com/app-store/review/#common-app-rejections>

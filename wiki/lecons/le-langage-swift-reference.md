@@ -232,15 +232,15 @@ Button(action: {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« The Basics - Constants and Variables ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310>
+    « The Basics - Constants and Variables ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310>
 
-« Swift Integer Quick Guide ». Use Your Loaf. <https://useyourloaf.com/blog/swift-integer-quick-guide/>
+    « Swift Integer Quick Guide ». Use Your Loaf. <https://useyourloaf.com/blog/swift-integer-quick-guide/>
 
-« Swift – Integer, Floating-Point Numbers ». Geeks for Geeks. <https://www.geeksforgeeks.org/swift-integer-floating-point-numbers/>
+    « Swift – Integer, Floating-Point Numbers ». Geeks for Geeks. <https://www.geeksforgeeks.org/swift-integer-floating-point-numbers/>
 
-« Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
+    « Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
 
 ## Les dictionnaires
 
@@ -347,15 +347,15 @@ let monDictionnaireTrie = monDictionnaire.sorted(by: <)
 - [removeValue()](https://developer.apple.com/documentation/swift/dictionary/removevalue(forkey:))
 - [values()](https://developer.apple.com/documentation/swift/dictionary/values-swift.property)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Dictionary ». Apple. <https://developer.apple.com/documentation/swift/dictionary>
+    « Dictionary ». Apple. <https://developer.apple.com/documentation/swift/dictionary>
 
-« Collection Types - Dictionnaries ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113>
+    « Collection Types - Dictionnaries ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113>
 
-« Expression implicitly coerced from ‘String?’ to ‘Any’- WHY SWIFT, WHY :( ». Steven Curtis. <https://stevenpcurtis.medium.com/expression-implicitly-coerced-from-string-to-any-why-swift-why-190dd0a58c58>
+    « Expression implicitly coerced from ‘String?’ to ‘Any’- WHY SWIFT, WHY :( ». Steven Curtis. <https://stevenpcurtis.medium.com/expression-implicitly-coerced-from-string-to-any-why-swift-why-190dd0a58c58>
 
-« Dictionaries in SwiftDictionaries in Swift ». Andy Bargh. <https://andybargh.com/dictionaries-in-swift/>
+    « Dictionaries in SwiftDictionaries in Swift ». Andy Bargh. <https://andybargh.com/dictionaries-in-swift/>
 
 ## Les structures
 
@@ -539,15 +539,15 @@ struct AjouterItem: View {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Properties ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/>
+    « Properties ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/>
 
-« What is a Computed Property in Swift? ». Swift Lee. <https://www.avanderlee.com/swift/computed-property/>
+    « What is a Computed Property in Swift? ». Swift Lee. <https://www.avanderlee.com/swift/computed-property/>
 
-« What are computed properties in Swift and when should you use them? ». Donny Wals. <https://www.donnywals.com/what-are-computed-properties-in-swift-and-when-should-you-use-them/>
+    « What are computed properties in Swift and when should you use them? ». Donny Wals. <https://www.donnywals.com/what-are-computed-properties-in-swift-and-when-should-you-use-them/>
 
-« Deciding between a computed property and a function in Swift ». Donny Wals. <https://www.donnywals.com/deciding-between-a-computed-property-and-a-function-in-swift/>
+    « Deciding between a computed property and a function in Swift ». Donny Wals. <https://www.donnywals.com/deciding-between-a-computed-property-and-a-function-in-swift/>
 
 ## Les énumérations
 
@@ -668,11 +668,11 @@ var couleur = Couleur.rouge
 Text("\(couleur.rawValue)")   // affiche 0
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Enumerations ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html>
+    « Enumerations ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html>
 
-« POO : les énumérations ». Swiftement. <https://www.swiftement.fr/2022/01/poo-les-enumerations/>
+    « POO : les énumérations ». Swiftement. <https://www.swiftement.fr/2022/01/poo-les-enumerations/>
 
 ## L'interpolation de chaînes (conversion de type et interprétation d'une variable dans une chaîne)
 
@@ -920,13 +920,13 @@ let valeur = unObjet.proprieteOptionnelle?.sousPropriete ?? "valeur par défaut"
 let premier = items?.first ?? Item(code: "A", titre: "Item A")
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Optional Chaining ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/>
+    « Optional Chaining ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/>
 
-« Chaînage d'optionnels (Optional chaining) ». Hacking with Swift. <https://www.hackingwithswift.com/read/fr/0/13/chainage-doptionnels-optional-chaining>
+    « Chaînage d'optionnels (Optional chaining) ». Hacking with Swift. <https://www.hackingwithswift.com/read/fr/0/13/chainage-doptionnels-optional-chaining>
 
-« Question mark (? vs ?. vs ?? vs ? :) in Swift ». Suneet. <https://agrawalsuneet.github.io/blogs/question-mark-in-swift/>
+    « Question mark (? vs ?. vs ?? vs ? :) in Swift ». Suneet. <https://agrawalsuneet.github.io/blogs/question-mark-in-swift/>
 
 ## Liaison optionnelle (if let / guard let)
 
@@ -1001,11 +1001,11 @@ func faireQuelqueChose(personnage: Personnage) {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Optionals and safe unwapping techniques ». Software Patterns Lexicon. <https://softwarepatternslexicon.com/swift/swift-language-features-and-best-practices/optionals-and-safe-unwrapping-techniques/>
+    « Optionals and safe unwapping techniques ». Software Patterns Lexicon. <https://softwarepatternslexicon.com/swift/swift-language-features-and-best-practices/optionals-and-safe-unwrapping-techniques/>
 
-« if let shorthand for unwrapping optionals ». Hackink with Swift. <https://www.hackingwithswift.com/swift/5.7/if-let-shorthand>
+    « if let shorthand for unwrapping optionals ». Hackink with Swift. <https://www.hackingwithswift.com/swift/5.7/if-let-shorthand>
 
 ## L'instruction guard
 
@@ -1024,15 +1024,15 @@ guard let itemsJSON = try? JSONEncoder().encode(items) else {
 
 Si le bloc ne se termine pas par un des mots-clés requis, vous obtiendrez un message du genre « 'guard' body must not fall through, consider using a 'return' or 'throw' to exit the scope ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« The guard keyword in Swift: early returns made easy ». Hacking with Swift. <https://www.hackingwithswift.com/new-syntax-swift-2-guard>
+    « The guard keyword in Swift: early returns made easy ». Hacking with Swift. <https://www.hackingwithswift.com/new-syntax-swift-2-guard>
 
-« That “return” keyword in guard let statement in Swift ». Mumtaz Hussain. <https://medium.com/@mumtaz.hussain/that-return-keyword-in-guard-let-statement-in-swift-eeacf88f6270>
+    « That “return” keyword in guard let statement in Swift ». Mumtaz Hussain. <https://medium.com/@mumtaz.hussain/that-return-keyword-in-guard-let-statement-in-swift-eeacf88f6270>
 
-« The Swift Guard Keyword ». Advanced Swift. <https://www.advancedswift.com/when-to-use-guard-in-swift/>
+    « The Swift Guard Keyword ». Advanced Swift. <https://www.advancedswift.com/when-to-use-guard-in-swift/>
 
-« When to use guard let rather than if let ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/understanding-swift/when-to-use-guard-let-rather-than-if-let>
+    « When to use guard let rather than if let ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/understanding-swift/when-to-use-guard-let-rather-than-if-let>
 
 ## try, try? et try!
 
@@ -1141,11 +1141,11 @@ func effectuerUnCalcul<T: Numeric, U: Numeric>(unParametre: T, unAutreParametre:
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Generics ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Generics.html>
+    « Generics ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Generics.html>
 
-« Understanding generics – part 1 ». Hacking with Swift. <https://www.hackingwithswift.com/plus/intermediate-swift/understanding-generics-part-1>
+    « Understanding generics – part 1 ». Hacking with Swift. <https://www.hackingwithswift.com/plus/intermediate-swift/understanding-generics-part-1>
 
 ## L'opérateur ternaire
 
@@ -1164,9 +1164,9 @@ TextField("", text: $telephone)
   .border(valide ? Color.gray: Color.red)
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Basic Operators - Ternary Conditional Operator ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#ID71>
+    « Basic Operators - Ternary Conditional Operator ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#ID71>
 
 ## Les fermetures (closures)
 
@@ -1185,13 +1185,13 @@ print(nomsTries)
 // Fin du code emprunté
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Swift de Scratch: Fermetures ». Envato Tuts. <https://code.tutsplus.com/fr/swift-de-scratch-fermetures--cms-23138t>
+    « Swift de Scratch: Fermetures ». Envato Tuts. <https://code.tutsplus.com/fr/swift-de-scratch-fermetures--cms-23138t>
 
-« Closures ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/>
+    « Closures ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/>
 
-« Fermeture (Closure), Application partielle et Curryfication en Swift (Partie 1/3) ». Medium. <https://medium.com/@dmorard1/fermeture-closure-application-partielle-et-curryfication-en-swift-partie-1-3-4c2c6f2bce67>
+    « Fermeture (Closure), Application partielle et Curryfication en Swift (Partie 1/3) ». Medium. <https://medium.com/@dmorard1/fermeture-closure-application-partielle-et-curryfication-en-swift-partie-1-3-4c2c6f2bce67>
 
 ## Les opérateurs d'intervalle
 
@@ -1243,6 +1243,6 @@ for nombre in 1..<3 {
 2
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Basic Operators - Range Operators ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/#Range-Operators>
+    « Basic Operators - Range Operators ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/#Range-Operators>

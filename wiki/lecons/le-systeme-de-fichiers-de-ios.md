@@ -103,15 +103,15 @@ do {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Using the file system effectively ». Apple Developer. <https://developer.apple.com/documentation/foundation/using-the-file-system-effectively>
+    « Using the file system effectively ». Apple Developer. <https://developer.apple.com/documentation/foundation/using-the-file-system-effectively>
 
-« Working with Files on iOS with Swift ». LearnAppMaking.com. <https://learnappmaking.com/filemanager-files-swift-how-to/>
+    « Working with Files on iOS with Swift ». LearnAppMaking.com. <https://learnappmaking.com/filemanager-files-swift-how-to/>
 
-« iOS storage best practices ». Vikash Anand. <https://medium.com/@anandin02/ios-storage-best-practices-294fca83ad9>
+    « iOS storage best practices ». Vikash Anand. <https://medium.com/@anandin02/ios-storage-best-practices-294fca83ad9>
 
-« Understanding the iOS File System ». Lucideus. <https://medium.com/@lucideus/understanding-the-ios-file-system-eee3dc87e455>
+    « Understanding the iOS File System ». Lucideus. <https://medium.com/@lucideus/understanding-the-ios-file-system-eee3dc87e455>
 
 ## UDID et app GUID
 

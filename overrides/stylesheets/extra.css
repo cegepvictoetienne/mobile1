@@ -206,6 +206,28 @@
   background-repeat: no-repeat;
 }
 
+/* Code block title (```lang title="...") placed inside the header bar */
+.md-typeset .highlight:has(> span.filename) {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.md-typeset .highlight > span.filename {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 2.25rem;
+  margin: 0;
+  padding: 0 1rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
 /* Inline code */
 [data-md-color-scheme="default"] .md-typeset code:not(pre code) {
   background-color: var(--ls-surface-high);

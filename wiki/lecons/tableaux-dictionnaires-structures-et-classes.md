@@ -76,13 +76,13 @@ monTableau[x][y] = 3
 
 Si jamais vous avez besoin d'un tableau qui contient différents types de données, la solution consiste à déclarer un protocole, de créer différentes structures qui répondent à ce protocole et d'utiliser ce protocole comme type de données dans le tableau.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Array ». Apple. <https://developer.apple.com/documentation/swift/array>
+    « Array ». Apple. <https://developer.apple.com/documentation/swift/array>
 
-« Collection Types ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html>
+    « Collection Types ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html>
 
-« Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
+    « Constants, Variables and Types ». Dimitri Racordon. <https://kyouko-taiga.github.io/swift-thoughts/tutorial/chapter-1/>
 
 ## Boucler dans un tableau
 
@@ -272,15 +272,15 @@ let monDictionnaireTrie = monDictionnaire.sorted(by: <)
 - [removeValue()](https://developer.apple.com/documentation/swift/dictionary/removevalue(forkey:))
 - [values()](https://developer.apple.com/documentation/swift/dictionary/values-swift.property)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Dictionary ». Apple. <https://developer.apple.com/documentation/swift/dictionary>
+    « Dictionary ». Apple. <https://developer.apple.com/documentation/swift/dictionary>
 
-« Collection Types - Dictionnaries ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113>
+    « Collection Types - Dictionnaries ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113>
 
-« Expression implicitly coerced from ‘String?’ to ‘Any’- WHY SWIFT, WHY :( ». Steven Curtis. <https://stevenpcurtis.medium.com/expression-implicitly-coerced-from-string-to-any-why-swift-why-190dd0a58c58>
+    « Expression implicitly coerced from ‘String?’ to ‘Any’- WHY SWIFT, WHY :( ». Steven Curtis. <https://stevenpcurtis.medium.com/expression-implicitly-coerced-from-string-to-any-why-swift-why-190dd0a58c58>
 
-« Dictionaries in SwiftDictionaries in Swift ». Andy Bargh. <https://andybargh.com/dictionaries-in-swift/>
+    « Dictionaries in SwiftDictionaries in Swift ». Andy Bargh. <https://andybargh.com/dictionaries-in-swift/>
 
 ## Recherche dans un tableau ou dans un dictionnaire
 
@@ -362,9 +362,9 @@ let monDictionnaire:[String:Int] = ["ABC":10, "DEF":3, "GHI":8]
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How To Find an Item in an Array in Swift ». LearnAppMaking.com. <https://learnappmaking.com/find-item-in-array-swift/>
+    « How To Find an Item in an Array in Swift ». LearnAppMaking.com. <https://learnappmaking.com/find-item-in-array-swift/>
 
 ## Structure vs classe
 
@@ -530,12 +530,12 @@ struct AjouterItem: View {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Properties ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/>
+    « Properties ». Swift. <https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/>
 
-« What is a Computed Property in Swift? ». Swift Lee. <https://www.avanderlee.com/swift/computed-property/>
+    « What is a Computed Property in Swift? ». Swift Lee. <https://www.avanderlee.com/swift/computed-property/>
 
-« What are computed properties in Swift and when should you use them? ». Donny Wals. <https://www.donnywals.com/what-are-computed-properties-in-swift-and-when-should-you-use-them/>
+    « What are computed properties in Swift and when should you use them? ». Donny Wals. <https://www.donnywals.com/what-are-computed-properties-in-swift-and-when-should-you-use-them/>
 
-« Deciding between a computed property and a function in Swift ». Donny Wals. <https://www.donnywals.com/deciding-between-a-computed-property-and-a-function-in-swift/>
+    « Deciding between a computed property and a function in Swift ». Donny Wals. <https://www.donnywals.com/deciding-between-a-computed-property-and-a-function-in-swift/>

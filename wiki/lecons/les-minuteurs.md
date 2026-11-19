@@ -198,9 +198,9 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Triggering events repeatedly using a timer ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/triggering-events-repeatedly-using-a-timer>
+    « Triggering events repeatedly using a timer ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/triggering-events-repeatedly-using-a-timer>
 
 ## DispatchQueue
 

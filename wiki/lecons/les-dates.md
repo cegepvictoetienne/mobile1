@@ -166,9 +166,9 @@ if let dateTransaction = dateFormatter.date(from: dateTransactionString) {
 
 Si vous avez besoin d'effectuer l'opération inverse, c'est-à-dire créer une chaîne à partir d'une instance de Date, consultez la fiche « [Convertir une date en chaîne](les-dates.md#convertir-une-date-en-chaine) ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Introduction to Date and Time Programming in Swift, Part 1 ». Auth0 by Otka. <https://auth0.com/blog/introduction-date-time-programming-swift-1/>
+    « Introduction to Date and Time Programming in Swift, Part 1 ». Auth0 by Otka. <https://auth0.com/blog/introduction-date-time-programming-swift-1/>
 
 ## Convertir une date en chaîne
 
@@ -296,6 +296,6 @@ En anglais : 11 April 2024   Ouch!
 
 Bien qu'il soit [possible de remédier à ce problème](https://developer.apple.com/documentation/foundation/dateformatter), il est préférable d'utiliser une des techniques présentées plus haut pour que la date respecte le format de localisation.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Preparing dates, currencies, and numbers for translation ». Apple. <https://developer.apple.com/documentation/xcode/preparing-dates-numbers-with-formatters>
+    « Preparing dates, currencies, and numbers for translation ». Apple. <https://developer.apple.com/documentation/xcode/preparing-dates-numbers-with-formatters>

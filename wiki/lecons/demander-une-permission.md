@@ -42,9 +42,9 @@ Ce pourrait être quelque chose du genre « $(PRODUCT_NAME) a besoin d'accéder 
 
 1. « CMPedometer ». Apple. <https://developer.apple.com/documentation/coremotion/cmpedometer>
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Requesting Authorization for Location Services ». Apple. <https://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services>
+    « Requesting Authorization for Location Services ». Apple. <https://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services>
 
 ## Variable $(PRODUCT_NAME)
 

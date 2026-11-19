@@ -129,9 +129,9 @@ Si vous tentez d'utiliser un autre type de boucle pour produire la vue, par exem
 
 Et si vous tentez le coup avec la méthode `forEach()`, vous pourriez obtenir un message du genre « The compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
+    « Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
 
 ## Modifier l'élément présentement traité dans une boucle
 
@@ -170,6 +170,6 @@ ForEach(items.indices, id: \.self) { index in
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to create a List or a ForEach from a binding ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-list-or-a-foreach-from-a-binding>
+    « How to create a List or a ForEach from a binding ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-list-or-a-foreach-from-a-binding>

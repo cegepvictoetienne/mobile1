@@ -130,13 +130,13 @@ init(chaineURL: String) {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Migrating from the Observable Object protocol to the Observable macro ». Apple. <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>
+    « Migrating from the Observable Object protocol to the Observable macro ». Apple. <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>
 
-« Data Flow in SwiftUI ». Tyler Kirtland. <https://blog.rocketinsights.com/data-flow-in-swiftui/>
+    « Data Flow in SwiftUI ». Tyler Kirtland. <https://blog.rocketinsights.com/data-flow-in-swiftui/>
 
-« How to use @ObservedObject to manage state from external objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects>
+    « How to use @ObservedObject to manage state from external objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects>
 
 ## Partager un objet observé entre deux vues : @StateObject vs @ObservedObject
 
@@ -334,13 +334,13 @@ Dans le cas où l'objet est déclaré avec `@ObservedObject`, le rafraîchisseme
 
 Voilà pourquoi il faut utiliser `@StateObject` lorsqu'on instancie l'objet à observer et réserver `@ObservedObject` pour les sous-vues qui reçoivent une référence à l'objet.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« @StateObject vs. @ObservedObject: The differences explained ». Swift Lee. <https://www.avanderlee.com/swiftui/stateobject-observedobject-differences/>
+    « @StateObject vs. @ObservedObject: The differences explained ». Swift Lee. <https://www.avanderlee.com/swiftui/stateobject-observedobject-differences/>
 
-« How to use @ObservedObject to manage state from external objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects>
+    « How to use @ObservedObject to manage state from external objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects>
 
-« SwiftUI: @State vs @StateObject vs @ObservedObject vs @EnvironmentObject ». Telstra Purple. <https://purple.telstra.com/blog/swiftui---state-vs--stateobject-vs--observedobject-vs--environme>
+    « SwiftUI: @State vs @StateObject vs @ObservedObject vs @EnvironmentObject ». Telstra Purple. <https://purple.telstra.com/blog/swiftui---state-vs--stateobject-vs--observedobject-vs--environme>
 
 ## .confirmationDialog() avant iOS 26
 

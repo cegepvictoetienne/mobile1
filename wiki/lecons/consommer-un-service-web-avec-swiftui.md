@@ -584,15 +584,15 @@ Il est possible de connaître le code d'état HTTP d'une page Web et des différ
 
   ![Codes d'état HTTP dans Chrome](images/Chrome-AfficherCodeEtatHTTP.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« HTTP response status codes ». MDN. <https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>
+    « HTTP response status codes ». MDN. <https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>
 
-« RFC 9110 HTTP Semantics - Status Code Registration ». IETF. <https://www.rfc-editor.org/rfc/rfc9110#name-status-code-registration>
+    « RFC 9110 HTTP Semantics - Status Code Registration ». IETF. <https://www.rfc-editor.org/rfc/rfc9110#name-status-code-registration>
 
-« Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content ». Internet Engineering Task Force (IETF) . <https://datatracker.ietf.org/doc/html/rfc7231#page-49>
+    « Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content ». Internet Engineering Task Force (IETF) . <https://datatracker.ietf.org/doc/html/rfc7231#page-49>
 
-« Liste des codes HTTP ». Wikipedia. <http://fr.wikipedia.org/wiki/Liste_des_codes_HTTP>
+    « Liste des codes HTTP ». Wikipedia. <http://fr.wikipedia.org/wiki/Liste_des_codes_HTTP>
 
 ## Vérifier le code d'état HTTP dans Chrome
 

@@ -12,11 +12,11 @@ Il est important de permettre l'enregistrement des données même en l'absence d
 
 Cette synchronisation permettra également d'assurer que les informations soient automatiquement disponibles si on brise/perd/change notre téléphone.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Persistance (informatique) ». Wikipédia. <https://fr.wikipedia.org/wiki/Persistance_(informatique)>
+    « Persistance (informatique) ». Wikipédia. <https://fr.wikipedia.org/wiki/Persistance_(informatique)>
 
-« Faites persister vos données dans votre application iOS ». OpenClassrooms. <https://openclassrooms.com/fr/courses/4871481-faites-persister-vos-donnees-dans-votre-application-ios/5417778-decouvrez-la-persistance-des-donnees>
+    « Faites persister vos données dans votre application iOS ». OpenClassrooms. <https://openclassrooms.com/fr/courses/4871481-faites-persister-vos-donnees-dans-votre-application-ios/5417778-decouvrez-la-persistance-des-donnees>
 
 ## Option pour enregistrer les données sous iOS
 
@@ -33,6 +33,6 @@ En voici quelques-unes :
 - [Firebase](https://firebase.google.com/docs/ios/setup)
 - etc.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« What Is the Difference Between Core Data and SQLite ». Cocoacasts. <https://cocoacasts.com/what-is-the-difference-between-core-data-and-sqlite>
+    « What Is the Difference Between Core Data and SQLite ». Cocoacasts. <https://cocoacasts.com/what-is-the-difference-between-core-data-and-sqlite>

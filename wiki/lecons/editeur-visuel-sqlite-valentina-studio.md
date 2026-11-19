@@ -35,9 +35,9 @@ Pour configurer les emplacements autorisés :
 
 ![Emplacements autorisés](images/Valentina-EmplacementsAutorises.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Preferences Dialog - Allowed Locations Help ». Valentina. <http://valentina-db.com/docs/dokuwiki/v7/doku.php?id=valentina:products:vstudio:help:dialogs:preferences:allowed_locations>
+    « Preferences Dialog - Allowed Locations Help ». Valentina. <http://valentina-db.com/docs/dokuwiki/v7/doku.php?id=valentina:products:vstudio:help:dialogs:preferences:allowed_locations>
 
 ## Générer un diagramme de la base de données
 

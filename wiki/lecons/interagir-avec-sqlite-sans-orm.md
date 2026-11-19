@@ -107,15 +107,15 @@ struct ContentView: View {
 
 Vous pouvez désormais poursuivre votre développement pour [afficher des données tirées de la base de données](interagir-avec-sqlite-sans-orm.md#afficher-des-donnees-tirees-de-la-bd).
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SQLite With Swift Tutorial: Getting Started ». Ray Wenderlich. <https://www.raywenderlich.com/6620276-sqlite-with-swift-tutorial-getting-started>
+    « SQLite With Swift Tutorial: Getting Started ». Ray Wenderlich. <https://www.raywenderlich.com/6620276-sqlite-with-swift-tutorial-getting-started>
 
-« Opening A New Database Connection ». SQLite. <https://www.sqlite.org/c3ref/open.html>
+    « Opening A New Database Connection ». SQLite. <https://www.sqlite.org/c3ref/open.html>
 
-« Result and Error Codes ». SQLite. <https://www.sqlite.org/rescode.html>
+    « Result and Error Codes ». SQLite. <https://www.sqlite.org/rescode.html>
 
-« C-language Interface Specification for SQLite - List Of Functions ». SQLite. [https://www.sqlite.org/capi3ref.html](https://www.sqlite.org/capi3ref.html#:~:text=List Of Functions)
+    « C-language Interface Specification for SQLite - List Of Functions ». SQLite. [https://www.sqlite.org/capi3ref.html](https://www.sqlite.org/capi3ref.html#:~:text=List Of Functions)
 
 ## Afficher des données tirées de la BD
 
@@ -277,11 +277,11 @@ var body: some View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« C-language Interface Specification for SQLite - List Of Functions ». SQLite. [https://www.sqlite.org/capi3ref.html](https://www.sqlite.org/capi3ref.html#:~:text=List Of Functions)
+    « C-language Interface Specification for SQLite - List Of Functions ». SQLite. [https://www.sqlite.org/capi3ref.html](https://www.sqlite.org/capi3ref.html#:~:text=List Of Functions)
 
-« Result and Error Codes ». SQLite. <https://www.sqlite.org/rescode.html>
+    « Result and Error Codes ». SQLite. <https://www.sqlite.org/rescode.html>
 
 ## Requête SQLite avec paramètres
 

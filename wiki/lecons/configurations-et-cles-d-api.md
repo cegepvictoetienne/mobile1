@@ -140,9 +140,9 @@ enum AppConfig {
 let cle = AppConfig.cleApiMeteo
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Youtube@NoahDoesCoding97 ». SwiftUI API Key Management (2025): Secure Your App's Keys [Best Practices Guide]. <https://www.youtube.com/watch?v=6DWCZpL7fBE>
+    « Youtube@NoahDoesCoding97 ». SwiftUI API Key Management (2025): Secure Your App's Keys [Best Practices Guide]. <https://www.youtube.com/watch?v=6DWCZpL7fBE>
 
 ## Stocker une clé d'API de façon sécurisée pour la production
 

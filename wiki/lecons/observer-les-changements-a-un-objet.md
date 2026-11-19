@@ -66,6 +66,6 @@ Auparavant, le mécanisme d'observation était réalisé à l'aide de [Observabl
 
 L'ancien mécanisme fonctionne toujours mais lorsqu'on développe pour iOS 17 ou plus récent, on préférera travailler avec la macro `@Observable` puisqu'elle est plus simple à mettre en oeuvre. De plus, `@Observable` est plus performant grâce à la compilation des macros.
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« Migrating from the Observable Object protocol to the Observable macro ». Apple. <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>
+    « Migrating from the Observable Object protocol to the Observable macro ». Apple. <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>

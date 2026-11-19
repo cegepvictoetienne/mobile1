@@ -389,15 +389,15 @@ Le visuel est très sommaire mais il permet d'illustrer l'importance de `.button
 
 ![Deux boutons de large dans List](images/SwiftUI-DeuxBoutonsDansList.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI - Dynamic List & Identifiable ». Medium. <https://medium.com/flawless-app-stories/swiftui-dynamic-list-identifiable-73c56215f9ff>
+    « SwiftUI - Dynamic List & Identifiable ». Medium. <https://medium.com/flawless-app-stories/swiftui-dynamic-list-identifiable-73c56215f9ff>
 
-« What is the difference between List and ForEach in SwiftUI? ». Stack Overflow. <https://stackoverflow.com/questions/56535326/what-is-the-difference-between-list-and-foreach-in-swiftui>
+    « What is the difference between List and ForEach in SwiftUI? ». Stack Overflow. <https://stackoverflow.com/questions/56535326/what-is-the-difference-between-list-and-foreach-in-swiftui>
 
-« Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
+    « Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
 
-« How to conform to the Hashable protocol ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/language/how-to-conform-to-the-hashable-protocol>
+    « How to conform to the Hashable protocol ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/language/how-to-conform-to-the-hashable-protocol>
 
 ## ContentUnavailableView
 

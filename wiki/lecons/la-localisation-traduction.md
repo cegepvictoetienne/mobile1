@@ -234,15 +234,15 @@ Si vous entrez dans une vue `Text("ABC")`, SwiftUI recherchera la clé `ABC` dan
 
 Si jamais la clé ne s'y trouvait pas ou si elle n'a pas été localisée, il affichera directement le texte de la clé, soit `ABC`.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI Localization Tutorial for iOS: Getting Started ». Ray Wenderlich. <https://www.raywenderlich.com/27469286-swiftui-localization-tutorial-for-ios-getting-started>
+    « SwiftUI Localization Tutorial for iOS: Getting Started ». Ray Wenderlich. <https://www.raywenderlich.com/27469286-swiftui-localization-tutorial-for-ios-getting-started>
 
-« Localization with SwiftUI, how to preview your localized content ». Benoit Pasquier. <https://benoitpasquier.com/localization-swiftui-how-top-preview-localized-content/>
+    « Localization with SwiftUI, how to preview your localized content ». Benoit Pasquier. <https://benoitpasquier.com/localization-swiftui-how-top-preview-localized-content/>
 
-« How to decide the user’s locale in Swift ». Medium. <https://medium.com/@hdmdhr/how-to-decide-the-users-locale-in-swift-251caf3346b9>
+    « How to decide the user’s locale in Swift ». Medium. <https://medium.com/@hdmdhr/how-to-decide-the-users-locale-in-swift-251caf3346b9>
 
-«  The Missing String Catalogs FAQ for Localization in Xcode 15  ». Fline Dev. <https://www.fline.dev/the-missing-string-catalogs-faq-for-xcode-15/>
+    «  The Missing String Catalogs FAQ for Localization in Xcode 15  ». Fline Dev. <https://www.fline.dev/the-missing-string-catalogs-faq-for-xcode-15/>
 
 ## Tenir compte de la localisation dans le canevas
 

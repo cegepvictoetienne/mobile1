@@ -76,11 +76,11 @@ Si vous recherchez sur le Web des informations sur les balises de proximité, vo
 
 Alors que le terme **beacon** représente les balises de proximité en tant que telles, **iBeacon** est une marque de commerce déposée par Apple pour regrouper toute la technologie alentour des balises de proximité.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Bluetooth beacons: Everything you need to know. ». Pointr. <https://www.pointr.tech/blog/beacons-everything-you-need-to-know>
+    « Bluetooth beacons: Everything you need to know. ». Pointr. <https://www.pointr.tech/blog/beacons-everything-you-need-to-know>
 
-« NFC ». Apple. <https://developer.apple.com/design/human-interface-guidelines/nfc>
+    « NFC ». Apple. <https://developer.apple.com/design/human-interface-guidelines/nfc>
 
 ## Les paramètres UUID, Major et Minor
 

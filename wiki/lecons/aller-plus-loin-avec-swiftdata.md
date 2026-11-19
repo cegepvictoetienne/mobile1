@@ -121,11 +121,11 @@ struct ListeItems: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to dynamically change a query's sort order or predicate ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-dynamically-change-a-querys-sort-order-or-predicate>
+    « How to dynamically change a query's sort order or predicate ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-dynamically-change-a-querys-sort-order-or-predicate>
 
-«  Dynamically filtering our SwiftData query  ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/dynamically-filtering-our-swiftdata-query>
+    «  Dynamically filtering our SwiftData query  ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/dynamically-filtering-our-swiftdata-query>
 
 ## Retrouver l'identifiant d'un enregistrement avec SwiftData
 
@@ -343,8 +343,8 @@ struct MonProjetApp: App {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Model your schema with SwiftData ». Apple. <https://developer.apple.com/videos/play/wwdc2023/10195/>
+    « Model your schema with SwiftData ». Apple. <https://developer.apple.com/videos/play/wwdc2023/10195/>
 
-« How to create a complex migration using VersionedSchema ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-create-a-complex-migration-using-versionedschema>
+    « How to create a complex migration using VersionedSchema ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-create-a-complex-migration-using-versionedschema>

@@ -70,9 +70,9 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to use gestures in SwiftUI ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/how-to-use-gestures-in-swiftui>
+    « How to use gestures in SwiftUI ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/how-to-use-gestures-in-swiftui>
 
 ## Déplacer une vue à l'aide de DragGesture
 
@@ -130,6 +130,6 @@ Pour simuler le mouvement des doigts pour agrandir ou pour rapetisser une image 
 
 Notez que ceci n'aura d'effet que si l'application est codée pour réagir à cette gestuelle.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Interacting with your app in the iOS and iPadOS simulator ». Apple. <https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-the-ios-or-ipados-simulator>
+    « Interacting with your app in the iOS and iPadOS simulator ». Apple. <https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-the-ios-or-ipados-simulator>

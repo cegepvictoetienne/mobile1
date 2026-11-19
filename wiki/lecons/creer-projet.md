@@ -131,10 +131,9 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI Essentials - Creating and Combining Views ». Apple.com. <https://developer.apple.com/tutorials/swiftui/creating-and-combining-views>
-
+    « SwiftUI Essentials - Creating and Combining Views ». Apple.com. <https://developer.apple.com/tutorials/swiftui/creating-and-combining-views>
 
 ## Section #Preview
 

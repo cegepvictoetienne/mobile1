@@ -124,9 +124,9 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Working with Toolbar in SwiftUI ». AppCoda. <https://www.appcoda.com/swiftui-toolbar/>
+    « Working with Toolbar in SwiftUI ». AppCoda. <https://www.appcoda.com/swiftui-toolbar/>
 
 ## Configurer les barres d'outils
 
@@ -251,6 +251,6 @@ NavigationStack {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Navigation bar swiftui ». Eon's swift blog. <https://eon.codes/blog/2023/11/18/navigation-bar-swiftui/>
+    « Navigation bar swiftui ». Eon's swift blog. <https://eon.codes/blog/2023/11/18/navigation-bar-swiftui/>

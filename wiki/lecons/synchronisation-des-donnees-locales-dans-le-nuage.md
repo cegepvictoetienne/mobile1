@@ -44,13 +44,13 @@ Parse est un autre outil intéressant : [https://parseplatform.org](https://pars
 
 Au moment d'écrire ces lignes, la version gratuite de Parse permettait 1 000 000 requêtes et 1 000 000 modifications par mois ainsi qu'un espace de stockage de 1Go.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Determining If CloudKit Is Right for Your App ». Apple. <https://developer.apple.com/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app>
+    « Determining If CloudKit Is Right for Your App ». Apple. <https://developer.apple.com/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app>
 
-« Data Synchronization ». objc. <https://www.objc.io/issues/10-syncing-data/data-synchronization/>
+    « Data Synchronization ». objc. <https://www.objc.io/issues/10-syncing-data/data-synchronization/>
 
-« A Guide to CloudKit: How to Sync User Data Across iOS Devices ». Toptal. <https://www.toptal.com/ios/sync-data-across-devices-with-cloudkit>
+    « A Guide to CloudKit: How to Sync User Data Across iOS Devices ». Toptal. <https://www.toptal.com/ios/sync-data-across-devices-with-cloudkit>
 
 ## Service Web pour synchroniser les données
 
@@ -657,11 +657,11 @@ Une fois le service Web écrit et testé, vous êtes prêts à le consommer dans
 
 - [avec SwiftUI](fonctions-obsoletes-ou-anciennes-syntaxes.md#consommer-un-service-web-technique-traditionnelle)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to Test and Play with Web APIs the Easy Way with Postman ». Free Code Camp. [https://www.freecodecamp.org/news/how-to-test-and-play-with-web-apis-the-easy-way-with-postman](https://www.freecodecamp.org/news/how-to-test-and-play-with-web-apis-the-easy-way-with-postman/)
+    « How to Test and Play with Web APIs the Easy Way with Postman ». Free Code Camp. [https://www.freecodecamp.org/news/how-to-test-and-play-with-web-apis-the-easy-way-with-postman](https://www.freecodecamp.org/news/how-to-test-and-play-with-web-apis-the-easy-way-with-postman/)
 
-« Debug a PHP HTTP request ». phpStorm. <https://www.jetbrains.com/help/phpstorm/debugging-a-php-http-request.html#create_http_request_debug_config>
+    « Debug a PHP HTTP request ». phpStorm. <https://www.jetbrains.com/help/phpstorm/debugging-a-php-http-request.html#create_http_request_debug_config>
 
 ## Synchronisation dans les deux sens
 
@@ -749,8 +749,8 @@ En plus d'assurer que les données ne seront pas perdues en cas de problème ave
 
 Nous n'irons pas plus loin dans cette avenue car cette technique, qui nécessite un compte payant, dépasse ce qui est couvert dans cette formation.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Syncing SwiftData with iCloud: A Step-by-Step Guide to Setting Up Cloud Sync in Your SwiftUI App ». DevFright. <https://www.devfright.com/syncing-swiftdata-with-icloud-a-step-by-step-guide-to-setting-up-cloud-sync-in-your-swiftui-app/>
+    « Syncing SwiftData with iCloud: A Step-by-Step Guide to Setting Up Cloud Sync in Your SwiftUI App ». DevFright. <https://www.devfright.com/syncing-swiftdata-with-icloud-a-step-by-step-guide-to-setting-up-cloud-sync-in-your-swiftui-app/>
 
-« How to sync SwiftData with iCloud ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-sync-swiftdata-with-icloud>
+    « How to sync SwiftData with iCloud ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-sync-swiftdata-with-icloud>

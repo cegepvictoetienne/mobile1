@@ -94,11 +94,11 @@ Text(Date.now, style: .date)
 
 Selon les configurations de l'appareil mobile, ceci afficher une date du genre 11 avril 2026 ou April 11, 2026.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Getting Started with SwiftUI and Working with Text ». App Coda. <https://www.appcoda.com/learnswiftui/swiftui-text.html>
+    « Getting Started with SwiftUI and Working with Text ». App Coda. <https://www.appcoda.com/learnswiftui/swiftui-text.html>
 
-« Typography - Supporting Dynamic Type ». Apple Developer. <https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type>
+    « Typography - Supporting Dynamic Type ». Apple Developer. <https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type>
 
 ## Button
 
@@ -381,11 +381,11 @@ Button(action: {
 | Sans disabled | Avec disabled |
 | Bouton activé | Bouton désactivé |
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Button ». Apple. <https://developer.apple.com/documentation/swiftui/button>
+    « Button ». Apple. <https://developer.apple.com/documentation/swiftui/button>
 
-« Mastering SwiftUI Buttons: How to Create and Customise Button ». SwiftyPlace. <https://www.swiftyplace.com/blog/mastering-swiftui-buttons-a-comprehensive-guide-to-creating-and-customizing-buttons>
+    « Mastering SwiftUI Buttons: How to Create and Customise Button ». SwiftyPlace. <https://www.swiftyplace.com/blog/mastering-swiftui-buttons-a-comprehensive-guide-to-creating-and-customizing-buttons>
 
 ## Link
 
@@ -653,13 +653,13 @@ VStack {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Alerts ». Apple developer. <https://developer.apple.com/design/human-interface-guidelines/alerts>
+    « Alerts ». Apple developer. <https://developer.apple.com/design/human-interface-guidelines/alerts>
 
-« alert(_:isPresented:presenting:actions:message:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)-8584l>
+    « alert(_:isPresented:presenting:actions:message:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)-8584l>
 
-« iOS 15 Alerts in SwiftUI ». YouTube - Stewart Lynch . <https://www.youtube.com/watch?v=NC_c7WfSRTk>
+    « iOS 15 Alerts in SwiftUI ». YouTube - Stewart Lynch . <https://www.youtube.com/watch?v=NC_c7WfSRTk>
 
 ## Demander une confirmation avec .confirmationDialog()
 
@@ -957,15 +957,15 @@ VStack(alignment: .leading) {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Plan Your Layout Hierarchy ». Apple. <https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views>
+    « Plan Your Layout Hierarchy ». Apple. <https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views>
 
-« Working with Stacks in SwiftUI ». Learn app making. <https://learnappmaking.com/stacks-vstack-hstack-swiftui-how-to/>
+    « Working with Stacks in SwiftUI ». Learn app making. <https://learnappmaking.com/stacks-vstack-hstack-swiftui-how-to/>
 
-« Adjusting the space between views ». Apple. <https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views>
+    « Adjusting the space between views ». Apple. <https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views>
 
-« SwiftUI Tutorial: Layout Tools ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe>
+    « SwiftUI Tutorial: Layout Tools ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe>
 
 ## List
 
@@ -1356,15 +1356,15 @@ Le visuel est très sommaire mais il permet d'illustrer l'importance de `.button
 
 ![Deux boutons de large dans List](../32-les-listes/images/SwiftUI-DeuxBoutonsDansList.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI - Dynamic List & Identifiable ». Medium. <https://medium.com/flawless-app-stories/swiftui-dynamic-list-identifiable-73c56215f9ff>
+    « SwiftUI - Dynamic List & Identifiable ». Medium. <https://medium.com/flawless-app-stories/swiftui-dynamic-list-identifiable-73c56215f9ff>
 
-« What is the difference between List and ForEach in SwiftUI? ». Stack Overflow. <https://stackoverflow.com/questions/56535326/what-is-the-difference-between-list-and-foreach-in-swiftui>
+    « What is the difference between List and ForEach in SwiftUI? ». Stack Overflow. <https://stackoverflow.com/questions/56535326/what-is-the-difference-between-list-and-foreach-in-swiftui>
 
-« Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
+    « Why does \.self work for ForEach? ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach>
 
-« How to conform to the Hashable protocol ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/language/how-to-conform-to-the-hashable-protocol>
+    « How to conform to the Hashable protocol ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/language/how-to-conform-to-the-hashable-protocol>
 
 ## Grid et LazyVGrid
 
@@ -1444,9 +1444,9 @@ LazyVGrid(columns: [
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to position views in a grid using LazyVGrid and LazyHGrid ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-position-views-in-a-grid-using-lazyvgrid-and-lazyhgrid>
+    « How to position views in a grid using LazyVGrid and LazyHGrid ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-position-views-in-a-grid-using-lazyvgrid-and-lazyhgrid>
 
 ## ContentUnavailableView
 

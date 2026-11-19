@@ -23,13 +23,13 @@ Voici une liste non exhaustive des informations disponibles grâce aux capteurs 
 
 Notez que le iPhone a un capteur de température mais il ne permet pas de mesurer la température ambiante. Il sert à réagir si le téléphone devient trop chaud ou trop froid.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Core Motion ». Apple. <https://developer.apple.com/documentation/coremotion>
+    « Core Motion ». Apple. <https://developer.apple.com/documentation/coremotion>
 
-« Learn How to Create iOS Apps - Core Motion ». DevFright. <https://www.devfright.com/category/core-motion/>
+    « Learn How to Create iOS Apps - Core Motion ». DevFright. <https://www.devfright.com/category/core-motion/>
 
-« Getting Processed Device-Motion Data ». Apple. <https://developer.apple.com/documentation/coremotion/getting_processed_device-motion_data>
+    « Getting Processed Device-Motion Data ». Apple. <https://developer.apple.com/documentation/coremotion/getting_processed_device-motion_data>
 
 ## L'orientation du téléphone (attitude)
 
@@ -75,9 +75,9 @@ Sur le site, de React Native Animated (je sais, on n'utilise pas ici cette bibli
 
 Attention cependant : le sens du lacet (**yaw**) pourrait être différent de celui utilisé par iOS.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Axes de rotation d'un aéronef ». Wikipédia. <https://fr.wikipedia.org/wiki/Axes_de_rotation_d%27un_a%C3%A9ronef>
+    « Axes de rotation d'un aéronef ». Wikipédia. <https://fr.wikipedia.org/wiki/Axes_de_rotation_d%27un_a%C3%A9ronef>
 
 ## Travailler avec l'attitude (tangage, roulis, lacet))
 

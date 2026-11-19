@@ -27,9 +27,9 @@ NavigationLink(destination: VueDetail(description: "Item XYZ", inventaire: 36)) 
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« View Communication Patterns in SwiftUI ». Vadim Bulavin. <https://www.vadimbulavin.com/passing-data-between-swiftui-views/>
+    « View Communication Patterns in SwiftUI ». Vadim Bulavin. <https://www.vadimbulavin.com/passing-data-between-swiftui-views/>
 
 ## De la vue enfant vers la vue parent (@Binding et @Bindable))
 
@@ -148,11 +148,11 @@ struct VueEnfant: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Managing Data Flow in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2019/07/03/managing-data-flow-in-swiftui/>
+    « Managing Data Flow in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2019/07/03/managing-data-flow-in-swiftui/>
 
-«  What's the difference between @Bindable and @Binding?  ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/whats-the-difference-between-bindable-and-binding>
+    «  What's the difference between @Bindable and @Binding?  ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/whats-the-difference-between-bindable-and-binding>
 
 ## Variables globales (@Environment et @EnvironmentObject)
 
@@ -212,10 +212,10 @@ struct VueSelection: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to use @EnvironmentObject to share data between views ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-environmentobject-to-share-data-between-views>
+    « How to use @EnvironmentObject to share data between views ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-environmentobject-to-share-data-between-views>
 
-« The power of Environment in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2019/08/21/the-power-of-environment-in-swiftui/>
+    « The power of Environment in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2019/08/21/the-power-of-environment-in-swiftui/>
 
-« @EnvironmentObject explained for sharing data between views in SwiftUI ». SwiftLee. <https://www.avanderlee.com/swiftui/environmentobject/>
+    « @EnvironmentObject explained for sharing data between views in SwiftUI ». SwiftLee. <https://www.avanderlee.com/swiftui/environmentobject/>

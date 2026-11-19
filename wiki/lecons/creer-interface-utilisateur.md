@@ -4,11 +4,11 @@
 - utiliser des contrôles conçus pour les écrans tactiles.
 - les éléments cliquables doivent suffisamment éloignés des autres éléments pour qu'il soit facile de les atteindre avec un doigt.
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« UI Design Dos and Don’ts ». Apple. <https://developer.apple.com/design/tips/>
+    « UI Design Dos and Don’ts ». Apple. <https://developer.apple.com/design/tips/>
 
-# Les vues
+## Les vues
 
 Dans SwiftUI, tout ce qui apparaît à l'écran est une vue. En fait, les éléments visuels tels que `Text()` ou `Image()` sont des vues puisqu'il s'agit de structures qui répondent au protocole `View`.
 
@@ -39,13 +39,13 @@ Important :
 - Le nom d'une vue doit respecter **LaCassePascal**.   
 - Toutes les vues vont dans un dossier nommé `Views`.  
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« View fondamentals ». Apple. <https://developer.apple.com/documentation/swiftui/view-fundamentals>
+    « View fondamentals ». Apple. <https://developer.apple.com/documentation/swiftui/view-fundamentals>
 
-« Your First iOS and SwiftUI App: An App From Scratch (tutoriel vidéo) ». Ray Wenderlich - Kodeco. <https://www.kodeco.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch>
+    « Your First iOS and SwiftUI App: An App From Scratch (tutoriel vidéo) ». Ray Wenderlich - Kodeco. <https://www.kodeco.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch>
 
-# Les modifieurs
+## Les modifieurs
 
 Les modifieurs permettent de définir certains aspects de l'apparence d'une vue.
 
@@ -56,7 +56,7 @@ Text("Hello, world!")
   .padding()
 ```
 
-## Liste des modifieurs
+### Liste des modifieurs
 
 - <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>L</kbd> : Affiche la bibliothèque d'objets  
 - 2e icône : les modifieurs  
@@ -64,7 +64,7 @@ Text("Hello, world!")
 
 ![Modifieurs](images/Xcode-Modifiers.webp)
 
-## Paramètres, types prédéfinis et types dynamiques
+### Paramètres, types prédéfinis et types dynamiques
 
 !!! important  
     À chaque fois qu'il est possible d'utiliser une valeur prédéfinie, il est préférable de l'utiliser plutôt que d'entrer un nombre. 
@@ -77,7 +77,7 @@ Pour connaître ces valeurs possibles des paramètres :
 
 ![Autocomplete](images/Xcode-Autocomplete.webp)
 
-## Types dynamiques
+### Types dynamiques
 
 Pour la taille du texte, il est conseillé d'utiliser un type dynamique, c'est-à-dire un mot qui représente une taille qui sera automatiquement ajustée selon le réglage de taille de police choisi par l’usager sur son appareil.
 
@@ -86,7 +86,7 @@ Text("Hello, world!")
   .font(.body)
 ```
 
-## Enchaînements
+### Enchaînements
 
 Chaque modifieur retourne une instance d'une vue. Ceci nous permet d'enchaîner plusieurs modifieurs d'affilée.
 
@@ -124,7 +124,7 @@ Text("Hello, world!")
 
 ![Second résultat](images/Xcode-ModifiersOrdre2.png)
 
-## Type entrant et type sortant
+### Type entrant et type sortant
 
 En général, un modifieur retourne le même type pour lequel il fonctionne. 
 
@@ -140,7 +140,7 @@ Si l'ordre n'est pas le bon, vous obtiendrez un message du genre « Value of typ
 
 ![No member bold](images/Xcode-ValueOfTypeSomeViewHasNoMemberBold.png)
 
-## Retrouver le type retourné par un modifieur
+### Retrouver le type retourné par un modifieur
 
 Pour connaître le type sortant des modifieurs directement dans Xcode :  
   
@@ -149,11 +149,11 @@ Pour connaître le type sortant des modifieurs directement dans Xcode :
 
   ![Type de retour du padding](images/Xcode-TypeRetourPadding.png)
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« Configuring Views ». Apple. <https://developer.apple.com/documentation/swiftui/configuring-views>
+    « Configuring Views ». Apple. <https://developer.apple.com/documentation/swiftui/configuring-views>
 
-# Les contrôles d'empilement (VStack, HStack, ZStack)
+## Les contrôles d'empilement (VStack, HStack, ZStack)
 
 Si une vue contient plusieurs vues, par exemple deux vues de type Text, elles doivent être placées dans une vue invisible qu'on appellera **contrôle d'empilement** (**stack**).
 
@@ -174,9 +174,9 @@ VStack {
  }
 ```
 
-![VStack](images/Swift-VStack.png)
+![VStack](images/Swift-VStack.webp){width=300}
 
-## Paramètres des contrôles d'empilement
+### Paramètres des contrôles d'empilement
 
 - Pour forcer un espacement entre les éléments d'un VStack :  
 
@@ -194,17 +194,17 @@ VStack(alignment: .leading) {
 }
 ```
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« Plan Your Layout Hierarchy ». Apple. <https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views>
+    « Plan Your Layout Hierarchy ». Apple. <https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views>
 
-« Working with Stacks in SwiftUI ». Learn app making. <https://learnappmaking.com/stacks-vstack-hstack-swiftui-how-to/>
+    « Working with Stacks in SwiftUI ». Learn app making. <https://learnappmaking.com/stacks-vstack-hstack-swiftui-how-to/>
 
-« Adjusting the space between views ». Apple. <https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views>
+    « Adjusting the space between views ». Apple. <https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views>
 
-« SwiftUI Tutorial: Layout Tools ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe>
+    « SwiftUI Tutorial: Layout Tools ». Karin Prater. <https://karinprater.medium.com/swiftui-tutorial-layout-tools-211b9663befe>
 
-# Les espaceurs (Spacer)
+## Les espaceurs (Spacer)
 
 Un Spacer() ajoute de l'espace automatiquement avant, après ou entre des vues afin de remplir l'écran.
 
@@ -223,7 +223,7 @@ VStack {
 
 Dans cet exemple, les modifieurs `padding()` assurent que le contrôle ne soit pas collé au bord de l'écran et le `Spacer()` ajoute l'espace requis entre les deux vues pour remplir l'écran en hauteur.
 
-![Spacer()](images/Swift-Spacer.png)
+![Spacer()](images/Swift-Spacer.webp){width=300}
 
 Il est possible d'appliquer des modifieurs à un `Spacer()` pour contrôler sa taille et son apparence.
 
@@ -239,11 +239,17 @@ VStack {
 }
 ```
 
-![Spacer avec Frame](images/Swift-SpacerFrame.png)
+![Spacer avec Frame](images/Swift-SpacerFrame.webp){width=300}
 
-# Les formes et le dessin
+## Les formes et le dessin
 
-SwiftUI propose quelques formes prédéfinies : Rectangle, RoundedRectangle, Capsule, Ellipse, Circle.
+Quelques formes prédéfinies :   
+
+- Rectangle  
+- RoundedRectangle  
+- Capsule  
+- Ellipse  
+- Circle  
 
 Voici quelques exemples d'utilisation.
 
@@ -269,6 +275,6 @@ HStack {
 
 ![Rectangle avec frame](images/SwiftUI-RectangleAvecFrame.png)
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI’s built-in shapes ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/swiftuis-built-in-shapes>
+    « SwiftUI’s built-in shapes ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/swiftuis-built-in-shapes>

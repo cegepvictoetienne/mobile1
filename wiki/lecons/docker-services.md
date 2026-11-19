@@ -88,6 +88,6 @@ def index():
 
 Pour voir le résultat, entrer l'adresse `http://127.0.0.1:5000` dans un navigateur.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Manage data in Docker ». Docker. <https://docs.docker.com/storage/>
+    « Manage data in Docker ». Docker. <https://docs.docker.com/storage/>

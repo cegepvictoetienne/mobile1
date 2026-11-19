@@ -104,9 +104,9 @@ Form {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Creating Forms in SwiftUI ». SerialCoder.dev. <https://serialcoder.dev/text-tutorials/swiftui/creating-forms-in-swiftui/>
+    « Creating Forms in SwiftUI ». SerialCoder.dev. <https://serialcoder.dev/text-tutorials/swiftui/creating-forms-in-swiftui/>
 
 ## TextField
 
@@ -303,15 +303,15 @@ TextField("Code:", text: $code)
   }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« TextField in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/02/26/textfield-in-swiftui/>
+    « TextField in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/02/26/textfield-in-swiftui/>
 
-« TextField in SwiftUI ». Stefan Blos. <https://stefanblos.com/posts/textfield-in-swiftui/>
+    « TextField in SwiftUI ». Stefan Blos. <https://stefanblos.com/posts/textfield-in-swiftui/>
 
-« Custom TextField in SwiftUI ». The Happy Programmer. <https://thehappyprogrammer.com/custom-textfield-in-swiftui>
+    « Custom TextField in SwiftUI ». The Happy Programmer. <https://thehappyprogrammer.com/custom-textfield-in-swiftui>
 
-« SwiftUI Form tutorial for beginners ». Programming with Swift. <https://programmingwithswift.com/swiftui-form-beginners-guide/>
+    « SwiftUI Form tutorial for beginners ». Programming with Swift. <https://programmingwithswift.com/swiftui-form-beginners-guide/>
 
 ## TextEditor
 
@@ -851,9 +851,9 @@ struct ContentView: View {
 
 ![Toggle](images/SwiftUI-Toggle.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to Use Toggle in SwiftUI ». Waldo. <https://www.waldo.com/blog/swiftui-toggle>
+    « How to Use Toggle in SwiftUI ». Waldo. <https://www.waldo.com/blog/swiftui-toggle>
 
 ## Stepper
 
@@ -1254,12 +1254,12 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Advanced SwiftUI TextField: Formatting and Validation ». Fatbobman's blog. <https://fatbobman.com/en/posts/textfield-1/>
+    « Advanced SwiftUI TextField: Formatting and Validation ». Fatbobman's blog. <https://fatbobman.com/en/posts/textfield-1/>
 
-« How to validate TextFields in SwiftUI like a Pro ». Medium. <https://medium.com/@mhmtkrnlk/how-to-validate-textfields-in-swiftui-like-a-pro-3dbe368d1570>
+    « How to validate TextFields in SwiftUI like a Pro ». Medium. <https://medium.com/@mhmtkrnlk/how-to-validate-textfields-in-swiftui-like-a-pro-3dbe368d1570>
 
-« A Data Validation Solution Utilizing Swift Property Wrappers and SwiftUI View Extensions ». Medium. <https://betterprogramming.pub/a-data-validation-solution-utilizing-swift-property-wrappers-and-swiftui-view-extensions-ae2db2209a32>
+    « A Data Validation Solution Utilizing Swift Property Wrappers and SwiftUI View Extensions ». Medium. <https://betterprogramming.pub/a-data-validation-solution-utilizing-swift-property-wrappers-and-swiftui-view-extensions-ae2db2209a32>
 
-« Field Validation and MVVM in SwiftUI ». YouTube - Stewart Lynch. <https://www.youtube.com/watch?v=7oMlz-pMSAI>
+    « Field Validation and MVVM in SwiftUI ». YouTube - Stewart Lynch. <https://www.youtube.com/watch?v=7oMlz-pMSAI>

@@ -118,8 +118,8 @@ Néanmoins, une fois le fichier localisé, il est intéressanat de l'ouvrir dans
 
 1. « UserDefaults ». Apple. <https://developer.apple.com/documentation/foundation/userdefaults>
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Change macOS user preferences via command line ». pawelgrzybek.com. <https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/>
+    « Change macOS user preferences via command line ». pawelgrzybek.com. <https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/>
 
-« How To Change Preferences From The Command Line On MacOS? ». Shell Tips!. <https://www.shell-tips.com/mac/defaults/>
+    « How To Change Preferences From The Command Line On MacOS? ». Shell Tips!. <https://www.shell-tips.com/mac/defaults/>

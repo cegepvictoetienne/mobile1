@@ -79,9 +79,9 @@ Notez que l'utilisation que vous faites de votre outil d'IA dans votre éditeur 
 
 1. « Setting up coding intelligence ». Apple Developer. [https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence](https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence#:~:text=the%20product%20can%20share%20your%20project%20files%20and%20other%20information%20with%20their%20model)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Setting up coding intelligence ». Apple Developer. <https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence>
+    « Setting up coding intelligence ». Apple Developer. <https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence>
 
 ## Désactiver les outils d'assistance au codage
 

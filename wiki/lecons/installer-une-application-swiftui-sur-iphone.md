@@ -133,6 +133,6 @@ Pour savoir si Xcode reconnaît le iPhone sans câble :
 
 ![Appareils connectés](images/Xcode-AppareilsConnectes.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Install iOS apps from outside the App Store ». 7 Labs. <https://7labs.io/mobile/iphone/install-apps-without-app-store.html>
+    « Install iOS apps from outside the App Store ». 7 Labs. <https://7labs.io/mobile/iphone/install-apps-without-app-store.html>

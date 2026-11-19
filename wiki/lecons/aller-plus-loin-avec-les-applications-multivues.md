@@ -106,11 +106,11 @@ struct ToolbarVuesEnfant: ToolbarContent {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI NavigationStack: Revolution of nested navigation with SwiftUI  ». Medium. <https://medium.com/@mdyamin/navigationstack-revolution-of-nested-navigation-with-swiftui-7a00782b974b>
+    « SwiftUI NavigationStack: Revolution of nested navigation with SwiftUI  ». Medium. <https://medium.com/@mdyamin/navigationstack-revolution-of-nested-navigation-with-swiftui-7a00782b974b>
 
-« Reverse Engineering SwiftUI’s NavigationPath Codability ». Point free. <https://www.pointfree.co/blog/posts/78-reverse-engineering-swiftui-s-navigationpath-codability>
+    « Reverse Engineering SwiftUI’s NavigationPath Codability ». Point free. <https://www.pointfree.co/blog/posts/78-reverse-engineering-swiftui-s-navigationpath-codability>
 
 ## Action au toucher d'un NavigationLink en plus du changement de vue
 
@@ -194,13 +194,13 @@ La petite zone grise dans le haut apparaît automatiquement. Elle a pour but de 
 
 ![Sheet](images/SwiftUI-Sheet.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« sheet(isPresented:onDismiss:content:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)>
+    « sheet(isPresented:onDismiss:content:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)>
 
-« SwiftUI Sheet Explained: Modal Views for iOS Apps ». BugFender. <https://bugfender.com/blog/swiftui-sheet/>
+    « SwiftUI Sheet Explained: Modal Views for iOS Apps ». BugFender. <https://bugfender.com/blog/swiftui-sheet/>
 
-« SwiftUI Sheet: Modal, Bottom, and full screen presentation in iOS ». Swifty Place. <https://www.swiftyplace.com/blog/swiftui-sheets-modals-bottom-sheets-fullscreen-presentation-in-ios>
+    « SwiftUI Sheet: Modal, Bottom, and full screen presentation in iOS ». Swifty Place. <https://www.swiftyplace.com/blog/swiftui-sheets-modals-bottom-sheets-fullscreen-presentation-in-ios>
 
 ## TabView
 
@@ -260,6 +260,6 @@ struct ContentView: View {
 
 ![TabView](images/SwiftUI-TabView.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI Tabview Tutorial: How to Customize the Tab Bar ». Swifty Place. <a href="https://www.swiftyplace.com/blog/tabview-in-swiftui-styling-navigation-and-more" target="_blank" rel="nofollow
+    « SwiftUI Tabview Tutorial: How to Customize the Tab Bar ». Swifty Place. <a href="https://www.swiftyplace.com/blog/tabview-in-swiftui-styling-navigation-and-more" target="_blank" rel="nofollow

@@ -151,17 +151,17 @@ Si vous obtenez l'erreur « Thread 1: Fatal error: Observation Registrar was not
 
 En effet, il semble y avoir un conflit entre le protocole `CustomReflectable` et le mécanisme d'observation utilisé par SwiftData.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Adding and editing persistent data in your app ». Apple. <https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app/>
+    « Adding and editing persistent data in your app ». Apple. <https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app/>
 
-« Deleting persistent data from your app ». Apple. <https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app>
+    « Deleting persistent data from your app ». Apple. <https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app>
 
-« Creating, editing, and deleting model objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/creating-editing-and-deleting-model-objects>
+    « Creating, editing, and deleting model objects ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/creating-editing-and-deleting-model-objects>
 
-«  When does SwiftData autosave data?  ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/when-does-swiftdata-autosave-data>
+    «  When does SwiftData autosave data?  ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/when-does-swiftdata-autosave-data>
 
-« How to save a SwiftData object ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-save-a-swiftdata-object>
+    « How to save a SwiftData object ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-save-a-swiftdata-object>
 
 ## Insérer ou supprimer des données d'une table enfant
 

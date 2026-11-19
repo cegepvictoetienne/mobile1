@@ -4,13 +4,13 @@
 
 ...
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to let users select pictures using PhotosPicker ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-select-pictures-using-photospicker>
+    « How to let users select pictures using PhotosPicker ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-select-pictures-using-photospicker>
 
-« The Complete Guide to PHPicker API in iOS 14 ». AppCoda. <https://www.appcoda.com/phpicker/>
+    « The Complete Guide to PHPicker API in iOS 14 ». AppCoda. <https://www.appcoda.com/phpicker/>
 
-« PhotosPicker in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2023/04/25/photospicker-in-swiftui/>
+    « PhotosPicker in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2023/04/25/photospicker-in-swiftui/>
 
 ## Prendre une photo directement dans l'application
 
@@ -176,15 +176,15 @@ Notez que les termes `Cancel`, `Retake` et `Use Photo` n'apparaîtront pas dans 
 
 ![Boutons localisés](images/SwiftUI-Camera-BoutonsLocalises-1.png) ![Boutons localisés](images/SwiftUI-Camera-BoutonsLocalises-2.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Building A Lightweight Camera App In SwiftUI ». Medium. <https://itnext.io/building-a-lightweight-camera-app-in-swiftui-66db47b3537f>
+    « Building A Lightweight Camera App In SwiftUI ». Medium. <https://itnext.io/building-a-lightweight-camera-app-in-swiftui-66db47b3537f>
 
-« Capturing and Saving a Photo ». Apple. <https://developer.apple.com/tutorials/sample-apps/capturingphotos-captureandsave>
+    « Capturing and Saving a Photo ». Apple. <https://developer.apple.com/tutorials/sample-apps/capturingphotos-captureandsave>
 
-« Requesting authorization to capture and save media ». Apple. <https://developer.apple.com/documentation/avfoundation/capture_setup/requesting_authorization_to_capture_and_save_media>
+    « Requesting authorization to capture and save media ». Apple. <https://developer.apple.com/documentation/avfoundation/capture_setup/requesting_authorization_to_capture_and_save_media>
 
-« How to use UIViewController in SwiftUI ». Sarunw. <https://sarunw.com/posts/uiviewcontroller-in-swiftui/>
+    « How to use UIViewController in SwiftUI ». Sarunw. <https://sarunw.com/posts/uiviewcontroller-in-swiftui/>
 
 ## Personnaliser les boutons de la caméra
 
@@ -312,9 +312,9 @@ Et voilà le résultat!
 
 ![Caméra avec boutons personnalisés](images/SwiftUI-CameraAvecBoutonsPersonnalises.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Customized Camera in SwiftUI ». Medium. <https://medium.com/macoclock/customized-camera-in-swiftui-bd218d2407d9>
+    « Customized Camera in SwiftUI ». Medium. <https://medium.com/macoclock/customized-camera-in-swiftui-bd218d2407d9>
 
 ## Enregistrer et retrouver une image dans le système de fichiers du iPhone
 

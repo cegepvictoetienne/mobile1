@@ -54,19 +54,19 @@ Les bases de données SQLite sont locales, c'est-à-dire que leurs fichiers sont
 
 Si la base de données est utilisée par une application native, son fichier sera généralement stocké au même endroit que l'application, à moins que le développeur en ait décidé autrement.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SQLite ». Wikipédia. <https://fr.wikipedia.org/wiki/SQLite>
+    « SQLite ». Wikipédia. <https://fr.wikipedia.org/wiki/SQLite>
 
-« Appropriate Uses For SQLite ». SQLite. <https://sqlite.org/whentouse.html>
+    « Appropriate Uses For SQLite ». SQLite. <https://sqlite.org/whentouse.html>
 
-« SQLite Tutorial ». SQLite Tutorial. <http://www.sqlitetutorial.net/>
+    « SQLite Tutorial ». SQLite Tutorial. <http://www.sqlitetutorial.net/>
 
-« Distinctive Features Of SQLite ». SQLite. <https://www.sqlite.org/different.html>
+    « Distinctive Features Of SQLite ». SQLite. <https://www.sqlite.org/different.html>
 
-« Limits In SQLite ». SQLite. <https://sqlite.org/limits.html>
+    « Limits In SQLite ». SQLite. <https://sqlite.org/limits.html>
 
-« SQL Features That SQLite Does Not Implement ». SQLite. <https://www.sqlite.org/omitted.html>
+    « SQL Features That SQLite Does Not Implement ». SQLite. <https://www.sqlite.org/omitted.html>
 
 ## Installation de SQLite
 
@@ -145,6 +145,6 @@ Pour installer SQLite sous Windows :
   .exit
   ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SQLite - Installation ». Tutorial points. <https://www.tutorialspoint.com/sqlite/sqlite_installation.htm>
+    « SQLite - Installation ». Tutorial points. <https://www.tutorialspoint.com/sqlite/sqlite_installation.htm>

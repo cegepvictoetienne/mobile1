@@ -41,9 +41,9 @@ Pour éviter un telle situation, je vous partage ici une technique qui ne créer
 - Placez votre base de données dans le dossier `dev`.
 - Lors de l'ajout du fichier dans le projet, la case **Copy items if needed** ne changera rien, qu'elle soit cochée ou non, puisque le fichier fait partie du dossier du projet. Xcode effectuera une copie du fichier seulement lors de la création du paquet.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How To Add Resource Files Into Xcode Project And iOS App ». https://www.dev2qa.com/. <https://www.dev2qa.com/how-to-add-resource-files-into-xcode-project-and-ios-app/>
+    « How To Add Resource Files Into Xcode Project And iOS App ». https://www.dev2qa.com/. <https://www.dev2qa.com/how-to-add-resource-files-into-xcode-project-and-ios-app/>
 
 ## Quels fichiers sont inclus dans le paquet?
 

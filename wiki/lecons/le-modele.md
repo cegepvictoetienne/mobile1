@@ -149,6 +149,6 @@ La valeur générée consiste en 26 caractères alphanumériques. Les 10 premier
 
 Ex : 01JORG0BTY377EV0YM7BGEPKX1
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« UUID vs ULID, How ULID improves write speeds ». Maingi Samuel. <https://medium.com/@sammaingi5/uuid-vs-ulid-how-ulid-improves-write-speeds-d16b23505458>
+    « UUID vs ULID, How ULID improves write speeds ». Maingi Samuel. <https://medium.com/@sammaingi5/uuid-vs-ulid-how-ulid-improves-write-speeds-d16b23505458>

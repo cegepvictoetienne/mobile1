@@ -19,24 +19,24 @@ var body: some View {
 } // fin body
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Mastering ScrollView in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/09/24/mastering-scrollview-in-swiftui/>
+    « Mastering ScrollView in SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/09/24/mastering-scrollview-in-swiftui/>
 
 ## Défilement infini (infinite scroll)
 
 Information à venir...
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« mplementing an infinite scrolling list with SwiftUI and Combine ». Donny Wals. <https://www.donnywals.com/implementing-an-infinite-scrolling-list-with-swiftui-and-combine/>
+    « mplementing an infinite scrolling list with SwiftUI and Combine ». Donny Wals. <https://www.donnywals.com/implementing-an-infinite-scrolling-list-with-swiftui-and-combine/>
 
 ## LazyVStack et LazyHStack
 
 Information à venir...
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How ScrollView lets us work with scrolling data ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/how-scrollview-lets-us-work-with-scrolling-data>
+    « How ScrollView lets us work with scrolling data ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/how-scrollview-lets-us-work-with-scrolling-data>
 
-« https://www.gfrigerio.com/lazy-loading-in-swiftui/ ». Gualtiero Frigerio. <https://www.gfrigerio.com/lazy-loading-in-swiftui/>
+    « https://www.gfrigerio.com/lazy-loading-in-swiftui/ ». Gualtiero Frigerio. <https://www.gfrigerio.com/lazy-loading-in-swiftui/>

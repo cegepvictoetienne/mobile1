@@ -153,17 +153,17 @@ struct ContentView: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Configuring your app to use location services ». Apple. <https://developer.apple.com/documentation/corelocation/configuring_your_app_to_use_location_services>
+    « Configuring your app to use location services ». Apple. <https://developer.apple.com/documentation/corelocation/configuring_your_app_to_use_location_services>
 
-« Getting the current location of a device ». Apple. <https://developer.apple.com/documentation/corelocation/getting_the_current_location_of_a_device>
+    « Getting the current location of a device ». Apple. <https://developer.apple.com/documentation/corelocation/getting_the_current_location_of_a_device>
 
-« Using CoreLocation With SwiftUI ». Andy Ibanez. <https://www.andyibanez.com/posts/using-corelocation-with-swiftui/>
+    « Using CoreLocation With SwiftUI ». Andy Ibanez. <https://www.andyibanez.com/posts/using-corelocation-with-swiftui/>
 
-« Core Location Tutorial for iOS: Tracking Visited Locations ». Kodeco. <https://www.kodeco.com/5247-core-location-tutorial-for-ios-tracking-visited-locations>
+    « Core Location Tutorial for iOS: Tracking Visited Locations ». Kodeco. <https://www.kodeco.com/5247-core-location-tutorial-for-ios-tracking-visited-locations>
 
-« Get current location using Core Location (Tutorial) ». fluffy.es. <https://fluffy.es/current-location/>
+    « Get current location using Core Location (Tutorial) ». fluffy.es. <https://fluffy.es/current-location/>
 
 ## Avoir accès aux coordonnées de localisation en tout temps
 
@@ -236,11 +236,11 @@ S'il accorde cette permission, il verra ensuite la boîte de dialogue qui demand
 
 ![Permission lorsque l'app est active](images/SwiftUI-AutoriserMonApplicationAUtiliserVosDonneesDeLocalisationEnToutTemps-1.png) ![Permission en tout temps](images/SwiftUI-AutoriserMonApplicationAUtiliserVosDonneesDeLocalisationEnToutTemps-2.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Handling location updates in the background ». Apple. <https://developer.apple.com/documentation/corelocation/handling_location_updates_in_the_background>
+    « Handling location updates in the background ». Apple. <https://developer.apple.com/documentation/corelocation/handling_location_updates_in_the_background>
 
-« Location Permission in iOS 13 - How to request properly “Always Allow” permission ». Medium. <https://medium.com/swlh/location-permission-in-ios-13-f9e10917c05e>
+    « Location Permission in iOS 13 - How to request properly “Always Allow” permission ». Medium. <https://medium.com/swlh/location-permission-in-ios-13-f9e10917c05e>
 
 ## Utiliser MapKit pour afficher une carte avec la position actuelle
 
@@ -291,11 +291,11 @@ struct ContentView: View {
 
 ![Afficher position actuelle](images/SwiftUI-MapKit-AfficherPositionActuelle.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Using MapKit with SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/07/29/using-mapkit-with-swiftui/>
+    « Using MapKit with SwiftUI ». Swift with Majid. <https://swiftwithmajid.com/2020/07/29/using-mapkit-with-swiftui/>
 
-« SwiftUI MapKit: How to display a map and show a location ». Code with Chris. <https://codewithchris.com/swiftui-mapkit/>
+    « SwiftUI MapKit: How to display a map and show a location ». Code with Chris. <https://codewithchris.com/swiftui-mapkit/>
 
 ## Utiliser MapKit pour afficher une carte avec des marqueurs
 
@@ -384,8 +384,8 @@ Remarquez le petit icône bleu qui apparaît à côté de l'heure pour indiquer 
 
 ![MapMarkers et position actuelle](images/SwiftUI-MapMarkerEtPositionActuelle.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Exploring SwiftUI map custom annotations ». Kristaps Grinbergs. <https://kristaps.me/blog/swiftui-map-annotations/>
+    « Exploring SwiftUI map custom annotations ». Kristaps Grinbergs. <https://kristaps.me/blog/swiftui-map-annotations/>
 
-« SwiftUI: Add MapMarkers With LongPressGesture — Part 1 ». Medium. <https://medium.com/@alessandromanilii/swiftui-add-mapmarkers-with-longpressgesture-part-1-31f55a87bef8>
+    « SwiftUI: Add MapMarkers With LongPressGesture — Part 1 ». Medium. <https://medium.com/@alessandromanilii/swiftui-add-mapmarkers-with-longpressgesture-part-1-31f55a87bef8>

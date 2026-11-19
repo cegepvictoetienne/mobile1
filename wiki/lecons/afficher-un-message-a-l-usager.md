@@ -213,10 +213,10 @@ VStack {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Alerts ». Apple developer. <https://developer.apple.com/design/human-interface-guidelines/alerts>
+    « Alerts ». Apple developer. <https://developer.apple.com/design/human-interface-guidelines/alerts>
 
-« alert(_:isPresented:presenting:actions:message:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)-8584l>
+    « alert(_:isPresented:presenting:actions:message:) ». Apple. <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)-8584l>
 
-« iOS 15 Alerts in SwiftUI ». YouTube - Stewart Lynch . <https://www.youtube.com/watch?v=NC_c7WfSRTk>
+    « iOS 15 Alerts in SwiftUI ». YouTube - Stewart Lynch . <https://www.youtube.com/watch?v=NC_c7WfSRTk>

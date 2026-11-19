@@ -106,17 +106,17 @@ Dans l'application Swift, les données décodées prendront cette forme :
 ]
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Encoding and Decoding Custom Types ». Apple. <https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types>
+    « Encoding and Decoding Custom Types ». Apple. <https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types>
 
-« Complete Guide to Codable — Decodable ». Medium - Flawless iOS. <https://medium.com/flawless-app-stories/complete-guide-to-codable-decodable-b1ff696da24f>
+    « Complete Guide to Codable — Decodable ». Medium - Flawless iOS. <https://medium.com/flawless-app-stories/complete-guide-to-codable-decodable-b1ff696da24f>
 
-«  SOLVED: Decoding JSON data - Error response  ». Hacking with Swift. <https://www.hackingwithswift.com/forums/swiftui/decoding-json-data/3024>
+    «  SOLVED: Decoding JSON data - Error response  ». Hacking with Swift. <https://www.hackingwithswift.com/forums/swiftui/decoding-json-data/3024>
 
-« Ultimate Guide to JSON Parsing with Swift ». Ben Scheirman. <https://benscheirman.com/2017/06/swift-json.html>
+    « Ultimate Guide to JSON Parsing with Swift ». Ben Scheirman. <https://benscheirman.com/2017/06/swift-json.html>
 
-« JSON Decoding in Swift with Codable: A Practical Guide ». Matteo Manferdini. <https://matteomanferdini.com/codable/>
+    « JSON Decoding in Swift with Codable: A Practical Guide ». Matteo Manferdini. <https://matteomanferdini.com/codable/>
 
 ## Rendre un modèle SwiftData encodable ou décodable
 
@@ -173,11 +173,11 @@ Ceci est réalisé à l'aide de ces étapes :
 
 Il est maintenant possible d'encoder en JSON des objets de la classe Item ou de décoder du JSON pour instancier des objets de cette classe.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to make SwiftData models conform to Codable ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-make-swiftdata-models-conform-to-codable>
+    « How to make SwiftData models conform to Codable ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-make-swiftdata-models-conform-to-codable>
 
-« Making your SwiftData models Codable ». Donny Wals. <https://www.donnywals.com/making-your-swiftdata-models-codable/>
+    « Making your SwiftData models Codable ». Donny Wals. <https://www.donnywals.com/making-your-swiftdata-models-codable/>
 
 ## Encodage et décodage avec des tables liées
 

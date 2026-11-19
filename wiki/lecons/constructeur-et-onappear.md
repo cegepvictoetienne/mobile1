@@ -96,8 +96,8 @@ func maFonction() {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI View Lifecycle ». vadimbulavin.com. <https://www.vadimbulavin.com/swiftui-view-lifecycle/>
+    « SwiftUI View Lifecycle ». vadimbulavin.com. <https://www.vadimbulavin.com/swiftui-view-lifecycle/>
 
-« Running Code Only Once in SwiftUI ». https://www.swiftjectivec.com/. <https://www.swiftjectivec.com/swiftui-run-code-only-once-versus-onappear-or-task/>
+    « Running Code Only Once in SwiftUI ». https://www.swiftjectivec.com/. <https://www.swiftjectivec.com/swiftui-run-code-only-once-versus-onappear-or-task/>

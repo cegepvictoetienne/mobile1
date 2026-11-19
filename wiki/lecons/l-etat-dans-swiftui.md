@@ -102,12 +102,12 @@ Button(action: {
 
 Dans cet exemple, la valeur de la variable d’état détermine si l’alerte est affichée ou non.
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftUI State (vidéo) ». Ray Wenderlich. <https://www.raywenderlich.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch/lessons/12>
+    « SwiftUI State (vidéo) ». Ray Wenderlich. <https://www.raywenderlich.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch/lessons/12>
 
-« Structure State ». Apple. <https://developer.apple.com/documentation/swiftui/state>
+    « Structure State ». Apple. <https://developer.apple.com/documentation/swiftui/state>
 
-« A guide to SwiftUI’s state management system ». Swift by Sundell. <https://www.swiftbysundell.com/articles/swiftui-state-management-guide/>
+    « A guide to SwiftUI’s state management system ». Swift by Sundell. <https://www.swiftbysundell.com/articles/swiftui-state-management-guide/>
 
-« Safely Updating The View State ». The SwiftUI Lab. <https://swiftui-lab.com/state-changes/>
+    « Safely Updating The View State ». The SwiftUI Lab. <https://swiftui-lab.com/state-changes/>

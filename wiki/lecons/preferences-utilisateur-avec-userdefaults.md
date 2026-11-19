@@ -62,8 +62,8 @@ Notez que dans cet extrait, l'opérateur `as?` indique que la valeur doit être 
 maValeur = UserDefaults.standard.object(forKey: "maCle") as? String ?? "clé maCle inexistante"
 ```
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« Swift Userdefaults 1/4 pour sauvegarder mais pas trop ». Medium. <https://medium.com/@luc.derosne/swift-userdefaults-1-4-pour-sauvegarder-mais-pas-trop-22d1cbe6f26>
+    « Swift Userdefaults 1/4 pour sauvegarder mais pas trop ». Medium. <https://medium.com/@luc.derosne/swift-userdefaults-1-4-pour-sauvegarder-mais-pas-trop-22d1cbe6f26>
 
-« The Advanced Guide to UserDefaults in Swift ». Yet Another Swift Blog. <https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/>
+    « The Advanced Guide to UserDefaults in Swift ». Yet Another Swift Blog. <https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/>

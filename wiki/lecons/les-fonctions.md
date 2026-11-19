@@ -48,9 +48,9 @@ func autreFonction(_ parametreNonNomme: String, parametreNomme: String) {
 autreFonction("blabla", parametreNomme: "Hello World!")
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Functions ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Functions.html>
+    « Functions ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Functions.html>
 
 ## Où déclarer les fonctions?
 
@@ -121,15 +121,15 @@ Quand une fonction est ainsi documentée, il est possible de voir cette document
 
 ![Documentation affichée dans le Quick Help](images/Xcode-DocumentationAfficheeDansQuickHelp.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Swift Documentation ». NSHipster. <https://nshipster.com/swift-documentation/>
+    « Swift Documentation ». NSHipster. <https://nshipster.com/swift-documentation/>
 
-« Documenting Your Swift Code in Xcode Using Markdown ». AppCoda. <https://www.appcoda.com/swift-markdown/>
+    « Documenting Your Swift Code in Xcode Using Markdown ». AppCoda. <https://www.appcoda.com/swift-markdown/>
 
-« Swift Documentation ». Sarunw. <https://sarunw.com/posts/swift-documentation/>
+    « Swift Documentation ». Sarunw. <https://sarunw.com/posts/swift-documentation/>
 
-« Formatting Your Documentation Content ». Swift.org. <https://www.swift.org/documentation/docc/formatting-your-documentation-content>
+    « Formatting Your Documentation Content ». Swift.org. <https://www.swift.org/documentation/docc/formatting-your-documentation-content>
 
 ## Passer un paramètre par référence
 
@@ -173,9 +173,9 @@ var body: some View {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Functions - In-Out Parameters ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID173>
+    « Functions - In-Out Parameters ». Swift. <https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID173>
 
 ## Ignorer la valeur de retour d'une fonction
 
@@ -187,9 +187,9 @@ Pour indiquer à Swift que vous désirez délibérément ignorer la valeur de re
 _ = maFonction()
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Useful Details About Underscore Keyword in Swift - Skip function invocation result ». Dmitri Pavlutin. <https://dmitripavlutin.com/useful-details-about-underscore-keyword-in-swift/#4-skip-function-invocation-result>
+    « Useful Details About Underscore Keyword in Swift - Skip function invocation result ». Dmitri Pavlutin. <https://dmitripavlutin.com/useful-details-about-underscore-keyword-in-swift/#4-skip-function-invocation-result>
 
 ## C'est quoi ces doublons?
 

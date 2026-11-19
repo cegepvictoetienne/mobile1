@@ -273,8 +273,8 @@ Rectangle()
 
 ![Rectangle avec UIScreen sur un iPhone 13 ProMax](images/SwiftUI-RectangleTailleUIScreen-iPhone13ProMax.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Layout ». Apple. <https://developer.apple.com/design/human-interface-guidelines/layout>
+    « Layout ». Apple. <https://developer.apple.com/design/human-interface-guidelines/layout>
 
-« Understanding frames and coordinates inside GeometryReader ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader>
+    « Understanding frames and coordinates inside GeometryReader ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader>

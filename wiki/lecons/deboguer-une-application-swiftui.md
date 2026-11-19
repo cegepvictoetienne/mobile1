@@ -93,9 +93,9 @@ Par exemple, si on a une instance de la classe `Item` nommée `item`,  l'instruc
   - titre: "Item 1"
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Swift's print(), debugPrint(), String(reflecting:), Mirror(reflecting:) and dump() ». swiftjectivec.com. <https://www.swiftjectivec.com/swift-debug-print-print-dump-mirror-reflection/>
+    « Swift's print(), debugPrint(), String(reflecting:), Mirror(reflecting:) and dump() ». swiftjectivec.com. <https://www.swiftjectivec.com/swift-debug-print-print-dump-mirror-reflection/>
 
 ## Afficher une variable dans le débogueur de Xcode
 
@@ -180,11 +180,11 @@ Si vous omettez la barre en bas alors qu'elle est requise, vous obtiendrez le me
 
 Notez que dans certains cas, la valeur de la variable d'état ne sera modifiée que lors du prochain rafraîchissement de l'écran.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« The complete guide to Debug Swift code with LLDB ». Andela. <https://andela.com/insights/the-complete-guide-to-debug-swift-code-with-lldb/>
+    « The complete guide to Debug Swift code with LLDB ». Andela. <https://andela.com/insights/the-complete-guide-to-debug-swift-code-with-lldb/>
 
-« Debugging Swift code with LLDB ». Ahmed Sulaiman. <https://medium.com/@ahmedsulaiman/debugging-swift-code-with-lldb-b30c5cf2fd49>
+    « Debugging Swift code with LLDB ». Ahmed Sulaiman. <https://medium.com/@ahmedsulaiman/debugging-swift-code-with-lldb-b30c5cf2fd49>
 
 ## Travailler avec un fichier journal (log)
 
@@ -312,11 +312,11 @@ log show --predicate 'subsystem == "com.apple.TimeMachine"' --info
 
 Si l'affichage est très long et que vous désirez l'arrêter, appuyez sur <kbd>⌃ Ctrl</kbd> + <kbd>C</kbd>.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« OSLog and Unified logging as recommended by Apple ». SwiftLee. <https://www.avanderlee.com/workflow/oslog-unified-logging/>
+    « OSLog and Unified logging as recommended by Apple ». SwiftLee. <https://www.avanderlee.com/workflow/oslog-unified-logging/>
 
-« The Simplest Swift Logging That Could Possibly Work ». Scalyr. <https://www.sentinelone.com/blog/getting-started-swift-logging>
+    « The Simplest Swift Logging That Could Possibly Work ». Scalyr. <https://www.sentinelone.com/blog/getting-started-swift-logging>
 
 ## Constante de débogage
 
@@ -338,9 +338,9 @@ Dans votre code, l'instruction `#if DEBUG` permettra de compiler un bloc de code
  #endif
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Statements - Conditional Compilation Block ». Swift. [https://docs.swift.org/swift-book/ReferenceManual/Statements.html](https://docs.swift.org/swift-book/ReferenceManual/Statements.html#:~:text=A conditional%20compilation%20block%20allows%20code%20to%20be%20conditionally%20compiled)
+    « Statements - Conditional Compilation Block ». Swift. [https://docs.swift.org/swift-book/ReferenceManual/Statements.html](https://docs.swift.org/swift-book/ReferenceManual/Statements.html#:~:text=A conditional%20compilation%20block%20allows%20code%20to%20be%20conditionally%20compiled)
 
 ## Self._printChanges
 
@@ -371,9 +371,9 @@ var body: some View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Debugging SwiftUI views: what caused that change? ». SwiftLee. <https://www.avanderlee.com/swiftui/debugging-swiftui-views/>
+    « Debugging SwiftUI views: what caused that change? ». SwiftLee. <https://www.avanderlee.com/swiftui/debugging-swiftui-views/>
 
 ## Déboguer une application sur le iPhone
 

@@ -14,17 +14,17 @@ Si vous devez développer des applications qui roulent sur une version antérieu
 
 Si vous désirez vous lancer avec SwiftData, poursuivez la lecture de ce chapitre!
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« SwiftData ». Apple. <https://developer.apple.com/xcode/swiftdata/>
+    « SwiftData ». Apple. <https://developer.apple.com/xcode/swiftdata/>
 
-« Framework SwiftData ». Apple. <https://developer.apple.com/documentation/swiftdata>
+    « Framework SwiftData ». Apple. <https://developer.apple.com/documentation/swiftdata>
 
-« SwiftData by Example ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/>
+    « SwiftData by Example ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/>
 
-« What is SwiftData? ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/what-is-swiftdata>
+    « What is SwiftData? ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/what-is-swiftdata>
 
-« Meet SwiftData ». Apple. <https://developer.apple.com/videos/play/wwdc2023/10187/>
+    « Meet SwiftData ». Apple. <https://developer.apple.com/videos/play/wwdc2023/10187/>
 
 ## Emplacement de la base de données SwiftData
 
@@ -110,9 +110,9 @@ Parmi les autres champs, notons :
 - Le champ Z_ENT fait référence à l'identifiant de la table que l'on retrouve dans Z_PRIMARYKEY.
 - Le champ Z_OPT indique le nombre de modifications qui ont été apportées aux données de l'enregistrement.
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How Core Data Saves Data in SQLite ». Fatbobman's blog. <https://fatbobman.com/en/posts/tables_and_fields_of_coredata/>
+    « How Core Data Saves Data in SQLite ». Fatbobman's blog. <https://fatbobman.com/en/posts/tables_and_fields_of_coredata/>
 
 ## Adapter le modèle et l'application pour SwiftData
 
@@ -249,11 +249,11 @@ struct MonProjetApp: App {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Defining a data model with SwiftData ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/defining-a-data-model-with-swiftdata>
+    « Defining a data model with SwiftData ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/defining-a-data-model-with-swiftdata>
 
-« Why are SwiftData models created as classes? ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/why-are-swiftdata-models-created-as-classes>
+    « Why are SwiftData models created as classes? ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/why-are-swiftdata-models-created-as-classes>
 
 ## Définir des relations entre les tables
 
@@ -403,13 +403,13 @@ final class Categorie {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Defining data relationships with enumerations and model classes ». Apple. <https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes/>
+    « Defining data relationships with enumerations and model classes ». Apple. <https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes/>
 
-« The Ultimate Guide to Building SwiftData Applications - Relationships ». AzamSharp. <https://azamsharp.com/2023/07/04/the-ultimate-swift-data-guide.html#relationships>
+    « The Ultimate Guide to Building SwiftData Applications - Relationships ». AzamSharp. <https://azamsharp.com/2023/07/04/the-ultimate-swift-data-guide.html#relationships>
 
-« Inferred vs explicit relationships ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/inferred-vs-explicit-relationships>
+    « Inferred vs explicit relationships ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/inferred-vs-explicit-relationships>
 
 ## Insérer des données initiales dans la base de données
 
@@ -697,13 +697,13 @@ Il est cependant préférable d'insérer les données initiales à l'aide du `Mo
 
 De plus, avec l'approche du `preloadAppContainer`, le code pourra être utilisé pour [voir les données initiales dans le canevas](swiftdata.md#donnees-swiftdata-affichees-dans-le-canevas-preview).
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Pre-populate a SwiftData Persistent Store ». Andrew Bankroft. <https://www.andrewcbancroft.com/blog/ios-development/data-persistence/pre-populate-swiftdata-persistent-store/>
+    « Pre-populate a SwiftData Persistent Store ». Andrew Bankroft. <https://www.andrewcbancroft.com/blog/ios-development/data-persistence/pre-populate-swiftdata-persistent-store/>
 
-« How to pre-load an app with JSON ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-pre-load-an-app-with-json>
+    « How to pre-load an app with JSON ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-pre-load-an-app-with-json>
 
-« How to pre-populate an app with an existing SwiftData database ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-pre-populate-an-app-with-an-existing-swiftdata-database>
+    « How to pre-populate an app with an existing SwiftData database ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-pre-populate-an-app-with-an-existing-swiftdata-database>
 
 ## Requêtes pour retrouver les données de la base de données (@Query)
 
@@ -861,11 +861,11 @@ do {
  }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Filtering and sorting persistent data ». Apple. <https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data>
+    « Filtering and sorting persistent data ». Apple. <https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data>
 
-« How to Query and Filter Data in SwiftData with Predicate ». Swifty Place. <https://www.swiftyplace.com/blog/fetch-and-filter-in-swiftdata>
+    « How to Query and Filter Data in SwiftData with Predicate ». Swifty Place. <https://www.swiftyplace.com/blog/fetch-and-filter-in-swiftdata>
 
 ## Données SwiftData affichées dans le canevas (#Preview)
 
@@ -909,9 +909,9 @@ Il est désormais plus facile de prévisualiser la vue responsable du `@Query` l
 
 Si, après avoir modifié les données en faisant des tests dans le canevas, vous désirez remettre les données initiales en place, suivez les instructions sur cette fiche : « [Forcer le rafraîchissement des données en cache du canevas](canevas.md) ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to use SwiftData in SwiftUI previews ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-swiftdata-in-swiftui-previews>
+    « How to use SwiftData in SwiftUI previews ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-swiftdata-in-swiftui-previews>
 
 ## Forcer le rafraîchissement des données en cache du canevas
 

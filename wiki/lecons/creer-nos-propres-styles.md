@@ -247,9 +247,9 @@ struct ContentView: View {
 
 Tout comme pour les styles, il est possible de passer un paramètre à une extension. Voir la fiche « [Styles avec paramètres](creer-nos-propres-styles.md#styles-avec-parametres) ».
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-«  SwiftUI Custom Styling  ». The SwiftUI Lab. <https://swiftui-lab.com/custom-styling/>
+    «  SwiftUI Custom Styling  ». The SwiftUI Lab. <https://swiftui-lab.com/custom-styling/>
 
 ## Styles avec paramètres
 

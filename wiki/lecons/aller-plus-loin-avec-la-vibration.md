@@ -248,20 +248,20 @@ guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
 
 Il n'y a rien de plus à faire. Le fichier de son sera chargé automatiquement lorsque le patron du fichier AHAP sera joué.
 
-## Pour plus d'information
+??? info "Pour plus d'information"
 
-« CHHapticEngine ». Apple. <https://developer.apple.com/documentation/corehaptics/chhapticengine>
+    « CHHapticEngine ». Apple. <https://developer.apple.com/documentation/corehaptics/chhapticengine>
 
-« Preparing Your App to Play Haptics ». Apple. <https://developer.apple.com/documentation/corehaptics/preparing_your_app_to_play_haptics>
+    « Preparing Your App to Play Haptics ». Apple. <https://developer.apple.com/documentation/corehaptics/preparing_your_app_to_play_haptics>
 
-« How to play custom vibrations using Core Haptics ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/core-haptics/how-to-play-custom-vibrations-using-core-haptics>
+    « How to play custom vibrations using Core Haptics ». Hacking with Swift. <https://www.hackingwithswift.com/example-code/core-haptics/how-to-play-custom-vibrations-using-core-haptics>
 
-« Playing a Custom Haptic Pattern from a File ». Apple. <https://developer.apple.com/documentation/corehaptics/playing_a_custom_haptic_pattern_from_a_file>
+    « Playing a Custom Haptic Pattern from a File ». Apple. <https://developer.apple.com/documentation/corehaptics/playing_a_custom_haptic_pattern_from_a_file>
 
-« Representing Haptic Patterns in AHAP Files ». Apple. <https://developer.apple.com/documentation/corehaptics/representing_haptic_patterns_in_ahap_files>
+    « Representing Haptic Patterns in AHAP Files ». Apple. <https://developer.apple.com/documentation/corehaptics/representing_haptic_patterns_in_ahap_files>
 
-« Practice audio haptic design ». Apple. <https://developer.apple.com/videos/play/wwdc2021/10278/>
+    « Practice audio haptic design ». Apple. <https://developer.apple.com/videos/play/wwdc2021/10278/>
 
-« How to add CoreHaptics to your iOS app ». Medium. <https://medium.com/bilue/how-to-add-corehaptics-to-your-ios-app-bbc408860322>
+    « How to add CoreHaptics to your iOS app ». Medium. <https://medium.com/bilue/how-to-add-corehaptics-to-your-ios-app-bbc408860322>
 
-«&nbspCaptain AHAP ». Fancy Pixel. <https://ahap.fancypixel.it/>
+    «&nbspCaptain AHAP ». Fancy Pixel. <https://ahap.fancypixel.it/>

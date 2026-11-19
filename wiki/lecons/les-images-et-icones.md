@@ -394,11 +394,11 @@ Choisissez **SF Symbols** pour voir les symboles SF disponibles.
 
 ![Hotpot](images/Hotpot-SymbolesSF.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« How to use SF Symbols in SwiftUI ». Simple Swift Guide. <https://www.simpleswiftguide.com/how-to-use-sf-symbols-in-swiftui/>
+    « How to use SF Symbols in SwiftUI ». Simple Swift Guide. <https://www.simpleswiftguide.com/how-to-use-sf-symbols-in-swiftui/>
 
-« How to get custom colors and transparency with SF Symbols ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-get-custom-colors-and-transparency-with-sf-symbols>
+    « How to get custom colors and transparency with SF Symbols ». Hacking with Swift. <https://www.hackingwithswift.com/quick-start/swiftui/how-to-get-custom-colors-and-transparency-with-sf-symbols>
 
 ## Label : la combinaison icône et texte
 

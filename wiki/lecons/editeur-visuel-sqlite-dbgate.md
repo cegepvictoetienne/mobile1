@@ -29,9 +29,9 @@ Si la version téléchargée ne correspond pas au type de puce du processeur de 
 
 ![dlopen... (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64h' or 'x86_64')](images/DBGate-IncompatibleArchitecture.png)
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Documentation ». DbGate. <https://dbgate.org/docs/>
+    « Documentation ». DbGate. <https://dbgate.org/docs/>
 
 ## Travailler avec DBGate
 

@@ -224,9 +224,9 @@ struct DetailItem: View {
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« Better Navigation in SwiftUI with NavigationStack ». Swifty Place. <https://www.swiftyplace.com/blog/better-navigation-in-swiftui-with-navigation-stack>
+    « Better Navigation in SwiftUI with NavigationStack ». Swifty Place. <https://www.swiftyplace.com/blog/better-navigation-in-swiftui-with-navigation-stack>
 
 ## Transférer des informations de la vue parent vers une vue enfant (initialisation de propriétés)
 
@@ -255,9 +255,9 @@ NavigationLink(destination: VueDetail(description: "Item XYZ", inventaire: 36)) 
 }
 ```
 
-### Pour plus d'information
+??? info "Pour plus d'information"
 
-« View Communication Patterns in SwiftUI ». Vadim Bulavin. <https://www.vadimbulavin.com/passing-data-between-swiftui-views/>
+    « View Communication Patterns in SwiftUI ». Vadim Bulavin. <https://www.vadimbulavin.com/passing-data-between-swiftui-views/>
 
 ## Cacher le lien de retour automatique
 
