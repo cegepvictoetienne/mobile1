@@ -5,3 +5,4 @@ venv/
 site/
 christiane
 .cache
+.obsidian

@@ -297,8 +297,9 @@ code a[href^="https://"]::after {
   display: none;
 }
 
-article a[href^="http"]:not(pre a):not(code a)::after,
-article a[href^="https://"]:not(pre a):not(code a)::after {
+/* Seulement les liens externes : la navigation instantanée rend les liens
+   internes absolus, il faut donc exclure le domaine du site et le serveur local. */
+article a[href^="http"]:not(pre a):not(code a):not([href^="https://mobile1.profinfo.ca"]):not([href^="http://mobile1.profinfo.ca"]):not([href^="http://localhost"]):not([href^="http://127.0.0.1"])::after {
   content: '';
   width: 11px;
   height: 11px;
