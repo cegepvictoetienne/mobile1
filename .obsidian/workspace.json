@@ -14,7 +14,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "New tab"
             }
           }
         ]
@@ -42,7 +42,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -172,27 +172,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer un nouveau canvas": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "bases:Créer une nouvelle base": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
   "active": "5a77f852b78507a7",
   "lastOpenFiles": [
+    "site/exercices/liste-avec-details/index.html",
+    "site/exercices/liste-avec-details",
+    "site/exercices/la-base-de-donnees/index.html",
+    "site/exercices/la-base-de-donnees",
+    "site/exercices/faceid-et-application-bilingue/index.html",
+    "site/exercices/faceid-et-application-bilingue",
+    "site/exercices/un-peu-de-raffinement/index.html",
+    "site/exercices/un-peu-de-raffinement",
+    "site/lecons/images/Xcode-Modifiers.webp",
+    "wiki/lecons/images/Xcode-Modifiers.webp",
+    "site/exercices/service-web-de-synchronisation/index.html",
+    "site/exercices/service-web-de-synchronisation",
+    "site/exercices/s-approprier-son-mac/index.html",
+    "site/lecons/images/Xcode-Autocomplete.webp",
+    "wiki/lecons/images/Xcode-Autocomplete.webp",
+    "wiki/lecons/images/Swift-NewSwiftUIView.webp",
+    "site/lecons/images/Swift-NewSwiftUIView.webp",
     "site/lecons/images/Xcode-CadreBleuSurCanevas.webp",
     "wiki/lecons/images/Xcode-CadreBleuSurCanevas.webp",
     "site/lecons/images/Xcode-Preview-Combinaison.webp",
-    "wiki/lecons/images/Xcode-Preview-Combinaison.webp",
-    "site/lecons/images/Xcode-Preview-DynamicTypeVariants.webp",
-    "wiki/lecons/images/Xcode-Preview-DynamicTypeVariants.webp",
-    "site/lecons/images/Xcode-Preview-OrientationVariants.webp",
-    "wiki/lecons/images/Xcode-Preview-OrientationVariants.webp",
-    "wiki/lecons/images/Xcode-Preview-ColorSchemeVariants.webp",
-    "site/lecons/images/Xcode-Preview-ColorSchemeVariants.webp",
-    "wiki/lecons/images/Xcode-Preview-ColorScheme.webp"
+    "wiki/lecons/images/Xcode-Preview-Combinaison.webp"
   ]
 }

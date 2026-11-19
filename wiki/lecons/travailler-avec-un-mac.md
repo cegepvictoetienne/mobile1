@@ -2,32 +2,28 @@ Un peu d'information et de vocabulaire sur la fenêtre Mac vous aidera à bien c
 
 ## Menu
 
-Le menu de l'application active apparaît toujours dans le haut de l'écran, peu importe la taille de la fenêtre. Il n'est pas rare d'avoir un menu complètement détaché de la fenêtre.
+Le menu de l'application active apparaît toujours dans le haut de l'écran.
 
 ![Le menu ne suit pas la fenêtre](images/Mac-MenuNeSuitPasFenetre.webp)
 
 ## Quai (Dock)
 
-Le Quai est cette barre, généralement située au bas de l'écran, qui affiche la liste des applications ouvertes ou gardées dans le Quai.
+Le Quai affiche la liste des applications ouvertes ou gardées dans le Quai.
 
 Les applications ouvertes ont un point noir sous leur icône.
-
-Le Quai est utile notamment pour passer d'une application à l'autre.
 
 ![Dock](images/Mac-Dock.webp)
 
 ### Garder dans le Quai
 
-Il est possible de faire en sorte qu'une application demeure dans le Quai même lorsqu'elle n'est pas ouverte. Ceci facilitera son ouverture par la suite.
 
-Pour y arriver :
+Pour garder une application dans le Quai même si elle n'est pas ouverte :
 
 - Clic droit sur son icône
 - **Options**
 - **Garder dans le Dock**
 
 ![Garder dans le Dock](images/Mac-GarderDansLeDock.png)
-
 
 Sous Mac, les boutons pour ajuster rapidement la taille d'une application sont situés dans le coin supérieur gauche de la fenêtre de l'application.
 
@@ -49,8 +45,6 @@ Un clic sur le bouton jaune permet de conserver l'application ouverte mais de li
 
 Son équivalent avec le clavier : <kbd>⌘ Cmd</kbd>+<kbd>M</kbd>
 
-Une fois l'application minimisée, vous pouvez y accéder de nouveau en cliquant sur son icône dans le Quai (Dock) ou encore en basculant entre les applications à l'aide des touches <kbd>⌘ Cmd</kbd>+<kbd>⇥ Tab</kbd>.
-
 ## Afficher une application en plein écran
 
 ![Boutons pour gérer la taille des fenêtres](images/Mac-BoutonPleinEcran.png)
@@ -61,23 +55,9 @@ Son équivalent avec le clavier : <kbd>⌘ Cmd</kbd>+<kbd>⌃ Ctrl</kbd>+<kbd>F<
 
 Pour accéder au Dock, qui est désormais caché, il suffit de déplacer la souris tout en bas de l'écran et le Dock apparaîtra.
 
-C'est la même chose pour la barre de menu : placez la souris en haut de l'écran et la barre de menu sera visible, le temps que vous accédiez à l'option désirée.
-
-## Agrandir une application sans cacher le Dock ni la barre de menu
-
-![Bouton agrandir](images/Mac-BoutonAgrandir.png)
-
-Voici une fonctionnalité mal connue et pourtant très intéressante, particulièrement pour les utilisateurs de Windows qui sont déroutés devant la fonctionnalité d'agrandissement pleine page de Mac.
-
-Si vous maintenez enfoncée la touche <kbd>⌥ Option</kbd> pendant que vous cliquez sur le bouton vert, l'icône se changera en +. Ceci indique que la fenêtre sera agrandie pour prendre tout l'espace disponible **sans cacher la barre de menu ni le dock**.
-
-**Vous obtiendrez le même résultat par un double-clic sur la barre de titre de la fenêtre.**
-
 # Spotlight  
 
-Pour lancer Spotlight, appuyez sur <kbd>⌘ Cmd</kbd> + <kbd>Espace</kbd> ou appuyez sur l’icône de loupe ![Icône loupe](images/Mac-IconeLoupe.png) dans le coin supérieur droit de l’écran.
-
-Attention : ne maintenez pas les touches <kbd>⌘ Cmd</kbd> + <kbd>Espace</kbd> enfoncées trop longtemps car ceci activera plutôt Siri.
+Pour lancer Spotlight :  <kbd>⌘ Cmd</kbd> + <kbd>Espace</kbd>  OU l’icône de loupe ![Icône loupe](images/Mac-IconeLoupe.png).
 
 ## Spotlight pour lancer une application
 
@@ -95,13 +75,8 @@ Dans cet exemple, le terminal est apparu comme suggestion principale après avoi
 
 Vous recherchez une photo de votre chat Roger ? Ouvrez Spotlight et commencez à taper le nom du fichier de la photo.
 
-Si le fichier n'apparaît pas assez rapidement à votre goût, naviguez dans la liste de suggestion à l'aide des flèches. Spotlight vous affichera un aperçu de ce qui est sélectionné. Appuyez sur <kbd>Entrée</kbd> lorsque vous aurez trouvé la photo recherchée.
-
 ![Spotlight](images/Mac-SpotlightPourTrouverPhoto.webp)
 
-## Spotlight pour trouver un site Web, une chanson, un contact
-
-Vous comprenez maintenant à quel point Spotlight est versatile. Utilisez-le pour rechercher n'importe quoi sur votre ordinateur ou sur le Web.
 
 ## Afficher la hiérarchie du dossier dans le bas de l’écran (Barre de chemin - Path bar)
 
@@ -112,28 +87,6 @@ Vous comprenez maintenant à quel point Spotlight est versatile. Utilisez-le pou
 Dans le bas de la fenêtre du Finder, vous verrez une barre qui montre chacun des dossiers qui ont été traversés pour se rendre au dossier affiché.
 
 Un double-clic sur un de ces dossiers permet d'accéder à ce dossier, ce qui facilite grandement la navigation.
-
-## Afficher la liste des dossiers en premier, suivie de la liste des fichiers
-
-Par défaut, le Finder présente tous les fichiers et dossiers ensemble, en ordre alphabétique.
-
-Si vous préférez, vous pouvez configurer le Finder pour que les dossiers apparaîssent en premier, suivis par les fichiers.
-
-- Ouvrez le Finder.
-- Rendez-vous dans le menu **Finder** / **Réglages**.
-- Cliquez sur l'onglet **Avancé**.
-- Dans la zone **Afficher les dossiers en haut**, cochez **Dans les fenêtres lors d'un tri par nom**.
-
-## Limiter les recherches au dossier actuel et à ses sous dossiers
-
-Par défaut, une recherche dans le Finder recherchera dans tous les dossiers du Mac.
-
-Si, comme moi, vous préférez que la recherche soit circonscrite au dossier actuel et à ses sous dossiers :
-
-- Ouvrez le Finder.
-- Rendez-vous dans le menu **Finder** / **Réglages**.
-- Cliquez sur l'onglet **Avancé**.
-- Dans la zone **En effectuant une recherche**, choisissez **Rechercher dans le dossier actuel**.
 
 ## Ajouter des raccourcis et emplacements dans la barre latérale
 
@@ -147,24 +100,6 @@ Si, comme moi, vous préférez que la recherche soit circonscrite au dossier act
 - Ouvrez le Finder.
 - Rendez-vous dans le menu **Finder** / **Réglages**.
 - Dans l'onglet **Avancé**, cochez **Afficher toutes les extensions de fichiers**.
-
-## Afficher les disques externes sur le bureau
-
-J'aime bien que les disques amovibles que je branche à mon Mac apparaissent sur le bureau. Ceci me permet notamment d'utiliser la corbeille pour éjecter ces disques.
-
-Pour réaliser cette configuration :
-
-- Ouvrez le Finder.
-- Rendez-vous dans le menu **Finder** / **Préférences**.
-- Dans l'onglet **Général**, zone **Afficher ces éléments sur le bureau**, cochez **Disques externes**.
-
-![Disques externes sur le bureau](images/Mac-PreferencesDuFinder-DisquesExternesSurBureau.webp)
-
-Les fichiers dont le nom débute par un point (en anglais : **dot files**) sont des fichiers cachés.
-
-D'autres fichiers ou dossiers ne débutent pas par un point mais ils sont considérés comme cachés par le système. C'est le cas par exemple pour le dossier **Bibliothèque** (**Library**) de chaque usager.
-
-Par défaut, ces fichiers et dossiers ne sont pas affichés dans le Finder.
 
 ## Afficher / cacher les fichiers et dossiers cachés
 
@@ -217,15 +152,13 @@ Attention : l'installation à partir d'un fichier téléchargé nécessite gén�
 
 ## Fichier .zip
 
-Avec un fichier .zip, vous devez commencer par le décompresser. Ceci se fait par un simple double-clic. Vous obtiendrez un dossier qui contient les fichiers décompressés. Il s'agira probablement de fichiers dont l'extension est .dmg ou .pkg. Ils pourraient également contenir directement un fichier .app.
+1. Décompresser  
+1. Si contenu est .pkg ou .dmg -> Double-clic du fichier 
+1. Si contenu est .app, mettre dans /Users/monuser/Applications.  
 
 ## Fichier .dmg
 
-Les fichiers .dmg (Disk iMaGe, ou en français image disque) permettent d'effectuer l'installation d'une application sur un Mac à l'aide d'un double-clic.
-
-Une fois un fichier .dmg lancé, l'image du disque est montée (donc visible dans le Finder comme s'il s'agissait d'un disque externe) et l'installation débute automatiquement.
-
-La première étape effectuée consiste généralement en la vérification du checksum pour assurer que le contenu n'a pas été modifié par une tierce partie.
+Une fois un fichier .dmg lancé, l'image du disque est montée et l'installation débute automatiquement.
 
 Certains .dmg contiennent directement un fichier .app. D'autres contiennent un .pkg (voir prochaine section).
 
@@ -243,15 +176,12 @@ Il est à noter qu'on retrouve parfois des fichiers .dmg qui contiennent un fich
 
 ## Fichier .pkg
 
-Les fichiers .pkg (PacKaGe, ou en français paquet) contiennent généralement des scripts utilisés pour effectuer l'installation.
-
 Un double-clic sur un fichier .pkg lancera le [programme d'installation de macOS](https://en.wikipedia.org/wiki/Installer_(macOS)).
-
-Fait intéressant, vous pouvez consulter la liste des fichiers contenus dans le .pkg à partir du programme d'installation en allant dans le menu **Fichier** / **Afficher les fichiers**. Ceci n'est cependant pas nécessaire pour procéder à l'installation.
 
 Pour lancer l'installation, cliquez sur **Continuer** dans le programme d'installation et suivez les étapes.
 
-Notez que les scripts inclus dans un fichier .pkg se chargent généralement de copier l'application dans le dossier Applications.
+!!! note 
+  Les scripts inclus dans un fichier .pkg se chargent généralement de copier l'application dans le dossier Applications.
 
 ## Fichier .app
 
@@ -353,33 +283,15 @@ Certaines fonctionnalités sont incluses directement dans le système d'exploita
 
 Pour effectuer une impression d'écran sous Mac sans avoir à installer quoi que ce soit :
 
-Appuyez sur<kbd>⌘ Command</kbd>+<kbd>⇧ Shift</kbd>+<kbd>3</kbd> pour obtenir une image de l'écran en entier.
 
-ou
-
-Appuyez sur <kbd>⌘ Command</kbd>+<kbd>⇧ Shift</kbd>+<kbd>4</kbd> pour sélectionner une partie de l'écran. Le curseur de la souris se transformera en objectif pour vous indiquer que vous pouvez débuter la sélection de ce qui sera enregistré sur l'image.
+- <kbd>⌘ Command</kbd>+<kbd>⇧ Shift</kbd>+<kbd>3</kbd> : une image de l'écran en entier.
+- <kbd>⌘ Command</kbd>+<kbd>⇧ Shift</kbd>+<kbd>4</kbd> : sélectionner une partie de l'écran. 
 
 ![Curseur impression d'écran](images/Mac-CurseurImpressionEcran.png)
 
 L'image est enregistrée directement sur le bureau. Vous pouvez la copier/coller ou simplement la faire glisser à l'endroit désiré.
 
-## Placer l'impression d'écran dans le presse-papier
-
-Si vous préférez que l'image soit conservée dans le presse-papier, vous devez ajouter la touche <kbd>⌃ Control</kbd>.
-
-Appuyez sur<kbd>⌘ Command</kbd>+<kbd>⌃ Control</kbd>+<kbd>⇧ Shift</kbd>+<kbd>3</kbd> pour obtenir une image de l'écran en entier.
-
-ou
-
-Appuyez sur <kbd>⌘ Command</kbd>+<kbd>⌃ Control</kbd>+<kbd>⇧ Shift</kbd>+<kbd>4</kbd> pour sélectionner une partie de l'écran. Le curseur de la souris se transformera en objectif pour vous indiquer que vous pouvez débuter la sélection de ce qui sera enregistré sur l'image.
-
-Vous pouvez coller le contenu du presse-papier à l'endroit désiré.
-
 ## Impression d'écran qui contient le curseur
-
-Il est possible de faire une impression d'écran dans laquelle le curseur apparaîtra. Ceci est pratique, notamment, si on veut une impression d'écran qui contient une bulle d'aide (qui n'apparait que lorsque la souris survole un élément).
-
-Ici aussi, les outils requis sont installés de base sur votre Mac.
 
 - Lancez l'utilitaire Aperçu (**Preview** en anglais).
 - Dans le menu en haut de la fenêtre, rendez-vous dans **Fichier** / **Effectuer une capture d'écran** / **À partir de l'écran entier**.
@@ -417,26 +329,3 @@ L'option **Effectuer une capture d'écran en taille réelle** (en anglais : **Ca
 ![Screenshot](images/Chrome-MenuScreenshot.png)
 
 L'image générée apparaîtra dans la zone de téléchargement au bas de l'écran de Chrome.
-
-# Accéder à certains dossiers système
-
-Certains dossiers système ne sont pas disponibles directement à partir des dossiers affichés dans le Finder. À preuve, si vous ouvrez le dossier Racine du Mac, qui peut porter un nom du genre `APPLE SSD` ou encore `Macintosh HD`, vous ne verrez pas par défaut les dossiers `etc` ou `usr`. ou encore pour le dossier `/Users/monnom/Library`.
-
-Pour accéder à ces dossiers, deux solutions s'offrent à vous :
-
-- Rendez-vous dans le menu **Aller** / **Aller au dossier** puis entrez le nom du dossier désiré.
-
-# Contrôler quelles applications sont lancées au démarrage
-
-Certaines applications sont si utiles qu'il est intéressant qu'elles soient lancées automatiquement au démarrage de votre Mac.
-
-À l'inverse, d'autres sont lancées automatiquement mais vous ne vous en servez qu'à l'occasion. Il serait préférable de ne pas les lancer au démarrage afin de ne pas alourdir le processus.
-
-Pour contrôler quelles applications sont lancées automatiquement ou non lors du démarrage de l'ordinateur, suivez ces étapes :
-
-- Rendez-vous dans le menu  / **Réglages système** / **Général**.
-- Cliquez sur l'onglet **Ouverture**.
-- Pour qu'une application soit lancée automatiquement au démarrage, cliquez sur le + au bas de la zone **Ouvrir avec la session** puis dans la fenêtre qui s'ouvre, retrouvez le fichier .app de l'application, probablement dans le dossier `/Applications`.
-- Pour qu'une application ne soit plus lancée automatiquement au démarrage, cliquez sur son nom dans la liste qui apparaît dans la zone **Ouvrir avec la session** puis cliquez sur le - au bas de la zone.
-
-![Applications lancées au démarrage](images/Mac-ApplicationsLanceesAuDemarrage.png)

@@ -1,12 +1,8 @@
 # Principes de développement d'une interface
 
-Apple nous propose quelques grands principes à suivre pendant le développement d'une interface.
-
-Par exemple :
-
-- Il faut s'assurer que l'utilisateur voit tout le contenu important sans avoir à zoomer ni à faire défiler l'écran.
-- Il faut utiliser des contrôles conçus pour les écrans tactiles.
-- Il faut s'assurer que les éléments cliquables sont suffisamment éloignés des autes éléments pour qu'il soit facile de les atteindre avec un doigt.
+- l'utilisateur doit voir tout le contenu important sans avoir à zoomer ni à faire défiler l'écran.
+- utiliser des contrôles conçus pour les écrans tactiles.
+- les éléments cliquables doivent suffisamment éloignés des autres éléments pour qu'il soit facile de les atteindre avec un doigt.
 
 ## Pour plus d'information
 
@@ -14,9 +10,9 @@ Par exemple :
 
 # Les vues
 
-Dans SwiftUI, tout ce qui apparaît à l'écran est une vue. En fait, les éléments visuels tels que `Text()` ou `Image()` sont vues puisqu'il s'agit de structures qui répondent au protocole `View`.
+Dans SwiftUI, tout ce qui apparaît à l'écran est une vue. En fait, les éléments visuels tels que `Text()` ou `Image()` sont des vues puisqu'il s'agit de structures qui répondent au protocole `View`.
 
-Par défaut, lors de la création du projet, une vue a déjà été créée pour vous : `ContentView`. Elle est placée dans le fichier ContentView.swift
+Par défaut, une vue a déjà été créée pour vous : `ContentView`.   
 
 ```swift title="Fichier ContentView.swift"
 struct ContentView: View {
@@ -24,31 +20,36 @@ struct ContentView: View {
 }
 ```
 
-Une vue peut définir un écran complet ou encore une petite partie d'écran.
+Une vue peut être : 
 
-Une vue peut contenir d'autres vues, que ce soient des vues fournies par SwiftUI, par exemple `Text()` ou `Image()`, ou encore des vues que vous aurez créées dans un autre fichier du projet.
+- L'écran au complet
+- Une partie de l'écran
+- Un composant, tel que  `Text()` ou `Image()`
+- Une structure créée par le programmeur 
 
 Pour ajouter une vue dans un projet SwiftUI :
 
-- Rendez-vous dans le menu **File** / **New** / **File from Template**.
-- Cliquez sur **SwiftUI View**.
+- Le menu **File** / **New** / **File from Template**.
+- **SwiftUI View**.
 
-  ![SwiftUI View](images/Swift-NewSwiftUIView.png)
+  ![SwiftUI View](images/Swift-NewSwiftUIView.webp)
 
-Le nom d'une vue doit respecter **LaCassePascal**.  
-De plus, il est d'usage de placer toutes les vues dans un dossier nommé `Views`.
+Important :  
+
+- Le nom d'une vue doit respecter **LaCassePascal**.   
+- Toutes les vues vont dans un dossier nommé `Views`.  
 
 ## Pour plus d'information
 
 « View fondamentals ». Apple. <https://developer.apple.com/documentation/swiftui/view-fundamentals>
 
-« Your First iOS and SwiftUI App: An App From Scratch (tutoriel vidéo) ». Ray Wenderlich. <https://www.raywenderlich.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch>
+« Your First iOS and SwiftUI App: An App From Scratch (tutoriel vidéo) ». Ray Wenderlich - Kodeco. <https://www.kodeco.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch>
 
 # Les modifieurs
 
 Les modifieurs permettent de définir certains aspects de l'apparence d'une vue.
 
-On placera le modifieur juste après le nom de la vue. Il peut être placé sur la même ligne ou encore sur la ligne suivante, décallé d'une tabulation.
+On placera le modifieur juste après le nom de la vue.
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -57,24 +58,24 @@ Text("Hello, world!")
 
 ## Liste des modifieurs
 
-Tous les modifieurs sont disponibles à partir de la bibliothèque d'objets.  
-Une fois la fenêtre de la bibliothèque ouverte, cliquez sur le deuxième icône. Les modifieurs apparaîtront dans la colonne de gauche, classés selon la vue à laquelle ils s'appliquent.
+- <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>L</kbd> : Affiche la bibliothèque d'objets  
+- 2e icône : les modifieurs  
+- Glisser le bon modifieur dans l'éditeur de code  
 
-Répérez le modifieur désiré puis faites-le glisser dans l'éditeur de code à l'endroit désiré.
-
-![Modifieurs](images/Xcode-Modifiers.png)
+![Modifieurs](images/Xcode-Modifiers.webp)
 
 ## Paramètres, types prédéfinis et types dynamiques
 
-Certains modifieurs attendent des paramètres, d'autres pas.
+!!! important  
+    À chaque fois qu'il est possible d'utiliser une valeur prédéfinie, il est préférable de l'utiliser plutôt que d'entrer un nombre. 
 
-Lorsqu'un paramètre est attendu, Xcode pourra faire des suggestions à l'aide de sa fonctionnalité d'autocomplétion.
+Pour connaître ces valeurs possibles des paramètres :  
 
-Il y a souvent des valeurs prédéfinies qui peuvent être utilisées. Il s'agit de valeurs définies dans des énumérations. **À chaque fois qu'il est possible d'utiliser une valeur prédéfinie, il est préférable de l'utiliser plutôt que d'entrer un nombre.**
+1. ouvrez la parenthèse qui suit le modifieur  
+1. entrez le point   
+1. choisissez parmi les valeurs proposées.  
 
-Pour connaître ces valeurs, ouvrez la parenthèse qui suit le modifieur, entrez le point caractéristique pour utiliser une énumération et choisissez parmi les valeurs proposées.
-
-![Autocomplete](images/Xcode-Autocomplete.png)
+![Autocomplete](images/Xcode-Autocomplete.webp)
 
 ## Types dynamiques
 
@@ -100,7 +101,9 @@ Text("Hello, world!")
   )
 ```
 
-Notez que l'ordre d'apparition des modifieurs peut avoir une influence sur le résultat final.
+!!! important   
+  L'ordre d'apparition des modifieurs peut avoir une influence sur le résultat final  
+
 
 Par exemple, si on ajoute un padding avant une bordure comme dans l'extrait de code précédent, la bordure sera appliquée sur le texte ET le padding donc elle ne sera pas collée au texte.
 
@@ -123,11 +126,13 @@ Text("Hello, world!")
 
 ## Type entrant et type sortant
 
-Certains modifieurs s'appliquent à tout ce qui répond au protocole `View`.
+En général, un modifieur retourne le même type pour lequel il fonctionne. 
 
-D'autres ne s'appliquent qu'aux vues d'un type précis, par exemple le modifieur `[bold()](https://developer.apple.com/documentation/swiftui/text/bold())` ne s'applique qu'aux vues de type [`Text`](https://developer.apple.com/documentation/swiftui/text).
+Ex :
 
-Il en va de même pour le type retourné par les modifieurs. Certains retournent une instance d'une structure précise, par exemple **Text**, alors que d'autres retournent une instance du protocole [`View`](https://developer.apple.com/documentation/swiftui/view).
+**bold()** fonctionne pour une vue de type `Text`, alors il retourne une vue `Text`. 
+
+**padding() fonctionne pour une vue de type `View`, alors il retourne une vue `View`. 
 
 Dans le cas où le modifieur retourne un `View`, il ne pourra être suivi que par des modifieurs qui s'appliquent à n'importe quel `View`. Si vous avez besoin d'un modifieur qui s'applique seulement à un `Text`, il faudra le placer avant ceux qui retournent un `View`.
 
@@ -137,10 +142,10 @@ Si l'ordre n'est pas le bon, vous obtiendrez un message du genre « Value of typ
 
 ## Retrouver le type retourné par un modifieur
 
-Pour connaître le type sortant des modifieurs directement dans Xcode :
-
-- Dans votre code, faites un clic droit sur le modifieur désiré puis choisissez **Show Quick Help**.
-- On voit ici que la valeur de retour de `padding()` est de type `some View`. Sans entrer dans les détails techniques, retenez que le mot `some` est utilisé devant un protocole.
+Pour connaître le type sortant des modifieurs directement dans Xcode :  
+  
+- clic droit sur le modifieur  
+- **Show Quick Help**.  
 
   ![Type de retour du padding](images/Xcode-TypeRetourPadding.png)
 
@@ -173,9 +178,7 @@ VStack {
 
 ## Paramètres des contrôles d'empilement
 
-Les contrôles d'empilement peuvent recevoir des paramètres pour ajuster leur apparence.
-
-Par exemple, on pourrait forcer un espacement entre les éléments d'un VStack.
+- Pour forcer un espacement entre les éléments d'un VStack :  
 
 ```swift title="SwiftUI"
 VStack(spacing: 20) {
@@ -183,7 +186,7 @@ VStack(spacing: 20) {
 }
 ```
 
-ou aligner à gauche les éléments empilés :
+- aligner à gauche les éléments empilés :
 
 ```swift title="SwiftUI"
 VStack(alignment: .leading) {
@@ -203,7 +206,7 @@ VStack(alignment: .leading) {
 
 # Les espaceurs (Spacer)
 
-La structure [Spacer()](https://developer.apple.com/documentation/swiftui/spacer) permet d'ajouter un espaceur (en anglais **spacer**) afin d'ajouter de l'espace automatiquement avant, après ou entre des vues afin de remplir l'écran.
+Un Spacer() ajoute de l'espace automatiquement avant, après ou entre des vues afin de remplir l'écran.
 
 Il s'utilisent à l'intérieur d'un `HStack` ou d'un `VStack`.
 
