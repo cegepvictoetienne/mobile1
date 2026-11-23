@@ -158,7 +158,7 @@ Par contre, lorsqu'un nouvel objet est instancié sans effectuer une requête à
 
 ## Retrouver un seul enregistrement avec SwiftData
 
-Lorsqu'on effectue une [requête avec @Query](swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query) dans une application SwiftUI qui utilise SwiftData, les données recueillies sont toujours placées dans un tableau d'objets et ce, même si la requête ne retrouve qu'un seul enregistrement.
+Lorsqu'on effectue une [requête avec @Query](../lecons/swiftdata.md#requetes-pour-retrouver-les-donnees-de-la-base-de-donnees-query) dans une application SwiftUI qui utilise SwiftData, les données recueillies sont toujours placées dans un tableau d'objets et ce, même si la requête ne retrouve qu'un seul enregistrement.
 
 ```swift title="SwiftUI"
 import SwiftUI
@@ -173,7 +173,7 @@ struct ContentView: View {
 }
 ```
 
-Normalement, ce comportement devrait convenir à votre application. Les traitements qui nécessitent un enregistrement particulier seront effectués [dans une vue enfant qui reçoit cet enregistrement en paramètre](transferer-des-informations-entre-les-vues.md#de-la-vue-enfant-vers-la-vue-parent-binding-et-bindable).
+Normalement, ce comportement devrait convenir à votre application. Les traitements qui nécessitent un enregistrement particulier seront effectués [dans une vue enfant qui reçoit cet enregistrement en paramètre](../lecons/transferer-des-informations-entre-les-vues.md#de-la-vue-enfant-vers-la-vue-parent-binding-et-bindable).
 
 Dans les cas d'exception où vous avez besoin de travailler avec un objet qui n'est pas dans un tableau sans passer par une vue parent, vous pouvez procéder comme ceci :
 

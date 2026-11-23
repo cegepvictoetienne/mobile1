@@ -2,7 +2,7 @@
 
 La classe [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults) est spécifiquement conçue pour enregistrer des paires clé-valeur, par exemple des préférences utilisateur.
 
-Dans les faits, il est souvent préférable de travailler avec l'attribut [@AppStorage](les-preferences-utilisateur.md#appstorage) car son utilisation est plus intuitive.
+Dans les faits, il est souvent préférable de travailler avec l'attribut [@AppStorage](../lecons/les-preferences-utilisateur.md#appstorage) car son utilisation est plus intuitive.
 
 Si vous êtes curieux d'en savoir plus, je vous explique ici le fonctionnement de `UserDefaults`, la classe qui se cache sous `@AppStorage`.
 

@@ -6,7 +6,7 @@ Pour que l'application iOS puisse travailler avec un fichier, par exemple une ba
 
 Les fichiers ainsi ajoutés feront partie du paquet (**bundle**) qui sera installé sur l'appareil mobile.
 
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche), faites un clic droit sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../lecons/images/Xcode-IconeChemise.png) dans la zone de gauche), faites un clic droit sur le nom du projet.
 - Sélectionnez **Add Files To "..."**.
 
   ![Add files to project](images/Xcode-AddFilesToProject.png)
@@ -78,7 +78,7 @@ Si l'application tourne sur un appareil mobile, il ne faut pas supprimer les don
 
 ### Sur le simulateur
 
-Lorsque l'application tourne sur le simulateur de Xcode, il est possible de [retrouver le fichier du simulateur](les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) afin de le supprimer.
+Lorsque l'application tourne sur le simulateur de Xcode, il est possible de [retrouver le fichier du simulateur](../lecons/les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) afin de le supprimer.
 
 Si l'application est bien conçue, elle créera une nouvelle copie à partir du paquet lors de son prochain lancement.
 

@@ -172,11 +172,11 @@ Form {
 
 ### Bouton pour traiter le formulaire
 
-Voir la fiche « [Bouton pour traiter le formulaire](les-formulaires-swiftui.md#bouton-pour-traiter-le-formulaire_1) » .
+Voir la fiche « [Bouton pour traiter le formulaire](../complements/les-formulaires-swiftui.md#bouton-pour-traiter-le-formulaire_1) » .
 
 ### Configurer le clavier
 
-Voir la fiche « [Configurer le clavier du téléphone](les-formulaires-swiftui.md#configurer-le-clavier-du-telephone) ».
+Voir la fiche « [Configurer le clavier du téléphone](../complements/les-formulaires-swiftui.md#configurer-le-clavier-du-telephone) ».
 
 ### Quelques autres modifieurs
 

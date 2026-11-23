@@ -125,9 +125,9 @@ ForEach(items) { item in
 
 ### Tentatives avec autres boucles
 
-Si vous tentez d'utiliser un autre type de boucle pour produire la vue, par exemple une boucle `for`, vous obtiendre le message d'erreur « Closure containing control flow statement cannot be used with result builder 'ViewBuilder' ».
+Si vous tentez d'utiliser un autre type de boucle pour produire la vue, par exemple une boucle `for`, vous obtiendre le message d'erreur `Closure containing control flow statement cannot be used with result builder 'ViewBuilder'`{ .erreur }.
 
-Et si vous tentez le coup avec la méthode `forEach()`, vous pourriez obtenir un message du genre « The compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions ».
+Et si vous tentez le coup avec la méthode `forEach()`, vous pourriez obtenir un message du genre `The compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions`{ .erreur }.
 
 ??? info "Pour plus d'information"
 
@@ -135,9 +135,9 @@ Et si vous tentez le coup avec la méthode `forEach()`, vous pourriez obtenir un
 
 ## Modifier l'élément présentement traité dans une boucle
 
-Par défaut, quand une vue fait une itération pour afficher les éléments d'un tableau, par exemple avec [List](quelques-vues-swiftui.md#list) ou avec [ForEach](les-boucles.md#foreach_1), le code à l'intérieur de la boucle ne peut pas modifier les éléments du tableau.
+Par défaut, quand une vue fait une itération pour afficher les éléments d'un tableau, par exemple avec [List](../complements/quelques-vues-swiftui.md#list) ou avec [ForEach](les-boucles.md#foreach_1), le code à l'intérieur de la boucle ne peut pas modifier les éléments du tableau.
 
-Si vous tentez de faire une telle modification, vous aurez un message d'erreur du genre « Cannot assign to property: 'item' is a 'let' constant ».
+Si vous tentez de faire une telle modification, vous aurez un message d'erreur du genre `Cannot assign to property: 'item' is a 'let' constant`{ .erreur }.
 
 ```swift title="SwiftUI"
 ForEach(items) { item in

@@ -29,7 +29,7 @@ de « Ce PC » sous Windows.
 16. Associez les fichiers .txt à Geany.
 17. Installez les services docker. Vous en aurez besoin plus tard dans la session.   
     1. Notez que même avec une installation dans le dossier /users/monnom/Applications , vous aurez besoin d'un mot de passe admin lors de l'installation de Docker. Vous demanderez à votre prof de l'entrer pour vous lorsque requis.  
-    1. Pour vous assurer que votre installation soit fonctionnelle, créez un fichier Python qui fait un echo de "Hello World" (suivez les instructions dans [la fiche d'installation](../lecons/docker-services.md)).   
+    1. Pour vous assurer que votre installation soit fonctionnelle, créez un fichier Python qui fait un echo de "Hello World" (suivez les instructions dans [la fiche d'installation](../complements/docker-services.md)).   
 18. Dans une fenêtre Terminal, lancez la commande which python3 pour voir où Python est installé par défaut sur macOS.   
 19. Installez Seashore (éditeur d'images, icône de poisson bleu et blanc) à partir de l'AppStore.  
 20. Ouvrez Seashore et agrandissez sa fenêtre sans cacher la barre de menu ni le Dock.  

@@ -21,7 +21,7 @@ Avant de débuter votre travail avec une base de données SQLite, vous devez vou
 
 Cette précaution est nécessaire notamment si vous avez installé Valentina Studio à partir de l'App Store. Ce type d'installation est plus sécuritaire puisque l'application est installée en [bac à sable](https://fr.wikipedia.org/wiki/Sandbox_(s%C3%A9curit%C3%A9_informatique)) (**sandbox**), c'est-à-dire qu'elle fonctionne en isolement par rapport au système d'exploitation.
 
-Si vous ne donnez pas les accès au dossier de la base de données, vous pourriez obtenir le message « Le fichier "..." vous essayez de créer est situé dans le répertoire, which ne figure pas dans vos emplacements autorisés. » (ouf, problème de traduction ici!) ou, lors de l'édition des données d'une BD existante : « Sqlite db "...: Error : "unable to open database file". ».
+Si vous ne donnez pas les accès au dossier de la base de données, vous pourriez obtenir le message « Le fichier "..." vous essayez de créer est situé dans le répertoire, which ne figure pas dans vos emplacements autorisés. » (ouf, problème de traduction ici!) ou, lors de l'édition des données d'une BD existante : `Sqlite db "...: Error : "unable to open database file".`{ .erreur }.
 
 ![(image)](images/Valentina-LeFichierEstSitueDansLeRepertoireQuiNeFigurePasDansVosEmplacementsAutorises.png)
 

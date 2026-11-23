@@ -10,7 +10,7 @@ Physiquement, SwiftData travaille par défaut avec une base de données SQLite.
 
 SwiftData a vu le jour avec iOS 17 en 2023. Il ne peut donc pas être utilisé pour développer des applications qui roulent sur une version antérieure de iOS. Parmi les téléphones qui ne peuvent pas être mis à jour vers iOS 17, notons iPhone 8, iPhone 8 Plus et iPhone X. Notez que iPhoneXr peut rouler iOS 17.
 
-Si vous devez développer des applications qui roulent sur une version antérieure de iOS, vous pouvez vous tourner vers CoreData ou encore utiliser [le squelette que je vous propose afin d'interagir directement avec une base de données SQLite](interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite).
+Si vous devez développer des applications qui roulent sur une version antérieure de iOS, vous pouvez vous tourner vers CoreData ou encore utiliser [le squelette que je vous propose afin d'interagir directement avec une base de données SQLite](../complements/interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite).
 
 Si vous désirez vous lancer avec SwiftData, poursuivez la lecture de ce chapitre!
 
@@ -140,7 +140,7 @@ final class Item {
 }
 ```
 
-Remarquez l'utilisation du type [Date](les-dates.md#initialiser-une-date-avec-swift) pour stocker une date, même si les dates en SQLite sont stockées sous forme de texte.
+Remarquez l'utilisation du type [Date](../complements/les-dates.md#initialiser-une-date-avec-swift) pour stocker une date, même si les dates en SQLite sont stockées sous forme de texte.
 
 SwiftData fera le nécessaire pour faire la conversion entre ces deux formats.
 
@@ -940,7 +940,7 @@ Notez que cette procédure supprimera toutes les données en cache du simulateur
 
 ### Si la commande ne fonctionne pas
 
-Si vous obtenez le message « xcrun: error: unable to find utility ""simctl", not a developer tool or in PATH », ceci signifie que vous devez installer les outils en ligne de commande de Xcode (Xcode command line tools).
+Si vous obtenez le message `xcrun: error: unable to find utility ""simctl", not a developer tool or in PATH`{ .erreur }, ceci signifie que vous devez installer les outils en ligne de commande de Xcode (Xcode command line tools).
 
 Pour y arriver :
 

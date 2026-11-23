@@ -149,7 +149,7 @@ C'est différent pour les instances d'une **structure** ou pour les variables de
 
 Ces paramètres sont donc immuables.
 
-À preuve, si vous tentez de modifier la valeur d'un tel paramètre, vous obtiendrez l'erreur « Cannot assign to value: 'unParametre' is a 'let' constant ».
+À preuve, si vous tentez de modifier la valeur d'un tel paramètre, vous obtiendrez l'erreur `Cannot assign to value: 'unParametre' is a 'let' constant`{ .erreur }.
 
 ![Cannot assign to value: 'unParametre' is a 'let' constant](images/SwiftUI-ParametreValeur-LetConstant.png)
 

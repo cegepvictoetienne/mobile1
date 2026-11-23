@@ -169,7 +169,7 @@ Pour voir le résultat de ce code en mode clair et en mode sombre, cliquez sur l
 
 #### Ajustement automatique des couleurs
 
-Il faut privilégier l'utilisation des [propriétés de classe](quelques-vues-swiftui.md#color)   `.primary`, `.secondary`, etc. pour identifier les couleurs.
+Il faut privilégier l'utilisation des [propriétés de classe](../complements/quelques-vues-swiftui.md#color)   `.primary`, `.secondary`, etc. pour identifier les couleurs.
 
 Il est également intéressant de définir nos propres couleurs personnalisées en mode clair et en mode sombre.
 
@@ -257,7 +257,7 @@ Sans rien changer à votre code, les vue qui utilisent `Color.accentColor` seron
 
 ## Pâlir une couleur
 
-A l'aide de [l'opacité](quelques-modifieurs.md#modifieur-opacity), il est possible d'obtenir une couleur plus pâle en mode Clair ou plus foncée en mode Sombre.
+A l'aide de [l'opacité](../complements/quelques-modifieurs.md#modifieur-opacity), il est possible d'obtenir une couleur plus pâle en mode Clair ou plus foncée en mode Sombre.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -407,11 +407,10 @@ SwiftUI permet de modifier les couleurs d'une image par programmation grâce à 
 - [.colorMultiply()](https://developer.apple.com/documentation/swiftui/view/colormultiply(_:))
 - [.hueRotation()](https://developer.apple.com/documentation/swiftui/view/huerotation(_:))
 - [.colorInvert()](https://developer.apple.com/documentation/swiftui/view/colorinvert())
-- [.colorMultiply()](https://developer.apple.com/documentation/swiftui/view/colormultiply(_:))
 
 Voici quelques exemples visuels.
 
-Dans les impressions d'écrans, les images de gauches sont originales et celles de droites ont été ajustées par programmation.
+Dans la première impression d'écran, l'image du haut est l'originale et les autres ont été ajustées par programmation. Dans les suivantes, l'image de gauche est l'originale et celle de droite a été ajustée.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -420,7 +419,6 @@ struct ContentView: View {
             Image("roger")
                 .resizable()
                 .scaledToFit()
-              
             HStack(spacing: 0) {
                 VStack {
                     Text(".renderingMode")
@@ -432,12 +430,11 @@ struct ContentView: View {
                 }
                 VStack {
                     Text(".brightness")
-                        Image("roger")
-                            .resizable()
-                            .scaledToFit()
-                            .brightness(0.2)
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .brightness(0.2)
                 }
-                
             }
             HStack(spacing: 0) {
                 VStack {
@@ -446,16 +443,14 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .saturation(1.5)
-                    
                 }
                 VStack {
                     Text(".contrast")
-                        Image("roger")
-                            .resizable()
-                            .scaledToFit()
-                            .contrast(1.9)
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .contrast(1.9)
                 }
-                
             }
         }
     }

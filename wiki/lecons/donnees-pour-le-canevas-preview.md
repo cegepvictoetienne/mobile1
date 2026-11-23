@@ -36,7 +36,7 @@ Dans la zone du canevas, on peut passer d'un `#Preview` à l'autre à l'aide des
 
 Il est désormais plus facile de prévisualiser la vue responsable du `@Query` lorsque la requête fournit des données à afficher et lorsqu'aucune donnée ne répond à cete requête.
 
-![Preview Liste vide](../37-swiftdata/images/Xcode-PreviewListeVide.png) ![Preview Liste remplie](../37-swiftdata/images/Xcode-PreviewListeRemplie.png)
+![Preview Liste vide](images/Xcode-PreviewListeVide.png) ![Preview Liste remplie](images/Xcode-PreviewListeRemplie.png)
 
 ### Réinitialiser les données du canevas
 
@@ -50,7 +50,7 @@ Si, après avoir modifié les données en faisant des tests dans le canevas, vou
 
 Lorsqu'une vue enfant a des propriétés déclarées avec `@Binding` ou avec `@Bindable`, ou même des propriétés en lecture seule, il faut apporter des ajustements à sa prévisualisation pour que tout fonctionne.
 
-Si vous laissez la prévisualisation telle quelle, vous obtenez le message « Missing argument for parameter ... in call ».
+Si vous laissez la prévisualisation telle quelle, vous obtenez le message `Missing argument for parameter ... in call`{ .erreur }.
 
 ![Missing argument for parameter 'titre' in call Insert 'titre: <#Binding<String>#>'](images/SwiftUI-MissingArmumentForParameter.png)
 
@@ -77,7 +77,7 @@ struct VueEnfant: View {
 }
 
 #Preview {
-  @Previewable @State var nom: String = "Annie"
+  @Previewable @State var nom: String = "Roger"
   VueEnfant(nom: $nom)
 }
 ```
@@ -96,7 +96,7 @@ struct AutreVueEnfant: View {
 }
 
 #Preview {
-  @Previewable @State var nom: String = "Annie"
+  @Previewable @State var nom: String = "Roger"
   @Previewable @State var item: Item = Item(code: "C", titre: "Item C")
   AutreVueEnfant(nom: $nom, item: $item)
 }
@@ -137,7 +137,7 @@ struct VueEnfant: View {
 }
 
 #Preview {
-  VueEnfant(nom: .constant("Annie"))
+  VueEnfant(nom: .constant("Roger"))
 }
 ```
 
@@ -160,7 +160,7 @@ struct EncoreUneVueEnfant: View {
 }
 ```
 
-Si vous utilisez `.constant()` alors que ce n'est pas requis, vous obtiendrez un message du genre « Type '...' has no member 'constant' ».
+Si vous utilisez `.constant()` alors que ce n'est pas requis, vous obtiendrez un message du genre `Type '...' has no member 'constant'`{ .erreur }.
 
 #### Vue intermédiaire
 
@@ -180,7 +180,7 @@ struct VueEnfant: View {
   return VueIntermediaire()
 
   struct VueIntermediaire: View {
-    @State var nom: String = "Annie"
+    @State var nom: String = "Roger"
 
     var body: some View {
       VueEnfant(nom: $nom)
@@ -226,7 +226,7 @@ Pour régler le problème, il suffit d'ajouter le `NavigationStack` dans le `#Pr
 
 ```swift title="SwiftUI"
 #Preview {
-  @Previewable @State var nom: String = "Annie"
+  @Previewable @State var nom: String = "Roger"
 
   NavigationStack {
     VueEnfant(nom: $nom)

@@ -12,7 +12,7 @@ Les préférences utilisateur doivent cependant être réservées à des donnée
 
 Pour créer une préférence utilisateur, la technique la plus simple consiste à travailler avec l'attribut [@AppStorage](https://developer.apple.com/documentation/swiftui/appstorage) (en anglais, on dit que c'est un **property wrapper**).
 
-Cet attribut est en fait une « enveloppe » alentour de la classe [UserDefaults](preferences-utilisateur-avec-userdefaults.md).
+Cet attribut est en fait une « enveloppe » alentour de la classe [UserDefaults](../complements/preferences-utilisateur-avec-userdefaults.md).
 
 Attention : les données enregistrées avec @AppStorage (ou avec UserDefaults) ne sont pas sécurisées. Elle ne doivent donc pas servir à stocker des informations sensibles.
 
@@ -92,7 +92,7 @@ struct AutreVue: View {
 
 ## Où sont enregistrées les préférences utilisateur?
 
-Lorsque vous enregistrez des préférences utilisateur à l'aide de [UserDefaults](preferences-utilisateur-avec-userdefaults.md) ou [@AppStorage](les-preferences-utilisateur.md#appstorage), les informations sont enregistrées dans un fichier .plist (**property list**).
+Lorsque vous enregistrez des préférences utilisateur à l'aide de [UserDefaults](../complements/preferences-utilisateur-avec-userdefaults.md) ou [@AppStorage](les-preferences-utilisateur.md#appstorage), les informations sont enregistrées dans un fichier .plist (**property list**).
 
 Pendant le développement de votre application, le fichier .plist sera créé sur votre ordinateur dès que vous lancez l'application dans le simulateur de Xcode.
 

@@ -10,7 +10,7 @@ La valeur d'une variable d'état ne doit jamais être modifiée directement dans
 
 La variable d'état doit plutôt être modifiée en réponse à un événement, par exemple un clic sur un bouton.
 
-Si vous tentez de modifier une variable d'état directement dans une vue, vous obtiendrez un message du genre : « Type '()' cannot conform to 'View' ».
+Si vous tentez de modifier une variable d'état directement dans une vue, vous obtiendrez un message du genre : `Type '()' cannot conform to 'View'`{ .erreur }.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -18,7 +18,7 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
-      nom = "Annie"
+      nom = "Roger"
       Text(nom)
       ...
     }
@@ -30,7 +30,7 @@ Cet exemple permet de modifier correctement la variable d'état.
 
 ```swift title="SwiftUI"
 Button(action: {
-  nom = "Annie"
+  nom = "Roger"
  }) {
   Text("Modifier le nom")
  }
@@ -43,11 +43,11 @@ Toutes les vues doivent être déclarées dans le corps principal de `ContentVie
 
 Il n'est pas possible de déclarer une vue en réaction à un événement.
 
-Si vous le faites, vous pourriez obtenir une erreur ou un avertissement du compilateur, par exemple « Result of 'Text' initializer is unused » et vous n'obtiendrez pas le résultat escompté.
+Si vous le faites, vous pourriez obtenir une erreur ou un avertissement du compilateur, par exemple `Result of 'Text' initializer is unused`{ .erreur } et vous n'obtiendrez pas le résultat escompté.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
-  @State private var nom: String = "Annie"
+  @State private var nom: String = "Roger"
 
   var body: some View {
     VStack {
@@ -68,7 +68,7 @@ Ici, le nom sera affiché seulement après avoir cliqué sur le bouton.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
-  @State private var nom: String = "Annie"
+  @State private var nom: String = "Roger"
   @State private var afficherNom: Bool = false
 
   var body: some View {

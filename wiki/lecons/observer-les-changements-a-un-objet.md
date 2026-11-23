@@ -62,7 +62,7 @@ Note : il est aussi possible d'utiliser `@Bindable` plutôt que `@State` afin de
 
 La macro `@Observable` n'existe que depuis iOS 17, sorti en septembre 2023.
 
-Auparavant, le mécanisme d'observation était réalisé à l'aide de [ObservableObject，@Published et @StateObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
+Auparavant, le mécanisme d'observation était réalisé à l'aide de [ObservableObject，@Published et @StateObject](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
 
 L'ancien mécanisme fonctionne toujours mais lorsqu'on développe pour iOS 17 ou plus récent, on préférera travailler avec la macro `@Observable` puisqu'elle est plus simple à mettre en oeuvre. De plus, `@Observable` est plus performant grâce à la compilation des macros.
 

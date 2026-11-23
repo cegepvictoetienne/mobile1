@@ -62,7 +62,7 @@ Le protocole `CustomReflectable` permet notamment de déterminer quelles informa
 
 Il est plus puissant que `CustomStringConvertible`.
 
-Attention : les instances d'un [modèle SwiftData](swiftdata.md#adapter-le-modele-et-lapplication-pour-swiftdata) qui répond au protocole `CustomReflectable` pourraient générer l'erreur « Thread 1: Fatal error: Observation Registrar was not found on Model » lorsqu'elles sont utilisées pour ajouter, modifier ou supprimer des données.
+Attention : les instances d'un [modèle SwiftData](swiftdata.md#adapter-le-modele-et-lapplication-pour-swiftdata) qui répond au protocole `CustomReflectable` pourraient générer l'erreur `Thread 1: Fatal error: Observation Registrar was not found on Model`{ .erreur } lorsqu'elles sont utilisées pour ajouter, modifier ou supprimer des données.
 
 ### Sans CustomReflectable
 

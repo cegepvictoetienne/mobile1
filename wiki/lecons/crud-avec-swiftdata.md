@@ -76,7 +76,7 @@ List(items) { item in
 
 Il est d'usage de demander confirmation avant suppression puisque cette opération est irréversible.
 
-La technique est expliquée dans la fiche « [Demander une confirmation avec .confirmationDialog()](quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog) ».
+La technique est expliquée dans la fiche « [Demander une confirmation avec .confirmationDialog()](../complements/quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog) ».
 
 Il faudra adapter le code présenté afin qu'il fasse un `modelContext.delete()` plutôt que de retirer un élément d'un tableau.
 
@@ -147,7 +147,7 @@ do {
 
 ### Erreur « Thread 1: Fatal error: Observation Registrar was not found on Model »
 
-Si vous obtenez l'erreur « Thread 1: Fatal error: Observation Registrar was not found on Model » lors de l'ajout, de la modification ou de la suppresison d'un enregistrement, assurez-vous que le modèle ne répond pas au protocole `CustomReflectable`.
+Si vous obtenez l'erreur `Thread 1: Fatal error: Observation Registrar was not found on Model`{ .erreur } lors de l'ajout, de la modification ou de la suppresison d'un enregistrement, assurez-vous que le modèle ne répond pas au protocole `CustomReflectable`.
 
 En effet, il semble y avoir un conflit entre le protocole `CustomReflectable` et le mécanisme d'observation utilisé par SwiftData.
 
@@ -431,7 +431,7 @@ La méthode [confirmationDialog()](https://developer.apple.com/documentation/swi
 
 ### confirmationDialog vs alert
 
-Le fonctionnement de `confirmationDialog` ressemble à celui de [alert](quelques-vues-swiftui.md#message-popup-avec-alert) : une variable d'état contrôle si le popup doit être affiché ou non et on peut définir quels boutons seront affichés et quelles actions ils déclencheront.
+Le fonctionnement de `confirmationDialog` ressemble à celui de [alert](../complements/quelques-vues-swiftui.md#message-popup-avec-alert) : une variable d'état contrôle si le popup doit être affiché ou non et on peut définir quels boutons seront affichés et quelles actions ils déclencheront.
 
 Voici comment choisir entre une alerte et une boîte de confirmation :
 

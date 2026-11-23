@@ -4,7 +4,7 @@
 
 Par défaut, lorsqu'une application est installée sur un iPhone, le nom qui apparaît sous son icône correspond au nom du dossier du projet.
 
-![Application sans AppIcon](../21-l-appicon/images/Xcode-ApplicationSansAppIcon.png)
+![Application sans AppIcon](images/Xcode-ApplicationSansAppIcon.png)
 
 Remarquez que sur cette image, l'application n'a pas [de AppIcon](l-appicon.md#ajouter-un-appicon) défini.
 
@@ -12,7 +12,7 @@ Dans la plupart des cas, il serait préférable de redéfinir le nom qui appara�
 
 Pour modifier ce nom :
 
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
 
   ![Navigateur de projet](images/Xcode-NavigateurDeProjet.png)
 - Dans l'onglet **General**, section **Identity**, entrez le nom désiré dans la zone **Display Name**.
@@ -69,7 +69,7 @@ Si vous tentez d'ouvrir votre application sur le iPhone plus d'une semaine aprè
     Sur le iPhone, rendez-vous dans **Réglages**.
   - Cliquez sur **Confidentialité et sécurité**.
   - Au bas de l'écran, activez le mode développeur.
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
 
   ![Navigateur de projet](images/Xcode-NavigateurDeProjet.png)
 - Dans l'onglet **General**, section **Identity**, assurez-vous d'avoir un nom conforme pour le **Bundle Identifier**. Il s'agit généralement d'un nom de domaine en format inverse, par exemple com.mondomaine, ou si vous ne possédez pas de nom de domaine, d'une chaîne du genre com.nomfamilleprenom. Le tout sera suivi d'un point puis d'une chaîne pour identifier le projet.
@@ -80,7 +80,7 @@ Si vous tentez d'ouvrir votre application sur le iPhone plus d'une semaine aprè
 
   ![Bundle indentifier](images/Xcode-BundleIdentifier.png)
 - Cliquez sur l'onglet **Signing & Capabilities**.
-- Si votre compte iCloud n'est pas encore associé à Xcode, vous verrez le message « Signing for "MonProjet" requires a development team ».
+- Si votre compte iCloud n'est pas encore associé à Xcode, vous verrez le message `Signing for "MonProjet" requires a development team`{ .erreur }.
 
   Cliquez sur **Add Account** vis-à-vis de **Team** puis fournissez votre code d'usager iCloud de même que votre mot de passe.
 
@@ -95,7 +95,7 @@ Si vous tentez d'ouvrir votre application sur le iPhone plus d'une semaine aprè
 
 ### Permettre l'exécution de l'application sur le iPhone
 
-À ce stade, Xcode vous a peut-être affiché un message d'erreur du genre « The request to open "com.monnom.monprojet" failed. Verify that the Developer App certificate for your account is trusted on your device. Open Settings on the device and navigate to General -> VPN & Device Management, then select your Developer App certificate to trust it. ».
+À ce stade, Xcode vous a peut-être affiché un message d'erreur du genre `The request to open "com.monnom.monprojet" failed. Verify that the Developer App certificate for your account is trusted on your device. Open Settings on the device and navigate to General -> VPN & Device Management, then select your Developer App certificate to trust it.`{ .erreur }.
 
 ![Could not launch Mon Projet](images/Xcode-RequestToOpenProjectFailed.png)
 

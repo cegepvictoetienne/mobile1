@@ -118,7 +118,7 @@ struct ContentView: View {
 
 ## Syntaxes obsolètes
 
-Avant iOS 17, [la syntaxe de onChange() pouvait prendre différentes formes](fonctions-obsoletes-ou-anciennes-syntaxes.md#onchange-avant-ios-17).
+Avant iOS 17, [la syntaxe de onChange() pouvait prendre différentes formes](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md#onchange-avant-ios-17).
 
 Ces syntaxes sont obsolètes et ne doivent plus être utilisées si on cible iOS 17 ou plus.
 

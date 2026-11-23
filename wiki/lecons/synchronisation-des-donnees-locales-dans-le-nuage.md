@@ -655,7 +655,7 @@ La technique pour effectuer un tel test est expliquée dans la fiche « [Tester 
 
 Une fois le service Web écrit et testé, vous êtes prêts à le consommer dans votre application.
 
-- [avec SwiftUI](fonctions-obsoletes-ou-anciennes-syntaxes.md#consommer-un-service-web-technique-traditionnelle)
+- [avec SwiftUI](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md#consommer-un-service-web-technique-traditionnelle)
 
 ??? info "Pour plus d'information"
 

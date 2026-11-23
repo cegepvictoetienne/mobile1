@@ -388,3 +388,32 @@ article a[href^="http"]:not(pre a):not(code a):not([href^="https://mobile1.profi
 .md-typeset table:not([class]) tr:nth-child(even) td {
   background-color: var(--ls-surface-low);
 }
+
+/* --------------------------------------------------------------------------
+   12. Messages d'erreur – `message`{ .erreur }
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme] .md-typeset code.erreur {
+  background-color: #FEF2F2;
+  color: var(--ls-alert);
+  border-left: 3px solid #DC2626;
+  border-radius: 0.25rem;
+  padding: 0.1em 0.5em;
+  font-size: 0.875em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+[data-md-color-scheme] .md-typeset code.erreur::before {
+  content: "⊗ ";
+  color: #DC2626;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code.erreur {
+  background-color: rgba(220, 38, 38, 0.18);
+  color: #FCA5A5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code.erreur::before {
+  color: #F87171;
+}

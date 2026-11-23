@@ -6,12 +6,12 @@ Dans une vue SwiftUI, à peu près tous les éléments graphiques, incluant les 
 
 Chaque vue est affichée dans un parent, le parent ultime étant l'écran ou plus précisément la zone sécuritaire de l'écran (**safe area**).
 
-Quand vient le temps de placer un élément à l'écran, le parent et l'enfant sont sollicités[1](https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader) :
+Quand vient le temps de placer un élément à l'écran, le parent et l'enfant sont sollicités :  
 
 - Le parent de cet élément suggère une taille et une position.
 - L'enfant décide de l'espace et la position qu'il désire occuper en fonction de ce qui a été suggéré par le parent. Plusieurs modifieurs lui permettent de le faire, par exemple .`position()`, `.offset()`, `.frame()`, `.padding()`, etc.
 
-Pour bien comprendre ce concept, je vous propose une petite démonstration :
+Voici un exemple :
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -39,43 +39,35 @@ struct ContentView: View {
 }
 ```
 
-Les éléments sont positionnés l'un sous l'autre grâce au `VStack`.
+![Canevas](images/Xcode-Positionnement-1.webp)  
 
-J'ai ajouté `spacing: 0` au `VStack` pour assurer que tout l'espacement soit dû aux paddings que j'ai utilisés.
 
-J'ai volontairement placé les paddings parfois directement sous l'élément, parfois après `background()`.
+| Explication | Résultat  
+| -- | --   
+| Le premier texte commence par recevoir une couleur de fond. Cette couleur, qui est une vue, occupe tout l'espace de son parent, le texte. Donc, la couleur ne déborde pas du texte. Puisque le padding est appliqué après le `background()`, il y a une marge non colorée alentour de la couleur de fond. | ![Canevas](images/Xcode-Positionnement-2.webp)
+| La même chose se produit pour le premier cercle. La couleur de fond est appliquée directement au cercle donc elle remplit l'espace occupé par le cercle puis le padding ajoute une marge alentour de cet espace. J'ai forcé la marge à 50 pour que ce soit plus visible. Avec le second cercle, on commence par appliquer le padding au cercle. La couleur de fond est appliquée à ce padding donc elle occupe tout l'espace du cercle et de sa marge. | ![Canevas](images/Xcode-Positionnement-3.webp)
+| Remarquez que le second cercle est plus gros que le premier et ce, même si les deux sont positionnés dans le même VStack et sans forcer leur taille. Ceci est dû au `padding(50)` appliqué au premier cercle. Le parent calcule la taille maximale du cercle par rapport à l'espace disponible et aux modifieurs qu'il utilise. Dans un tel cas, si le cercle avait voulu imposer sa taille à l'aide de `.frame(width: 390)`, le cercle aurait gardé la même taille puisque l'espace ne le permet pas. | ![Canevas](images/Xcode-Positionnement-4.webp)
+| Pour terminer, la couleur de fond couvre le texte et sa marge puisque le padding a été appliqué avant le `background()` | ![Canevas](images/Xcode-Positionnement-5.webp)
 
-Dans Xcode, on peut configurer le canevas pour que des lignes bleues entourent l'espace qu'une vue occupe effectivement à l'écran quand on clique sur cette vue dans le code.
 
-Ces quatre images montrent les lignes bleues quand on clique dans l'ordre sur le premier texte, sur le premier cercle, sur le second cercle puis sur le second texte.
+??? info "Pour plus d'information"  
 
-![Canevas](images/Xcode-Positionnement-1.png) ![Canevas](images/Xcode-Positionnement-2.png) ![Canevas](images/Xcode-Positionnement-3.png) ![Canevas](images/Xcode-Positionnement-4.png)
-
-Le premier texte commence par recevoir une couleur de fond. Cette couleur, qui est une vue, occupe tout l'espace de son parent, le texte. Donc, la couleur ne déborde pas du texte.
-
-Puisque le padding est appliqué après le `background()`, il y a une marge non colorée alentour de la couleur de fond.
-
-La même chose se produit pour le premier cercle. La couleur de fond est appliquée directement au cercle donc elle remplit l'espace occupé par le cercle puis le padding ajoute une marge alentour de cet espace. J'ai forcé la marge à 50 pour que ce soit plus visible.
-
-Avec le second cercle, on commence par appliquer le padding au cercle. La couleur de fond est appliquée à ce padding donc elle occupe tout l'espace du cercle et de sa marge.
-
-Remarquez que le second cercle est plus gros que le premier et ce, même si les deux sont positionnés dans le même VStack et sans forcer leur taille. Ceci est dû au `padding(50)` appliqué au premier cercle. Le parent calcule la taille maximale du cercle par rapport à l'espace disponible et aux modifieurs qu'il utilise. Dans un tel cas, si le cercle avait voulu imposer sa taille à l'aide de `.frame(width: 390)`, le cercle aurait gardé la même taille puisque l'espace ne le permet pas.
-
-Pour terminer, la couleur de fond couvre le texte et sa marge puisque le padding a été appliqué avant le `background()`.
-
-### Source
-
-1. « Understanding frames and coordinates inside GeometryReader ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader>
+    « Understanding frames and coordinates inside GeometryReader ». Hacking with Swift. <https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader>
 
 ## Modifieur .padding()
 
 Le modifieur [.padding()](https://developer.apple.com/documentation/swiftui/view/padding(_:_:)) permet d'ajouter de l'espace alentour d'une vue.
 
-Ce modifieur est très utilisé. Il fait d'ailleurs partie de la vue générée par défaut dans un nouveau projet SwiftUI afin d'assurer qu'aucun texte ne soit collé directement au bord de l'écran.
-
-### Côté où l'espacement doit être ajouté
-
-Lorsqu'il est utilisé sans paramètre, le modifieur `.padding()` ajoute un espacement égal de chaque côté de la vue.
+<table markdown="1">
+<thead>
+<tr>
+<th>Code</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody markdown="1">
+<tr markdown="1">
+<td markdown="1">
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -83,17 +75,16 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-Padding.png)
+</td>
+<td markdown="1">
 
-Il est possible de préciser le ou les côtés où l'espacement doit être ajouté. Les [paramètres disponibles](https://developer.apple.com/documentation/swiftui/edge/set) à cet effet sont :
+![exemple padding](images/SwiftUI-Padding.png){width=150}
 
-- `.all` (valeur par défaut)
-- .`top`
-- `.bottom`
-- `.leading` (espacement placé avant la vue, normalement à sa gauche)
-- `.trailing` (espacement placé après la vue, normalement à sa droite)
-- `.horizontal` (de chaque côté horizontal, normalement à gauche et à droite)
-- `.vertical` (de chaque côté vertical, normalement en haut et en bas)
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -101,9 +92,17 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingLeading.png)
+</td>
+<td markdown="1">
 
-Si vous désirez ajouter un espacement partout sauf en bas :
+![exemple padding](images/SwiftUI-PaddingLeading.png){width=150}
+
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
+
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -112,7 +111,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-Cette syntaxe est équivalente :
+ou  
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -120,15 +119,18 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingHorizontalTop.png)
+</td>
+<td markdown="1">
 
-### Taille de l'espacement
+![exemple padding](images/SwiftUI-PaddingHorizontalTop.png){width=150}
 
-La taille de l'espacement est calculée en points.
+</td>
+</tr>
 
-Par défaut, SwiftUI utilise une taille qui tient compte du périphérique utilisé.
 
-Vous avec la possibilité de spécifier la taille désirée à l'aide d'un nombre ou d'une variable de type GCFloat.
+<tr markdown="1">
+<td markdown="1">
+
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -136,7 +138,17 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-Padding100.png)
+</td>
+<td markdown="1">
+
+![exemple padding](images/SwiftUI-Padding100.png){width=150}
+
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
+
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -144,7 +156,17 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingLeading50.png)
+</td>
+<td markdown="1">
+
+![exemple padding](images/SwiftUI-PaddingLeading50.png){width=150}
+
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
+
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -153,7 +175,18 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingHorizontal100Vertical30.png)
+</td>
+<td markdown="1">
+
+![exemple padding](images/SwiftUI-PaddingHorizontal100Vertical30.png){width=150}
+
+</td>
+</tr>
+
+
+<tr markdown="1">
+<td markdown="1">
+
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -161,7 +194,17 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingHorizontalTop75.png)
+</td>
+<td markdown="1">
+
+![exemple padding](images/SwiftUI-PaddingHorizontalTop75.png){width=150}
+
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
+
 
 La dimension des espacements peut également être fournie à l'aide d'un paramètre de type [EdgeInsets](https://developer.apple.com/documentation/swiftui/edgeinsets) :
 
@@ -171,7 +214,17 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](images/SwiftUI-PaddingEdgeInsets.png)
+</td>
+<td markdown="1">
+
+![exemple padding](images/SwiftUI-PaddingEdgeInsets.png){width=150}
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
 
 ## Tenir compte de la taille de l'écran avec GeometryReader
 
@@ -192,8 +245,6 @@ Il s’agit de l’espace que la vue parente réserve à la vue enfant lors de l
 Lorsque `GeometryReader` est appliqué au niveau de la vue la plus englobante de l'interface, cet espace correspond à la zone protégée, c'est-à-dire la zone dans laquelle il est sécuritaire d'afficher du contenu.
 
 La variable `geometry`, fournie par la fonction anonyme, est de type [GeometryProxy](https://developer.apple.com/documentation/swiftui/geometryproxy). Elle permet d'accéder aux dimensions de la zone.
-
-Je vous fais la démonstration avec un rectangle qui utilise presque tout l'espace disponible.
 
 ```swift title="SwiftUI"
 var body: some View {
@@ -232,7 +283,8 @@ On se tournera alors sur la méthode [onAppear()](constructeur-et-onappear.md#on
 
 Il faudra donner une valeur initiale quelconque à la variable d'état et écraser cette valeur dès que l'écran apparaît.
 
-Important : il faut appliquer `onAppear()` sur une vue placée à l'intérieur du `GeometryReader`.
+!!! Important
+    il faut appliquer `onAppear()` sur une vue placée à l'intérieur du `GeometryReader`.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -254,24 +306,6 @@ struct ContentView: View {
   }
 }
 ```
-
-### Taille par rapport à l'écran entier
-
-Avant iOS 26, il était possible de travailler avec `UIScreen.main` pour retrouver les dimensions de l'écran entier.
-
-Cette fonctionnalité est maintenant obsolète.
-
-Avec ceci, on obtenait un rectangle qui occupait la moitié de la taille de l'écran.
-
-```swift title="SwiftUI"
-Rectangle()
-  .frame(
-    width:UIScreen.main.bounds.width / 2,
-    height:UIScreen.main.bounds.height / 2
-  )
-```
-
-![Rectangle avec UIScreen sur un iPhone 13 ProMax](images/SwiftUI-RectangleTailleUIScreen-iPhone13ProMax.png)
 
 ??? info "Pour plus d'information"
 

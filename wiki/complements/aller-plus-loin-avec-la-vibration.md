@@ -1,10 +1,10 @@
 # CHHapticEngine
 
-Alors que la classe [UINotificationFeedbackGenerator()](la-vibration.md) travaille avec des vibrations standardisées, la classe [CHHapticEngine](https://developer.apple.com/documentation/corehaptics/chhapticengine) peut émettre des vibrations qui correspondent à un patron que vous aurez vous-même créé. Il permet même de faire jouer un son pendant la vibration.
+Alors que la classe [UINotificationFeedbackGenerator()](../lecons/la-vibration.md) travaille avec des vibrations standardisées, la classe [CHHapticEngine](https://developer.apple.com/documentation/corehaptics/chhapticengine) peut émettre des vibrations qui correspondent à un patron que vous aurez vous-même créé. Il permet même de faire jouer un son pendant la vibration.
 
 En passant, le terme **haptic** se traduit par **haptique**, c'est-à-dire ce qui concerne le sens du toucher.
 
-Notez que si vous désirez émettre une vibration pour signaler un succès, un avertissement ou une erreur, vous devez plutôt utiliser [SensoryFeedback](la-vibration.md) puisqu'il s'agit de vibrations standardisées.
+Notez que si vous désirez émettre une vibration pour signaler un succès, un avertissement ou une erreur, vous devez plutôt utiliser [SensoryFeedback](../lecons/la-vibration.md) puisqu'il s'agit de vibrations standardisées.
 
 Voici les étapes à réaliser pour préparer le moteur de vibrations avec `CHHapticEngine`.
 

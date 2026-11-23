@@ -2,7 +2,7 @@
 
 ## Retourner à n'importe quelle vue de la pile (NavigationPath)
 
-Dans une application SwiftUI qui utilise un ou plusieurs [NavigationLink](les-applications-multivues.md), il est possible de revenir à la vue précédente :
+Dans une application SwiftUI qui utilise un ou plusieurs [NavigationLink](../lecons/les-applications-multivues.md), il est possible de revenir à la vue précédente :
 
 - à l'aide du [bouton de retour](fonctions-obsoletes-ou-anciennes-syntaxes.md#texte-du-bouton-de-retour-dans-la-vue-enfant) généré automatiquement par SwiftUI
 - à l'aide de [la méthode dismiss()](fonctions-obsoletes-ou-anciennes-syntaxes.md#texte-du-bouton-de-retour-dans-la-vue-enfant)
@@ -11,7 +11,7 @@ Il est également possible de dépiler la pile d'appel vers la vue désirée et 
 
 Ceci est réalisé à l'aide de la structure [NavigationPath](https://developer.apple.com/documentation/swiftui/navigationpath) qui doit être passée en paramètre au NavigationStack. Cette structure permet de retenir ce qui est dans la pile des vues.
 
-Pour pouvoir dépiler comme désiré, le NavigationLink devra travailler avec [.navigationDestination()](les-applications-multivues.md).
+Pour pouvoir dépiler comme désiré, le NavigationLink devra travailler avec [.navigationDestination()](../lecons/les-applications-multivues.md).
 
 ```swift title="Fichier ContentView.swift"
 struct ContentView: View {
@@ -206,7 +206,7 @@ La petite zone grise dans le haut apparaît automatiquement. Elle a pour but de 
 
 La structure [TabView](https://developer.apple.com/documentation/swiftui/tabview) permet de naviguer entre différentes vues d'une application SwiftUI.
 
-Il s'agit d'une technique à la fois alternative et complémentaire à [ToolbarContent](la-barre-de-navigation.md#configurer-les-barres-doutils).
+Il s'agit d'une technique à la fois alternative et complémentaire à [ToolbarContent](../lecons/la-barre-de-navigation.md#configurer-les-barres-doutils).
 
 Elle crée des éléments cliquables au bas de l'écran et permet de préciser le contenu de la vue active.
 

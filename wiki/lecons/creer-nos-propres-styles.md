@@ -209,7 +209,7 @@ struct ContentView: View {
 
 ### Extensions
 
-Dans le dernier exemple, j'ai été obligée d'appliquer le modifieur `resizable()` à l'image. Il aurait été plus intéressant d'ajouter ce modifieur directement dans le ViewModifier mais ceci causait l'erreur « Value of type 'ContentView.ImageRonde.Content' (aka '_ViewModifier_Content<ContentView.ImageRonde>') has no member 'resizable' ».
+Dans le dernier exemple, j'ai été obligée d'appliquer le modifieur `resizable()` à l'image. Il aurait été plus intéressant d'ajouter ce modifieur directement dans le ViewModifier mais ceci causait l'erreur `Value of type 'ContentView.ImageRonde.Content' (aka '_ViewModifier_Content<ContentView.ImageRonde>') has no member 'resizable'`{ .erreur }.
 
 ![Value of type 'ContentView.ImageRonde.Content' (aka '_ViewModifier_Content<ContentView.ImageRonde>') has no member 'resizable'](images/SwiftUI-ValueOfTypeContentViewHasNoMemberResizable.png)
 

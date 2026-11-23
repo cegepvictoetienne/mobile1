@@ -156,7 +156,7 @@ struct VueEnfant: View {
 
 ## Variables globales (@Environment et @EnvironmentObject)
 
-Si l'application a besoin de passer un objet entre des vues qui ne sont pas directement liées, par exemple de la vue parent vers l'enfant de son enfant, il est possible de travailler avec l'attribut (**property wrapper**) [@Environment](https://developer.apple.com/documentation/swiftui/environment) lorsque la classe est décorée avec [@Observable](observer-les-changements-a-un-objet.md) ou [@EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject) si vous utilisez l'ancienne technique qui consiste à [conformer la classe au protocole ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
+Si l'application a besoin de passer un objet entre des vues qui ne sont pas directement liées, par exemple de la vue parent vers l'enfant de son enfant, il est possible de travailler avec l'attribut (**property wrapper**) [@Environment](https://developer.apple.com/documentation/swiftui/environment) lorsque la classe est décorée avec [@Observable](observer-les-changements-a-un-objet.md) ou [@EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject) si vous utilisez l'ancienne technique qui consiste à [conformer la classe au protocole ObservableObject](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
 
 Prenons l'exemple de cette classe observable.
 

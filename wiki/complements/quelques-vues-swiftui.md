@@ -336,7 +336,7 @@ Button(action: {
 
 ### Action du bouton
 
-L'action du bouton peut être spécifiée dans une fonction anonyme ou encore dans une [fonction nommée](les-fonctions.md#declarer-une-fonction-swift).
+L'action du bouton peut être spécifiée dans une fonction anonyme ou encore dans une [fonction nommée](../lecons/les-fonctions.md#declarer-une-fonction-swift).
 
 ```swift title="SwiftUI"
 Button("Cliquez ici", action: {
@@ -407,7 +407,7 @@ Link("Source de l'image : Open Clipart",
 
 ### URL dans une variable
 
-Si l'URL provient d'une variable, par exemple s'il est saisi par l'usager ou s'il est tiré d'une base de données, il n'est pas sécuritaire d'utiliser le point d'exclamation. Si on le faisait et que l'URL était nil, on obtiendrait le message « Fatal error: Unexpectedly found nil while unwrapping an Optional value » lors de l'exécution de l'application.
+Si l'URL provient d'une variable, par exemple s'il est saisi par l'usager ou s'il est tiré d'une base de données, il n'est pas sécuritaire d'utiliser le point d'exclamation. Si on le faisait et que l'URL était nil, on obtiendrait le message `Fatal error: Unexpectedly found nil while unwrapping an Optional value`{ .erreur } lors de l'exécution de l'application.
 
 Il existe une technique plus sécuritaire pour effectuer ce travail : tester si la chaîne n'est pas à nil avant d'utiliser le point d'exclamation.
 
@@ -451,7 +451,7 @@ La structure Color propose des propriétés de classe pour définir des couleurs
 - Color.white
 - Color.yellow
 
-![Couleurs prédéfinies](../07-les-couleurs/images/SwiftUI-Color.png)
+![Couleurs prédéfinies](../lecons/images/SwiftUI-Color.png)
 
 Les couleurs peuvent être utilisées dans des méthodes qui attendent en paramètre une structure Color.
 
@@ -469,7 +469,7 @@ La structure Color propose également des propriétés de classe pour choisir un
 - [Color.primary](https://developer.apple.com/documentation/swiftui/color/primary) (noir en mode Apparence Claire ou blanc en mode Apparence Sombre)
 - [Color.secondary](https://developer.apple.com/documentation/swiftui/color/secondary) (noir avec transparence en mode Apparence Claire ou blanc avec transparence en mode Apparence Sombre))
 
-![Couleurs prédéfinies](../07-les-couleurs/images/SwiftUI-Color-2.png)
+![Couleurs prédéfinies](../lecons/images/SwiftUI-Color-2.png)
 
 ## Message popup avec .alert()
 
@@ -509,7 +509,7 @@ Button(action: {
 }
 ```
 
-![Alerte avec bouton par défaut](../15-afficher-un-message-a-l-usager/images/SwiftUI-Alert-1.png)
+![Alerte avec bouton par défaut](../lecons/images/SwiftUI-Alert-1.png)
 
 Attention : la [Structure Alert](https://developer.apple.com/documentation/swiftui/alert) ne doit plus être utilisée. Elle est obsolète depuis iOS 13.0 et macOS 10.15.
 
@@ -536,7 +536,7 @@ Button("Faire livrer") {
 }
 ```
 
-![Alerte avec bouton personnalisé](../15-afficher-un-message-a-l-usager/images/SwiftUI-Alert-3.png)
+![Alerte avec bouton personnalisé](../lecons/images/SwiftUI-Alert-3.png)
 
 ### Alerte avec code à exécuter
 
@@ -577,7 +577,7 @@ Button("Synchroniser") {
  }
 ```
 
-![Alert avec message](../15-afficher-un-message-a-l-usager/images/SwiftUI-AlertAvecMessage.png)
+![Alert avec message](../lecons/images/SwiftUI-AlertAvecMessage.png)
 
 ### Alerte qui pose une question
 
@@ -602,7 +602,7 @@ Button("Supprimer") {
 }
 ```
 
-![Alerte avec boutons oui et non](../15-afficher-un-message-a-l-usager/images/SwiftUI-Alert-2.png)
+![Alerte avec boutons oui et non](../lecons/images/SwiftUI-Alert-2.png)
 
 ### Alerte qui saisit de l'information
 
@@ -626,7 +626,7 @@ Si vous avez besoin d'un texte supplémentaire, vous pouvez utiliser la syntaxe 
  }
 ```
 
-![TextField dans .alert()](../15-afficher-un-message-a-l-usager/images/SwiftUI-TextFieldDansAlert.png)
+![TextField dans .alert()](../lecons/images/SwiftUI-TextFieldDansAlert.png)
 
 ### Alerte attachée à autre chose qu'un bouton
 
@@ -775,7 +775,7 @@ struct UnItem: View {
 }
 ```
 
-![confirmationDialog()](../43-crud-avec-swiftdata/images/SwiftUI-ConfirmationDialogIOS26.png)
+![confirmationDialog()](../lecons/images/SwiftUI-ConfirmationDialogIOS26.png)
 
 ### Et si le bouton qui appelle le confirmationDialog n'est pas dans une liste?
 
@@ -783,7 +783,7 @@ Le bouton qui permet d'afficher le `confirmationDialog` pourrait être placé en
 
 Puisque la vue de détail est une vue enfant, elle a déjà son propre état. Elle peut donc contenir le `confirmationDialog` ainsi que tout le code qui l'entoure.
 
-Si le `confirmationDialog` mène à une suppression, une fois la suppression réalisée, il faudra penser à utiliser [dismiss()](les-applications-multivues.md) pour refermer la vue de détail.
+Si le `confirmationDialog` mène à une suppression, une fois la suppression réalisée, il faudra penser à utiliser [dismiss()](../lecons/les-applications-multivues.md) pour refermer la vue de détail.
 
 Remarquez qu'ici encore, le `confirmationDialog` a été attaché directement au bouton pour qu'il apparaisse vis-à-vis ce dernier.
 
@@ -819,7 +819,7 @@ struct DetailsItem: View {
 }
 ```
 
-![ConfirmationDialog dans vue de détail](../43-crud-avec-swiftdata/images/SwiftUI-ConfirmationDialogDansVueDetail.png)
+![ConfirmationDialog dans vue de détail](../lecons/images/SwiftUI-ConfirmationDialogDansVueDetail.png)
 
 ## Ajouter une image dans un projet SwiftUI
 
@@ -836,7 +836,7 @@ Pour utiliser une image dans une application SwiftUI, il faut d'abord l'ajouter 
 - Dans Xcode, cliquez sur `Assets.xcassets` dans la zone de gauche.
 - Cliquez sur le + au bas de la zone centrale qui liste les ressources du projet, sélectionnez **Import** puis retrouvez dans vos dossiers l'image désirée.
 
-  ![Assets.xcassets](../20-les-images-et-icones/images/Xcode-AssetsXcassets.png)
+  ![Assets.xcassets](../lecons/images/Xcode-AssetsXcassets.png)
 
 ### Nom de l'image
 
@@ -861,13 +861,13 @@ Image("nom-image")
 
 Dans vos vues SwiftUI, il est facile d'intégrer une icône suivie d'un texte. Le contrôle [Label](https://developer.apple.com/documentation/swiftui/label) est conçu exactement pour celà.
 
-Il est possible de travailler avec [la bibliothèque d'icônes SF Symbols](les-images-et-icones.md#la-bibliotheque-dicones-sf-symbols).
+Il est possible de travailler avec [la bibliothèque d'icônes SF Symbols](../lecons/les-images-et-icones.md#la-bibliotheque-dicones-sf-symbols).
 
 ```swift title="SwiftUI"
 Label("Ajouter", systemImage: "plus.circle")
 ```
 
-![Label](../20-les-images-et-icones/images/SwiftUI-Label.png)
+![Label](../lecons/images/SwiftUI-Label.png)
 
 Il est également possible d'utiliser une [image que vous avez ajoutée dans votre projet](quelques-vues-swiftui.md#ajouter-une-image-dans-un-projet-swiftui).
 
@@ -875,7 +875,7 @@ Il est également possible d'utiliser une [image que vous avez ajoutée dans vot
 Label("Profil", image: "user")
 ```
 
-![Label](../20-les-images-et-icones/images/SwiftUI-LabelImage.png)
+![Label](../lecons/images/SwiftUI-LabelImage.png)
 
 ## Les espaceurs (Spacer)
 
@@ -896,7 +896,7 @@ VStack {
 
 Dans cet exemple, les modifieurs `padding()` assurent que le contrôle ne soit pas collé au bord de l'écran et le `Spacer()` ajoute l'espace requis entre les deux vues pour remplir l'écran en hauteur.
 
-![Spacer()](../06-creer-une-interface-utilisateur-swiftui/images/Swift-Spacer.png)
+![Spacer()](../lecons/images/Swift-Spacer.webp){width=300}
 
 Il est possible d'appliquer des modifieurs à un `Spacer()` pour contrôler sa taille et son apparence.
 
@@ -912,7 +912,7 @@ VStack {
 }
 ```
 
-![Spacer avec Frame](../06-creer-une-interface-utilisateur-swiftui/images/Swift-SpacerFrame.png)
+![Spacer avec Frame](../lecons/images/Swift-SpacerFrame.webp){width=300}
 
 ## Les contrôles d'empilement (VStack, HStack, ZStack)
 
@@ -935,7 +935,7 @@ VStack {
  }
 ```
 
-![VStack](../06-creer-une-interface-utilisateur-swiftui/images/Swift-VStack.png)
+![VStack](../lecons/images/Swift-VStack.webp){width=300}
 
 ### Paramètres des contrôles d'empilement
 
@@ -1025,7 +1025,7 @@ List(items) { item in
 }
 ```
 
-![List simple](../32-les-listes/images/SwiftUI-ListSansForEach.png)
+![List simple](../lecons/images/SwiftUI-ListSansForEach.png)
 
 ### Masquer le fond gris
 
@@ -1038,7 +1038,7 @@ List(items) { item in
 .scrollContentBackground(.hidden)
 ```
 
-![scrollContentBackground](../32-les-listes/images/SwiftUI-List-scrollContentBackground.png)
+![scrollContentBackground](../lecons/images/SwiftUI-List-scrollContentBackground.png)
 
 ### Si les éléments ne répondent pas au protocole Identifiable
 
@@ -1131,7 +1131,7 @@ List(items) { item in
  }
 ```
 
-![List](../32-les-listes/images/SwiftUI-List-2.png)
+![List](../lecons/images/SwiftUI-List-2.png)
 
 ### Avec ForEach
 
@@ -1179,7 +1179,7 @@ List {
  }
 ```
 
-![List avec Foreach](../32-les-listes/images/SwiftUI-List-3.png)
+![List avec Foreach](../lecons/images/SwiftUI-List-3.png)
 
 ### Sélectionner un élément
 
@@ -1214,7 +1214,7 @@ struct ContentView: View {
  }
 ```
 
-![Liste avec sélection](../32-les-listes/images/SwiftUI-ListAvecSelection.png)
+![Liste avec sélection](../lecons/images/SwiftUI-ListAvecSelection.png)
 
 ### Sélectionner plusieurs éléments
 
@@ -1242,7 +1242,7 @@ struct ContentView: View {
  }
 ```
 
-![Sélection multiple](../32-les-listes/images/SwiftUI-ListeSelectionMultiple.png)
+![Sélection multiple](../lecons/images/SwiftUI-ListeSelectionMultiple.png)
 
 ### Changer l'apparence de l'item sélectionné
 
@@ -1260,7 +1260,7 @@ List(items, selection: $selection) { item in
  }
 ```
 
-![List avec élément sélectionné visible](../32-les-listes/images/SwiftUI-List-4.png)
+![List avec élément sélectionné visible](../lecons/images/SwiftUI-List-4.png)
 
 Dans le cas où le contenu de la liste n'est pas généré directement par List, il faudra ajouter un `.tag()` pour permettre à List de reconnaître les éléments lors de la sélection.
 
@@ -1284,7 +1284,7 @@ List(selection: $selection) {
  }
 ```
 
-![List avec élément sélecitonné visible](../32-les-listes/images/SwiftUI-List-5.png)
+![List avec élément sélecitonné visible](../lecons/images/SwiftUI-List-5.png)
 
 ### Placer deux boutons sur une même ligne du List
 
@@ -1354,7 +1354,7 @@ struct ContentView: View {
 
 Le visuel est très sommaire mais il permet d'illustrer l'importance de `.buttonStyle()` pour placer deux boutons côte-à-côte sur une ligne de la liste.
 
-![Deux boutons de large dans List](../32-les-listes/images/SwiftUI-DeuxBoutonsDansList.png)
+![Deux boutons de large dans List](../lecons/images/SwiftUI-DeuxBoutonsDansList.png)
 
 ??? info "Pour plus d'information"
 
@@ -1412,7 +1412,7 @@ Grid {
  }
 ```
 
-![Grid](../24-grille-d-items/images/SwiftUI-Grid.png)
+![Grid](../lecons/images/SwiftUI-Grid.png)
 
 Il est possible de spécifier certains paramètres pour mieux contrôler l'apparence du Grid.
 
@@ -1422,7 +1422,7 @@ Grid(horizontalSpacing: 5, verticalSpacing: 25) {
 }
 ```
 
-![Grid](../24-grille-d-items/images/SwiftUI-GridSpacing.png)
+![Grid](../lecons/images/SwiftUI-GridSpacing.png)
 
 ### LazyVGrid
 
@@ -1483,7 +1483,7 @@ NavigationStack {
 }
 ```
 
-Le message apparaîtra [dans la langue de localisation](la-localisation-traduction.md#application-swiftui-bilingue) déterminée par le croisement entre les langues supportées par l'application et la langue configurée sur l'appareil.
+Le message apparaîtra [dans la langue de localisation](../lecons/la-localisation-traduction.md#application-swiftui-bilingue) déterminée par le croisement entre les langues supportées par l'application et la langue configurée sur l'appareil.
 
 |  |  |
 | --- | --- |
@@ -1500,7 +1500,7 @@ Dans ce second exemple, on affiche un simple message sous une icône.
 ContentUnavailableView("Aucun favori", systemImage: "star.slash")
 ```
 
-![Aucun favori](../32-les-listes/images/SwiftUI-ContentUnavailableView-AucunFavori.png)
+![Aucun favori](../lecons/images/SwiftUI-ContentUnavailableView-AucunFavori.png)
 
 ### Icône, message et description
 
@@ -1514,7 +1514,7 @@ ContentUnavailableView(
  )
 ```
 
-![Aucun résultat](../32-les-listes/images/SwiftUI-ContentUnavailableView-AucunResultat.png)
+![Aucun résultat](../lecons/images/SwiftUI-ContentUnavailableView-AucunResultat.png)
 
 ### Icône, message, description et action
 
@@ -1535,7 +1535,7 @@ ContentUnavailableView {
 }
 ```
 
-![Avec bouton - aucun item](../32-les-listes/images/SwiftUI-ContentUnavailableView-ListeVideAvecBouton.png)
+![Avec bouton - aucun item](../lecons/images/SwiftUI-ContentUnavailableView-ListeVideAvecBouton.png)
 
 Voici un autre exemple intéressant.
 
@@ -1551,4 +1551,4 @@ ContentUnavailableView {
  }
 ```
 
-![Avec bouton - connexion impossible](../32-les-listes/images/SwiftUI-ContentUnavailableView-ConnexionImpossible.png)
+![Avec bouton - connexion impossible](../lecons/images/SwiftUI-ContentUnavailableView-ConnexionImpossible.png)

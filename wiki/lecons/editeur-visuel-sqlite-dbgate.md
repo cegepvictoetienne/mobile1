@@ -25,7 +25,7 @@ Si vous avez une puce Intel, sélectionnez **Installer Intel (x86)**.
 
 Si vous avez une puce Apple, sélectionnez **Installer Apple (arm64)**.
 
-Si la version téléchargée ne correspond pas au type de puce du processeur de votre ordinateur, vous obtiendrez un message du genre « dlopen... (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64h' or 'x86_64') » lorsque vous tenterez d'ouvrir une base de données.
+Si la version téléchargée ne correspond pas au type de puce du processeur de votre ordinateur, vous obtiendrez un message du genre `dlopen... (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64h' or 'x86_64')`{ .erreur } lorsque vous tenterez d'ouvrir une base de données.
 
 ![dlopen... (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64h' or 'x86_64')](images/DBGate-IncompatibleArchitecture.png)
 

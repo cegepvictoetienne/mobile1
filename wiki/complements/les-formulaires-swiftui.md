@@ -16,7 +16,7 @@ Form {
  }
 ```
 
-![TextField dans Form](../14-saisie-de-texte/images/SwiftUI-TextFieldDansForm.png)
+![TextField dans Form](../lecons/images/SwiftUI-TextFieldDansForm.png)
 
 ### Ajuster l'espacement à l'intérieur du Form
 
@@ -128,7 +128,7 @@ struct ContentView: View {
 }
 ```
 
-![TextField](../14-saisie-de-texte/images/SwiftUI-TextField.png)
+![TextField](../lecons/images/SwiftUI-TextField.png)
 
 ### Modifieur textFieldStyle()
 
@@ -144,7 +144,7 @@ TextField("Nom", text: $nom)
 
 J'ai ajouté un modifieur `padding()` afin que le `TextField` ne soit pas collé sur les bords de l'écran.
 
-![TextFieldStyle](../14-saisie-de-texte/images/SwiftUI-TextFieldStyle.png)
+![TextFieldStyle](../lecons/images/SwiftUI-TextFieldStyle.png)
 
 ### Bordure personnalisée
 
@@ -162,7 +162,7 @@ TextField("Nom", text: $nom)
   .padding()
 ```
 
-![TextField avec overlay](../14-saisie-de-texte/images/SwiftUI-TextFieldAvecOverlay.png)
+![TextField avec overlay](../lecons/images/SwiftUI-TextFieldAvecOverlay.png)
 
 ### Placer le TextField dans un Form
 
@@ -176,7 +176,7 @@ Form {
  }
 ```
 
-![TextField dans Form](../14-saisie-de-texte/images/SwiftUI-TextFieldDansForm.png)
+![TextField dans Form](../lecons/images/SwiftUI-TextFieldDansForm.png)
 
 ### Libellé
 
@@ -188,7 +188,7 @@ Ceci serait problématique par exemple dans un formulaire qui doit saisir un pr�
 
 D'ailleurs, on voit dans les applications de Apple qu'il y a généralement autre chose que le filigrane pour identifier une case de saisie, tel qu'illustré dans cette vue dans les réglages.
 
-![Libellés dans les réglages](../14-saisie-de-texte/images/SwiftUI-LibellesDansReglages.png)
+![Libellés dans les réglages](../lecons/images/SwiftUI-LibellesDansReglages.png)
 
 Afin de s'assurer que l'application soit ergonomique, il est possible de forcer l'affichage d'un libellé en utilisant des sections.
 
@@ -206,7 +206,7 @@ Form {
 }
 ```
 
-![Sections](../14-saisie-de-texte/images/SwiftUI-TextFieldAvecSections.png)
+![Sections](../lecons/images/SwiftUI-TextFieldAvecSections.png)
 
 Autre technique : définir le libellé à l'aide d'un `Text` placé à gauche du `TextField`.
 
@@ -225,7 +225,7 @@ Form {
 }
 ```
 
-![Libellés avec HStack](../14-saisie-de-texte/images/SwiftUI-TextFieldAvecLibellesDansHStack.png)
+![Libellés avec HStack](../lecons/images/SwiftUI-TextFieldAvecLibellesDansHStack.png)
 
 Afin de reproduire l'apparence des réglages du iPhone, il suffit d'ajouter une largeur aux libellés et de préciser qu'ils doivent être alignés à gauche.
 
@@ -249,7 +249,7 @@ Form {
  }
 ```
 
-![TextField avec largeur libellé uniforme](../14-saisie-de-texte/images/SwiftUI-TextFieldAvecLibellesDansHStackLargeurUniforme.png)
+![TextField avec largeur libellé uniforme](../lecons/images/SwiftUI-TextFieldAvecLibellesDansHStackLargeurUniforme.png)
 
 ### Libellé flottant
 
@@ -276,7 +276,7 @@ Form {
  }
 ```
 
-![Alignement à droite](../14-saisie-de-texte/images/SwiftUI-TextFieldAlignementDroite.png)
+![Alignement à droite](../lecons/images/SwiftUI-TextFieldAlignementDroite.png)
 
 ### Bouton pour traiter le formulaire
 
@@ -294,7 +294,7 @@ Voir la fiche « [Configurer le clavier du téléphone](les-formulaires-swiftui.
 
 ### Réagir au changement
 
-Il est possible de commander une action dès que l'usager tape du texte dans le TextField grâce à la méthode [onChange()](reagir-a-un-changement.md).
+Il est possible de commander une action dès que l'usager tape du texte dans le TextField grâce à la méthode [onChange()](../lecons/reagir-a-un-changement.md).
 
 ```swift title="SwiftUI"
 TextField("Code:", text: $code)
@@ -339,7 +339,7 @@ Par défaut, dès que l'usager clique dans un TextField, un clavier apparaît au
 
 Sur le simulateur, pour obtenir ce comportement, vous devez aller dans le menu **I/O** / **Keyboard** et décocher l'option **Connect Hardware Keyboard**.
 
-![Clavier](../14-saisie-de-texte/images/SwiftUI-Clavier.png)
+![Clavier](../lecons/images/SwiftUI-Clavier.png)
 
 Le modifieur [.keyboardType()](https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)) permet de spécifier le type de clavier à utiliser. Ceci permettra d'offrir à l'usager un clavier adapté au genre d'information qu'il doit entrer.
 
@@ -350,7 +350,7 @@ TextField("", text: $ageString)
   .keyboardType(.numberPad)
 ```
 
-![numberPad](../14-saisie-de-texte/images/SwiftUi-ClavierNumberPad-EcranComplet.png)
+![numberPad](../lecons/images/SwiftUi-ClavierNumberPad-EcranComplet.png)
 
 Il existe des claviers spécialisés pour différents besoins.
 
@@ -372,7 +372,7 @@ Pour ajouter une langue sur le téléphone ou dans le simulateur :
 - Sélectionnez l'option **Général** / **Langue et région**.
 - Cliquez sur **Ajouter une langue** puis sélectionnez la langue désirée.
 
-![Choix localisation](../14-saisie-de-texte/images/SwiftUI-Clavier-ChoixLocalisation.png)
+![Choix localisation](../lecons/images/SwiftUI-Clavier-ChoixLocalisation.png)
 
 ### Aperçu des configurations de clavier disponibles
 
@@ -382,9 +382,9 @@ C'est le clavier qui apparaît si vous ne spécifiez pas de type de clavier ou e
 
 Il est illustré ici avec les lettres majuscules, avec les lettres minuscules, avec les chiffres puis avec les caractères spéciaux.
 
-![.default](../14-saisie-de-texte/images/SwiftUI-ClavierDefaultMaj.png) ![.default](../14-saisie-de-texte/images/SwiftUI-ClavierDefault.png)
+![.default](../lecons/images/SwiftUI-ClavierDefaultMaj.png) ![.default](../lecons/images/SwiftUI-ClavierDefault.png)
 
-![.default](../14-saisie-de-texte/images/SwiftUI-ClavierDefault-2.png) ![.default](../14-saisie-de-texte/images/SwiftUI-ClavierDefault-3.png)
+![.default](../lecons/images/SwiftUI-ClavierDefault-2.png) ![.default](../lecons/images/SwiftUI-ClavierDefault-3.png)
 
 #### .numberPad
 
@@ -396,13 +396,13 @@ Si le téléphone est configuré pour travailler dans une langue dans laquelle l
 
 Dans cet exemple, on voit que le clavier peut afficher des caractères arabes.
 
-![.numberPad](../14-saisie-de-texte/images/SwiftUI-ClavierNumberPad.png) ![.numberPad](../14-saisie-de-texte/images/SwiftUI-ClavierNumberPadArabe.png)
+![.numberPad](../lecons/images/SwiftUI-ClavierNumberPad.png) ![.numberPad](../lecons/images/SwiftUI-ClavierNumberPadArabe.png)
 
 #### .decimalPad
 
 Même chose que .numberPad sauf qu'il y a une touche pour ajouter un point décimal.
 
-![.decimalPad](../14-saisie-de-texte/images/SwiftUI-ClavierDecimalPad.png)
+![.decimalPad](../lecons/images/SwiftUI-ClavierDecimalPad.png)
 
 #### .numbersAndPonctuation
 
@@ -410,7 +410,7 @@ Des touches ont été ajoutées à celles des chiffres afin faciliter l'entrée 
 
 C'est le clavier à utiliser si vous avez besoin de permettre les nombres négatifs.
 
-![.numbersAndPonctuation](../14-saisie-de-texte/images/SwiftUI-ClavierNumbersAndPonctuation.png)
+![.numbersAndPonctuation](../lecons/images/SwiftUI-ClavierNumbersAndPonctuation.png)
 
 #### .phonePad
 
@@ -418,7 +418,7 @@ Ce clavier est optimisé pour entrer des numéros de téléphone. Il est comme .
 
 Dans le cas où votre application permettrait par exemple d'entrer un numéro qui serait composé par l'application, il y a même les touches `wait` et `pause` qui peuvent être utilisées.
 
-![.phonePad](../14-saisie-de-texte/images/SwiftUI-ClavierPhonePad.png) ![.phonePad](../14-saisie-de-texte/images/SwiftUI-ClavierPhonePad-2.png)
+![.phonePad](../lecons/images/SwiftUI-ClavierPhonePad.png) ![.phonePad](../lecons/images/SwiftUI-ClavierPhonePad-2.png)
 
 #### .namePhonePad
 
@@ -426,19 +426,19 @@ Ce clavier a été pensé pour les fois où l'usager doit entrer soit du texte, 
 
 Quand il présente des lettres, le clavier est identique au clavier .default. C'est quand on clique sur la touche 123 pour passer en mode numérique qu'il est différent puisqu'il ne présente que des chiffres.
 
-![.namePhonePad](../14-saisie-de-texte/images/SwiftUI-ClavierNamePhonePad.png) ![.namePhonePad](../14-saisie-de-texte/images/SwiftUI-ClavierNamePhonePad-2.png)
+![.namePhonePad](../lecons/images/SwiftUI-ClavierNamePhonePad.png) ![.namePhonePad](../lecons/images/SwiftUI-ClavierNamePhonePad-2.png)
 
 #### .alphabet
 
 Comme .default sauf qu'il n'y a pas de touche pour les émoticones.
 
-![.asciiCapable](../14-saisie-de-texte/images/SwiftUI-ClavierAsciiCapable.png)
+![.asciiCapable](../lecons/images/SwiftUI-ClavierAsciiCapable.png)
 
 #### .asciiCapable
 
 Comme .alphabet sauf que si on clique sur l'icône de globe pour modifier la localisation, seules les langues dont les lettres sont représentés par des caractères de la charte ASCII de base seront disponibles.
 
-![.asciiCapable](../14-saisie-de-texte/images/SwiftUI-ClavierAsciiCapable.png)
+![.asciiCapable](../lecons/images/SwiftUI-ClavierAsciiCapable.png)
 
 #### .asciiCapableNumberPad
 
@@ -446,31 +446,31 @@ Même chose que .numberPad sauf que les chiffres sont toujours représentés par
 
 Même si plusieurs langues sont configurées sur le téléphone, il n'y a pas d'icône de globe qui permet de changer de langue, par exemple pour afficher des chiffres arabes.
 
-![.asciiCapableNumberPad](../14-saisie-de-texte/images/SwiftUI-ClavierAsciiCapableNumberPad.png)
+![.asciiCapableNumberPad](../lecons/images/SwiftUI-ClavierAsciiCapableNumberPad.png)
 
 #### .twitter
 
 Comme .default sauf qu'on a ajouté des touches pour faciliter l'entrée du @ et du #.
 
-![.twitter](../14-saisie-de-texte/images/SwiftUI-ClavierTwitter.png)
+![.twitter](../lecons/images/SwiftUI-ClavierTwitter.png)
 
 #### .URL
 
 Comme .default sauf qu'on a ajouté des touches pour faciliter l'entrée de la barre oblique et des caractères « .com ».
 
-![.twitter](../14-saisie-de-texte/images/SwiftUI-ClavierURL.png)
+![.twitter](../lecons/images/SwiftUI-ClavierURL.png)
 
 #### .emailAddress
 
 Comme .default sauf qu'il y a une touche pour faciliter l'entrée du @ et du point.
 
-![.emailAddress](../14-saisie-de-texte/images/SwiftUI-ClavierEmailAddress.png)
+![.emailAddress](../lecons/images/SwiftUI-ClavierEmailAddress.png)
 
 #### .webSearch
 
 Comme .default sauf qu'il y a une touche pour faciliter l'entrée du point.
 
-![.webSearch](../14-saisie-de-texte/images/SwiftUI-ClavierWebSearch.png)
+![.webSearch](../lecons/images/SwiftUI-ClavierWebSearch.png)
 
 ## Saisir un nombre
 
@@ -618,9 +618,9 @@ struct ContentView: View {
 
 Je vous partage une petite astuce qui permet de limiter le nombre de caractères entrés dans un [TextField](les-formulaires-swiftui.md#textfield) avec SwiftUI.
 
-La technique consiste à utiliser la méthode [onChange()](reagir-a-un-changement.md) afin d'ajuster la variable si elle contient plus de caractères que désiré.
+La technique consiste à utiliser la méthode [onChange()](../lecons/reagir-a-un-changement.md) afin d'ajuster la variable si elle contient plus de caractères que désiré.
 
-Il faudra passer le paramètre [par référence](les-fonctions.md#passer-un-parametre-par-reference) pour que la fonction puisse modifier la valeur de ce paramètre.
+Il faudra passer le paramètre [par référence](../lecons/les-fonctions.md#passer-un-parametre-par-reference) pour que la fonction puisse modifier la valeur de ce paramètre.
 
 ```swift title="SwiftUI"
 var body: some View {
@@ -697,7 +697,7 @@ struct ContentView: View {
 }
 ```
 
-![Picker](../45-choisir-une-option/images/SwiftUI-PickerString-1.png) ![Picker](../45-choisir-une-option/images/SwiftUI-PickerString-2.png)
+![Picker](../lecons/images/SwiftUI-PickerString-1.png) ![Picker](../lecons/images/SwiftUI-PickerString-2.png)
 
 #### Picker avec instances d'une structure ou d'une classe
 
@@ -742,7 +742,7 @@ Struct ContentView: View {
 }
 ```
 
-![Picker](../45-choisir-une-option/images/SwiftUI-Picker.png) ![Picker](../45-choisir-une-option/images/SwiftUI-Picker-2.png)
+![Picker](../lecons/images/SwiftUI-Picker.png) ![Picker](../lecons/images/SwiftUI-Picker-2.png)
 
 #### Picker avec une énumération
 
@@ -826,7 +826,7 @@ struct ContentView: View {
 
 ### Picker dans un menu
 
-Si vous désirez créer un menu avec un crochet devant l'option sélectionnée, vous pouvez placer un picker dans le menu. [Les détails sont ici](le-menu.md).
+Si vous désirez créer un menu avec un crochet devant l'option sélectionnée, vous pouvez placer un picker dans le menu. [Les détails sont ici](../lecons/le-menu.md).
 
 ## Toggle
 
@@ -904,9 +904,9 @@ Il n'est pas toujours requis d'ajouter un bouton pour traiter les données saisi
 
 Les informations pourraient être traitées à différents moments, par exemple :
 
-- Au fur et à mesure que les informations sont modifiées (ex : [.onChange()](reagir-a-un-changement.md));
-- Lorsque l'usager clique sur le bouton de retour dans une [vue affichée via NavigationLink](les-applications-multivues.md);
-- Sur-le-champ, lorsqu'il s'agit de valeurs tirées de la base de données à l'aide de [SwiftData](crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees).
+- Au fur et à mesure que les informations sont modifiées (ex : [.onChange()](../lecons/reagir-a-un-changement.md));
+- Lorsque l'usager clique sur le bouton de retour dans une [vue affichée via NavigationLink](../lecons/les-applications-multivues.md);
+- Sur-le-champ, lorsqu'il s'agit de valeurs tirées de la base de données à l'aide de [SwiftData](../lecons/crud-avec-swiftdata.md#operations-crud-avec-swiftdata-ajouter-modifier-ou-supprimer-des-donnees).
 
 Si vous souhaitez tout de même ajouter un bouton à un formulaire, sachez qu'il n'est pas requis que le bouton soit placé à l'intérieur du `Form`. Il n'est d'ailleurs pas nécessaire d'utiliser un `Form`.
 
@@ -941,7 +941,7 @@ Form {
 }
 ```
 
-![Bouton](../14-saisie-de-texte/images/SwiftUI-BoutonFormulaire-1.png)
+![Bouton](../lecons/images/SwiftUI-BoutonFormulaire-1.png)
 
  Ici, on utilise l'approche avec des sections pour les libellés.
 
@@ -965,7 +965,7 @@ Form {
 }
 ```
 
-![Bouton](../14-saisie-de-texte/images/SwiftUI-BoutonFormulaire-2.png)
+![Bouton](../lecons/images/SwiftUI-BoutonFormulaire-2.png)
 
 Voici un exemple sans `Form`.
 
@@ -993,7 +993,7 @@ VStack(alignment: .leading) {
  Spacer()
 ```
 
-![Bouton](../14-saisie-de-texte/images/SwiftUI-BoutonFormulaire-3.png)
+![Bouton](../lecons/images/SwiftUI-BoutonFormulaire-3.png)
 
 ## Contrôle du focus
 

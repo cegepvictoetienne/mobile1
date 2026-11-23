@@ -51,7 +51,7 @@ La majorité des configurations par défaut présentées dans le fichier `.env` 
 
 ### Démarrage des services
 
-**Assurez-vous que Docker Desktop soit démarré**. Si vous omettez cette étape, vous obtiendrez le message « command not found: docker-compose ».
+**Assurez-vous que Docker Desktop soit démarré**. Si vous omettez cette étape, vous obtiendrez le message `command not found: docker-compose`{ .erreur }.
 
 Dans une fenêtre Terminal, placez-vous dans le dossier `mobile1_services` puis lancez cette commande :
 

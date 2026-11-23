@@ -24,7 +24,7 @@ Si vous avez besoin d'un contrôle plus précis de la caméra, je vous suggère 
 
 ### Demander la permission
 
-Pour utiliser la caméra, vous devez ajouter la clé [NSCameraUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nscamerausagedescription) (Privacy - Camera Usage Description) [à Info.plist](info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist).
+Pour utiliser la caméra, vous devez ajouter la clé [NSCameraUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nscamerausagedescription) (Privacy - Camera Usage Description) [à Info.plist](../lecons/info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist).
 
 Dès que l'application tentera d'utiliser la caméra, une boîte de dialogue demandera la permission à l'usager s'il ne l'a pas déjà accordée.
 
@@ -170,7 +170,7 @@ struct ContentView: View {
 
 ### Localisation des boutons
 
-Lorsque [l'application est localisée](la-localisation-traduction.md#application-swiftui-bilingue), SwiftUI affiche automatiquement les boutons de la caméra dans la langue de l'application.
+Lorsque [l'application est localisée](../lecons/la-localisation-traduction.md#application-swiftui-bilingue), SwiftUI affiche automatiquement les boutons de la caméra dans la langue de l'application.
 
 Notez que les termes `Cancel`, `Retake` et `Use Photo` n'apparaîtront pas dans les chaînes à localiser, tout se passe sans qu'on le voit.
 

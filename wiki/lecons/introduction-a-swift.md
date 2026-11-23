@@ -1,52 +1,10 @@
 # Introduction à Swift
 
-## Swift, SwiftUI, UIKit, Objective C, c'est quoi?
+## Swift et SwiftUI c'est quoi?
 
 [Swift](https://developer.apple.com/swift/) est un langage de programmation pour développer des applications qui roulent dans le monde Apple, que ce soit sur un MacBook, un iPhone, une Apple Watch, etc.
 
-Avant 2014, le langage utilisé était [Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html). Ce langage n'est pratiquement plus utilisé de nos jours puisque le code Swift est plus intuitif, concis et rapide.
-
-Fait intéressant : Swift est également compatible avec Linux.
-
-[SwiftUI](https://developer.apple.com/xcode/swiftui/) est un cadres d'application (**framework**) basé sur le langage Swift. Il a vu le jour en septembre 2019.
-
-Pour exécuter du code écrit avec SwiftUI, l'appareil doit utiliser le système d'exploitation :
-
-- sur iPhone : iOS 13.0 ou plus récent (sorti en septembre 2019)
-- sur ordinateur : macOS 10.15 ou plus récent
-- sur AppleTV : tvOS 13.0 ou plus récent
-- sur Apple Watch : watchOS 6.0 ou plus récent
-
-Pour développer des applications qui tournent sur les appareils moins récents, il faut plutôt utiliser [UIKit](https://developer.apple.com/documentation/uikit), le cadre d'application qui était utilisé avant SwiftUI, lui aussi basé sur Swift.
-
-## Quelle version de Swift est utilisée?
-
-Lorsque vous installez un version de Xcode, il vient avec une version précise de Swift.
-
-L'arrimage entre les versions de Xcode et les versions de Swift sont données ici : <https://en.wikipedia.org/w/index.php?title=Xcode>.
-
-Pour connaître la version de Swift installée sur votre Mac, ouvrez une fenêtre Terminal et entrez la commande :
-
-```text title="Terminal"
-swift -version
-```
-
-Sous Xcode 16.2, on obtiens ceci :
-
-```text title="Résultat à l'écran"
-monnom@MacBook-Pro-de-MonNom ~ %swift -version
-swift-driver version: 1.115.1 Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-Target: x86_64-apple-macosx15.0
-```
-
-Dans Xcode, il est possible de modifier la version de Swift pour un projet. Pour savoir laquelle est utilisée dans votre projet :
-
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
-- Dans la zone centrale, cliquez sur le nom du projet dans la zone **PROJECT**.
-- Rendez-vous dans l'onglet **Build Settings**.
-- Faites défiler l'écran presque jusqu'en bas. Dans la section **Swift Compiler - Language**, vous voyez la version actuellement configurée.
-
-![Version de Swift](images/Xcode-SwiftVersion.png)
+[SwiftUI](https://developer.apple.com/xcode/swiftui/) est un cadre d'application (**framework**) basé sur le langage Swift. 
 
 ## Variables, constantes et types de données
 
@@ -58,16 +16,13 @@ Avec Swift, les mots-clés `var` et `let` permettent de déclarer respectivement
 - `let` : déclare une constante
 
 ```swift title="Swift"
-var nom = "Annie"
+var nom = "Roger"
 let iterations = 10
 ```
-
-Lorsque le type peut être déduit à partir de la valeur d'initialisation, Swift effectue automatiquement une inférence de type. Il n’est donc pas nécessaire de préciser le type, comme dans l'exemple précédent.
-
-Si désiré, il est tout de même possible de spécifier le type.
+Pour spécifier explicitement le type :  
 
 ```swift title="Swift"
-var nom: String = "Annie"
+var nom: String = "Roger"
 let iterations: Int = 10
 ```
 
@@ -78,25 +33,21 @@ var nom: String
 var montant: Decimal = 10.99   // sans le type, la variable aurait été de type Double
 ```
 
-### Types de base
+### Types de base  
 
-Les types de base en Swift sont :
+| Type | Description  
+| -- | --   
+| `Int` | Nombre entier  
+| `UInt` | Nombre entier non signé (**Unsigned**)  
+| `Double`|  Nombre à virgule flottante codé sur 64 bits (15 décimales) - idéal pour calcul scientifique  
+| `Float` | Nombre à virgule flottante codé sur 32 bits (6 décimales) - idéal pour jeux, graphiques, animation  
+| `Bool` | Booléen  
+| `String`|  chaîne de caractères.  
 
-- `Int` : nombre entier.   
-  Il est également possible de spécifier sur combien de bits on désire stocker le nombre, par exemple 32 bits ou 64 bits, avec Int32 et Int64. Ceci affectera les valeurs minimales et maximales qui peuvent être stockées.   
-  Int32 : -2147483648 à 2147483647  
-  Int64 : -9223372036854775808 à 9223372036854775807  
-  Cette précision n'est généralement pas nécessaire. Si vous travaillez sur un système en 64 bits, Int fera la même chose que Int64.
-- `UInt` : Nombre entier non signé (**Unsigned**)
-- `Double` : Nombre à virgule flottante codé sur 64 bits (15 décimales) - idéal pour calcul scientifique
-- `Float` : Nombre à virgule flottante codé sur 32 bits (6 décimales) - idéal pour jeux, graphiques, animation
-- `Bool` : Booléen
-- `String` : chaîne de caractères.
-
-Fait intéressant : on peut convertir une chaîne de caractères en tableau comme suit :
+On peut convertir une chaîne de caractères en tableau comme suit :  
 
 ```swift title="Swift"
-let tableauLettres = Array(nom) // ["A", "n", "n", "i", "e"]
+let tableauLettres = Array(nom) // ["R", "o", "g", "e", "r"]
 ```
 
 ### Type Decimal
@@ -111,13 +62,13 @@ let prix: Decimal = 69.44
 
 Si on initialise une variable de type Decimal à partir d'une chaîne, il faut tenir compte que le résultat pourrait être nil si la chaîne n'était pas conforme.
 
-Dans cet exemple, il est sécuritaire d'utiliser l'[opérateur de déballage forcé (!)](le-langage-swift-reference.md#les-optionnels) puisque la chaîne est codée en dur et qu'on est certains que la valeur pourra être convertie en Decimal.
+Dans cet exemple, il est sécuritaire d'utiliser l'[opérateur de déballage forcé (!)](../complements/le-langage-swift-reference.md#les-optionnels) puisque la chaîne est codée en dur et qu'on est certains que la valeur pourra être convertie en Decimal.
 
 ```swift title="Swift"
 let prix = Decimal(string: "69.44")!
 ```
 
-Dans d'autres contextes, il est préférable d'utiliser [if let](le-langage-swift-reference.md#liaison-optionnelle-if-let-guard-let).
+Dans d'autres contextes, il est préférable d'utiliser [if let](../complements/le-langage-swift-reference.md#liaison-optionnelle-if-let-guard-let).
 
 ```swift title="Swift"
 if let prix = Decimal(string: prixSaisi) {
@@ -211,22 +162,19 @@ Circle()
 
 Les mots-clés `var` et `let` permettent également de déclarer des instances de structures et de classes.
 
-Petite mise en garde : si une instance d'une structure est déclarée avec `let`, l’instance devient entièrement immuable.
+!!! warning "Attention"  
+    si une instance d'une **structure** est déclarée avec `let`, l’instance devient entièrement immuable.
 
 L'instance **ainsi que toutes ses propriétés** ne pourront pas être réassignées.
 
 ```swift title="Swift"
 let monInstance = MaStructure()
- monInstance.unePropriete = "abc"
+ monInstance.unePropriete = "abc" // erreur « Cannot assign to property: 'monInstance' is a 'let' constant ».
 ```
-
-Ce code générera l'erreur « Cannot assign to property: 'monInstance' is a 'let' constant ».
 
 ![Cannot assign to property: 'monInstance' is a 'let' constant](images/Swift-CannotAssignToPropertyMonInstanceIsALetConstant.png)
 
-Notez que ce comportement est différent de ce qu'on retrouve dans d'autres langages, par exemple [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
-
-Les classes réagissent différemment.
+Les **classes** réagissent différemment.
 
 ```swift title="Swift"
 let monInstance = MaClasse()
@@ -247,19 +195,15 @@ var body: some View {
 }
 ```
 
-Ici, on voit que la variable `body` est d'un type qui répond au protocole `View` mais on ne connaît pas son type précis. Ce pourrait être un `Text`, un `VStack`, etc.
-
-Sans entrer dans les détails techniques, disons que les types opaques permettent de [régler une problématique en n'exposant pas le type précis d'une variable](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html).
+La variable `body` est d'un type qui répond au protocole `View` mais on ne connaît pas son type précis. Ce pourrait être un `Text`, un `VStack`, etc.  
 
 ### À quel endroit déclarer les variables dans SwiftUI?
 
 Les variables et constantes qui doivent être utilisées dans toute une vue seront déclarées directement dans la structure de la vue, avant le `body`.
 
-Dans l'exemple qui suit, le contexte dicte qu'on doit utiliser une constante.
-
 ```swift title="SwiftUI"
 struct ContentView: View {
-  let nom: String = "Annie"
+  let nom: String = "Roger"
 
   var body: some View {
     ...
@@ -272,12 +216,12 @@ Il est possible de déclarer les variables et constantes avec une portée plus p
 La variable ou constante n'existera pas en dehors du code de ce bouton.
 
 ```swift title="SwiftUI"
-Button(action: {
-  var nom: String = "Annie"
-  ...
-}) {
+  Button(action: {
+    var nom: String = "Roger"
+    ...
+  }) {
   Text("Vérifier")
-}
+  }
 ```
 
 ??? info "Pour plus d'information"

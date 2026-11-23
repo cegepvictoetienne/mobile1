@@ -4,7 +4,7 @@
     1. Modifiez cette application afin qu'elle utilise [Face ID](../lecons/l-authentification.md) pour vous authentifier (bon, elle ne manipule pas d'informations sensibles mais ça permet de pratiquer la fonctionnalité 😉).
 
         !!! Warning "Attention"
-            Le code cible iOS < 17 donc vous devrez modifier le `@Observable` pour utiliser [l'ancienne syntaxe](../lecons/fonctions-obsoletes-ou-anciennes-syntaxes.md).
+            Le code cible iOS < 17 donc vous devrez modifier le `@Observable` pour utiliser [l'ancienne syntaxe](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md).
 
     2. Testez bien votre application pour vous assurer qu'elle réagisse comme il faut dans toutes ces situations :
         1. La connexion avec Face ID est réussie

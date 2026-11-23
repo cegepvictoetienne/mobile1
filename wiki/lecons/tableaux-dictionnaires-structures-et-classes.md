@@ -309,13 +309,13 @@ struct Ami {
 
 let amis: [Ami] = [
   Ami(nomFamille: "Lacasse", prenom: "Toto"),
-  Ami(nomFamille: "Gagnon", prenom: "Annie"),
+  Ami(nomFamille: "Gagnon", prenom: "Roger"),
   Ami(nomFamille: "Girard", prenom: "Andréanne")
 ]
 ...
 
 if let position = amis.firstIndex(where: {
-  $0.prenom == "Annie"
+  $0.prenom == "Roger"
  }) {
   nomFamille = amis[position].nomFamille
  }
@@ -333,16 +333,16 @@ Si la clé n'existe pas, on aura nil.
 C'est pourquoi il faut prévoir ce qui se passera si jamais la clé n'existe pas. Ici, j'ai choisi d'imprimer le mot « aucun ».
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Annie Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
- print(monDictionnaire["Nom"] ?? "aucun")   // Annie Gagnon
+ print(monDictionnaire["Nom"] ?? "aucun")   // Roger Gagnon
  print(monDictionnaire["Téléphone"] ?? "aucun")   // aucun
 ```
 
 Il aurait aussi été possible de gérer le cas où la clé n'existe pas comme suit :
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Annie Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
 if let valeur = monDictionnaire["Nom"] {
   print(valeur)
@@ -368,7 +368,7 @@ let monDictionnaire:[String:Int] = ["ABC":10, "DEF":3, "GHI":8]
 
 ## Structure vs classe
 
-Swift propose des [structures](tableaux-dictionnaires-structures-et-classes.md#les-structures) et des [classes](le-langage-swift-reference.md#les-classes) pour représenter des données et des comportements.
+Swift propose des [structures](tableaux-dictionnaires-structures-et-classes.md#les-structures) et des [classes](../complements/le-langage-swift-reference.md#les-classes) pour représenter des données et des comportements.
 
 La différence entre les deux n'est pas si évidente à prime abord.
 
@@ -424,7 +424,7 @@ struct Ami {
 Pour créer une instance de la structure, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Annie")
+let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'instance puisqu'elle a été créée avec le mot-clé `let`.
@@ -457,7 +457,7 @@ Désormais, pour instancier un Ami, il est possible de fournir seulement le pré
 Le nom de famille pourra être ajusté au besoin par une instruction séparée.
 
 ```swift title="Swift"
-var ami = Ami(prenom: "Annie")
+var ami = Ami(prenom: "Roger")
 ...
 ami.nomFamille = "Gagnon"
 ```

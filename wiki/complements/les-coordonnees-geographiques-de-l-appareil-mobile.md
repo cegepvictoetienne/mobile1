@@ -10,17 +10,17 @@ Elle utilise les ondes Wi-Fi, les ondes cellulaires ou les ondes GPS afin de dé
 
 Il est à noter que l'usager peut en tout temps désactiver la précision de la géolocalisation sur son iPhone : **Réglages** / **Confidentialité et sécurité** / **Service de localisation** / Clic sur l'application souhaitée / Décocher **Positon exacte**.
 
-Attention : le code présenté ici utilise [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject) plutôt que la technique moderne [@Observable](observer-les-changements-a-un-objet.md). À vous de l'adapter pour cibler iOS 17 ou plus.
+Attention : le code présenté ici utilise [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject) plutôt que la technique moderne [@Observable](../lecons/observer-les-changements-a-un-objet.md). À vous de l'adapter pour cibler iOS 17 ou plus.
 
 ### Permission requise
 
-Avant de débuter le codage, il faut [ajouter une clé dans Info.plist](info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist) afin de [demander la permission pour utiliser la position de l'appareil](demander-une-permission.md).
+Avant de débuter le codage, il faut [ajouter une clé dans Info.plist](../lecons/info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist) afin de [demander la permission pour utiliser la position de l'appareil](../lecons/demander-une-permission.md).
 
 Il s'agit de la clé [NSLocationWhenInUseUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription) (Privacy - Location When In Use Usage Description) pour laquelle vous devez préciser un message du genre « $(PRODUCT_NAME) désire connaître votre position. ». L'application demandera la permission à l'aide de `locationManager.[requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)()`.
 
 #### Si la clé n'est pas ajoutée
 
-Si vous n'ajoutez pas la ou les clés requises dans Info.plist, vous n'obtiendrez jamais la position et vous verrez ce message dans la sortie standard de Xcode lorsque le téléphone est branché à l'ordinateur : « This app has attempted to access privacy-sensitive data without a usage description. The app's Info.plist must contain an “NSLocationWhenInUseUsageDescription” key with a string value explaining to the user how the app uses this data ».
+Si vous n'ajoutez pas la ou les clés requises dans Info.plist, vous n'obtiendrez jamais la position et vous verrez ce message dans la sortie standard de Xcode lorsque le téléphone est branché à l'ordinateur : `This app has attempted to access privacy-sensitive data without a usage description. The app's Info.plist must contain an “NSLocationWhenInUseUsageDescription” key with a string value explaining to the user how the app uses this data`{ .erreur }.
 
 #### Permission donnée par l'usager
 
@@ -179,7 +179,7 @@ Depuis iOS 13.4, il faut d'abord demander la permission avec `locationManager.re
 
 Notez que votre application devra [actualiser les données en arrière-plan](https://developer.apple.com/documentation/corelocation/handling_location_updates_in_the_background). Ceci est très demandant au niveau de la batterie. N'utilisez cette fonctionnalité que si vous en avez vraiment besoin.
 
-Attention : le code présenté ici utilise [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject) plutôt que la technique moderne [@Observable](observer-les-changements-a-un-objet.md). À vous de l'adapter pour cibler iOS 17 ou plus.
+Attention : le code présenté ici utilise [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject) plutôt que la technique moderne [@Observable](../lecons/observer-les-changements-a-un-objet.md). À vous de l'adapter pour cibler iOS 17 ou plus.
 
 ```swift title="Fichier LocationManager.swift"
 import Foundation
@@ -259,7 +259,7 @@ Par contre, il ne sera pas possible de modifier le zoom par programmation en cha
 
 ### Permission requise
 
-Avant de débuter le codage, il faut [ajouter une clé dans Info.plist](info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist) afin de [demander la permission pour utiliser la position de l'appareil](demander-une-permission.md).
+Avant de débuter le codage, il faut [ajouter une clé dans Info.plist](../lecons/info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist) afin de [demander la permission pour utiliser la position de l'appareil](../lecons/demander-une-permission.md).
 
 Il s'agit de la clé [NSLocationWhenInUseUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription) (Privacy - Location When In Use Usage Description) pour laquelle vous devez préciser un message du genre « $(PRODUCT_NAME) désire connaître votre position. ».
 

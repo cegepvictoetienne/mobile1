@@ -24,7 +24,7 @@ Il existe plusieurs façon pour faire persister les données sur iOS.
 
 En voici quelques-unes :
 
-- [UserDefaults](preferences-utilisateur-avec-userdefaults.md), qui peut être interfacé facilement avec l'attribut [@AppStorage](les-preferences-utilisateur.md#appstorage), pour le stockage de quelques paires clé-valeur
+- [UserDefaults](../complements/preferences-utilisateur-avec-userdefaults.md), qui peut être interfacé facilement avec l'attribut [@AppStorage](les-preferences-utilisateur.md#appstorage), pour le stockage de quelques paires clé-valeur
 - [CoreData](https://developer.apple.com/documentation/coredata), un ORM (**Object Relational Mapper**), c'est-à-dire une couche d'abstraction entre l'application et la base de données. CoreData peut stocker les données de différentes façons, par exemple avec SQLite (en utilisant une structure précise), XML, Binary Store.
 - [SwiftData](https://developer.apple.com/documentation/swiftdata), qui a été introduit avec iOS 17 en 2023. Il s'agit d'un ORM basé sur CoreData mais plus simple et efficace. Par contre, il offre moins de fonctionnalités que CoreData.
 - SQLite, qui peut être utilisé seul ou encore à l'aide d'une bibliothèque pour faciliter son utilisation, par exemple [GRDB.swift](https://github.com/groue/GRDB.swift), [SQLite.swift](https://github.com/stephencelis/SQLite.swift), [SQLiteDB](https://github.com/FahimF/SQLiteDB)

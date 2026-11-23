@@ -54,7 +54,7 @@ struct ContentView: View {
 
 ## Menu avec Picker
 
-Le menu peut également utiliser [un Picker](les-formulaires-swiftui.md#picker) qui a l'avantage d'identifier l'option sélectionnée à l'aide d'un crochet.
+Le menu peut également utiliser [un Picker](../complements/les-formulaires-swiftui.md#picker) qui a l'avantage d'identifier l'option sélectionnée à l'aide d'un crochet.
 
 ```swift title="SwiftUI"
 struct ContentView: View {

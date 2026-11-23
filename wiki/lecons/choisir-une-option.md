@@ -94,7 +94,7 @@ Struct ContentView: View {
 
 ### Picker avec une énumération
 
-Voyons maintenant comment travailler avec une [énumération](le-langage-swift-reference.md#les-enumerations).
+Voyons maintenant comment travailler avec une [énumération](../complements/le-langage-swift-reference.md#les-enumerations).
 
 L'énumération doit répondre au protocole [CaseIterable](https://developer.apple.com/documentation/swift/caseiterable).
 

@@ -8,7 +8,7 @@ La méthode [random()](https://developer.apple.com/documentation/swift/int/29956
 nombre = Int.random(in: 1..<50)
 ```
 
-[Deux opérateurs sont disponibles pour définir l'étendue](le-langage-swift-reference.md#les-operateurs-dintervalle) :
+[Deux opérateurs sont disponibles pour définir l'étendue](../complements/le-langage-swift-reference.md#les-operateurs-dintervalle) :
 
 - `a...b` (opérateur d'intervalle fermé ou, en anglais, **closed range operator**) : les trois points indiquent que les valeurs a et b sont incluses
 - `a..<b` (opérateur d'intervalle semi-ouvert ou, en anglais, **half-open range operator**) : les deux points suivis du signe « plus petit que » indiquent que a est inclus mais b est exclu
@@ -36,7 +36,7 @@ Si on ne tient pas compte de ce fait et qu'on écrit :
 var info = infos.randomElement()
 ```
 
-On obtiendra le message « Value of optional type 'String?' must be unwrapped to a value of type 'String' ».
+On obtiendra le message `Value of optional type 'String?' must be unwrapped to a value of type 'String'`{ .erreur }.
 
 ### Collection codée en dur
 

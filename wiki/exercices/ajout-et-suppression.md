@@ -9,6 +9,6 @@
     3. Si vous tapez à nouveau sur un objet hors ligne, il redeviendra en ligne.
 5. Si vous ne l'avez pas déjà fait, ajoutez une icône de poubelle vis-à-vis chaque objet connecté afin de pouvoir le supprimer. L'application doit demander une confirmation avant suppression.
 6. Ajoutez un menu déroulant avec les options « Afficher les objets hors ligne » et « Masquer les objets hors ligne ». L'option choisie doit être clairement indiquée. Ces options ne feront rien pour l'instant.
-7. **OPTIONNEL** : codez la fonctionnalité pour afficher ou non les objets hors ligne. Vous aurez besoin de ceci : [Modifier le tri ou le filtre d'une requête après que la requête ait été exécutée](../lecons/aller-plus-loin-avec-swiftdata.md).
+7. **OPTIONNEL** : codez la fonctionnalité pour afficher ou non les objets hors ligne. Vous aurez besoin de ceci : [Modifier le tri ou le filtre d'une requête après que la requête ait été exécutée](../complements/aller-plus-loin-avec-swiftdata.md).
 8. Récupérez la base de données du simulateur afin de conserver une copie des données ajoutées par l'application. Placez les fichiers dans le dossier `dev`, dans un sous-dossier dont le nom est la date du jour. Ce type de manipulation pourrait être demandé en examen.
 9. Installez votre application sur un iPhone et testez-la à fond.

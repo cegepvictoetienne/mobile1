@@ -78,7 +78,7 @@ struct ContentView: View {
 
 La gestuelle [DragGesture](https://developer.apple.com/documentation/swiftui/draggesture) permet de déplacer une vue, par exemple un cercle, à l'aide de la souris sur l'ordinateur ou à l'aide d'un doigt sur un appareil mobile.
 
-Le secret, c'est de donner une position fixe à la vue dès le départ à l'aide du [modifieur .position()](quelques-modifieurs.md#modifieur-position).
+Le secret, c'est de donner une position fixe à la vue dès le départ à l'aide du [modifieur .position()](../complements/quelques-modifieurs.md#modifieur-position).
 
 Cette position sera une variable d'état afin de forcer le rafraîchissement de la vue dès qu'elle est modifiée.
 

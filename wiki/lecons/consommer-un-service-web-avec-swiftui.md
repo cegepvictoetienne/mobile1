@@ -57,7 +57,7 @@ struct ReponseDuService: Decodable {
 Le service Web peut être appelé à différents moments, par exemple :
 
 - lors de l'[initialisation de la vue](constructeur-et-onappear.md#onappear) (onAppear())
-- en réaction à [un clic sur un bouton](quelques-vues-swiftui.md#button)
+- en réaction à [un clic sur un bouton](../complements/quelques-vues-swiftui.md#button)
 - à tous les X temps
 - etc.
 
@@ -461,7 +461,7 @@ La façon d'encoder les données dépendra du type d'encodage attendu par le ser
 Lorsque l'encodage attendu est en JSON, on pourra encoder les données comme suit :
 
 ```swift title="Swift"
-let donneesJSON = try JSONEncoder().encode(["nom": "Annie", "age": "18"])
+let donneesJSON = try JSONEncoder().encode(["nom": "Roger", "age": "18"])
 ```
 
 Rappel : avec Swift, un tableau associatif s'appelle [dictionnaire](https://developer.apple.com/documentation/swift/dictionary). Ses clés doivent toutes être du même type, généralement String.
@@ -476,7 +476,7 @@ request.httpBody = donneesJSON   // voir plus bas pour l'initialisation de reque
 
 ##### text/plain
 
-Dans le cas où l'encodage attendu est en texte, il est possible de fournir les informations sous forme de chaîne au format `nom=Annie&age=18`.
+Dans le cas où l'encodage attendu est en texte, il est possible de fournir les informations sous forme de chaîne au format `nom=Roger&age=18`.
 
 Cette chaîne pourra être générée à partir d'un dictionnaire comme suit :
 
@@ -826,9 +826,9 @@ Si vous désirez travailler avec service Web local pendant la phase de développ
 
 Si vous utilisez un URL non sécurisé avec la fonction `URLSession()`, vous obtiendrez, selon la version de Swift, un message du genre :
 
-- « An SSL error has occurred and a secure connection to the server cannot be made. »
-- ou « The resource could not be loaded because the App Transport Security policy requires the use of a secure connection. »
-- ou encore « App Transport Security has blocked a cleartext HTTP connection to ... since it is insecure. Use HTTPS instead or add this domain to Exception Domains in your Info.plist. ».
+- `An SSL error has occurred and a secure connection to the server cannot be made.`{ .erreur }
+- ou `The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.`{ .erreur }
+- ou encore `App Transport Security has blocked a cleartext HTTP connection to ... since it is insecure. Use HTTPS instead or add this domain to Exception Domains in your Info.plist.`{ .erreur }.
 
 ```swift title="SwiftUI"
 guard let url = URL(string: "http://127.0.0.1:5000") else {
@@ -847,7 +847,7 @@ Il est possible d'informer SwiftUI que vous désirez effectuer une requête non 
 
 Ceci est réalisé en ajoutant une entrée dans [Info.plist](info-plist.md#ajouter-une-paire-cle-valeur-dans-infoplist).
 
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
 - Rendez-vous dans l'onglet **Info**.
 - Dans la section **Custum iOS Target Properties**, pointez la souris vis-à-vis n'importe quelle clé puis cliquez sur +.
 - Entrez le nom de clé `NSAppTransportSecurity` (App Transport Security Settings). Xcode indiquera qu'il s'agit d'un dictionnaire.

@@ -136,7 +136,7 @@ Ex :
 
 Dans le cas où le modifieur retourne un `View`, il ne pourra être suivi que par des modifieurs qui s'appliquent à n'importe quel `View`. Si vous avez besoin d'un modifieur qui s'applique seulement à un `Text`, il faudra le placer avant ceux qui retournent un `View`.
 
-Si l'ordre n'est pas le bon, vous obtiendrez un message du genre « Value of type 'some View' has no member 'bold' ».
+Si l'ordre n'est pas le bon, vous obtiendrez un message du genre `Value of type 'some View' has no member 'bold'`{ .erreur }.
 
 ![No member bold](images/Xcode-ValueOfTypeSomeViewHasNoMemberBold.png)
 

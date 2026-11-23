@@ -2,7 +2,7 @@
 
 ## onChange() avant iOS 17
 
-Depuis iOS 17, [la syntaxe de onChange()](reagir-a-un-changement.md) a été simplifiée.
+Depuis iOS 17, [la syntaxe de onChange()](../lecons/reagir-a-un-changement.md) a été simplifiée.
 
 Dans les extaits de code qui suivent, je vous montre comment le [onChange()](https://developer.apple.com/documentation/swiftui/view/onchange(of:perform:)) était réalisé avant iOS 17.
 
@@ -69,7 +69,7 @@ struct ContentView: View {
 
 ## ObservableObject, @Published et @StateObject
 
-La macro [@Observable](observer-les-changements-a-un-objet.md) n'existe que depuis iOS 17, sorti en septembre 2023.
+La macro [@Observable](../lecons/observer-les-changements-a-un-objet.md) n'existe que depuis iOS 17, sorti en septembre 2023.
 
 Auparavant, le mécanisme d'observation nécessitait trois choses :
 
@@ -95,7 +95,7 @@ class Position: ObservableObject {
 
 Et voici un exemple de vue qui doit surveiller un objet de cette classe.
 
-Au même titre qu'une [variable d'état](l-etat-dans-swiftui.md), les variables observées forcent le rafraîchissement de la vue dès qu'elles sont modifiées.
+Au même titre qu'une [variable d'état](../lecons/l-etat-dans-swiftui.md), les variables observées forcent le rafraîchissement de la vue dès qu'elles sont modifiées.
 
 ```swift title="SwiftUI (avant iOS 17)"
 struct ContentView: View {
@@ -112,7 +112,7 @@ Prenez note qu'au lieu de `@StateObject`, il est possible de [travailler avec @O
 
 ### Initialisation dans le constructeur
 
-Si vous devez passer par le constructeur pour initialiser un objet décoré avec @StateObject, quelques précautions s'imposent sinon, vous obtiendrez un message du genre « Cannot assign to property: '...' is a get-only property ».
+Si vous devez passer par le constructeur pour initialiser un objet décoré avec @StateObject, quelques précautions s'imposent sinon, vous obtiendrez un message du genre `Cannot assign to property: '...' is a get-only property`{ .erreur }.
 
 D'abord, il faut faire précéder le nom de la propriété par une barre de soulignement. En effet, on travaille ici avec une propriété encapsulée, aussi appelée **propriété privée sous-jacente** (en anglais : **backing property**) qui a été créée automatiquement lors de la déclaration de la variable décorée avec @StateObject.
 
@@ -140,7 +140,7 @@ init(chaineURL: String) {
 
 ## Partager un objet observé entre deux vues : @StateObject vs @ObservedObject
 
-Note : ces notions ne sont plus applicables si vous utiisez [@Observable](observer-les-changements-a-un-objet.md) plutpôt que [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
+Note : ces notions ne sont plus applicables si vous utiisez [@Observable](../lecons/observer-les-changements-a-un-objet.md) plutpôt que [ObservableObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject).
 
 Tel que décrit dans la fiche « [ObservableObject, @Published et @StateObject](fonctions-obsoletes-ou-anciennes-syntaxes.md#observableobject-published-et-stateobject) », lorsque vous déclarez un objet avec avec [@StateObject](https://developer.apple.com/documentation/swiftui/stateobject), vous vous assurez que la vue sera rafraîchie à chaque fois qu'une propriété publiée de cet objet sera modifiée, que ce soit fait dans la classe de l'objet ou directement dans la vue qui utilise l'objet.
 
@@ -372,7 +372,7 @@ Voici un exemple de popop de confirmation avant iOS 26.
 
 Dans une vue `List`, il était parfois préférable d'attacher le `.confirmationDialog()` au `List` plutôt qu'au bouton à l'intérieur de la liste.
 
-Ceci était le cas, notamment, lorsqu'on obtenait le message d'erreur  « The compiler is unable to type-check this expression in reasonable time ».
+Ceci était le cas, notamment, lorsqu'on obtenait le message d'erreur  `The compiler is unable to type-check this expression in reasonable time`{ .erreur }.
 
 ```swift title="SwiftUI (iOS < 26)"
  List(items) { item in
@@ -407,15 +407,15 @@ Si vous ciblez une ancienne version, ces explications sont pour vous!
 
 ### Texte par défaut
 
-Lorsqu'une vue est affichée à partir d'un [NavigationLink](les-applications-multivues.md) et que la vue principale n'a pas de `.navigationTitle()`, le texte par défaut du lien de retour est **Back**.
+Lorsqu'une vue est affichée à partir d'un [NavigationLink](../lecons/les-applications-multivues.md) et que la vue principale n'a pas de `.navigationTitle()`, le texte par défaut du lien de retour est **Back**.
 
 ![Back](images/SwiftUI-NavigationLink-Back.png)
 
-Remarquez que si l'application [supporte le français](la-localisation-traduction.md#application-swiftui-bilingue) et que le périphérique est configuré en français, le texte par défaut du bouton de retour sera plutôt **Retour**.
+Remarquez que si l'application [supporte le français](../lecons/la-localisation-traduction.md#application-swiftui-bilingue) et que le périphérique est configuré en français, le texte par défaut du bouton de retour sera plutôt **Retour**.
 
 ### Titre de la vue parent comme libellé du lien de retour
 
-Dans le cas où [un titre](la-barre-de-navigation.md#configurer-le-titre-de-lapplication) a été défini dans la vue qui contient le `NavigationLink`, c'est ce titre qui sera utilisé par défaut.
+Dans le cas où [un titre](../lecons/la-barre-de-navigation.md#configurer-le-titre-de-lapplication) a été défini dans la vue qui contient le `NavigationLink`, c'est ce titre qui sera utilisé par défaut.
 
 Il y a une exception : si le titre est trop long pour le périphérique choisi, SwiftUI utilisera le texte par défaut : Back ou Retour.
 
@@ -485,7 +485,7 @@ Avant iOS 15, on utilisait une technique dite traditionnelle pour effectuer un a
 
 Cette technique travaillait avec une fermeture (en anglais: **closure**), c'est-à-dire un bloc de code fourni en paramètre qui s'exécute une fois que la réponse du serveur est reçue. La fermeture était exécutée sur un fil d'exécution en arrière-plan et il fallait faire appel à `DispatchQueue.main.async` pour mettre à jour l'interface graphique.
 
-Depuis iOS 15, il est préférable de travailler avec une [technique plus moderne](consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees), qui fait appel à `async/await`.
+Depuis iOS 15, il est préférable de travailler avec une [technique plus moderne](../lecons/consommer-un-service-web-avec-swiftui.md#consommer-un-service-web-pour-synchroniser-les-donnees), qui fait appel à `async/await`.
 
 Voici donc comment on s'y prenait avec la technique traditionnelle.
 

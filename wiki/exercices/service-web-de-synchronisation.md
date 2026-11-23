@@ -2,7 +2,7 @@
 
 Dans cet exercice, vous devez tester, ajuster et retester le service Web de synchronisation fourni dans les [notes de cours](../lecons/synchronisation-des-donnees-locales-dans-le-nuage.md).
 
-Vous pouvez installer le service Web localement sur votre MacBook à l'aide de [Docker](../lecons/docker-services.md) ou encore le mettre en ligne chez un hébergeur. Notez cependant que si le service Web est local, il pourra fonctionner avec le simulateur mais pas avec le iPhone.
+Vous pouvez installer le service Web localement sur votre MacBook à l'aide de [Docker](../complements/docker-services.md) ou encore le mettre en ligne chez un hébergeur. Notez cependant que si le service Web est local, il pourra fonctionner avec le simulateur mais pas avec le iPhone.
 
 Afin de simplifier le tout, vous n'avez pas besoin de coder l'authentification auprès du service Web.
 

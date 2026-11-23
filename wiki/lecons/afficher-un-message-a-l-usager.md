@@ -143,7 +143,7 @@ Button("Synchroniser") {
 
 L'alerte peut contenir autant de boutons que désiré, ce qui ouvre la porte à une foule de possibilités, par exemple poser une question.
 
-**Notez cependant que généralement, [.confirmationDialog](quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog) est plus approprié pour demander une confirmation.**
+**Notez cependant que généralement, [.confirmationDialog](../complements/quelques-vues-swiftui.md#demander-une-confirmation-avec-confirmationdialog) est plus approprié pour demander une confirmation.**
 
 Lorsqu'une alerte est utilisée pour poser une question, il est important de montrer clairement à l'usager qu'il peut accepter (ex : bouton OK ou Oui) ou refuser (ex : bouton Annuler ou Non) ce qui lui est demandé.
 
@@ -166,7 +166,7 @@ Button("Supprimer") {
 
 ### Alerte qui saisit de l'information
 
-Depuis iOS 16, la méthode .alert() permet de saisir de l'information, par exemple à l'aide d'un [TextField](les-formulaires-swiftui.md#textfield).
+Depuis iOS 16, la méthode .alert() permet de saisir de l'information, par exemple à l'aide d'un [TextField](../complements/les-formulaires-swiftui.md#textfield).
 
 Il n'est pas possible de construire une vue complexe mais l'ajout de quelques TextFields est accepté.
 

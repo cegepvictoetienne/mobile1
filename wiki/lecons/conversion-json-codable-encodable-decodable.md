@@ -10,7 +10,7 @@ Le type [Codable](https://developer.apple.com/documentation/swift/codable) est u
 
 L'encodage est parfois appelé [sérialisation](https://fr.wikipedia.org/wiki/S%C3%A9rialisation) et le décodage, désérialisation.
 
-Ceci permettra notamment [de transférer des données à un service Web et de recevoir la réponse de ce service Web](fonctions-obsoletes-ou-anciennes-syntaxes.md#consommer-un-service-web-technique-traditionnelle).
+Ceci permettra notamment [de transférer des données à un service Web et de recevoir la réponse de ce service Web](../complements/fonctions-obsoletes-ou-anciennes-syntaxes.md#consommer-un-service-web-technique-traditionnelle).
 
 Prenons un modèle `Item` défini comme suit :
 
@@ -36,7 +36,7 @@ Pour obtenir une version JSON de ce tableau, on travaillera avec [JSONEncoder().
 
 Il faut prévoir ce qui se passera si jamais les données ne pouvaient pas être encodées.
 
-L'instruction [guard](le-langage-swift-reference.md#linstruction-guard) permet de sortir du bloc de code en cours, par exemple de la fonction, si une condition n'est pas respectée. Le code pourrait également être réalisé à l'aide d'un `if` mais `guard` assure que le bloc de code sera terminé si la condition est évaluée à false.
+L'instruction [guard](../complements/le-langage-swift-reference.md#linstruction-guard) permet de sortir du bloc de code en cours, par exemple de la fonction, si une condition n'est pas respectée. Le code pourrait également être réalisé à l'aide d'un `if` mais `guard` assure que le bloc de code sera terminé si la condition est évaluée à false.
 
 ```swift title="Swift"
 guard let itemsJSON = try? JSONEncoder().encode(items) else {
@@ -122,7 +122,7 @@ Dans l'application Swift, les données décodées prendront cette forme :
 
 Lorsque les données à encoder proviennent d'un modèle SwiftData, il faut prendre une précaution pour assurer que le modèle réponde au protocole `Encodable` ou à `Decodable` ou encore aux deux (`Codable`).
 
-Sans cette précaution, vous obtiendrez les messages d'erreur « Type 'Item' does not conform to protocol 'Encodable' » ou « Type 'Item' does not conform to protocol 'Decodable' ».
+Sans cette précaution, vous obtiendrez les messages d'erreur `Type 'Item' does not conform to protocol 'Encodable'`{ .erreur } ou `Type 'Item' does not conform to protocol 'Decodable'`{ .erreur }.
 
 Ceci est dû au fait que la macro `@Model` ajoute du code pour nous et c'est une partie de ce code qui ne répond pas à ces protocoles.
 
@@ -130,7 +130,7 @@ Pour régler ce problème, il faut spécifier comment encoder ou décoder les do
 
 Ceci est réalisé à l'aide de ces étapes :
 
-- Définir une [énumération](le-langage-swift-reference.md#les-enumerations) nommée `CodingKey` qui répond au protocole [CodingKey](https://developer.apple.com/documentation/swift/codingkey) pour lister toutes les propriétés qui doivent pouvoir être encodées ou décodées. Le nom de chaque cas de l'énumération doit correspondre au nom d'une propriété à encoder ou à décoder.
+- Définir une [énumération](../complements/le-langage-swift-reference.md#les-enumerations) nommée `CodingKey` qui répond au protocole [CodingKey](https://developer.apple.com/documentation/swift/codingkey) pour lister toutes les propriétés qui doivent pouvoir être encodées ou décodées. Le nom de chaque cas de l'énumération doit correspondre au nom d'une propriété à encoder ou à décoder.
 
   ```swift title="SwiftUI"
   @Model

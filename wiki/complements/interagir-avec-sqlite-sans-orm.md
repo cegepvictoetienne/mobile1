@@ -3,7 +3,7 @@
 ## Ouverture de la base de données SQLite
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 SQLite est écrit en langage C. Pour utiliser son API dans un programme Swift, il faut notamment travailler avec des pointeurs C, par exemple avec des variables de type [OpaquePointer](https://developer.apple.com/documentation/swift/opaquepointer).
 
@@ -120,13 +120,13 @@ Vous pouvez désormais poursuivre votre développement pour [afficher des donné
 ## Afficher des données tirées de la BD
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Maintenant que notre application SwiftUI est capable de se [brancher à la base de données](interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite), il est possible d'afficher dans une vue les résultats d'une requête SQL.
 
 ### Modèles pour représenter chacune des tables de la BD
 
-D'abord, vous aurez besoin d'un [modèle](le-modele.md#gerer-les-donnees-de-lapplication-en-memoire-initialiser-un-tableau-dinstances) pour chacune des tables.
+D'abord, vous aurez besoin d'un [modèle](../lecons/le-modele.md#gerer-les-donnees-de-lapplication-en-memoire-initialiser-un-tableau-dinstances) pour chacune des tables.
 
 Le modèle contiendra une propriété pour chaque champ de la table. Les types de données devront correspondre et les champs qui peuvent être à nuls devront correspondre à une propriété dont le type se termine par un point d'interrogation.
 
@@ -286,7 +286,7 @@ var body: some View {
 ## Requête SQLite avec paramètres
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Avec SQLite comme avec tout autre système de gestion de base de données, les requêtes qui contiennent des variables doivent faire l'objet d'une attention particulière.
 
@@ -453,7 +453,7 @@ func insererItem(code: String, description: String) -> Bool {
 ## Gérer les versions de la base de données en production
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Une fois qu'une application est utilisée en production, il est possible que des ajustements à la base de données soient requis afin d'implanter de nouvelles fonctionnalités.
 
@@ -467,7 +467,7 @@ Voici les grandes étapes qui permettront de gérer les versions de la base de d
 ## Comment insérer des données dans une BD SQLite
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Lorsqu'on connaît les principes pour interagir avec une base de données SQLite dans un projet SwiftUI, on comprend que l'insertion n'est pas plus compilquée que la lecture de données.
 
@@ -476,14 +476,14 @@ Voici les étapes pour y arriver :
 - [Effectuer le branchement à la base de données](interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite). Ceci sera généralement fait dans la méthode `init()` du ContentView.
 - Les données à afficher seront souvent saisies dans un formulaire.
 - Une fois la saisie complétée, un bouton permettra [d'enregistrer les données](interagir-avec-sqlite-sans-orm.md#requete-sqlite-avec-parametres).
-- Au besoin, un mécanisme permettra de [synchroniser les données dans l'infonuagique](synchronisation-des-donnees-locales-dans-le-nuage.md#approches-possibles-pour-la-synchronisation).
+- Au besoin, un mécanisme permettra de [synchroniser les données dans l'infonuagique](../lecons/synchronisation-des-donnees-locales-dans-le-nuage.md#approches-possibles-pour-la-synchronisation).
 - Une fois la vue du formulaire refermée, il faudra que les nouvelles données [apparaissent automatiquement dans la liste de données](interagir-avec-sqlite-sans-orm.md#gerer-le-rafraichissement-de-la-liste-apres-insertion).
 - Dans tous les cas, l'usager doit être informé de l'état de l'opération avec un message de succès ou d'erreur selon le cas.
 
 ## Gérer le rafraîchissement de la liste après insertion
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Lorsqu'une application mobile présente une liste de valeurs tirée de la base de données et qu'une vue enfant peut ajouter, modifier ou supprimer ces valeurs, il faut trouver un mécanisme pour que la liste soit rafraîchie lorsque la vue principale est réaffichée après l'opération.
 
@@ -552,7 +552,7 @@ struct VueEnfant: View {
 ## Vérifier les modifications dans la base de données de l'application
 
 Note : Cette fiche présente une technique pour travailler avec SQLite sans ORM.   
-Depuis iOS 17, il est préférable de travailler avec [SwiftData](swiftdata.md#quest-ce-que-swiftdata).
+Depuis iOS 17, il est préférable de travailler avec [SwiftData](../lecons/swiftdata.md#quest-ce-que-swiftdata).
 
 Une application mobile qui interagit avec une base de données ne peut pas modifier directement la base de données livrée avec son paquet.
 
@@ -560,6 +560,6 @@ Elle doit [copier la base de données vers un dossier dans lequel elle peut écr
 
 Si vous souhaitez consulter la base de données après que des données aient été modifiées par l'application, vous devrez retrouver le fichier dans lequel ces modifications ont eu lieu.
 
-Pour retrouver les données modifiées lorsque l'application tourne dans le simulateur, consultez la fiche « [Retrouver un fichier dans le simulateur](les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) ».
+Pour retrouver les données modifiées lorsque l'application tourne dans le simulateur, consultez la fiche « [Retrouver un fichier dans le simulateur](../lecons/les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) ».
 
-Pour retrouver les données modifiées directement sur un appareil mobile, consultez la fiche « [Récupérer les données d'une application à partir du iPhone](les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) ».
+Pour retrouver les données modifiées directement sur un appareil mobile, consultez la fiche « [Récupérer les données d'une application à partir du iPhone](../lecons/les-fichiers-modifies-sur-un-appareil-mobile-ou-sur-le-simulateur.md) ».

@@ -1,10 +1,7 @@
 # Les variables qui définissent l'état de la vue (View State)
 
-Le rafraîchissement d'une vue SwiftUI est associé à ses variables d'état. Dès qu'une variable d'état change, SwiftUI redessine ce qui est nécessaire.
 
-La programmation avec React utilise un principe semblable. Et sous React, les variables responsables du rafraîchissement d'un composant s'appellent également variables d'état.
-
-On peut comparer les variables d'état à un tableau de bord. Il s'agit des informations qui nous indiquent comment est notre vue à un moment donné.
+Une vue SwiftUI se rafraîchit lors d'un changement à ses variables d'état.  
 
 ## Déclarer une variable d'état
 
@@ -22,11 +19,10 @@ struct ContentView: View {
 }
 ```
 
-Les variables d'état devraient toujours être privées (**private**).
+!!! important "Important"  
+    Les variables d'état doivent toujours être privées (**private**). Il faut toujours leur donner une valeur de départ.
 
-Il faut toujours leur donner une valeur de départ.
-
-Notez que si le code de la vue doit modifier la valeur d'une variable déclarée dans sa structure et que cette variable n'a pas été déclarée avec `@State`, vous obtiendrez le message « Cannot assign to property: 'self' is immutable ».
+Notez que si le code de la vue doit modifier la valeur d'une variable déclarée dans sa structure et que cette variable n'a pas été déclarée avec `@State`, vous obtiendrez le message `Cannot assign to property: 'self' is immutable`{ .erreur }.
 
 ![Cannot assign to property: 'self' is immutable](images/Swift-CannotAssignToPropertySelfIsImmuable.png)
 
@@ -34,13 +30,11 @@ Comme le message l'indique, une structure est immuable par défaut. Puisque Cont
 
 La solution consiste à ajouter `@State` devant cette variable.
 
-## Modifier une variable d'état
+## Modifier une variable d'état  
 
-Maintenant qu'on a une variable d'état, utilisons-la pour rafraîchir la vue.
+Normalement, la modification d'une variable d'état est en réaction à une action utilisateur.  
 
-Il doit y avoir quelque chose qui modifie cette variable d'état pour que la vue soit automatiquement rafraîchie.
-
-Ce peut être du code que vous écrivez en réaction à une action de l'usager, par exemple lorsqu'il clique sur un bouton.
+Par exemple, un clic de bouton :  
 
 ```swift title="SwiftUI"
 struct ContentView: View {

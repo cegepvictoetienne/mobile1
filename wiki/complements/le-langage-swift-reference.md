@@ -10,7 +10,7 @@ Avec Swift, les mots-clés `var` et `let` permettent de déclarer respectivement
 - `let` : déclare une constante
 
 ```swift title="Swift"
-var nom = "Annie"
+var nom = "Roger"
 let iterations = 10
 ```
 
@@ -19,7 +19,7 @@ Lorsque le type peut être déduit à partir de la valeur d'initialisation, Swif
 Si désiré, il est tout de même possible de spécifier le type.
 
 ```swift title="Swift"
-var nom: String = "Annie"
+var nom: String = "Roger"
 let iterations: Int = 10
 ```
 
@@ -172,9 +172,9 @@ let monInstance = MaStructure()
  monInstance.unePropriete = "abc"
 ```
 
-Ce code générera l'erreur « Cannot assign to property: 'monInstance' is a 'let' constant ».
+Ce code générera l'erreur `Cannot assign to property: 'monInstance' is a 'let' constant`{ .erreur }.
 
-![Cannot assign to property: 'monInstance' is a 'let' constant](../10-introduction-a-swift/images/Swift-CannotAssignToPropertyMonInstanceIsALetConstant.png)
+![Cannot assign to property: 'monInstance' is a 'let' constant](../lecons/images/Swift-CannotAssignToPropertyMonInstanceIsALetConstant.png)
 
 Notez que ce comportement est différent de ce qu'on retrouve dans d'autres langages, par exemple [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
 
@@ -211,7 +211,7 @@ Dans l'exemple qui suit, le contexte dicte qu'on doit utiliser une constante.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
-  let nom: String = "Annie"
+  let nom: String = "Roger"
 
   var body: some View {
     ...
@@ -225,7 +225,7 @@ La variable ou constante n'existera pas en dehors du code de ce bouton.
 
 ```swift title="SwiftUI"
 Button(action: {
-  var nom: String = "Annie"
+  var nom: String = "Roger"
   ...
 }) {
   Text("Vérifier")
@@ -389,7 +389,7 @@ struct Ami {
 Pour créer une instance de la structure, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Annie")
+let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'instance puisqu'elle a été créée avec le mot-clé `let`.
@@ -422,7 +422,7 @@ Désormais, pour instancier un Ami, il est possible de fournir seulement le pré
 Le nom de famille pourra être ajusté au besoin par une instruction séparée.
 
 ```swift title="Swift"
-var ami = Ami(prenom: "Annie")
+var ami = Ami(prenom: "Roger")
 ...
 ami.nomFamille = "Gagnon"
 ```
@@ -468,7 +468,7 @@ class Ami {
 Pour créer une instance de la classe, qu'on appellera **objet**, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Annie")
+let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'objet puisqu'il a été créé avec le mot-clé `let`.
@@ -705,7 +705,7 @@ Elle permet notamment de créer une chaîne qui contient des variables.
 On place la variable ou la constante dans la chaîne entre parenthèses, précédées d’une barre oblique inverse (\).
 
 ```swift title="SwiftUI"
-let nom: String = "Annie"
+let nom: String = "Roger"
  Text("Bonjour \(nom)")
 ```
 
@@ -823,7 +823,7 @@ Autre exemple avec une chaîne de caractères :
 ```swift title="Swift"
 var nom: String?
 ...
-nom = "Annie"
+nom = "Roger"
 ...
 nom = nil
 ```
@@ -858,7 +858,7 @@ Tel que spécifié [dans la documentation officielle de Swift](https://docs.swif
 
 Swift fait une gestion serrée des optionnels. Il n'est pas possible d'utiliser une variable optionnelle régulière sans prendre les précautions adéquates.
 
-Si vous tentez d'utiliser un optionnel sans précaution, vous obtiendrez un message du genre « Value of optional type 'String?' must be unwrapped to a value of type 'String' ».
+Si vous tentez d'utiliser un optionnel sans précaution, vous obtiendrez un message du genre `Value of optional type 'String?' must be unwrapped to a value of type 'String'`{ .erreur }.
 
 ![Value of optional type 'String?' must be unwrapped to a value of type 'String'](images/SwiftUI-ValueOfOptionalMustBeUnwrapped.png)
 
@@ -872,7 +872,7 @@ Dans ce contexte, le point d'exclamation s'appelle **opérateur de déballage fo
 Text(nom!)
 ```
 
-Mais attention : si jamais la variable avait la valeur nil, le programme planterait avec le message « Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value ».
+Mais attention : si jamais la variable avait la valeur nil, le programme planterait avec le message `Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value`{ .erreur }.
 
 ![Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value](images/SwiftUI-UnexpectedlyFoundNilWhileUnwrapping.png)
 
@@ -895,7 +895,7 @@ Image(cartePigee!.image)
 Il est également possible d'utiliser l'[opérateur de fusion nil'](https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#:~:text=Nil%2DCoalescing%20Operator) (**Nil-Coalescing Operator**) pour spécifier la valeur à utiliser si la variable vaut nil.
 
 ```swift title="Swift"
-Text(nom ?? "Annie")
+Text(nom ?? "Roger")
 ```
 
 En fait, l'opérateur de fusion nil est un raccourci de l'opérateur ternaire que l'on peut utiliser lorsqu'il faut vérifier si une variable a la valeur nil.
@@ -903,7 +903,7 @@ En fait, l'opérateur de fusion nil est un raccourci de l'opérateur ternaire qu
 L'instruction précédente est équivalente à celle-ci :
 
 ```swift title="Swift"
-Text(nom != nil ? nom : "Annie")
+Text(nom != nil ? nom : "Roger")
 ```
 
 #### Chaînage d'optionnels (?)
@@ -1022,7 +1022,7 @@ guard let itemsJSON = try? JSONEncoder().encode(items) else {
 // ici, on a la garantie que itemsJSON a pu être initialisé
 ```
 
-Si le bloc ne se termine pas par un des mots-clés requis, vous obtiendrez un message du genre « 'guard' body must not fall through, consider using a 'return' or 'throw' to exit the scope ».
+Si le bloc ne se termine pas par un des mots-clés requis, vous obtiendrez un message du genre `'guard' body must not fall through, consider using a 'return' or 'throw' to exit the scope`{ .erreur }.
 
 ??? info "Pour plus d'information"
 
@@ -1051,7 +1051,7 @@ do {
 }
 ```
 
-Si vous omettez de placer le `try` dans un bloc `do`...`catch`, vous obtiendrez l'erreur « Errors thrown from here are not handled ».
+Si vous omettez de placer le `try` dans un bloc `do`...`catch`, vous obtiendrez l'erreur `Errors thrown from here are not handled`{ .erreur }.
 
 ### try?
 

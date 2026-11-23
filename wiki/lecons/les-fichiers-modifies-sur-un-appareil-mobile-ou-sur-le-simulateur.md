@@ -70,7 +70,7 @@ Avec SwiftData, si vous [activez le débogage](debogage-avec-swiftdata.md), le c
 
 #### Base de données SQLite sans bibliothèque ni ORM supplémentaire
 
-Si vous travaillez avec une base de données que votre application [se charge de copier dans le dossier Application Support](interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite), cette technique est pour vous.
+Si vous travaillez avec une base de données que votre application [se charge de copier dans le dossier Application Support](../complements/interagir-avec-sqlite-sans-orm.md#ouverture-de-la-base-de-donnees-sqlite), cette technique est pour vous.
 
 La technique demande une petite instruction supplémentaire dans le code pour faire afficher le chemin complet par programmation dans la sortie standard de Xcode.
 
@@ -215,7 +215,7 @@ Une fois les dossiers du simulateur supprimés, il faut tout de même lancer cet
 xcrun simctl erase all
 ```
 
-Sans cette commande, le prochain lancement de votre application dans un simulateur vous donnerait l'erreur « Unable to boot device because it cannot be located on disk. ».
+Sans cette commande, le prochain lancement de votre application dans un simulateur vous donnerait l'erreur `Unable to boot device because it cannot be located on disk.`{ .erreur }.
 
 ### Suppression définitive d'un simulateur
 

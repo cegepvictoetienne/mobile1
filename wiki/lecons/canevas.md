@@ -102,7 +102,7 @@ Notez que cette procédure supprimera toutes les données en cache du simulateur
 
 ## Si la commande ne fonctionne pas
 
-Si vous obtenez le message « xcrun: error: unable to find utility ""simctl", not a developer tool or in PATH », ceci signifie que vous devez installer les outils en ligne de commande de Xcode (Xcode command line tools).
+Si vous obtenez le message `xcrun: error: unable to find utility ""simctl", not a developer tool or in PATH`{ .erreur }, ceci signifie que vous devez installer les outils en ligne de commande de Xcode (Xcode command line tools).
 
 Pour y arriver :
 

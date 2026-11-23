@@ -114,7 +114,7 @@ AsyncImage(url: URL(string: "https://mobile1.profinfo.ca/images/apple-touch-icon
 
 ## Ajuster une image
 
-Dans une application SwiftUI, une image peut être affichée [à partir d'un fichier qui a été ajouté au projet](quelques-vues-swiftui.md#ajouter-une-image-dans-un-projet-swiftui) ou encore [directement à partir d'un URL](les-images-et-icones.md#asyncimage-pour-afficher-une-image-a-partir-dun-url).
+Dans une application SwiftUI, une image peut être affichée [à partir d'un fichier qui a été ajouté au projet](../complements/quelques-vues-swiftui.md#ajouter-une-image-dans-un-projet-swiftui) ou encore [directement à partir d'un URL](les-images-et-icones.md#asyncimage-pour-afficher-une-image-a-partir-dun-url).
 
 Par défaut, l'image conserve sa taille originale sans tenir compte de la taille de l'écran ni de ce qui s'y trouve déjà.
 
@@ -243,57 +243,57 @@ SwiftUI permet de modifier les couleurs d'une image par programmation grâce à 
 - [.colorMultiply()](https://developer.apple.com/documentation/swiftui/view/colormultiply(_:))
 - [.hueRotation()](https://developer.apple.com/documentation/swiftui/view/huerotation(_:))
 - [.colorInvert()](https://developer.apple.com/documentation/swiftui/view/colorinvert())
-- [.colorMultiply()](https://developer.apple.com/documentation/swiftui/view/colormultiply(_:))
 
 Voici quelques exemples visuels.
 
-Dans les impressions d'écrans, les images de gauches sont originales et celles de droites ont été ajustées par programmation.
+Dans la première impression d'écran, l'image du haut est l'originale et les autres ont été ajustées par programmation. Dans les suivantes, l'image de gauche est l'originale et celle de droite a été ajustée.
 
 ```swift title="SwiftUI"
 struct ContentView: View {
-  var body: some View {
-    VStack {
-      Text(".renderingMode")
-       HStack {
-         Image("avril")
-           .resizable()
-           .scaledToFit()
-         Image("avril")
-           .renderingMode(.template)
-           .resizable()
-           .scaledToFit()
-           .foregroundColor(.blue)
-       }
-      Text(".brightness")
-        .padding(.top)
-      HStack {
-        Image("fond")
-          .resizable()
-           .scaledToFit()
-         Image("fond")
-           .resizable()
-           .scaledToFit()
-           .brightness(0.2)
-       }
-      Text(".saturation et .contrast")
-        .padding(.top)
-       HStack {
-         Image("coucher_soleil")
-           .resizable()
-           .scaledToFit()
-         Image("coucher_soleil")
-           .resizable()
-           .scaledToFit()
-           .saturation(1.5)
-           .contrast(1.9)
-       }
+    var body: some View {
+        VStack {
+            Image("roger")
+                .resizable()
+                .scaledToFit()
+            HStack(spacing: 0) {
+                VStack {
+                    Text(".renderingMode")
+                    Image("roger")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.blue)
+                }
+                VStack {
+                    Text(".brightness")
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .brightness(0.2)
+                }
+            }
+            HStack(spacing: 0) {
+                VStack {
+                    Text(".saturation")
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .saturation(1.5)
+                }
+                VStack {
+                    Text(".contrast")
+                    Image("roger")
+                        .resizable()
+                        .scaledToFit()
+                        .contrast(1.9)
+                }
+            }
+        }
     }
-    .padding()
-  }
 }
 ```
 
-![Ajustements aux couleurs d'images](../07-les-couleurs/images/SwiftUI-AjustementCouleursImage.png)
+![Ajustements aux couleurs d'images](images/SwiftUI-AjustementCouleursImage.webp)
 
  Si vous travaillez avec une image dont les traits principaux sont en noir, voici une astuce pour transformer les traits noirs dans la couleur de votre choix.
 
@@ -311,7 +311,7 @@ HStack {
 }
 ```
 
-![.colorInvert et .colorMultiply](../07-les-couleurs/images/SwiftUI-ColorInvertEtColorMultiply.png)
+![.colorInvert et .colorMultiply](images/SwiftUI-ColorInvertEtColorMultiply.png)
 
 Si vous avez en main une image colorée (clipart ou photo), il est possible d'utiliser `.hueRotation()` pour décaler toutes les couleurs de l'image le long du cercle chromatique.
 
@@ -327,7 +327,7 @@ HStack {
  }
 ```
 
-![.hueRotation()](../07-les-couleurs/images/SwiftUI-HueRotation.png)
+![.hueRotation()](images/SwiftUI-HueRotation.png)
 
 ## La bibliothèque d'icônes SF Symbols
 
@@ -341,7 +341,7 @@ Pour ajouter un de ces symboles à votre application SwiftUI :
 Image(systemName: "graduationcap")
 ```
 
-Les icônes SF Symbols peuvent également être utilisés avec les contrôles [Label](quelques-vues-swiftui.md#label-la-combinaison-icone-et-texte).
+Les icônes SF Symbols peuvent également être utilisés avec les contrôles [Label](../complements/quelques-vues-swiftui.md#label-la-combinaison-icone-et-texte).
 
 Il est possible de modifier la couleur d'une icône. Ici, je change la couleur selon la valeur d'une variable booléenne.
 
@@ -412,7 +412,7 @@ Label("Ajouter", systemImage: "plus.circle")
 
 ![Label](images/SwiftUI-Label.png)
 
-Il est également possible d'utiliser une [image que vous avez ajoutée dans votre projet](quelques-vues-swiftui.md#ajouter-une-image-dans-un-projet-swiftui).
+Il est également possible d'utiliser une [image que vous avez ajoutée dans votre projet](../complements/quelques-vues-swiftui.md#ajouter-une-image-dans-un-projet-swiftui).
 
 ```swift title="SwiftUI"
 Label("Profil", image: "user")

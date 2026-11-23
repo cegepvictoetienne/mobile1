@@ -25,7 +25,7 @@ Image("nom-image")
   .frame(width: 250, height: 250)
 ```
 
-Vous trouverez plus d'exemples avec aperçu du résultat de chacun sur la fiche « [Ajuster une image](les-images-et-icones.md#ajuster-une-image) ».
+Vous trouverez plus d'exemples avec aperçu du résultat de chacun sur la fiche « [Ajuster une image](../lecons/les-images-et-icones.md#ajuster-une-image) ».
 
 ## Modifieur .padding()
 
@@ -43,7 +43,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-Padding.png)
+![exemple padding](../lecons/images/SwiftUI-Padding.png)
 
 Il est possible de préciser le ou les côtés où l'espacement doit être ajouté. Les [paramètres disponibles](https://developer.apple.com/documentation/swiftui/edge/set) à cet effet sont :
 
@@ -61,7 +61,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingLeading.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingLeading.png)
 
 Si vous désirez ajouter un espacement partout sauf en bas :
 
@@ -80,7 +80,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingHorizontalTop.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingHorizontalTop.png)
 
 ### Taille de l'espacement
 
@@ -88,7 +88,7 @@ La taille de l'espacement est calculée en points.
 
 Par défaut, SwiftUI utilise une taille qui tient compte du périphérique utilisé.
 
-Vous avec la possibilité de spécifier la taille désirée à l'aide d'un nombre ou d'une variable de type GCFloat.
+Vous avec la possibilité de spécifier la taille désirée à l'aide d'un nombre ou d'une variable de type CGFloat.
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -96,7 +96,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-Padding100.png)
+![exemple padding](../lecons/images/SwiftUI-Padding100.png)
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -104,7 +104,7 @@ Text("Hello, world!")
   .background(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingLeading50.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingLeading50.png)
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -113,7 +113,7 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingHorizontal100Vertical30.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingHorizontal100Vertical30.png)
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
@@ -121,7 +121,7 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingHorizontalTop75.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingHorizontalTop75.png)
 
 La dimension des espacements peut également être fournie à l'aide d'un paramètre de type [EdgeInsets](https://developer.apple.com/documentation/swiftui/edgeinsets) :
 
@@ -131,7 +131,7 @@ Text("Hello, world!")
   .backgound(Color.yellow)
 ```
 
-![exemple padding](../09-position-des-elements-a-l-ecran/images/SwiftUI-PaddingEdgeInsets.png)
+![exemple padding](../lecons/images/SwiftUI-PaddingEdgeInsets.png)
 
 ## Modifieur .offset()
 
@@ -288,7 +288,7 @@ Remarquez que le parent n'est pas l'écran entier mais bien la zone sécuritaire
 
 ![Rectangle](images/SwiftUI-Position-CoinDansCoinSuperieurGauche.png)
 
-Et pour le coin inférieur droit, on travaillera avec [GeometryReader](position-des-elements-a-l-ecran.md#tenir-compte-de-la-taille-de-lecran-avec-geometryreader).
+Et pour le coin inférieur droit, on travaillera avec [GeometryReader](../lecons/position-des-elements-a-l-ecran.md#tenir-compte-de-la-taille-de-lecran-avec-geometryreader).
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -418,7 +418,7 @@ Une opacité de 1 correspond à aucune transparence.
 
 Une opacité de 0 correspond à une vue invisible.
 
-On peut utiliser l'opacité, par exemple, pour [pâlir une couleur](couleurs.md).
+On peut utiliser l'opacité, par exemple, pour [pâlir une couleur](../lecons/couleurs.md).
 
 Attention : il faut appliquer l'opacité sur la bonne vue.
 

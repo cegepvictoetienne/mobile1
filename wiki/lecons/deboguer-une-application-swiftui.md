@@ -42,7 +42,7 @@ MonProjet.Item
 
 Il est possible d'utiliser la fonction `print()` dans le `body()`.
 
-Par contre, si vous ne prenez pas les précautions nécessaires, vous obtiendrez le message d'erreur « Type '()' cannot conform to 'View'; only struct/enum/class types can conform to protocols » :
+Par contre, si vous ne prenez pas les précautions nécessaires, vous obtiendrez le message d'erreur `Type '()' cannot conform to 'View'; only struct/enum/class types can conform to protocols`{ .erreur } :
 
 ```swift title="SwiftUI"
 var body: some View {
@@ -176,7 +176,7 @@ Dans le cas d'une variable d'état, il faudra ajouter une barre en bas devant le
 p _maVariableDEtat
 ```
 
-Si vous omettez la barre en bas alors qu'elle est requise, vous obtiendrez le message « error: Couldn't lookup symbols ».
+Si vous omettez la barre en bas alors qu'elle est requise, vous obtiendrez le message `error: Couldn't lookup symbols`{ .erreur }.
 
 Notez que dans certains cas, la valeur de la variable d'état ne sera modifiée que lors du prochain rafraîchissement de l'écran.
 
@@ -227,7 +227,7 @@ let logger = Logger()
 logger.debug("test")
 ```
 
-Pour travailler avec une variable, il faut utliser [l'interpolation de chaînes](le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine).
+Pour travailler avec une variable, il faut utliser [l'interpolation de chaînes](../complements/le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine).
 
 ```swift title="Swift"
 logger.debug("Problème rencontré: \(erreur)")
@@ -324,7 +324,7 @@ Pendant le développement d'une application SwiftUI, il est intéressant de trav
 
 Ceci permettra notamment d'ajouter des [blocs de compilation conditionnelle](https://docs.swift.org/swift-book/ReferenceManual/Statements.html#:~:text=Conditional%20Compilation%20Block) (**Conditional Compilation Block**) qui ne seront compilés que pendant le développement de l'application.
 
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche), cliquez sur le nom du projet.
 - Rendez-vous dans l'onglet **Build Settings**.
 - Dans le sous-onglet **All**, section **Swift Compiler - Custom Flags**, assurez-vous que la configuration **Debug** contienne la valeur `DEBUG`.
 
@@ -358,7 +358,7 @@ Dès qu'un point d'arrêt est rencontré, entrez cette commande à l'invite **ll
 
 Lorsque cette commande est utilisée directement dans le code, vous voyez en tout temps ce qui a causé le rafraîchissement de la vue.
 
-Mais attention : si vous utilisez cette instruction directement dans la vue sans prendre de précautions, vous obtiendrez le message d'erreur « Type '()' cannot conform to 'View' ».
+Mais attention : si vous utilisez cette instruction directement dans la vue sans prendre de précautions, vous obtiendrez le message d'erreur `Type '()' cannot conform to 'View'`{ .erreur }.
 
 Pour régler ce problème :
 

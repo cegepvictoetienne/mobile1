@@ -10,7 +10,7 @@ La langue utilisée correspondra à la langue configurée sur le périphérique,
 
 Pour que l'application puisse être affichée en français, vous devez y ajouter une langue.
 
-- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](../10-introduction-a-swift/images/Xcode-IconeChemise.png) dans la zone de gauche),  cliquez sur le nom du projet.
+- Dans le navigateur de projet de Xcode (s'il n'est pas visible, cliquez sur l'icône de chemise ![Icône chemise, filière](images/Xcode-IconeChemise.png) dans la zone de gauche),  cliquez sur le nom du projet.
 - Dans la zone centrale, assurez-vous que le projet soit sélectionné sous **PROJECT**.
 - Rendez-vous dans l'onglet **Info**.
 - Dans la section **Localizations**, cliquez sur le + puis sélectionnez la langue à ajouter.
