@@ -389,6 +389,29 @@ article a[href^="http"]:not(pre a):not(code a):not([href^="https://mobile1.profi
   background-color: var(--ls-surface-low);
 }
 
+/* Table code / résultat : deux colonnes égales, l'image remplit la sienne.
+   Utilisation : <div class="code-resultat" markdown="1"> autour de la table */
+.md-typeset .code-resultat .md-typeset__table {
+  display: block;
+}
+
+.md-typeset .code-resultat table:not([class]) {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.md-typeset .code-resultat th,
+.md-typeset .code-resultat td {
+  width: 50%;
+}
+
+.md-typeset .code-resultat td img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* --------------------------------------------------------------------------
    12. Messages d'erreur – `message`{ .erreur }
    -------------------------------------------------------------------------- */

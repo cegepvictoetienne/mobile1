@@ -4,9 +4,23 @@
 
 La vue [TextField](https://developer.apple.com/documentation/swiftui/textfield) permet de saisir du texte.
 
-Le premier paramètre de `TextField` permet de spécifier le libellé. Sous iOS, ce libellé sera inscrit dans la boîte de saisie, comme un filigrane (en anglais : **watermark** ou **placeholder**). Ce n'est que sous macOS qu'il est placé comme les libellés qu'on a l'habitude de voir dans un formulaire Web, c'est-à-dire à gauche de la case de saisie.
+Le premier paramètre de `TextField` permet de spécifier le libellé comme un filigrane (en anglais : **watermark** ou **placeholder**).   
 
-Le second paramètre est le nom de la variable dans laquelle la valeur saisie sera stockée. Ce doit être une variable avec liaison (**binding**), donc précédée par un signe $, afin que la valeur entrée dans le `TextField` modifie cette variable et vice-versa. Ce peut être par exemple une variable déclarée avec l'attribut `@State`.
+Le second paramètre est le nom de la variable dans laquelle la valeur saisie sera stockée. Ce doit être une variable avec liaison (**binding**), donc précédée par un signe *$*, afin que la valeur entrée dans le `TextField` modifie cette variable et vice-versa. Ce peut être par exemple une variable déclarée avec l'attribut `@State`.
+
+
+<div class="code-resultat" markdown="1">
+
+<table markdown="1">
+<thead>
+<tr>
+<th>Code</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody markdown="1">
+<tr markdown="1">
+<td markdown="1">
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -19,12 +33,18 @@ struct ContentView: View {
   }
 }
 ```
+</td>
 
-![TextField](images/SwiftUI-TextField.png)
+<td markdown="1">
 
-### Modifieur textFieldStyle()
 
-Vous l'avez sans doute remarqué, par défaut, l'apparence n'est pas très intéressante.
+![TextField](images/SwiftUI-TextField.webp)
+
+</td>
+</tr>
+
+<tr markdown="1">
+<td markdown="1">
 
 Le modifieur `textFieldStyle()` permet d'ajuster l'apparence du TextField.
 
@@ -33,12 +53,19 @@ TextField("Nom", text: $nom)
   .textFieldStyle(.roundedBorder)
   .padding()
 ```
+</td>
 
-J'ai ajouté un modifieur `padding()` afin que le `TextField` ne soit pas collé sur les bords de l'écran.
+<td markdown="1">
 
-![TextFieldStyle](images/SwiftUI-TextFieldStyle.png)
 
-### Bordure personnalisée
+![TextFieldStyle](images/SwiftUI-TextFieldStyle.webp)
+
+</td>
+</tr>
+
+
+<tr markdown="1">
+<td markdown="1">
 
 Plutôt qu'une bordure grise, il est possible de définir une bordure personnalisée selon nos besoins.
 
@@ -53,8 +80,23 @@ TextField("Nom", text: $nom)
   }
   .padding()
 ```
+</td>
 
-![TextField avec overlay](images/SwiftUI-TextFieldAvecOverlay.png)
+<td markdown="1">
+
+
+![TextField avec overlay](images/SwiftUI-TextFieldAvecOverlay.webp)
+
+</td>
+</tr>
+
+
+</tbody>
+</table>
+
+</div>
+
+
 
 ### Placer le TextField dans un Form
 
@@ -74,17 +116,9 @@ Form {
 
 Il faut toujours avoir un libellé autre que le filigrane.
 
-En effet, l'utilisation d'un filigrane comme seul libellé n'est pas ergonomique puisqu'une fois le formulaire rempli, on ne verra plus ce qui était attendu dans chacune des cases.
-
-Ceci serait problématique par exemple dans un formulaire qui doit saisir un prénom et un nom de famille. Devait-on entrer le nom de famille en premier ou le prénom?
-
-D'ailleurs, on voit dans les applications de Apple qu'il y a généralement autre chose que le filigrane pour identifier une case de saisie, tel qu'illustré dans cette vue dans les réglages.
-
 ![Libellés dans les réglages](images/SwiftUI-LibellesDansReglages.png)
 
 Afin de s'assurer que l'application soit ergonomique, il est possible de forcer l'affichage d'un libellé en utilisant des sections.
-
-Remarquez qu'ici, je n'ai rien spécifié comme filigrane. J'aurais pu utiliser un filigrane pour donner de l'information complémentaire sur ce qui est attendu, par exemple le format d'un numéro de téléphone ou encore le fait que l'information soit requise ou non.
 
 ```swift title="SwiftUI"
 Form {
@@ -142,18 +176,6 @@ Form {
 ```
 
 ![TextField avec largeur libellé uniforme](images/SwiftUI-TextFieldAvecLibellesDansHStackLargeurUniforme.png)
-
-### Libellé flottant
-
-Pour une apparence plus sophistiquée, vous pouvez vous tourner vers des libellés flottants, c'est-à-dire que le libellé apparaît comme un filigrane au départ et qu'il se déplace en haut de la valeur saisie dès qu'on commence à entrer du texte.
-
-Contrairement à Google avec [Material Design](https://m3.material.io/components/text-fields/overview), Apple a choisi de ne pas fournir de vue qui permet de générer un libellé flottant. C'est que ce type d'utilisation [est controversé](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6) bien que plusieurs arguments des détracteurs [soient discutables](https://medium.com/bymds/are-float-labels-really-that-problematic-after-all-da7ffe7d5417).
-
-Si vous souhaitez utiliser des libellés flottants, vous devrez ajouter un peu de code à votre application.
-
-Vous pouvez par exemple baser votre travail sur ceci : <https://github.com/kishanraja/FloatingLabelTextFieldSwiftUI>
-
-ou sur ceci : <https://levelup.gitconnected.com/swiftui-floating-label-text-field-af04c2eb1a2b>
 
 ### Alignement du texte
 
@@ -228,23 +250,6 @@ Il existe des claviers spécialisés pour différents besoins.
 
 Je vous présente un peu plus bas un aperçu des touches offertes par chacun.
 
-### Icône pour changer la langue du clavier
-
-Au bas du clavier numérique, vous retrouverez souvent une icône de globe.
-
-Un clic sur cette icône permet de basculer entre deux langues configurées sur le téléphone ou dans le simulateur. S'il y a plus de deux langues, un clic prolongé permettra de sélectionner parmi ces langues.
-
-Les caractères présentés sur le clavier numérique seront différents selon la langue choisie.
-
-C'est l'usager qui détermine les langues disponibles et non le développeur.
-
-Pour ajouter une langue sur le téléphone ou dans le simulateur :
-
-- Cliquez sur l'icône **Réglages**.
-- Sélectionnez l'option **Général** / **Langue et région**.
-- Cliquez sur **Ajouter une langue** puis sélectionnez la langue désirée.
-
-![Choix localisation](images/SwiftUI-Clavier-ChoixLocalisation.png)
 
 ### Aperçu des configurations de clavier disponibles
 

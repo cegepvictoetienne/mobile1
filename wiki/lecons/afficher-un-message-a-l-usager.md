@@ -71,17 +71,6 @@ Button(action: {
 
 ![Alerte avec bouton par défaut](images/SwiftUI-Alert-1.png)
 
-Attention : la [Structure Alert](https://developer.apple.com/documentation/swiftui/alert) ne doit plus être utilisée. Elle est obsolète depuis iOS 13.0 et macOS 10.15.
-
-```swift title="SwiftUI"
-Button("Test") {
-  afficherAlerte = true
-}
-.alert(isPresented: $afficherAlerte) {
-  Alert(title: Text("Bonjour!"))
-}
-```
-
 ### Alerte avec bouton personnalisé
 
 Il est possible de changer le texte du bouton principal en définissant un bouton dont le rôle est `.cancel`.
@@ -166,7 +155,7 @@ Button("Supprimer") {
 
 ### Alerte qui saisit de l'information
 
-Depuis iOS 16, la méthode .alert() permet de saisir de l'information, par exemple à l'aide d'un [TextField](../complements/les-formulaires-swiftui.md#textfield).
+La méthode .alert() permet de saisir de l'information, par exemple à l'aide d'un [TextField](../complements/les-formulaires-swiftui.md#textfield).
 
 Il n'est pas possible de construire une vue complexe mais l'ajout de quelques TextFields est accepté.
 
