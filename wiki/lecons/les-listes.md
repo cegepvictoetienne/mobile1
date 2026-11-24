@@ -156,10 +156,10 @@ List(items) { item in
   HStack {
     Image(systemName: "paperclip")
     Text(item.code)
-      .foregroundColor(item.couleur)
+      .foregroundStyle(item.couleur)
     Text("-")
     Text(item.titre)
-      .foregroundColor(item.couleur)
+      .foregroundStyle(item.couleur)
   }
  }
 ```
@@ -190,10 +190,10 @@ List {
     ForEach(itemsCategorie1) { item in
       HStack {
         Text(item.code)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
         Text("-")
         Text(item.titre)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
       }
     }
   }
@@ -202,10 +202,10 @@ List {
     ForEach(itemsCategorie2) { item in
       HStack {
         Text(item.code)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
         Text("-")
         Text(item.titre)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
       }
     }
   }
@@ -303,10 +303,10 @@ List(selection: $selection) {
     HStack {
       Image(systemName: "paperclip")
       Text(item.code)
-        .foregroundColor(item.couleur)
+        .foregroundStyle(item.couleur)
       Text("-")
       Text(item.titre)
-        .foregroundColor(item.couleur)
+        .foregroundStyle(item.couleur)
     }
     .tag(item.id)
     .listRowBackground(item.id == selection
@@ -359,7 +359,7 @@ struct ContentView: View {
             Text("-")
               .frame(maxWidth: .infinity)
               .padding()
-              .foregroundColor(Color.primary)
+              .foregroundStyle(Color.primary)
               .background(Color.secondary .opacity(0.4))
               .cornerRadius(15.0)
           }
@@ -373,7 +373,7 @@ struct ContentView: View {
             Text("+")
               .frame(maxWidth: .infinity)
               .padding()
-              .foregroundColor(Color.primary)
+              .foregroundStyle(Color.primary)
               .background(Color.secondary .opacity(0.4))
               .cornerRadius(15.0)
           }

@@ -145,7 +145,7 @@ struct ContentView: View {
         NavigationLink(destination: CameraView(enregistrementReussi: $enregistrementReussi, photo: $photo)) {
           Text("Utiliser la caméra")
             .padding()
-            .foregroundColor(Color.white)
+            .foregroundStyle(Color.white)
             .background(Color.cyan)
             .cornerRadius(10.0)
         }
@@ -159,7 +159,7 @@ struct ContentView: View {
 
         if !enregistrementReussi {
           Text("L'image n'a pas pu être enregistrée dans le système de fichiers.")
-            .foregroundColor(.red)
+            .foregroundStyle(.red)
         }
       }   // fin VStack
       .navigationTitle("Mon application")
@@ -266,7 +266,7 @@ struct ContentView: View {
         }) {
           Image(systemName: "arrow.triangle.2.circlepath")
             .font(.title)
-            .foregroundColor(.white)
+            .foregroundStyle(.white)
             .shadow(radius: 10)
         }
 
@@ -277,7 +277,7 @@ struct ContentView: View {
         }) {
           Circle()
             .frame(width: 80)
-            .foregroundColor(.black)
+            .foregroundStyle(.black)
             .padding()
             .background(Color.gray)
             .clipShape(Circle())
@@ -292,12 +292,12 @@ struct ContentView: View {
           if (utiliserFlash == true){
             Image(systemName: "bolt.fill")
               .font(.title)
-              .foregroundColor(.yellow)
+              .foregroundStyle(.yellow)
               .shadow(radius: 10)
           } else {
             Image(systemName: "bolt.slash.fill")
               .font(.title)
-              .foregroundColor(.gray)
+              .foregroundStyle(.gray)
               .shadow(radius: 10)
           }
         }
@@ -500,7 +500,7 @@ struct MonBouton: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
     .padding()
-    .foregroundColor(Color.white)
+    .foregroundStyle(Color.white)
     .background(actif ? Color.cyan : Color.gray)
     .cornerRadius(10.0)
     .opacity(actif ? 1 : 0.5)
@@ -577,17 +577,17 @@ struct ContentView: View {
 
         if !boutonEnregistrerActif && !erreur {
           Text("Image enregistrée avec succès!")
-            .foregroundColor(.green)
+            .foregroundStyle(.green)
         }
 
         if imageIntrouvable {
           Text("Impossible de retrouver une image à cette adresse.")
-            .foregroundColor(.red)
+            .foregroundStyle(.red)
         }
 
         if erreur {
           Text("Une erreur s'est produite.")
-            .foregroundColor(.red)
+            .foregroundStyle(.red)
         }
       } // fin VStack
       .navigationTitle("Mes images")
@@ -713,7 +713,7 @@ struct FichiersEnregistresView: View {
 
       if erreur {
         Text("Une erreur s'est produite.")
-          .foregroundColor(.red)
+          .foregroundStyle(.red)
       }
     } // fin VStack
     .onAppear(perform: initialiserListeFichiers)

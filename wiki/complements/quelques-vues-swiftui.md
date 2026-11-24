@@ -208,7 +208,7 @@ Button(action: {
 }) {
   Text("Cliquez ici")
     .padding()
-    .foregroundColor(Color.white)
+    .foregroundStyle(Color.white)
     .background(Color.orange)
     .cornerRadius(15.0)
  }
@@ -226,7 +226,7 @@ Button(action: {
  }) {
   Text("Cliquez ici")
     .padding(50)
-    .foregroundColor(Color.white)
+    .foregroundStyle(Color.white)
     .background(Color.orange)
     .cornerRadius(15.0)
  }
@@ -243,7 +243,7 @@ Button(action: {
   Text("Cliquez ici")
  }
  .padding(50)
- .foregroundColor(Color.white)
+ .foregroundStyle(Color.white)
  .background(Color.orange)
  .cornerRadius(15.0)
 ```
@@ -255,7 +255,7 @@ Button("Cliquez ici", action: {
   // traitement ici
 })
 .padding(50)
-.foregroundColor(Color.white)
+.foregroundStyle(Color.white)
 .background(Color.orange)
 .cornerRadius(15.0)
 ```
@@ -268,7 +268,7 @@ Button(action: {
 }) {
   Text("Cliquez ici")
     .padding(50)
-    .foregroundColor(Color.white)
+    .foregroundStyle(Color.white)
     .background(Color.orange)
     .cornerRadius(15.0)
  }
@@ -284,7 +284,7 @@ Button(action: {
   Text("Cliquez ici")
     .padding()
     .frame(height: 100)
-    .foregroundColor(Color.white)
+    .foregroundStyle(Color.white)
     .font(.title)
     .background(Color.red)
     .cornerRadius(15.0)
@@ -302,7 +302,7 @@ Button(action: {
 }) {
   Text("Cliquez ici")
     .padding()
-    .foregroundColor(.black)
+    .foregroundStyle(.black)
     .background(LinearGradient(gradient: Gradient(colors: [.white, .gray]), startPoint: .top, endPoint: .bottom))
     .border(Color(red: 0.9, green: 0.9, blue: 0.9), width: 1)
  }
@@ -326,7 +326,7 @@ Button(action: {
       .cornerRadius(10)
     Text("Cliquez ici")
       .fontWeight(.bold)
-      .foregroundColor(.white)
+      .foregroundStyle(.white)
       .shadow(color: Color.black, radius: 5)
   }
 }
@@ -457,7 +457,7 @@ Les couleurs peuvent être utilisées dans des méthodes qui attendent en param�
 
 ```swift title="SwiftUI"
 Text("Texte rouge")
-  .foregroundColor(.red)
+  .foregroundStyle(.red)
 ```
 
 ### Rôles ou statuts
@@ -1123,10 +1123,10 @@ List(items) { item in
   HStack {
     Image(systemName: "paperclip")
     Text(item.code)
-      .foregroundColor(item.couleur)
+      .foregroundStyle(item.couleur)
     Text("-")
     Text(item.titre)
-      .foregroundColor(item.couleur)
+      .foregroundStyle(item.couleur)
   }
  }
 ```
@@ -1157,10 +1157,10 @@ List {
     ForEach(itemsCategorie1) { item in
       HStack {
         Text(item.code)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
         Text("-")
         Text(item.titre)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
       }
     }
   }
@@ -1169,10 +1169,10 @@ List {
     ForEach(itemsCategorie2) { item in
       HStack {
         Text(item.code)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
         Text("-")
         Text(item.titre)
-          .foregroundColor(item.couleur)
+          .foregroundStyle(item.couleur)
       }
     }
   }
@@ -1270,10 +1270,10 @@ List(selection: $selection) {
     HStack {
       Image(systemName: "paperclip")
       Text(item.code)
-        .foregroundColor(item.couleur)
+        .foregroundStyle(item.couleur)
       Text("-")
       Text(item.titre)
-        .foregroundColor(item.couleur)
+        .foregroundStyle(item.couleur)
     }
     .tag(item.id)
     .listRowBackground(item.id == selection
@@ -1326,7 +1326,7 @@ struct ContentView: View {
             Text("-")
               .frame(maxWidth: .infinity)
               .padding()
-              .foregroundColor(Color.primary)
+              .foregroundStyle(Color.primary)
               .background(Color.secondary .opacity(0.4))
               .cornerRadius(15.0)
           }
@@ -1340,7 +1340,7 @@ struct ContentView: View {
             Text("+")
               .frame(maxWidth: .infinity)
               .padding()
-              .foregroundColor(Color.primary)
+              .foregroundStyle(Color.primary)
               .background(Color.secondary .opacity(0.4))
               .cornerRadius(15.0)
           }

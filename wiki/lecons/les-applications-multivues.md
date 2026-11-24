@@ -305,7 +305,7 @@ struct VueEnfant: View {
       }) {
         Text("Retour")
           .padding()
-          .foregroundColor(Color.white)
+          .foregroundStyle(Color.white)
           .background(Color.gray)
           .cornerRadius(15.0)
       }

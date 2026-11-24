@@ -107,7 +107,7 @@ struct ListeItems: View {
     List (items) { item in
       HStack(spacing: 4) {
         Text(item.nom)
-          .foregroundColor(item.actif ? Color.black : Color.gray)
+          .foregroundStyle(item.actif ? Color.black : Color.gray)
         Spacer()
         Button(
           action: {

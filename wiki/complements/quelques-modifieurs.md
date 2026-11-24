@@ -149,7 +149,7 @@ struct ContentView: View {
     ZStack {
       Circle()
         .frame(width: 150, height: 150)
-        .foregroundColor(.orange)
+        .foregroundStyle(.orange)
 
       Text("Hello, world!")
         .font(.title)
@@ -168,7 +168,7 @@ struct ContentView: View {
     ZStack {
       Circle()
         .frame(width: 150, height: 150)
-        .foregroundColor(.orange)
+        .foregroundStyle(.orange)
 
       Text("Hello, world!")
         .font(.title)
@@ -188,7 +188,7 @@ struct ContentView: View {
     ZStack {
       Circle()
         .frame(width: 150, height: 150)
-        .foregroundColor(.orange)
+        .foregroundStyle(.orange)
         .offset(x: -77)
 
       Text("Hello, world!")
@@ -225,7 +225,7 @@ struct ContentView: View {
   var body: some View {
     Rectangle()
       .frame(width: 150, height: 100)
-      .foregroundColor(Color.red)
+      .foregroundStyle(Color.red)
   }
 }
 ```
@@ -241,7 +241,7 @@ struct ContentView: View {
   var body: some View {
     Rectangle()
       .frame(width: 150, height: 100)
-      .foregroundColor(Color.red)
+      .foregroundStyle(Color.red)
       .position(x: 0, y: 0)
   }
 }
@@ -258,7 +258,7 @@ struct ContentView: View {
   var body: some View {
     Rectangle()
       .frame(width: 150, height: 100)
-      .foregroundColor(Color.red)
+      .foregroundStyle(Color.red)
       .position(position)
   }
 }
@@ -278,7 +278,7 @@ struct ContentView: View {
   var body: some View {
     Rectangle()
       .frame(width: largeur, height: hauteur)
-      .foregroundColor(Color.red)
+      .foregroundStyle(Color.red)
       .position(x: largeur/2, y: hauteur/2)
   }
 }
@@ -299,7 +299,7 @@ struct ContentView: View {
     GeometryReader { geometry in
       Rectangle()
         .frame(width: largeur, height: hauteur)
-        .foregroundColor(Color.red)
+        .foregroundStyle(Color.red)
         .position(x: geometry.size.width - largeur/2, y: geometry.size.height - hauteur/2)
     }
   }
@@ -319,7 +319,7 @@ struct ContentView: View {
     GeometryReader { geometry in
       Rectangle()
         .frame(width: largeur, height: hauteur)
-        .foregroundColor(Color.red)
+        .foregroundStyle(Color.red)
     }
   }
 }
@@ -340,12 +340,12 @@ struct ContentView: View {
     VStack {
       Rectangle()
         .frame(width: largeur, height: hauteur)
-        .foregroundColor(Color.red)
+        .foregroundStyle(Color.red)
         .position(x: largeur/2, y: hauteur/2)
 
       Rectangle()
         .frame(width: largeur, height: hauteur)
-        .foregroundColor(Color.blue)
+        .foregroundStyle(Color.blue)
         .position(x: largeur/2, y: hauteur/2)
     }
   }
@@ -374,13 +374,13 @@ Dans cet exemple, sans le `.zIndex()`, le cercle serait placé sous le rectangle
 ZStack {
   Circle()
     .frame(width: 150, height: 150)
-    .foregroundColor(.orange)
+    .foregroundStyle(.orange)
     .offset(x: -77)
     .zIndex(1)
 
   Rectangle()
     .frame(width: 150, height: 150)
-    .foregroundColor(.teal)
+    .foregroundStyle(.teal)
  }
 ```
 

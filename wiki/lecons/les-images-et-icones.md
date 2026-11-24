@@ -262,7 +262,7 @@ struct ContentView: View {
                         .renderingMode(.template)
                         .resizable()
                         .scaledToFit()
-                        .foregroundColor(.blue)
+                        .foregroundStyle(.blue)
                 }
                 VStack {
                     Text(".brightness")
@@ -347,7 +347,7 @@ Il est possible de modifier la couleur d'une icône. Ici, je change la couleur s
 
 ```swift title="SwiftUI"
 Image(systemName: "sun.max")
-  .foregroundColor(maVariableBooleenne ? Color.black : Color.gray)
+  .foregroundStyle(maVariableBooleenne ? Color.black : Color.gray)
 ```
 
 Pour modifier la taille de l'icône :

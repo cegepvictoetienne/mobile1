@@ -1159,7 +1159,7 @@ struct ContentView: View {
         } footer: {
           if messageNom != "" {
             Text(messageNom)
-              .foregroundColor(.red)
+              .foregroundStyle(.red)
           }
         }
 
@@ -1171,7 +1171,7 @@ struct ContentView: View {
         } footer: {
           if messagePrix != "" {
             Text(messagePrix)
-              .foregroundColor(.red)
+              .foregroundStyle(.red)
           }
         }
 
@@ -1218,7 +1218,7 @@ struct ContentView: View {
         } footer: {
           if messageNom != "" && peutAfficherMessageNom {
             Text(messageNom)
-              .foregroundColor(.red)
+              .foregroundStyle(.red)
           }
         }
 
@@ -1230,7 +1230,7 @@ struct ContentView: View {
         } footer: {
           if messagePrix != "" && peutAfficherMessagePrix {
             Text(messagePrix)
-              .foregroundColor(.red)
+              .foregroundStyle(.red)
           }
         }
 

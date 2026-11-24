@@ -94,7 +94,7 @@ Chaque modifieur retourne une instance d'une vue. Ceci nous permet d'enchaîner 
 Text("Hello, world!")
   .padding()
   .font(.title)
-  .foregroundColor(.gray)
+  .foregroundStyle(.gray)
   .overlay(
     RoundedRectangle(cornerRadius: 20)
     .stroke(Color.purple, lineWidth: 5)
@@ -114,7 +114,7 @@ Et si on applique le padding après la bordure :
 ```swift title="SwiftUI"
 Text("Hello, world!")
   .font(.title)
-  .foregroundColor(.gray)
+  .foregroundStyle(.gray)
   .overlay(
     RoundedRectangle(cornerRadius: 20)
     .stroke(Color.purple, lineWidth: 5)

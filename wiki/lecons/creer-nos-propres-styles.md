@@ -105,7 +105,7 @@ struct MonButtonStyle: ButtonStyle {
       .background(
         Color.blue.opacity(configuration.isPressed ? 0.5 : 1)
       )
-      .foregroundColor(.white)
+      .foregroundStyle(.white)
       .cornerRadius(8)
   }
 }
@@ -153,7 +153,7 @@ struct TexteAccent: ViewModifier {
     return content
       .font(.system(.largeTitle))
       .padding()
-      .foregroundColor(Color.accentColor)
+      .foregroundStyle(Color.accentColor)
       .shadow(color: .gray, radius: 5, x: 0, y: 8)
   }
 }
@@ -263,7 +263,7 @@ struct MonButton: ButtonStyle {
     configuration.label
       .padding()
       .background(actif ? Color.cyan : Color.gray)
-      .foregroundColor(.white)
+      .foregroundStyle(.white)
       .cornerRadius(8)
       .opacity(actif ? 1 : 0.5)
   }

@@ -227,7 +227,7 @@ struct ContentView: View {
             }) {
               Text("Nouvelle image")
                 .padding()
-                .foregroundColor(Color.white)
+                .foregroundStyle(Color.white)
                 .background(Color.gray)
                 .cornerRadius(15.0)
             }

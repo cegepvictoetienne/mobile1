@@ -23,13 +23,13 @@ struct ContentView: View {
 
       Circle()
         .background(Color.orange)
-        .foregroundColor(.green)
+        .foregroundStyle(.green)
         .padding(50)
 
       Circle()
         .padding()
         .background(Color.pink)
-        .foregroundColor(.blue)
+        .foregroundStyle(.blue)
 
       Text("Bye!")
         .padding()

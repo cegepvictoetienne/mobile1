@@ -359,7 +359,7 @@ struct ContentView: View {
             }
             .frame(width: 60, height: 60)
             .labelStyle(.iconOnly)
-            .foregroundColor(.white)
+            .foregroundStyle(.white)
           }
         }
         .padding()

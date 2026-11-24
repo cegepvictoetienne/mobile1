@@ -14,7 +14,7 @@ Dans le cas où l'application n'a pas de barre navigation :
 var body: some View {
   ZStack {
     Rectangle()
-      .foregroundColor(.yellow)
+      .foregroundStyle(.yellow)
     Text("La zone protégée est en jaune.")
   }
 }
@@ -29,7 +29,7 @@ var body: some View {
   NavigationStack {
     ZStack {
       Rectangle()
-        .foregroundColor(.yellow)
+        .foregroundStyle(.yellow)
       Text("La zone protégée est en jaune.")
     }
     .navigationTitle("Mon application")

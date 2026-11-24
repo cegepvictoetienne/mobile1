@@ -77,7 +77,7 @@ if maVariableDEtat {
 
 ```swift title="SwiftUI"
 Text("Je suis bleu si c'est vrai")
-    .foregroundColor(maVariableDEtat ? .blue : .red)
+    .foregroundStyle(maVariableDEtat ? .blue : .red)
 ```
 
 ```swift title="SwiftUI"

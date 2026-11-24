@@ -26,7 +26,7 @@ Menu {
     }
 } label: {
     Image(systemName: "line.3.horizontal")
-        .foregroundColor(.primary)
+        .foregroundStyle(.primary)
  }
 ```
 
@@ -85,7 +85,7 @@ struct ContentView: View {
             }
           } label: {
             Image(systemName: "line.3.horizontal")
-              .foregroundColor(.primary)
+              .foregroundStyle(.primary)
           }
         })
       })

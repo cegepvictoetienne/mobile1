@@ -77,7 +77,7 @@ Les couleurs peuvent être utilisées dans des méthodes qui attendent en param�
 
 ```swift title="SwiftUI"
 Text("Texte rouge")
-  .foregroundColor(.red)
+  .foregroundStyle(.red)
 ```
 
 ### Rôles ou statuts
@@ -160,7 +160,7 @@ S'il a spécifié que la couleur doit être noir et que le fond devient noir lor
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
-  .foregroundColor(Color.black)
+  .foregroundStyle(Color.black)
 ```
 
 Pour voir le résultat de ce code en mode clair et en mode sombre, cliquez sur l'icône **Variants** (en forme de damier) au bas de la zone du canevas puis choisissez **Color Scheme Variants**.
@@ -179,7 +179,7 @@ Dans l'exemple qui suit, la couleur `messageBienvenue` est différente selon que
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
-  .foregroundColor(Color.messageBienvenue)
+  .foregroundStyle(Color.messageBienvenue)
 ```
 
 ![Color Scheme Variants](images/SwiftUI-CouleurVsColorSchemeVariants-2.png)
@@ -198,7 +198,7 @@ struct ContentView: View {
       Rectangle()
         .fill(Color.primary)
       Text("Hello, world!")
-        .foregroundColor(colorScheme == .light ? .white : .black)
+        .foregroundStyle(colorScheme == .light ? .white : .black)
         .padding()
     }
     ...
@@ -268,7 +268,7 @@ struct ContentView: View {
         .fill(.blue)
         .opacity(0.5)
       Text("Color.blue, opacity 0.5")
-        .foregroundColor(.primary)
+        .foregroundStyle(.primary)
         .padding()
     }
     ...
@@ -385,14 +385,14 @@ Ceci est dû à une génération automatique d'un membre statique basé sur le n
 
 ```swift title="SwiftUI"
 Text("Hello, world!")
- .foregroundColor(Color.sousTitre)
+ .foregroundStyle(Color.sousTitre)
 ```
 
 Avec cette deuxième option, le nom doit respecter la casse utilisée lors de la création de la couleur personnalisée.
 
 ```swift title="SwiftUI"
 Text("Mon sous-titre")
-  .foregroundColor(Color("SousTitre"))
+  .foregroundStyle(Color("SousTitre"))
 ```
 
 ## Modifier la couleur d'une image par programmation
@@ -426,7 +426,7 @@ struct ContentView: View {
                         .renderingMode(.template)
                         .resizable()
                         .scaledToFit()
-                        .foregroundColor(.blue)
+                        .foregroundStyle(.blue)
                 }
                 VStack {
                     Text(".brightness")
