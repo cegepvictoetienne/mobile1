@@ -10,6 +10,13 @@ SCRIPTS_DIR := overrides/scripts
 
 .PHONY: help install build serve clean pre-build rebuild deploy liens orphelins orphelins-effacer
 
+.PHONY: check
+
+# Resolve IDs at recipe time with := inside a recipe-free shell call
+RUN_ID = $(shell gh run list -L1 --json databaseId -q '.[0].databaseId')
+JOB_ID = $(shell gh run view $(RUN_ID) --json jobs -q '.jobs[0].databaseId')
+
+
 help:
 	@echo "Cibles disponibles :"
 	@echo "  make install     - Crée le venv et installe les dépendances"
@@ -21,6 +28,8 @@ help:
 	@echo "  make liens       - Vérifie les liens externes du wiki"
 	@echo "  make orphelins   - Liste les fichiers du wiki non référencés"
 	@echo "  make orphelins-effacer - Supprime les fichiers non référencés (avec confirmation)"
+	@echo "  make check       - vérifier la run de GitHub Actions"
+	@echo "  make check-log   - vérifier la run de GitHub Actions - détails de la job"
 
 # --- Installation ---
 $(VENV)/bin/activate:
@@ -71,3 +80,9 @@ orphelins: install
 
 orphelins-effacer: install
 	$(VENV_BIN)/python $(SCRIPTS_DIR)/fichiers_orphelins.py --effacer
+
+check:
+	gh run view --job $(JOB_ID)
+
+check-log:
+	gh run view --log --job $(JOB_ID)
