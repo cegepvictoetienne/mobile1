@@ -415,7 +415,7 @@ Remarquez que si l'application [supporte le français](../lecons/la-localisation
 
 ### Titre de la vue parent comme libellé du lien de retour
 
-Dans le cas où [un titre](../lecons/la-barre-de-navigation.md#configurer-le-titre-de-lapplication) a été défini dans la vue qui contient le `NavigationLink`, c'est ce titre qui sera utilisé par défaut.
+Dans le cas où un titre a été défini dans la vue qui contient le `NavigationLink`, c'est ce titre qui sera utilisé par défaut.
 
 Il y a une exception : si le titre est trop long pour le périphérique choisi, SwiftUI utilisera le texte par défaut : Back ou Retour.
 

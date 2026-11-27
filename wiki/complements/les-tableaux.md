@@ -267,7 +267,7 @@ struct Ami {
 
 let amis: [Ami] = [
   Ami(nomFamille: "Lacasse", prenom: "Toto"),
-  Ami(nomFamille: "Gagnon", prenom: "Roger"),
+  Ami(nomFamille: "Wilco", prenom: "Roger"),
   Ami(nomFamille: "Girard", prenom: "Andréanne")
 ]
 ...
@@ -291,16 +291,16 @@ Si la clé n'existe pas, on aura nil.
 C'est pourquoi il faut prévoir ce qui se passera si jamais la clé n'existe pas. Ici, j'ai choisi d'imprimer le mot « aucun ».
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Wilco", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
- print(monDictionnaire["Nom"] ?? "aucun")   // Roger Gagnon
+ print(monDictionnaire["Nom"] ?? "aucun")   // Roger Wilco
  print(monDictionnaire["Téléphone"] ?? "aucun")   // aucun
 ```
 
 Il aurait aussi été possible de gérer le cas où la clé n'existe pas comme suit :
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Wilco", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
 if let valeur = monDictionnaire["Nom"] {
   print(valeur)

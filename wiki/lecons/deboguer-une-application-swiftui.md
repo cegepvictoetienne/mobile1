@@ -2,7 +2,7 @@
 
 ## print(), debugPrint, dump()
 
-Je vous présente ici trois fonctions qui permettent d'afficher des informations de débogage dans la sortie Standard, que l'on retrouve dans le bas de l'écran de Xcode.
+Voici trois fonctions qui permettent d'afficher des informations de débogage dans la sortie Standard, que l'on retrouve dans le bas de l'écran de Xcode.
 
 ### print()
 
@@ -155,7 +155,7 @@ Par exemple, pour trouver la valeur de la variable `nom` :
   p nom
   ```
 
-  ![Commande p à la console](images/Xcode-CommandeP.png)
+  ![Commande p à la console](images/Xcode-CommandeP.webp)
 
 Plusieurs commandes peuvent afficher des valeurs dans la fenêtre lldb :
 
@@ -188,7 +188,7 @@ Notez que dans certains cas, la valeur de la variable d'état ne sera modifiée 
 
 ## Travailler avec un fichier journal (log)
 
-Depuis iOS 10, [Apple recommande de travailler avec le système journal unifié](https://developer.apple.com/documentation/os/logging) (**unified logging system**) pour enregistrer des messages à partir d'une application.
+[Apple recommande de travailler avec le système journal unifié](https://developer.apple.com/documentation/os/logging) (**unified logging system**) pour enregistrer des messages à partir d'une application.
 
 Un tel système offre plusieurs avantages :
 
@@ -197,9 +197,7 @@ Un tel système offre plusieurs avantages :
 - Il est possible de choisir le niveau du message (débogage, d'avertissement, d'erreur, etc.) afin de mieux gérer les informations enregistrées.
 - Le système journal unifié de Apple stocke les informations en format binaire, ce qui réduit l'espace disque requis.
 
-Les messages peuvent être enregistrés dans le système journal unifié à l'aide de l'objet [Logger](deboguer-une-application-swiftui.md#travailler-avec-un-fichier-journal-log) ou à l'aide de [os_log()](deboguer-une-application-swiftui.md#travailler-avec-un-fichier-journal-log).
-
-Ils pourront être affichés de différentes façons, notamment [dans Xcode](deboguer-une-application-swiftui.md#travailler-avec-un-fichier-journal-log) ou encore à l'aide de l'[application Console](deboguer-une-application-swiftui.md#travailler-avec-un-fichier-journal-log).
+Les messages peuvent être enregistrés dans le système journal unifié à l'aide de l'objet Logger.
 
 ### Niveau du message
 
@@ -215,7 +213,7 @@ Il est possible de travailler avec des messages différents niveaux.
 
 ### Logger
 
-Depuis iOS 14, la méthode privilégiée pour enregistrer de l'information dans un fichier journal consiste à utiliser l'objet [Logger](https://developer.apple.com/documentation/os/logger).
+La méthode privilégiée pour enregistrer de l'information dans un fichier journal consiste à utiliser l'objet [Logger](https://developer.apple.com/documentation/os/logger).
 
 ```swift title="Swift"
 import OSLog
@@ -227,25 +225,15 @@ let logger = Logger()
 logger.debug("test")
 ```
 
-Pour travailler avec une variable, il faut utliser [l'interpolation de chaînes](../complements/le-langage-swift-reference.md#linterpolation-de-chaines-conversion-de-type-et-interpretation-dune-variable-dans-une-chaine).
+Pour travailler avec une variable, il faut utliser l'interpolation de chaînes.
 
 ```swift title="Swift"
 logger.debug("Problème rencontré: \(erreur)")
 ```
 
-### os_log()
-
-Si vous devez travailler avec iOS 13 ou moins, `Logger` ne fonctionne pas. Vous devrez vous tourner vers l'instruction [os_log](https://developer.apple.com/documentation/os/os_log) :
-
-```swift title="Swift"
-import os.log
-...
-os_log(.debug, "test")
-```
-
 ### Consulter le journal
 
-Peu importe si l'information a été enregistrée avec `Logger` ou avec `os_log()`, l'information du journal peut être lue de différentes façons :
+L'information du journal peut être lue de différentes façons :
 
 - directement dans Xcode
 - à l'aide de l'application Console (installée par défaut)
@@ -304,12 +292,6 @@ Par exemple, pour voir si une clé USB a été branchée à l'ordinateur dans le
 log show --last 30m --predicate 'eventMessage contains "mounted"' --info
 ```
 
-Ou pour voir les opérations faites dans le Time Machine :
-
-```text title="Terminal"
-log show --predicate 'subsystem == "com.apple.TimeMachine"' --info
-```
-
 Si l'affichage est très long et que vous désirez l'arrêter, appuyez sur <kbd>⌃ Ctrl</kbd> + <kbd>C</kbd>.
 
 ??? info "Pour plus d'information"
@@ -344,7 +326,7 @@ Dans votre code, l'instruction `#if DEBUG` permettra de compiler un bloc de code
 
 ## Self._printChanges
 
-Pour vous aider à déterminer qu'est-ce qui a causé un rafraîchissement de la vue, vous pouvez utiliser l'instruction `po Self._printChanges()` dans [la fenêtre de débogage de bas niveau](deboguer-une-application-swiftui.md#fenetre-de-debogage-de-bas-niveau-lldb-low-level-debugger).
+Pour vous aider à déterminer qu'est-ce qui a causé un rafraîchissement de la vue, vous pouvez utiliser l'instruction `po Self._printChanges()` dans la fenêtre de débogage de bas niveau.
 
 L'instruction peut également être utilisée directement dans le code.
 

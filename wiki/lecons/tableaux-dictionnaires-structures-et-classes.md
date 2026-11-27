@@ -2,9 +2,7 @@
 
 ## Les tableaux Swift
 
-Les tableaux en Swift ressemblent beaucoup aux tableaux en PHP.
-
-Par contre, tous les éléments du tableau doivent avoir le même type.
+Les tableaux en Swift doivent avoir le même type.
 
 ```swift title="Swift"
 let monTableau = ["valeur 1", "valeur 2", "valeur 3"]
@@ -19,13 +17,10 @@ var monTableau = Array(repeating: "", count: 10)
 Il est possible de déclarer un tableau vide à condition de spécifier son type.
 
 ```swift title="Swift"
+// Comme ceci : (explicite)
 var monTableau: [String] = []
-```
-
-Cette autre syntaxe est équivalente. On dira qu'elle utilise l'inférence de type (c'est-à-dire que le type n'est pas spécifié). Elle appelle le constructeur du type Array avec le type String : [String]()
-
-```swift title="Swift"
-var monTableau = [String]()
+// ou comme cela : (par inférence)
+var monTableau2 = [String]()
 ```
 
 ### Tableau d'instances d'une structure
@@ -39,7 +34,7 @@ var items: [Item] = [
 ]
 ```
 
-Il est également possible d'ajouter des éléments au tableau dans un deuxième temps.
+Pour ajouter des éléments au tableau :  
 
 ```swift title="Swift"
 var items: [Item] = []
@@ -86,7 +81,7 @@ Si jamais vous avez besoin d'un tableau qui contient différents types de donné
 
 ## Boucler dans un tableau
 
-Je vous présente ici quelques techniques pour boucler dans les éléments d'un tableau.
+Voici quelques techniques pour boucler dans les éléments d'un tableau.
 
 ### for
 
@@ -179,12 +174,8 @@ Pour déclarer un dictionnaire vide :
 
 ```swift title="Swift"
 var monDictionnaire = [String:Int]()
-```
-
-ou
-
-```swift title="Swift"
-var monDictionnaire:[String:Int] = [:]
+// ou
+var monDictionnaire2:[String:Int] = [:]
 ```
 
 On peut également le remplir dès sa déclaration :
@@ -309,7 +300,7 @@ struct Ami {
 
 let amis: [Ami] = [
   Ami(nomFamille: "Lacasse", prenom: "Toto"),
-  Ami(nomFamille: "Gagnon", prenom: "Roger"),
+  Ami(nomFamille: "Wilco", prenom: "Roger"),
   Ami(nomFamille: "Girard", prenom: "Andréanne")
 ]
 ...
@@ -333,16 +324,16 @@ Si la clé n'existe pas, on aura nil.
 C'est pourquoi il faut prévoir ce qui se passera si jamais la clé n'existe pas. Ici, j'ai choisi d'imprimer le mot « aucun ».
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Wilco", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
- print(monDictionnaire["Nom"] ?? "aucun")   // Roger Gagnon
+ print(monDictionnaire["Nom"] ?? "aucun")   // Roger Wilco
  print(monDictionnaire["Téléphone"] ?? "aucun")   // aucun
 ```
 
 Il aurait aussi été possible de gérer le cas où la clé n'existe pas comme suit :
 
 ```swift title="Swift"
-let monDictionnaire:[String:String] = ["Nom":"Roger Gagnon", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
+let monDictionnaire:[String:String] = ["Nom":"Roger Wilco", "Spécialité":"SwiftUI", "Ville":"Victoriaville"]
 
 if let valeur = monDictionnaire["Nom"] {
   print(valeur)
@@ -406,7 +397,7 @@ Le nom de la structure sera un mot au singulier.
 
 Dans la structure, les propriétés sont définies avec le mot-clé `var` et les méthodes, avec le mot-clé `func`.
 
-```swift title="Fichier Models/Ami.swift"
+```swift title="Models/Ami.swift"
 import Foundation
 
 struct Ami {
@@ -424,7 +415,7 @@ struct Ami {
 Pour créer une instance de la structure, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
+let ami = Ami(nomFamille: "Wilco", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'instance puisqu'elle a été créée avec le mot-clé `let`.
@@ -437,7 +428,8 @@ Le **memberwise initializer** permet d'instancier la structure en précisant une
 
 Il est possible de définir un constructeur nommé `init()` qui répondra à nos besoins de façon plus précise, par exemple en donnant une valeur par défaut à certaines propriétés ou en effectuant un traitement particulier.
 
-Attention : sans précaution, ceci écrasera le **memberwise initializer**. C'est pourquoi il est préférable de créer une [extension](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html) de la structure dans laquelle le ou les constructeurs seront définis.
+!!! warning "Attention"
+    sans précaution, ceci écrasera le **memberwise initializer**. C'est pourquoi il est préférable de créer une [extension](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html) de la structure dans laquelle le ou les constructeurs seront définis.
 
 De cette façon, l'instance pourra être créée à l'aide du **memberwise initializer** ou d'un des constructeurs définis dans l'extension.
 
@@ -459,7 +451,7 @@ Le nom de famille pourra être ajusté au besoin par une instruction séparée.
 ```swift title="Swift"
 var ami = Ami(prenom: "Roger")
 ...
-ami.nomFamille = "Gagnon"
+ami.nomFamille = "Wilco"
 ```
 
 Tout constructeur doit s'assurer que chacune des propriétés a une valeur valide lorsque l'instanciation est terminée.

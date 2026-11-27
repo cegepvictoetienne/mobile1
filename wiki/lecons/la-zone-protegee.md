@@ -93,7 +93,7 @@ struct ContentView: View {
 
 ![Couleur de fond](images/Xcode-CouleurDeFondIgnoresSafeArea.png)
 
-Ceci fonctionne également pour les applications avec [barre de titre](la-barre-de-navigation.md#configurer-le-titre-de-lapplication).
+Ceci fonctionne également pour les applications avec barre de titre.
 
 On voit que la couleur remplira tout l'espace, même celui sous le titre.
 

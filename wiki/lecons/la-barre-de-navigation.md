@@ -1,16 +1,10 @@
 # La barre de navigation
 
-## Configurer le titre de l'application
-
-Il est intéressant d'ajouter un titre dans la bare de navigation, dans le haut de la fenêtre d'une application mobile. Cette barre peut contenir le titre de l'application et possiblement des icônes ou du texte qui donnent accès à des fonctionnalités de votre choix.
-
 ### NavigationStack
 
-Avec SwiftUI, il est possible d'ajouter un titre en englobant le contenu de la vue dans un [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack), qui est disponible depuis iOS 16.
+Avec SwiftUI, il est possible d'ajouter un titre en englobant le contenu de la vue dans un [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack).  
 
 Dans sa forme la plus simple, le titre de l'application sera fourni à l'aide de la méthode [navigationTitle()](https://developer.apple.com/documentation/swiftui/view/navigationtitle(_:)-5di1u).
-
-Notez que la vue [NavigationView](https://developer.apple.com/documentation/swiftui/navigationview) et sa méthode [navigationBarTitle()](https://developer.apple.com/documentation/swiftui/view/navigationbartitle(_:)-6p1k7) sont obsolètes.
 
 Voici donc comment définir le titre de l'application à l'aide de NavigationStack et navigationTitle().
 
@@ -132,7 +126,7 @@ struct ContentView: View {
 
 ### Deux barres d'outils
 
-Il est possible d'ajouter du texte ou des icônes dans la [barre de navigation](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) (**navigation bar**) située dans le haut complètement de l'application. Cette barre est aussi appelée [barre d'outils](https://developer.apple.com/documentation/swiftui/toolbars) (**toolbar**). Sur macOS, elle s'appelle [barre de titre](https://developer.apple.com/documentation/swiftui/configure-your-apps-navigation-titles) (**title bar**).
+On peut ajouter du texte ou des icônes dans la [barre de navigation](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) (**navigation bar**) située dans le haut complètement de l'application. Cette barre est aussi appelée [barre d'outils](https://developer.apple.com/documentation/swiftui/toolbars) (**toolbar**).
 
 Une seconde barre d'outils est disponible dans le bas de l'écran.
 
@@ -170,34 +164,29 @@ L'emplacement exact dépendra des options utilisées puisque certains se placent
 struct ContentView: View {
   var body: some View {
     NavigationStack {
-      // contenu de la vue
-      // ...
-      .toolbar(content: {
-        ToolbarItem(placement: .principal, content: {
-          Text("Le titre")
-        })
-        ToolbarItem(placement: .topBarLeading, content: {
-          //...
-        })
-        ToolbarItem(placement: .topBarTrailing, content: {
-          //...
-        })
-        ToolbarItem(placement: .bottomBar, content: {
-          //...
-        })
-        ToolbarItem(placement: .status, content: {
-          //...
-        })
-        ToolbarItem(placement: .bottomBar, content: {
-          //...
-        })
+      VStack {
+          Text("Hello, world!")
+      }
+        .padding()
+        .toolbar(content: {
+          ToolbarItem(placement: .principal, content: {Text("titre")})
+          ToolbarItem(placement: .topBarLeading, content:
+                          { Button { } label: { Image(systemName: "line.3.horizontal") }})
+          ToolbarItem(placement: .topBarTrailing, content:
+                          { Button { } label: { Image(systemName: "person.crop.circle") }})
+          ToolbarItem(placement: .bottomBar, content:
+                          { Button { } label: { Image(systemName: "speaker.wave.3") }})
+          ToolbarItem(placement: .bottomBar, content:
+                          { Button { } label: { Image(systemName: "trash")} })
+          ToolbarItem(placement: .status, content:
+                          { Button { } label: { Image(systemName: "bookmark.fill") }})            
       })   // fin .toolbar
     }   // fin NavigationStack
   }   // fin body
 }   // fin ContentView
 ```
 
-![ToolbarItem](images/SwiftUI-ToolbarItem.png)
+![ToolbarItem](images/SwiftUI-ToolbarItem.webp){width=300}
 
 ### Code des barres d'outils dans son propre fichier
 

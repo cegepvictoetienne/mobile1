@@ -206,7 +206,7 @@ La petite zone grise dans le haut apparaît automatiquement. Elle a pour but de 
 
 La structure [TabView](https://developer.apple.com/documentation/swiftui/tabview) permet de naviguer entre différentes vues d'une application SwiftUI.
 
-Il s'agit d'une technique à la fois alternative et complémentaire à [ToolbarContent](../lecons/la-barre-de-navigation.md#configurer-les-barres-doutils).
+Il s'agit d'une technique à la fois alternative et complémentaire à ToolbarContent.
 
 Elle crée des éléments cliquables au bas de l'écran et permet de préciser le contenu de la vue active.
 

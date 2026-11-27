@@ -30,7 +30,7 @@ Menu {
  }
 ```
 
-Souvent, le menu sera ajouté dans la [barre de navigation](la-barre-de-navigation.md#configurer-les-barres-doutils).
+Souvent, le menu sera ajouté dans la barre de navigation.
 
 ```swift title="Swift"
 struct ContentView: View {

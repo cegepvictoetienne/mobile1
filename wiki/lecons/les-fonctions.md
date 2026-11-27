@@ -54,9 +54,9 @@ autreFonction("blabla", parametreNomme: "Hello World!")
 
 ## Où déclarer les fonctions?
 
-Sans un projet SwiftUI, une fonction qui est utilisée seulement dans une vue sera déclarée directement dans la structure de cette vue, généralement après le body.
+Dans un projet SwiftUI, une fonction qui est utilisée seulement dans une vue sera déclarée directement dans la structure de cette vue, généralement après le body.
 
-Cesi assurera que la fonction aura accès aux variables déclarées dans le ContentView, notammnent les [variables d'état](l-etat-dans-swiftui.md).
+Cesi assurera que la fonction aura accès aux variables déclarées dans le ContentView, notamment les [variables d'état](l-etat-dans-swiftui.md).
 
 ```swift title="SwiftUI"
 struct ContentView: View {
@@ -202,7 +202,7 @@ func maFonction(unParametre: String) -> String {
 }
 ```
 
-Quand le paramètre est un type objet, on a parfois l'impression qu'on bégaie.
+Quand le paramètre est un type objet, on a parfois l'impression de se répéter.
 
 ```swift title="Swift"
 func maFonction(item: Item) -> String {
@@ -216,7 +216,7 @@ Ce qu'il faut savoir :
 - le premier mot entre parenthèses, qui débute par une minuscule, est le nom du paramètre. On l'utilisera également lors de l'appel de la fonction.
 - le second mot, qui débute par une majuscule, est son type.
 
-Lors de l'appel de la fonction, on a également l'impression de bégayer.
+Lors de l'appel de la fonction, on a également l'impression de se répéter.
 
 ```swift title="Swift"
 ForEach(items) { item in

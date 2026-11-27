@@ -1,48 +1,12 @@
 # Les boucles
 
-## Boucle for
-
-La [boucle for](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID121) en langage Swift permet d'effectuer une boucle.
-
-Elle ressemble beaucoup à la structure de contrôle du même nom dans d'autres langages, par exemple PHP ou JavaScript.
-
-C'est une bonne habitude à prendre de donner un nom au pluriel à la variable qui stocke les éléments. Ceci permet d'utiliser ce même mot au singulier pour identifier l'élément qui est actuellement traité.
-
-```swift title="Swift"
-for valeur in valeurs {
-  print(valeur)
-}
-```
-
-## forEach()
-
-Dans le langage Swift, la méthode [forEach()](https://developer.apple.com/documentation/swift/array/foreach(_:)) permet de boucler sur les éléments d'une collection.
-
-Après l'accolade ouvrante, on spécife le nom que portera l'élément de la collection qui est actuellement traité, suivi du mot-clé `in`.
-
-```swift title="Swift"
-monTableau.forEach { element in
-  print(element)
-}
-```
-
-Si vous désirez boucler un nombre défini de fois, vous pouvez utiliser cette syntaxe :
-
-```swift title="Swift"
-(0...4).forEach { i in
-  print(i)
-}
-```
+En plus de `for` et de la méthode `.forEach()`, il y a en SwiftUI la bouche `ForEach`.  
 
 ## ForEach()
 
-La structure [ForEach()](https://developer.apple.com/documentation/swiftui/foreach) de SwiftUI permet de créer une vue à partir des éléments d'une collection.
+La structure [ForEach()](https://developer.apple.com/documentation/swiftui/foreach) de SwiftUI permet de créer une **vue** à partir des éléments d'une collection.
 
-Elle ressemble à [la méthode forEach()](les-boucles.md#foreach) à première vue mais détrompez-vous, il s'agit de deux choses différentes.
-
-Les deux permettent de boucler sur une collection, c'est vrai. Mais alors que `forEach()` est une méthode, `ForEach()` est une vue.
-
-C'est pourquoi seule la structure `ForEach()` permet de boucler pour créer plusieurs instances d'un Text, d'un TextField, d'une image, etc.
+La structure `ForEach()` permet de boucler pour créer plusieurs instances d'un Text, d'un TextField, d'une image, etc.
 
 Par exemple, ceci permet de créer une image pour chaque image dont le nom est stocké dans un tableau de String.
 
@@ -135,7 +99,7 @@ Et si vous tentez le coup avec la méthode `forEach()`, vous pourriez obtenir un
 
 ## Modifier l'élément présentement traité dans une boucle
 
-Par défaut, quand une vue fait une itération pour afficher les éléments d'un tableau, par exemple avec [List](../complements/quelques-vues-swiftui.md#list) ou avec [ForEach](les-boucles.md#foreach_1), le code à l'intérieur de la boucle ne peut pas modifier les éléments du tableau.
+Par défaut, quand une vue fait une itération pour afficher les éléments d'un tableau, par exemple avec [List](../complements/quelques-vues-swiftui.md#list) ou avec `ForEach`, le code à l'intérieur de la boucle ne peut pas modifier les éléments du tableau.
 
 Si vous tentez de faire une telle modification, vous aurez un message d'erreur du genre `Cannot assign to property: 'item' is a 'let' constant`{ .erreur }.
 

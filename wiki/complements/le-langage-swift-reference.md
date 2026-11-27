@@ -389,7 +389,7 @@ struct Ami {
 Pour créer une instance de la structure, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
+let ami = Ami(nomFamille: "Wilco", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'instance puisqu'elle a été créée avec le mot-clé `let`.
@@ -424,7 +424,7 @@ Le nom de famille pourra être ajusté au besoin par une instruction séparée.
 ```swift title="Swift"
 var ami = Ami(prenom: "Roger")
 ...
-ami.nomFamille = "Gagnon"
+ami.nomFamille = "Wilco"
 ```
 
 Tout constructeur doit s'assurer que chacune des propriétés a une valeur valide lorsque l'instanciation est terminée.
@@ -468,7 +468,7 @@ class Ami {
 Pour créer une instance de la classe, qu'on appellera **objet**, on procédera comme suit :
 
 ```swift title="Swift"
-let ami = Ami(nomFamille: "Gagnon", prenom: "Roger")
+let ami = Ami(nomFamille: "Wilco", prenom: "Roger")
 ```
 
 Dans cet exemple, il ne sera pas possible de modifier les propriétés de l'objet puisqu'il a été créé avec le mot-clé `let`.

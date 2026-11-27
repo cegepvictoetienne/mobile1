@@ -386,14 +386,6 @@ Il suffit de cliquer sur le dernier icône (celui en forme d'étoile).
 
 ![Symboles SF dans Xcode](images/Xcode-SymbolesSFDansInspecteurObjets.png)
 
-#### Symboles SF en ligne
-
-Il existe des sites Web qui présentent les symboles SF disponibles, par exemple : <https://hotpot.ai/free-icons>.
-
-Choisissez **SF Symbols** pour voir les symboles SF disponibles.
-
-![Hotpot](images/Hotpot-SymbolesSF.png)
-
 ??? info "Pour plus d'information"
 
     « How to use SF Symbols in SwiftUI ». Simple Swift Guide. <https://www.simpleswiftguide.com/how-to-use-sf-symbols-in-swiftui/>
